@@ -1,0 +1,8 @@
+﻿.CURRENT OBJECTIVE : run first "Hello world!" application.
+9.23.2018 Emulators are too heavy to run, at least in my PC. So, prepara your mobile device to run app for testing.
+Use YuanDao I bought before.
+ 	.Now, Android Studio has some problem?
+
+.CURRENT OBJECTIVE : Select vacabulary you are going to use in app. In Japanese, English, and Chinese.
+
+pinyin怕pīnpīn
