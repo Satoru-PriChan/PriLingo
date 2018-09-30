@@ -1,4 +1,4 @@
-This project is that I am now trying to create Android app where people can learn
+This project is that I am now trying to create Android app which people can learn
 foreign languages by vocabulary relating Pretty Series(PriPara, PriChan, etc)
 presented in. 
 
