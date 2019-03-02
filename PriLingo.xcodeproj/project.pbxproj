@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA398083E46E7E11F161FD4 /* Pods_PriLingoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */; };
+		68285597453B3E9B67653C92 /* Pods_PriLingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */; };
+		85C8085E8EB7F06230E3F230 /* Pods_PriLingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */; };
+		CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE06F40E220C5C1000343CD9 /* Localizable.strings */; };
+		CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE06F40E220C5C1000343CD9 /* Localizable.strings */; };
+		CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE06F40E220C5C1000343CD9 /* Localizable.strings */; };
 		CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1272209B5B800953C0D /* AppDelegate.swift */; };
 		CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CE0AC12D2209B5B800953C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC12B2209B5B800953C0D /* Main.storyboard */; };
@@ -14,6 +20,20 @@
 		CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC1302209B5B900953C0D /* LaunchScreen.storyboard */; };
 		CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC13C2209B5B900953C0D /* PriLingoTests.swift */; };
 		CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1472209B5BA00953C0D /* PriLingoUITests.swift */; };
+		CE0AC157220B219300953C0D /* ScreenDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */; };
+		CE0AC158220B219300953C0D /* ScreenDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */; };
+		CE0AC159220B219300953C0D /* ScreenDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */; };
+		CE0AC15A220B219300953C0D /* ScreenDesignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */; };
+		CE0AC15B220B219300953C0D /* ScreenDesignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */; };
+		CE0AC15C220B219300953C0D /* ScreenDesignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */; };
+		CE0B74FF22159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */; };
+		CE0B750022159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */; };
+		CE0B750122159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */; };
+		CE0B750222159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
+		CE0B750322159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
+		CE0B750422159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
+		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
+		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.debug.xcconfig"; sourceTree = "<group>"; };
+		81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE06F3FF220C5A3B00343CD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CE06F400220C5A3B00343CD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CE06F401220C5A4200343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		CE06F402220C5A4200343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CE06F403220C5AF100343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		CE06F404220C5AF100343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE06F40D220C5C1000343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE06F40F220C5C1300343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE06F410220C5C1500343CD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE06F411220C5C1600343CD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE0AC1242209B5B800953C0D /* PriLingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriLingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC1272209B5B800953C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0AC1292209B5B800953C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +81,15 @@
 		CE0AC1432209B5BA00953C0D /* PriLingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriLingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC1472209B5BA00953C0D /* PriLingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriLingoUITests.swift; sourceTree = "<group>"; };
 		CE0AC1492209B5BA00953C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDesignViewController.swift; sourceTree = "<group>"; };
+		CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController.xib; sourceTree = "<group>"; };
+		CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDesignViewController2.swift; sourceTree = "<group>"; };
+		CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController2.xib; sourceTree = "<group>"; };
+		DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.release.xcconfig"; sourceTree = "<group>"; };
+		EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F312C8FA8696C618859B4D74 /* Pods-PriLingoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCE8067E80DC5AE6DBFAB21F /* Pods-PriLingoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68285597453B3E9B67653C92 /* Pods_PriLingo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA398083E46E7E11F161FD4 /* Pods_PriLingoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +113,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C8085E8EB7F06230E3F230 /* Pods_PriLingoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A71CB322B95224E5BEED39A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */,
+				8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */,
+				DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7EEA9415B9DD823A9BF586B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */,
+				E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */,
+				F312C8FA8696C618859B4D74 /* Pods-PriLingoTests.debug.xcconfig */,
+				EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */,
+				FCE8067E80DC5AE6DBFAB21F /* Pods-PriLingoUITests.debug.xcconfig */,
+				81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE06F405220C5BAD00343CD9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CE06F40E220C5C1000343CD9 /* Localizable.strings */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		CE0AC11B2209B5B800953C0D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +158,8 @@
 				CE0AC13B2209B5B900953C0D /* PriLingoTests */,
 				CE0AC1462209B5BA00953C0D /* PriLingoUITests */,
 				CE0AC1252209B5B800953C0D /* Products */,
+				C7EEA9415B9DD823A9BF586B /* Pods */,
+				A71CB322B95224E5BEED39A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +176,14 @@
 		CE0AC1262209B5B800953C0D /* PriLingo */ = {
 			isa = PBXGroup;
 			children = (
+				CEB63243222961E300FBB79C /* DB */,
+				CEB632422229618800FBB79C /* UI */,
 				CE0AC1272209B5B800953C0D /* AppDelegate.swift */,
-				CE0AC1292209B5B800953C0D /* ViewController.swift */,
 				CE0AC12B2209B5B800953C0D /* Main.storyboard */,
 				CE0AC12E2209B5B900953C0D /* Assets.xcassets */,
 				CE0AC1302209B5B900953C0D /* LaunchScreen.storyboard */,
 				CE0AC1332209B5B900953C0D /* Info.plist */,
+				CE06F405220C5BAD00343CD9 /* Supporting files */,
 			);
 			path = PriLingo;
 			sourceTree = "<group>";
@@ -125,6 +206,25 @@
 			path = PriLingoUITests;
 			sourceTree = "<group>";
 		};
+		CEB632422229618800FBB79C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AC1292209B5B800953C0D /* ViewController.swift */,
+				CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */,
+				CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */,
+				CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */,
+				CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CEB63243222961E300FBB79C /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC14C2209B5BA00953C0D /* Build configuration list for PBXNativeTarget "PriLingo" */;
 			buildPhases = (
+				E0A5D200D2143918E89A430E /* [CP] Check Pods Manifest.lock */,
 				CE0AC1202209B5B800953C0D /* Sources */,
 				CE0AC1212209B5B800953C0D /* Frameworks */,
 				CE0AC1222209B5B800953C0D /* Resources */,
+				40D81D2A66C7EA45F1271353 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC14F2209B5BA00953C0D /* Build configuration list for PBXNativeTarget "PriLingoTests" */;
 			buildPhases = (
+				1AACCB9D8599FC7957159E4E /* [CP] Check Pods Manifest.lock */,
 				CE0AC1342209B5B900953C0D /* Sources */,
 				CE0AC1352209B5B900953C0D /* Frameworks */,
 				CE0AC1362209B5B900953C0D /* Resources */,
+				5BB39D40B985AEFF9938C01C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC1522209B5BA00953C0D /* Build configuration list for PBXNativeTarget "PriLingoUITests" */;
 			buildPhases = (
+				EE1C650AF1E88649412CC4FB /* [CP] Check Pods Manifest.lock */,
 				CE0AC13F2209B5BA00953C0D /* Sources */,
 				CE0AC1402209B5BA00953C0D /* Frameworks */,
 				CE0AC1412209B5BA00953C0D /* Resources */,
+				8BBE1A2CB6777BD9AFC6350B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +317,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = CE0AC11B2209B5B800953C0D;
 			productRefGroup = CE0AC1252209B5B800953C0D /* Products */;
@@ -229,7 +337,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE0AC15A220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
+				CE0B750222159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CE0AC12D2209B5B800953C0D /* Main.storyboard in Resources */,
 			);
@@ -239,6 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0B750322159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */,
+				CE0AC15B220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
+				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,16 +360,156 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0B750422159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */,
+				CE0AC15C220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
+				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AACCB9D8599FC7957159E4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriLingoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40D81D2A66C7EA45F1271353 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB39D40B985AEFF9938C01C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BBE1A2CB6777BD9AFC6350B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A5D200D2143918E89A430E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriLingo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE1C650AF1E88649412CC4FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriLingoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE0AC1202209B5B800953C0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0AC157220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CE0B74FF22159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +519,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0B750022159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
+				CE0AC158220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0B750122159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
+				CE0AC159220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +553,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CE06F40E220C5C1000343CD9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE06F40D220C5C1000343CD9 /* ja */,
+				CE06F40F220C5C1300343CD9 /* zh-Hant */,
+				CE06F410220C5C1500343CD9 /* zh-Hans */,
+				CE06F411220C5C1600343CD9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CE0AC12B2209B5B800953C0D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE0AC12C2209B5B800953C0D /* Base */,
+				CE06F3FF220C5A3B00343CD9 /* zh-Hans */,
+				CE06F401220C5A4200343CD9 /* zh-Hant */,
+				CE06F403220C5AF100343CD9 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -305,6 +579,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE0AC1312209B5B900953C0D /* Base */,
+				CE06F400220C5A3B00343CD9 /* zh-Hans */,
+				CE06F402220C5A4200343CD9 /* zh-Hant */,
+				CE06F404220C5AF100343CD9 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,6 +709,7 @@
 		};
 		CE0AC14D2209B5BA00953C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +728,7 @@
 		};
 		CE0AC14E2209B5BA00953C0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +747,7 @@
 		};
 		CE0AC1502209B5BA00953C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F312C8FA8696C618859B4D74 /* Pods-PriLingoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +769,7 @@
 		};
 		CE0AC1512209B5BA00953C0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +791,7 @@
 		};
 		CE0AC1532209B5BA00953C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE8067E80DC5AE6DBFAB21F /* Pods-PriLingoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +812,7 @@
 		};
 		CE0AC1542209B5BA00953C0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

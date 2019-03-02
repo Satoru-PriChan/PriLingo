@@ -1,0 +1,6 @@
+framework module Pods_PriLingo {
+  umbrella header "Pods-PriLingo-umbrella.h"
+
+  export *
+  module * { export * }
+}
