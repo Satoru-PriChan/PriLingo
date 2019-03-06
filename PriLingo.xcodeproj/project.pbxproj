@@ -34,6 +34,18 @@
 		CE0B750422159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
+		CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
+		CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
+		CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
+		CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE7222FECE60095D3D2 /* SuperTable.swift */; };
+		CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE7222FECE60095D3D2 /* SuperTable.swift */; };
+		CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE7222FECE60095D3D2 /* SuperTable.swift */; };
+		CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */; };
+		CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */; };
+		CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */; };
+		CEF46BF5223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
+		CEF46BF6223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
+		CEF46BF7223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +97,10 @@
 		CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController.xib; sourceTree = "<group>"; };
 		CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDesignViewController2.swift; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController2.xib; sourceTree = "<group>"; };
+		CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATEGORIES.swift; sourceTree = "<group>"; };
+		CEF46BE7222FECE60095D3D2 /* SuperTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTable.swift; sourceTree = "<group>"; };
+		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
+		CEF46BF4223002270095D3D2 /* Statements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statements.swift; sourceTree = "<group>"; };
 		DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.release.xcconfig"; sourceTree = "<group>"; };
 		EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,8 +237,28 @@
 		CEB63243222961E300FBB79C /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				CEF46BDE222FEC910095D3D2 /* Table */,
+				CEF46BEF222FF7C80095D3D2 /* SQL */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		CEF46BDE222FEC910095D3D2 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				CEF46BE7222FECE60095D3D2 /* SuperTable.swift */,
+				CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */,
+				CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		CEF46BEF222FF7C80095D3D2 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				CEF46BF4223002270095D3D2 /* Statements.swift */,
+			);
+			path = SQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,9 +544,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE0AC157220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
 				CE0B74FF22159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
+				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
+				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
+				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,9 +559,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE0B750022159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC158220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
+				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
+				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,9 +574,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE0B750122159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC159220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
+				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
+				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
