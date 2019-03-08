@@ -11,14 +11,12 @@ import Foundation
 //class for SQL statements
 class Statements {
     // MARK: - T_CATEGORIES
-    
     public static let SELECT_ALL_T_CATEGORIES = ""
-        + "SELECT * FROM "
-        + CATEGORIES.T_CATEGORIES
-        + ";"
+    + "SELECT * FROM "
+    + CATEGORIES.T_CATEGORIES
+    + ";"
     
     // MARK: - MST_WORDS
-    
     public static let SELECT_ALL_MSTWORDS = ""
     + "SELECT * FROM "
     + WORDS.MST_WORDS + " "
