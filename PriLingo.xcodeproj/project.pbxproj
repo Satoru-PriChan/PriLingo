@@ -32,6 +32,9 @@
 		CE0B750222159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
 		CE0B750322159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
 		CE0B750422159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */; };
+		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
+		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
+		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -103,6 +106,7 @@
 		CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController.xib; sourceTree = "<group>"; };
 		CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDesignViewController2.swift; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController2.xib; sourceTree = "<group>"; };
+		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATEGORIES.swift; sourceTree = "<group>"; };
@@ -231,6 +235,14 @@
 			path = PriLingoUITests;
 			sourceTree = "<group>";
 		};
+		CE17A03B223298D10073A0A4 /* InitialSetup */ = {
+			isa = PBXGroup;
+			children = (
+				CE17A03C223298F30073A0A4 /* DBSetUp.swift */,
+			);
+			path = InitialSetup;
+			sourceTree = "<group>";
+		};
 		CEB632422229618800FBB79C /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF3750E2231246B00CC8A74 /* PriLingoDB.db */,
+				CE17A03B223298D10073A0A4 /* InitialSetup */,
 				CEF46BDE222FEC910095D3D2 /* Table */,
 				CEF46BEF222FF7C80095D3D2 /* SQL */,
 			);
@@ -566,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
+				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CE0AC157220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
 				CE0B74FF22159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
@@ -582,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
+				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CE0B750022159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC158220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
@@ -598,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
+				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CE0B750122159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC159220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,

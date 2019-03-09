@@ -23,6 +23,19 @@ class PriLingoTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    ///function to test DBSetUp class.
+    func testDBInitialSetUp() {
+        if !FileManager.default.fileExists(atPath: Path.docDB) {
+            //perform initial copy
+            let dbSetup = DBSetUp.init()
+            XCTAssert(dbSetup.InitialSetUpDB() && FileManager.default.fileExists(atPath: Path.docDB))
+        } else {
+            //not perform copy
+            let dbSetUp = DBSetUp.init()
+            XCTAssertFalse(dbSetUp.InitialSetUpDB())
+        }
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
