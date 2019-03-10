@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FMDB
 
 ///Data Store Object class for Category
 class DSOCategory {
@@ -47,5 +48,42 @@ class DSOCategory {
     var spare9: String?
     var spare10: String?
     
-    
+    ///initializer to create from FMResultSet
+    init(myResultSet: FMResultSet?) {
+        self.iD = myResultSet?.string(forColumn: CATEGORIES.ID)
+        self.name1 = myResultSet?.string(forColumn: CATEGORIES.NAME1)
+        self.name2 = myResultSet?.string(forColumn: CATEGORIES.NAME2)
+        self.name3 = myResultSet?.string(forColumn: CATEGORIES.NAME3)
+        self.name4 = myResultSet?.string(forColumn: CATEGORIES.NAME4)
+        self.name5 = myResultSet?.string(forColumn: CATEGORIES.NAME5)
+        self.name6 = myResultSet?.string(forColumn: CATEGORIES.NAME6)
+        self.name7 = myResultSet?.string(forColumn: CATEGORIES.NAME7)
+        self.name8 = myResultSet?.string(forColumn: CATEGORIES.NAME8)
+        self.name9 = myResultSet?.string(forColumn: CATEGORIES.NAME9)
+        self.name10 = myResultSet?.string(forColumn: CATEGORIES.NAME10)
+        self.description1 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION1)
+        self.description2 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION2)
+        self.description3 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION3)
+        self.description4 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION4)
+        self.description5 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION5)
+        self.description6 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION6)
+        self.description7 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION7)
+        self.description8 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION8)
+        self.description9 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION9)
+        self.description10 = myResultSet?.string(forColumn: CATEGORIES.DESCRIPTION10)
+        self.lastUPD = myResultSet?.string(forColumn: CATEGORIES.LAST_UPD_DATETIME)
+        self.lastUPDer = myResultSet?.string(forColumn: CATEGORIES.LAST_UPDATER)
+        self.deleteFlag = myResultSet?.string(forColumn: CATEGORIES.DLT_FLAG)
+        self.spare1 = myResultSet?.string(forColumn: CATEGORIES.SPARE1)
+        self.spare2 = myResultSet?.string(forColumn: CATEGORIES.SPARE2)
+        self.spare3 = myResultSet?.string(forColumn: CATEGORIES.SPARE3)
+        self.spare4 = myResultSet?.string(forColumn: CATEGORIES.SPARE4)
+        self.spare5 = myResultSet?.string(forColumn: CATEGORIES.SPARE5)
+        self.spare6 = myResultSet?.string(forColumn: CATEGORIES.SPARE6)
+        self.spare7 = myResultSet?.string(forColumn: CATEGORIES.SPARE7)
+        self.spare8 = myResultSet?.string(forColumn: CATEGORIES.SPARE8)
+        self.spare9 = myResultSet?.string(forColumn: CATEGORIES.SPARE9)
+        self.spare10 = myResultSet?.string(forColumn: CATEGORIES.SPARE10)
+
+    }
 }

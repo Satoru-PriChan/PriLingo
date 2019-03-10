@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import FMDB
 @testable import PriLingo
 
 class PriLingoTests: XCTestCase {
@@ -36,7 +37,20 @@ class PriLingoTests: XCTestCase {
             XCTAssertFalse(dbSetUp.InitialSetUpDB())
         }
     }
-
+    
+    ///function to test SQL statement
+    func testDBStatements() {
+        let myDB = FMDatabase.init(path: Path.docDB)
+        myDB.open()
+        for i in 1...10 {
+            do {
+                let myResultSet = try myDB.executeQuery(Statements.SELECT_ALL_T_CATEGORIES, values: [i])
+            } catch {
+                XCTAssert(false)
+            }
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

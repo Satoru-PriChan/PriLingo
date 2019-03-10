@@ -35,6 +35,18 @@
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
+		CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
+		CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
+		CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
+		CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */; };
+		CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */; };
+		CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */; };
+		CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2242233FD1700410F02 /* DSOWord.swift */; };
+		CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2242233FD1700410F02 /* DSOWord.swift */; };
+		CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2242233FD1700410F02 /* DSOWord.swift */; };
+		CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
+		CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
+		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -107,6 +119,10 @@
 		CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDesignViewController2.swift; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDesignViewController2.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
+		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
+		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
+		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
+		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATEGORIES.swift; sourceTree = "<group>"; };
@@ -243,6 +259,24 @@
 			path = InitialSetup;
 			sourceTree = "<group>";
 		};
+		CEB2D21A2233F9E400410F02 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */,
+				CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		CEB2D2232233FCE200410F02 /* Data Store Object(DSO) */ = {
+			isa = PBXGroup;
+			children = (
+				CEB2D2282233FD2900410F02 /* DSOCategory.swift */,
+				CEB2D2242233FD1700410F02 /* DSOWord.swift */,
+			);
+			path = "Data Store Object(DSO)";
+			sourceTree = "<group>";
+		};
 		CEB632422229618800FBB79C /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +296,8 @@
 				CE17A03B223298D10073A0A4 /* InitialSetup */,
 				CEF46BDE222FEC910095D3D2 /* Table */,
 				CEF46BEF222FF7C80095D3D2 /* SQL */,
+				CEB2D21A2233F9E400410F02 /* DAO */,
+				CEB2D2232233FCE200410F02 /* Data Store Object(DSO) */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -580,14 +616,18 @@
 			files = (
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */,
 				CE0AC157220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
 				CE0B74FF22159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
+				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
+				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
+				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,14 +637,18 @@
 			files = (
 				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */,
 				CE0B750022159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC158220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
+				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
+				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,14 +658,18 @@
 			files = (
 				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */,
 				CE0B750122159D6A00CC49A0 /* ScreenDesignViewController2.swift in Sources */,
 				CE0AC159220B219300953C0D /* ScreenDesignViewController.swift in Sources */,
+				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
+				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
+				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
