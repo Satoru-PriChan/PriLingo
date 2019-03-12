@@ -107,4 +107,42 @@ class DSOWord {
         self.spare9 = myResultSet.string(forColumn: WORDS.SPARE9)
         self.spare10 = myResultSet.string(forColumn: WORDS.SPARE10)
     }
+    
+    ///describe itself by print method
+    func describe() {
+        print("File: \(#file) Line \(#line): Func \(#function):" +
+            "\n  self.iD: \(String(describing: self.iD))" +
+            "\n  name1: \(String(describing: self.name1))" +
+            "\n  name2: \(String(describing: self.name2))" +
+            "\n  name3: \(String(describing: self.name3))" +
+            "\n  name4: \(String(describing: self.name4))" +
+            "\n  name5: \(String(describing: self.name5))" +
+            "\n  name6: \(String(describing: self.name6))" +
+            "\n  name7: \(String(describing: self.name7))" +
+            "\n  name8: \(String(describing: self.name8))" +
+            "\n  name9: \(String(describing: self.name9))" +
+            "\n  name10: \(String(describing: self.name10))" +
+            "\n  phonetic1: \(String(describing: self.phonetic1))" +
+            "\n  phonetic2: \(String(describing: self.phonetic2))" +
+            "\n  phonetic3: \(String(describing: self.phonetic3))" +
+            "\n  phonetic4: \(String(describing: self.phonetic4))" +
+            "\n  phonetic5: \(String(describing: self.phonetic5))" +
+            "\n  phonetic6: \(String(describing: self.phonetic6))" +
+            "\n  phonetic7: \(String(describing: self.phonetic7))" +
+            "\n  phonetic8: \(String(describing: self.phonetic8))" +
+            "\n  phonetic9: \(String(describing: self.phonetic9))" +
+            "\n  phonetic10: \(String(describing: self.phonetic10))" +
+            "\n  description1: \(String(describing: self.description1))" +
+            "\n  description2: \(String(describing: self.description2))" +
+            "\n  description3: \(String(describing: self.description3))" +
+            "\n  description4: \(String(describing: self.description4))" +
+            "\n  description5: \(String(describing: self.description5))" +
+            "\n  description6: \(String(describing: self.description6))" +
+            "\n  description7: \(String(describing: self.description7))" +
+            "\n  description8: \(String(describing: self.description8))" +
+            "\n  description9: \(String(describing: self.description9))" +
+            "\n  description10: \(String(describing: self.description10))" +
+            "\n  categoryID: \(String(describing: self.categoryID))" +
+            "\n  favorite: \(String(describing: self.favorite))")
+    }
 }

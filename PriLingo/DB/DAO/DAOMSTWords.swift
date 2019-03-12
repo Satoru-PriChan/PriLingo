@@ -21,7 +21,7 @@ class DAOMSTWords {
     func exeSelect(_categoryID: String) -> Array<DSOWord>?{
         let myDB = FMDatabase.init(path: Path.docDB)
         var myResultSet: FMResultSet? = nil
-        var words: Array<DSOWord>? = nil
+        var words: Array<DSOWord> = []
         
         myDB.open()
         
@@ -35,7 +35,7 @@ class DAOMSTWords {
         
         //you can force myResultSet unwrapped cause it has already passed do-catch clause.
         while(myResultSet!.next()) {
-            words?.append(DSOWord.init(myResultSet: myResultSet!))
+            words.append(DSOWord.init(myResultSet: myResultSet!))
         }
         
         myDB.close()

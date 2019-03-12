@@ -30,7 +30,7 @@ class PriLingoTests: XCTestCase {
         if !FileManager.default.fileExists(atPath: Path.docDB) {
             //perform initial copy
             let dbSetup = DBSetUp.init()
-            XCTAssert(dbSetup.InitialSetUpDB() && FileManager.default.fileExists(atPath: Path.docDB))
+            XCTAssertTrue(dbSetup.InitialSetUpDB() && FileManager.default.fileExists(atPath: Path.docDB))
         } else {
             //not perform copy
             let dbSetUp = DBSetUp.init()
@@ -40,13 +40,24 @@ class PriLingoTests: XCTestCase {
     
     ///function to test SQL statement
     func testDBStatements() {
-        let myDB = FMDatabase.init(path: Path.docDB)
-        myDB.open()
-        for i in 1...10 {
-            do {
-                let myResultSet = try myDB.executeQuery(Statements.SELECT_ALL_T_CATEGORIES, values: [i])
-            } catch {
-                XCTAssert(false)
+        //category
+        let daoTCategories = DAOTCategories.init()
+        let resultA = daoTCategories.exeSelect()
+        XCTAssertNotNil(resultA, "resultA is null.")
+        
+        guard resultA != nil && resultA!.count != 0 else {return}
+        
+        for category in resultA! {
+            category.describe()
+            
+            //words
+            let daoMSTWords = DAOMSTWords.init()
+            let resultB = daoMSTWords.exeSelect(_categoryID: category.iD!)
+            XCTAssertNotNil(resultB, "resultB is nil at \(category.iD ?? "?")th trial.")
+            
+            if resultB == nil || resultB!.count == 0 {continue}
+            for word in resultB! {
+                word.describe()
             }
         }
     }
