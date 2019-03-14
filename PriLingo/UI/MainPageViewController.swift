@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainPageViewController: UIViewController {
+class MainPageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -19,6 +19,15 @@ class MainPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - UICollectionViewDataSource
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
 
     /*
     // MARK: - Navigation

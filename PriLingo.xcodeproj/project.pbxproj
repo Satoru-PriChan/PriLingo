@@ -49,6 +49,12 @@
 		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
+		CEF2EF66223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2EF64223A7CD50065CC8A /* MainPageCollectionViewCell.swift */; };
+		CEF2EF67223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2EF64223A7CD50065CC8A /* MainPageCollectionViewCell.swift */; };
+		CEF2EF68223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2EF64223A7CD50065CC8A /* MainPageCollectionViewCell.swift */; };
+		CEF2EF69223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2EF65223A7CD50065CC8A /* MainPageCollectionViewCell.xib */; };
+		CEF2EF6A223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2EF65223A7CD50065CC8A /* MainPageCollectionViewCell.xib */; };
+		CEF2EF6B223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2EF65223A7CD50065CC8A /* MainPageCollectionViewCell.xib */; };
 		CEF300552239386300300D00 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF300532239386300300D00 /* MainPageViewController.swift */; };
 		CEF300562239386300300D00 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF300532239386300300D00 /* MainPageViewController.swift */; };
 		CEF300572239386300300D00 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF300532239386300300D00 /* MainPageViewController.swift */; };
@@ -129,6 +135,8 @@
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
+		CEF2EF64223A7CD50065CC8A /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEF2EF65223A7CD50065CC8A /* MainPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCollectionViewCell.xib; sourceTree = "<group>"; };
 		CEF300532239386300300D00 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		CEF300542239386300300D00 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
@@ -291,6 +299,8 @@
 				CEF3005B2239386B00300D00 /* test */,
 				CEF300532239386300300D00 /* MainPageViewController.swift */,
 				CEF300542239386300300D00 /* MainPageViewController.xib */,
+				CEF2EF64223A7CD50065CC8A /* MainPageCollectionViewCell.swift */,
+				CEF2EF65223A7CD50065CC8A /* MainPageCollectionViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -458,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF2EF69223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE0AC15A220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
@@ -473,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF2EF6A223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */,
 				CE0AC15B220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
@@ -485,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF2EF6B223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* ScreenDesignViewController2.xib in Resources */,
 				CE0AC15C220B219300953C0D /* ScreenDesignViewController.xib in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
@@ -643,6 +656,7 @@
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CEF2EF66223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF300552239386300300D00 /* MainPageViewController.swift in Sources */,
@@ -665,6 +679,7 @@
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CEF2EF67223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF300562239386300300D00 /* MainPageViewController.swift in Sources */,
@@ -687,6 +702,7 @@
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CEF2EF68223A7CD50065CC8A /* MainPageCollectionViewCell.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEF300572239386300300D00 /* MainPageViewController.swift in Sources */,
