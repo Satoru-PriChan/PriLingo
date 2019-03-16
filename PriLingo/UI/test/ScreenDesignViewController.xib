@@ -55,5 +55,13 @@
             <nil key="highlightedColor"/>
             <point key="canvasLocation" x="-845" y="-108"/>
         </label>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dy2-AC-5Fc">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-520" y="-194.75262368815595"/>
+        </label>
     </objects>
 </document>
