@@ -42,7 +42,7 @@
                     <items>
                         <tabBarItem title="Search" id="hlS-dh-YqG"/>
                         <tabBarItem systemItem="favorites" id="ETR-SF-SHY"/>
-                        <tabBarItem title="Study" id="Ixn-7l-x8u" userLabel="Study"/>
+                        <tabBarItem title="Pronunciation" id="Ixn-7l-x8u" userLabel="Study"/>
                         <tabBarItem title="Setting" id="Mjz-Le-KZJ" userLabel="Setting"/>
                     </items>
                 </tabBar>

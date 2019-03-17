@@ -296,6 +296,7 @@
 		CEB632422229618800FBB79C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CEF3C1B7223DC7DA009B9775 /* Screen Design */,
 				CEF3005B2239386B00300D00 /* test */,
 				CEF300532239386300300D00 /* MainPageViewController.swift */,
 				CEF300542239386300300D00 /* MainPageViewController.xib */,
@@ -322,10 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				CE0AC1292209B5B800953C0D /* ViewController.swift */,
-				CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */,
-				CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */,
-				CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */,
-				CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -336,6 +333,17 @@
 				CEF375132231591800CC8A74 /* Path.swift */,
 			);
 			path = UtilityClass;
+			sourceTree = "<group>";
+		};
+		CEF3C1B7223DC7DA009B9775 /* Screen Design */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AC155220B219300953C0D /* ScreenDesignViewController.swift */,
+				CE0AC156220B219300953C0D /* ScreenDesignViewController.xib */,
+				CE0B74FD22159D6A00CC49A0 /* ScreenDesignViewController2.swift */,
+				CE0B74FE22159D6A00CC49A0 /* ScreenDesignViewController2.xib */,
+			);
+			path = "Screen Design";
 			sourceTree = "<group>";
 		};
 		CEF46BDE222FEC910095D3D2 /* Table */ = {
