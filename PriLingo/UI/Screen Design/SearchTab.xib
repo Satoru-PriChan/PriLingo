@@ -310,5 +310,13 @@
             </items>
             <point key="canvasLocation" x="50" y="326"/>
         </tabBar>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="play all the words in a category once, or for good." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s42-f6-R5M">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="998" y="-204"/>
+        </label>
     </objects>
 </document>
