@@ -26,10 +26,7 @@
                     <items>
                         <navigationItem title="Favorites" id="Vkk-45-rTj">
                             <barButtonItem key="leftBarButtonItem" title="(home)" id="DTS-bU-Zqw"/>
-                            <rightBarButtonItems>
-                                <barButtonItem title="▶️" id="LBk-MR-uTf"/>
-                                <barButtonItem title="○" id="Xv1-hJ-kDm"/>
-                            </rightBarButtonItems>
+                            <barButtonItem key="rightBarButtonItem" title="(help)" id="RAg-35-kAJ"/>
                         </navigationItem>
                     </items>
                 </navigationBar>
@@ -76,7 +73,7 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-0A-cZs">
                             <rect key="frame" x="242" y="14" width="118" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Cancel"/>
+                            <state key="normal" title="Cancel, Repeat"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
