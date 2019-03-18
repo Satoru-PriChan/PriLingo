@@ -61,6 +61,9 @@
 		CEF375142231591800CC8A74 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF375132231591800CC8A74 /* Path.swift */; };
 		CEF375152231591800CC8A74 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF375132231591800CC8A74 /* Path.swift */; };
 		CEF375162231591800CC8A74 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF375132231591800CC8A74 /* Path.swift */; };
+		CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
+		CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
+		CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
 		CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
 		CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
 		CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
@@ -133,6 +136,7 @@
 		CEF300542239386300300D00 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
 		CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATEGORIES.swift; sourceTree = "<group>"; };
 		CEF46BE7222FECE60095D3D2 /* SuperTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTable.swift; sourceTree = "<group>"; };
 		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 			children = (
 				CE0B74FE22159D6A00CC49A0 /* Top.xib */,
 				CE0AC156220B219300953C0D /* SearchTab.xib */,
+				CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */,
 			);
 			path = "Screen Design";
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 				CEF2EF69223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
+				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEF300582239386300300D00 /* MainPageViewController.xib in Resources */,
@@ -482,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEF2EF6A223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
@@ -495,6 +502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEF2EF6B223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
