@@ -51,8 +51,8 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Title" id="RmO-yD-BaR">
-                            <barButtonItem key="leftBarButtonItem" title="home" id="u5g-1d-To4"/>
-                            <barButtonItem key="rightBarButtonItem" title="help" id="7h5-FB-zBp"/>
+                            <barButtonItem key="leftBarButtonItem" title="(home)" id="u5g-1d-To4"/>
+                            <barButtonItem key="rightBarButtonItem" title="(help)" id="7h5-FB-zBp"/>
                         </navigationItem>
                     </items>
                 </navigationBar>
