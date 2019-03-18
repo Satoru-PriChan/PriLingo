@@ -64,15 +64,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHm-a4-Gi2">
-                    <rect key="frame" x="0.0" y="612" width="375" height="49"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem systemItem="favorites" id="9ni-YN-8Q1"/>
-                        <tabBarItem systemItem="more" id="nXZ-wG-CH4"/>
-                    </items>
-                </tabBar>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="and-7r-e3v">
                     <rect key="frame" x="7" y="115" width="368" height="52"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -288,15 +279,6 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-QA-wga">
-                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem systemItem="favorites" id="szQ-9a-H5R"/>
-                        <tabBarItem systemItem="more" id="zox-ar-HcD"/>
-                    </items>
-                </tabBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="5bp-Ky-LAY"/>
@@ -318,5 +300,29 @@
             <nil key="highlightedColor"/>
             <point key="canvasLocation" x="-790.39999999999998" y="-808.69565217391312"/>
         </label>
+        <tabBar contentMode="scaleToFill" id="2qE-kS-DYr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <items>
+                <tabBarItem title="Search" id="Bx9-Rw-z0h"/>
+                <tabBarItem systemItem="favorites" id="gz3-Vb-ShM"/>
+                <tabBarItem title="Pronunciation" id="UfB-Xr-Nxg" userLabel="Study"/>
+                <tabBarItem title="Setting" id="g9f-Z5-4vo" userLabel="Setting"/>
+            </items>
+            <point key="canvasLocation" x="46" y="-393"/>
+        </tabBar>
+        <tabBar contentMode="scaleToFill" id="1kR-Vr-zHj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <items>
+                <tabBarItem title="Search" id="BHh-V5-KJa"/>
+                <tabBarItem systemItem="favorites" id="G2c-Fy-3LQ"/>
+                <tabBarItem title="Pronunciation" id="Rst-b6-Yj8" userLabel="Study"/>
+                <tabBarItem title="Setting" id="iYf-UY-lY4" userLabel="Setting"/>
+            </items>
+            <point key="canvasLocation" x="50" y="326"/>
+        </tabBar>
     </objects>
 </document>
