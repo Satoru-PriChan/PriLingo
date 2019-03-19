@@ -64,6 +64,9 @@
 		CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
 		CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
 		CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */; };
+		CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382E2223FD21E000B06B9 /* SettingsTab.xib */; };
+		CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382E2223FD21E000B06B9 /* SettingsTab.xib */; };
+		CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF382E2223FD21E000B06B9 /* SettingsTab.xib */; };
 		CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
 		CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
 		CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */; };
@@ -137,6 +140,7 @@
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
+		CEF382E2223FD21E000B06B9 /* SettingsTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTab.xib; sourceTree = "<group>"; };
 		CEF46BE3222FECB60095D3D2 /* CATEGORIES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATEGORIES.swift; sourceTree = "<group>"; };
 		CEF46BE7222FECE60095D3D2 /* SuperTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTable.swift; sourceTree = "<group>"; };
 		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
@@ -337,6 +341,7 @@
 				CE0B74FE22159D6A00CC49A0 /* Top.xib */,
 				CE0AC156220B219300953C0D /* SearchTab.xib */,
 				CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */,
+				CEF382E2223FD21E000B06B9 /* SettingsTab.xib */,
 			);
 			path = "Screen Design";
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEF300582239386300300D00 /* MainPageViewController.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
+				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CE0AC12D2209B5B800953C0D /* Main.storyboard in Resources */,
 			);
@@ -488,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEF2EF6A223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
@@ -502,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEF2EF6B223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
