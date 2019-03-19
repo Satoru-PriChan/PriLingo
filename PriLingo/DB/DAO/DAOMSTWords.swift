@@ -19,7 +19,7 @@ class DAOMSTWords {
     /// - Parameter _categoryID: categoryID whose Words' data you would like to get
     /// - Returns: an Array of DSOWord. if some error occurred, it returns nil.
     func exeSelect(_categoryID: String) -> Array<DSOWord>?{
-        let myDB = FMDatabase.init(path: Path.docDB)
+        let myDB = FMDatabase.init(path: Path.libDB)
         var myResultSet: FMResultSet? = nil
         var words: Array<DSOWord> = []
         

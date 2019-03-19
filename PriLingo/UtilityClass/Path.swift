@@ -15,13 +15,13 @@ class Path {
     static let dbName = "PriLingoDB";
     
     ///sandbox: document directory
-    static let documentDir = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!.path
+    static let libraryDir = FileManager.default.urls(for: FileManager.SearchPathDirectory.libraryDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!.path
     
     ///sandbox: document directory: DB directory
-    static let docDBDir = Path.documentDir + "/" + "DB"
+    static let libDBDir = Path.libraryDir + "/" + "DB"
     
     ///sandbox: DB path
-    static let docDB = Path.docDBDir + "/" + Path.dbName + ".db"
+    static let libDB = Path.libDBDir + "/" + Path.dbName + ".db"
     
     
     ///Bundle: path for DB in Main Bundle

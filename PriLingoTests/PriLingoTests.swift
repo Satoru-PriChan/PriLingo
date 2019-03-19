@@ -27,10 +27,10 @@ class PriLingoTests: XCTestCase {
     
     ///function to test DBSetUp class.
     func testDBInitialSetUp() {
-        if !FileManager.default.fileExists(atPath: Path.docDB) {
+        if !FileManager.default.fileExists(atPath: Path.libDB) {
             //perform initial copy
             let dbSetup = DBSetUp.init()
-            XCTAssertTrue(dbSetup.InitialSetUpDB() && FileManager.default.fileExists(atPath: Path.docDB))
+            XCTAssertTrue(dbSetup.InitialSetUpDB() && FileManager.default.fileExists(atPath: Path.libDB))
         } else {
             //not perform copy
             let dbSetUp = DBSetUp.init()

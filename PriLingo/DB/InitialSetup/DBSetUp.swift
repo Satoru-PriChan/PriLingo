@@ -16,11 +16,11 @@ class DBSetUp {
     ///
     /// - Returns: if copy performed, return true. else, return false
     func InitialSetUpDB() -> Bool{
-        if !FileManager.default.fileExists(atPath: Path.docDB) {
+        if !FileManager.default.fileExists(atPath: Path.libDB) {
             do {
-                try FileManager.default.createDirectory(atPath: Path.docDBDir, withIntermediateDirectories: true, attributes: nil)
+                try FileManager.default.createDirectory(atPath: Path.libDBDir, withIntermediateDirectories: true, attributes: nil)
                 
-                try FileManager.default.copyItem(atPath: Path.dBInBundle, toPath: Path.docDB)
+                try FileManager.default.copyItem(atPath: Path.dBInBundle, toPath: Path.libDB)
                 return true
             } catch {
                 //debug

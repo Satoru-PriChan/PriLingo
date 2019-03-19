@@ -19,7 +19,7 @@ class DAOTCategories {
         var myResultSet: FMResultSet? = nil
         var DSOCategories: Array<DSOCategory> = []
 
-        let myDB = FMDatabase.init(path: Path.docDB)
+        let myDB = FMDatabase.init(path: Path.libDB)
         myDB.open()
 
         //execute SELECT query

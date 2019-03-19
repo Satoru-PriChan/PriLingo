@@ -26,7 +26,7 @@ class ViewController: UIViewController {
  */
         
         //debug
-        print("File: \(#file) Line \(#line): Func \(#function):  \n Path.docDB: \(Path.docDB) Path.dbINBundle: \n \(Path.dBInBundle)")
+        print("File: \(#file) Line \(#line): Func \(#function):  \n Path.docDB: \(Path.libDB) Path.dbINBundle: \n \(Path.dBInBundle)")
     }
 
 
