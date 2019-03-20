@@ -15,7 +15,6 @@
 		CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE06F40E220C5C1000343CD9 /* Localizable.strings */; };
 		CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1272209B5B800953C0D /* AppDelegate.swift */; };
 		CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
-		CE0AC12D2209B5B800953C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC12B2209B5B800953C0D /* Main.storyboard */; };
 		CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC12E2209B5B900953C0D /* Assets.xcassets */; };
 		CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC1302209B5B900953C0D /* LaunchScreen.storyboard */; };
 		CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC13C2209B5B900953C0D /* PriLingoTests.swift */; };
@@ -106,11 +105,8 @@
 		81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE06F3FF220C5A3B00343CD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		CE06F400220C5A3B00343CD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		CE06F401220C5A4200343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		CE06F402220C5A4200343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		CE06F403220C5AF100343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		CE06F404220C5AF100343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE06F40D220C5C1000343CD9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE06F40F220C5C1300343CD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -119,7 +115,6 @@
 		CE0AC1242209B5B800953C0D /* PriLingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriLingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC1272209B5B800953C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0AC1292209B5B800953C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE0AC12C2209B5B800953C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0AC12E2209B5B900953C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0AC1312209B5B900953C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0AC1332209B5B900953C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -244,7 +239,6 @@
 				CEF37512223158D700CC8A74 /* UtilityClass */,
 				CEB63243222961E300FBB79C /* DB */,
 				CEB632422229618800FBB79C /* UI */,
-				CE0AC12B2209B5B800953C0D /* Main.storyboard */,
 				CE0AC12E2209B5B900953C0D /* Assets.xcassets */,
 				CE0AC1302209B5B900953C0D /* LaunchScreen.storyboard */,
 				CE0AC1332209B5B900953C0D /* Info.plist */,
@@ -492,7 +486,6 @@
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
-				CE0AC12D2209B5B800953C0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,17 +747,6 @@
 				CE06F411220C5C1600343CD9 /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		CE0AC12B2209B5B800953C0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE0AC12C2209B5B800953C0D /* Base */,
-				CE06F3FF220C5A3B00343CD9 /* zh-Hans */,
-				CE06F401220C5A4200343CD9 /* zh-Hant */,
-				CE06F403220C5AF100343CD9 /* ja */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		CE0AC1302209B5B900953C0D /* LaunchScreen.storyboard */ = {
