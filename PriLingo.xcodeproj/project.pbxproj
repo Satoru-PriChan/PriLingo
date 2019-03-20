@@ -79,6 +79,9 @@
 		CEF46BF5223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
 		CEF46BF6223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
 		CEF46BF7223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
+		CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
+		CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
+		CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +148,7 @@
 		CEF46BE7222FECE60095D3D2 /* SuperTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTable.swift; sourceTree = "<group>"; };
 		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
 		CEF46BF4223002270095D3D2 /* Statements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statements.swift; sourceTree = "<group>"; };
+		CEF71E852241188000B30970 /* PronunciationTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PronunciationTab.xib; sourceTree = "<group>"; };
 		DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.release.xcconfig"; sourceTree = "<group>"; };
 		EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 				CE0B74FE22159D6A00CC49A0 /* Top.xib */,
 				CE0AC156220B219300953C0D /* SearchTab.xib */,
 				CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */,
+				CEF71E852241188000B30970 /* PronunciationTab.xib */,
 				CEF382E2223FD21E000B06B9 /* SettingsTab.xib */,
 			);
 			path = "Screen Design";
@@ -477,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF2EF69223A7CD50065CC8A /* MainPageCollectionViewCell.xib in Resources */,
+				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
@@ -501,6 +507,7 @@
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
+				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
 				CEF300592239386300300D00 /* MainPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +523,7 @@
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
+				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
 				CEF3005A2239386300300D00 /* MainPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
