@@ -31,12 +31,6 @@
 		CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
-		CEA04CD622426ED000501A08 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD422426ED000501A08 /* TopViewController.swift */; };
-		CEA04CD722426ED000501A08 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD422426ED000501A08 /* TopViewController.swift */; };
-		CEA04CD822426ED000501A08 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD422426ED000501A08 /* TopViewController.swift */; };
-		CEA04CD922426ED000501A08 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CD522426ED000501A08 /* TopViewController.xib */; };
-		CEA04CDA22426ED000501A08 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CD522426ED000501A08 /* TopViewController.xib */; };
-		CEA04CDB22426ED000501A08 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CD522426ED000501A08 /* TopViewController.xib */; };
 		CEA04CDE22426EEA00501A08 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CDC22426EEA00501A08 /* SearchViewController.swift */; };
 		CEA04CDF22426EEA00501A08 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CDC22426EEA00501A08 /* SearchViewController.swift */; };
 		CEA04CE022426EEA00501A08 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CDC22426EEA00501A08 /* SearchViewController.swift */; };
@@ -149,8 +143,6 @@
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
-		CEA04CD422426ED000501A08 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		CEA04CD522426ED000501A08 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
 		CEA04CDC22426EEA00501A08 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CEA04CDD22426EEA00501A08 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -305,8 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
-				CEA04CD422426ED000501A08 /* TopViewController.swift */,
-				CEA04CD522426ED000501A08 /* TopViewController.xib */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -561,7 +551,6 @@
 				CEA04CE122426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
-				CEA04CD922426ED000501A08 /* TopViewController.xib in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
 			);
@@ -571,7 +560,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA04CDA22426ED000501A08 /* TopViewController.xib in Resources */,
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
@@ -590,7 +578,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA04CDB22426ED000501A08 /* TopViewController.xib in Resources */,
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
@@ -754,7 +741,6 @@
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
-				CEA04CD622426ED000501A08 /* TopViewController.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
@@ -779,7 +765,6 @@
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
-				CEA04CD722426ED000501A08 /* TopViewController.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
@@ -804,7 +789,6 @@
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
-				CEA04CD822426ED000501A08 /* TopViewController.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,

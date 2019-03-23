@@ -77,5 +77,13 @@
             <nil key="highlightedColor"/>
             <point key="canvasLocation" x="-276.80000000000001" y="-233.43328335832086"/>
         </label>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page shows in Search tab. but it " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="86f-zj-7pb">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-632" y="196.55172413793105"/>
+        </label>
     </objects>
 </document>
