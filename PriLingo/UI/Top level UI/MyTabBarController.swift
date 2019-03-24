@@ -15,6 +15,16 @@ class MyTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //prepare each tab
+        let searchVC = SearchViewController()
+        let favoritesVC = FavoritesViewController()
+        let pronunciationVC = PronunciationViewController()
+        let settingsVC = SettingsViewController()
+        let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
+        let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
+        self.viewControllers = viewControllers
+        
     }
     
 
