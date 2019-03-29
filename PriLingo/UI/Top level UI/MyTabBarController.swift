@@ -25,6 +25,9 @@ class MyTabBarController: UITabBarController {
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
+        //change tabbar shape
+        self.addTabBarShape()
+        
     }
     
 
@@ -37,5 +40,44 @@ class MyTabBarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    ///change self shape.
+    func addTabBarShape() {
+        let _shapeLayer = CAShapeLayer()
+        _shapeLayer.path = self.createPathCircle()
+        _shapeLayer.strokeColor = UIColor.init(white: 0.5, alpha: 0.9).cgColor
+        _shapeLayer.fillColor = UIColor.init(white: 0.5, alpha: 0.5).cgColor
+        
+        //this way, it can support orientation change.
+        if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {
+            self.tabBar.layer.replaceSublayer(self.tabBar.layer.sublayers![0], with: _shapeLayer)
+        } else {
+            self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
+        }
+    
+        
+    }
+
+    
+    ///function to return CGPath that discribes half circle and straight.
+    func createPathCircle() -> CGPath {
+        let radius: CGFloat = 37.0
+        let path = UIBezierPath()
+        let centerWidth = self.tabBar.frame.width * 0.5
+        
+        //starting point (left top) then draw lines until the it retunrs to the starting point by close().
+        path.move(to: CGPoint.init(x: 0, y: 0))
+        path.addLine(to: CGPoint.init(x: (centerWidth - radius), y: 0))
+        //radian = degree * π/180
+        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: true)
+        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: 0))
+        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
+        path.addLine(to: CGPoint.init(x: 0, y: self.tabBar.frame.height))
+        path.close()
+        
+        return path.cgPath
+        
+    }
+    
 
 }
