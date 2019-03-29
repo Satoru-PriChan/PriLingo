@@ -18,9 +18,13 @@ class MyTabBarController: UITabBarController {
         
         //prepare each tab
         let searchVC = SearchViewController()
+        searchVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.search, tag: 0)
         let favoritesVC = FavoritesViewController()
+        favoritesVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.favorites, tag: 1)
         let pronunciationVC = PronunciationViewController()
+        pronunciationVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.history, tag: 2)
         let settingsVC = SettingsViewController()
+        settingsVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.featured, tag: 3)
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
@@ -69,7 +73,7 @@ class MyTabBarController: UITabBarController {
         path.move(to: CGPoint.init(x: 0, y: 0))
         path.addLine(to: CGPoint.init(x: (centerWidth - radius), y: 0))
         //radian = degree * π/180
-        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: true)
+        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: false)
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: 0))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
         path.addLine(to: CGPoint.init(x: 0, y: self.tabBar.frame.height))
