@@ -29,8 +29,12 @@ class MyTabBarController: UITabBarController {
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
+        self.tabBar.addSubview(UIImageView.init(image: UIImage.init(named: "test3.png")))
+        
         //change tabbar shape
         self.addTabBarShape()
+        
+        
         
     }
     
@@ -45,7 +49,9 @@ class MyTabBarController: UITabBarController {
     }
     */
     
-    ///change self shape.
+    
+    
+    ///change tabbar-like shape.
     func addTabBarShape() {
         let _shapeLayer = CAShapeLayer()
         _shapeLayer.path = self.createPathCircle()
@@ -54,6 +60,13 @@ class MyTabBarController: UITabBarController {
         
         //this way, it can support orientation change.
         if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {
+            self.tabBar.layer.replaceSublayer(self.tabBar.layer.sublayers![0], with: _shapeLayer)
+        } else {
+            self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
+        }
+        
+        //for background Image
+        if  (self.tabBar.backgroundImage != nil) && self.tabBar.layer.sublayers!.count != 0 {
             self.tabBar.layer.replaceSublayer(self.tabBar.layer.sublayers![0], with: _shapeLayer)
         } else {
             self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
