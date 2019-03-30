@@ -67,6 +67,9 @@
 		CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
+		CEC67A8A224EFCBD0038D17B /* test.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A89224EFCBC0038D17B /* test.PNG */; };
+		CEC67A8B224EFCBD0038D17B /* test.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A89224EFCBC0038D17B /* test.PNG */; };
+		CEC67A8C224EFCBD0038D17B /* test.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A89224EFCBC0038D17B /* test.PNG */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -155,6 +158,7 @@
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
+		CEC67A89224EFCBC0038D17B /* test.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.PNG; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -358,6 +362,7 @@
 		CEB632422229618800FBB79C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CEC67A88224EFC960038D17B /* Image */,
 				CEA04CFC22426F6700501A08 /* Top level UI */,
 				CEA04CFD22426FA700501A08 /* Search tab UI */,
 				CEA04CFE22426FCD00501A08 /* Favorites tab UI */,
@@ -380,6 +385,14 @@
 				CEB2D2232233FCE200410F02 /* Data Store Object(DSO) */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		CEC67A88224EFC960038D17B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CEC67A89224EFCBC0038D17B /* test.PNG */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		CEF3005B2239386B00300D00 /* test */ = {
@@ -543,6 +556,7 @@
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
+				CEC67A8A224EFCBD0038D17B /* test.PNG in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
@@ -561,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
+				CEC67A8B224EFCBD0038D17B /* test.PNG in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
@@ -579,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
+				CEC67A8C224EFCBD0038D17B /* test.PNG in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,

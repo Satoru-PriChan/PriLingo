@@ -73,7 +73,7 @@ class MyTabBarController: UITabBarController {
         path.move(to: CGPoint.init(x: 0, y: 0))
         path.addLine(to: CGPoint.init(x: (centerWidth - radius), y: 0))
         //radian = degree * π/180
-        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: false)
+        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: true)
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: 0))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
         path.addLine(to: CGPoint.init(x: 0, y: self.tabBar.frame.height))
