@@ -29,9 +29,6 @@ class MyTabBarController: UITabBarController {
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
-        //self.tabBar.addSubview(UIImageView.init(image: UIImage.init(named: "test4.png")))
-        //self.tabBar.backgroundImage = UIImage.init(named: "test4.png")
-        
         //change tabbar shape
         self.addTabBarShape()
         
@@ -55,9 +52,9 @@ class MyTabBarController: UITabBarController {
     ///change tabbar-like shape.
     func addTabBarShape() {
         let _shapeLayer = CAShapeLayer()
-        _shapeLayer.path = self.createPathCircle()
+      _shapeLayer.path = self.createPathCircle()
         _shapeLayer.strokeColor = UIColor.init(white: 0.5, alpha: 0.9).cgColor
-        _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "test6.jpeg")!).cgColor
+        _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "test10.png")!).cgColor
         
         //this way, it can support orientation change.
         if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {
@@ -85,13 +82,15 @@ class MyTabBarController: UITabBarController {
         let centerWidth = self.tabBar.frame.width * 0.5
         
         //starting point (left top) then draw lines until the it retunrs to the starting point by close().
-        path.move(to: CGPoint.init(x: 0, y: 0))
-        path.addLine(to: CGPoint.init(x: (centerWidth - radius), y: 0))
+        let startX: CGFloat = 0
+        let startY: CGFloat = -100
+        path.move(to: CGPoint.init(x: startX, y: startY))
+        path.addLine(to: CGPoint.init(x: (centerWidth - radius), y: startY))
         //radian = degree * π/180
-        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: 0), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: true)
-        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: 0))
+        path.addArc(withCenter: CGPoint.init(x: centerWidth, y: startY), radius: radius, startAngle: CGFloat(180) * CGFloat.pi / 180, endAngle: CGFloat(0) * CGFloat.pi / 180, clockwise: true)
+        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: startY))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
-        path.addLine(to: CGPoint.init(x: 0, y: self.tabBar.frame.height))
+        path.addLine(to: CGPoint.init(x: startX, y: self.tabBar.frame.height))
         path.close()
         
         return path.cgPath
