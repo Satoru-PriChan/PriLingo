@@ -29,7 +29,8 @@ class MyTabBarController: UITabBarController {
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
-        self.tabBar.addSubview(UIImageView.init(image: UIImage.init(named: "test3.png")))
+        //self.tabBar.addSubview(UIImageView.init(image: UIImage.init(named: "test4.png")))
+        //self.tabBar.backgroundImage = UIImage.init(named: "test4.png")
         
         //change tabbar shape
         self.addTabBarShape()
@@ -56,7 +57,7 @@ class MyTabBarController: UITabBarController {
         let _shapeLayer = CAShapeLayer()
         _shapeLayer.path = self.createPathCircle()
         _shapeLayer.strokeColor = UIColor.init(white: 0.5, alpha: 0.9).cgColor
-        _shapeLayer.fillColor = UIColor.init(white: 0.5, alpha: 0.5).cgColor
+        _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "test4.png")!).cgColor //UIColor.init(white: 0.5, alpha: 0.5).cgColor
         
         //this way, it can support orientation change.
         if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {
@@ -66,11 +67,12 @@ class MyTabBarController: UITabBarController {
         }
         
         //for background Image
-        if  (self.tabBar.backgroundImage != nil) && self.tabBar.layer.sublayers!.count != 0 {
-            self.tabBar.layer.replaceSublayer(self.tabBar.layer.sublayers![0], with: _shapeLayer)
+        /*
+        if self.tabBar.subviews.count != 0 && self.tabBar.subviews[0].layer.sublayers != nil && self.tabBar.subviews[0].layer.sublayers!.count != 0{
+            self.tabBar.subviews[0].layer.replaceSublayer(self.tabBar.subviews[0].layer.sublayers![0], with: _shapeLayer)
         } else {
-            self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
-        }
+            self.tabBar.subviews[0].layer.insertSublayer(_shapeLayer, at: 0)
+        }*/
     
         
     }
