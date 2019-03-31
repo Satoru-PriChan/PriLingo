@@ -57,7 +57,7 @@ class MyTabBarController: UITabBarController {
         let _shapeLayer = CAShapeLayer()
         _shapeLayer.path = self.createPathCircle()
         _shapeLayer.strokeColor = UIColor.init(white: 0.5, alpha: 0.9).cgColor
-        _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "test4.png")!).cgColor //UIColor.init(white: 0.5, alpha: 0.5).cgColor
+        _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "test6.jpeg")!).cgColor
         
         //this way, it can support orientation change.
         if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {

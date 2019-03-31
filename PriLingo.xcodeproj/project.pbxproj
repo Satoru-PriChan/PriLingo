@@ -73,6 +73,12 @@
 		CEC67A96224FC0230038D17B /* test4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A95224FC0220038D17B /* test4.png */; };
 		CEC67A97224FC0230038D17B /* test4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A95224FC0220038D17B /* test4.png */; };
 		CEC67A98224FC0230038D17B /* test4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC67A95224FC0220038D17B /* test4.png */; };
+		CEF0DB432250A50C00FA37CA /* test5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB422250A50C00FA37CA /* test5.jpeg */; };
+		CEF0DB442250A50C00FA37CA /* test5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB422250A50C00FA37CA /* test5.jpeg */; };
+		CEF0DB452250A50C00FA37CA /* test5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB422250A50C00FA37CA /* test5.jpeg */; };
+		CEF0DB472250A61400FA37CA /* test6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB462250A61400FA37CA /* test6.jpeg */; };
+		CEF0DB482250A61400FA37CA /* test6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB462250A61400FA37CA /* test6.jpeg */; };
+		CEF0DB492250A61400FA37CA /* test6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEF0DB462250A61400FA37CA /* test6.jpeg */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -163,6 +169,8 @@
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEC67A91224F051B0038D17B /* test3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test3.png; sourceTree = "<group>"; };
 		CEC67A95224FC0220038D17B /* test4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test4.png; sourceTree = "<group>"; };
+		CEF0DB422250A50C00FA37CA /* test5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test5.jpeg; sourceTree = "<group>"; };
+		CEF0DB462250A61400FA37CA /* test6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test6.jpeg; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -394,6 +402,8 @@
 		CEC67A88224EFC960038D17B /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CEF0DB462250A61400FA37CA /* test6.jpeg */,
+				CEF0DB422250A50C00FA37CA /* test5.jpeg */,
 				CEC67A95224FC0220038D17B /* test4.png */,
 				CEC67A91224F051B0038D17B /* test3.png */,
 			);
@@ -573,6 +583,8 @@
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CEC67A92224F051B0038D17B /* test3.png in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
+				CEF0DB472250A61400FA37CA /* test6.jpeg in Resources */,
+				CEF0DB432250A50C00FA37CA /* test5.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,9 +597,11 @@
 				CEC67A97224FC0230038D17B /* test4.png in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
+				CEF0DB442250A50C00FA37CA /* test5.jpeg in Resources */,
 				CEC67A93224F051B0038D17B /* test3.png in Resources */,
 				CEA04CE222426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CEF0DB482250A61400FA37CA /* test6.jpeg in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -605,9 +619,11 @@
 				CEC67A98224FC0230038D17B /* test4.png in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
+				CEF0DB452250A50C00FA37CA /* test5.jpeg in Resources */,
 				CEC67A94224F051B0038D17B /* test3.png in Resources */,
 				CEA04CE322426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CEF0DB492250A61400FA37CA /* test6.jpeg in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
