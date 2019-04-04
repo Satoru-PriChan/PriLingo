@@ -76,9 +76,7 @@ class MyTabBarController: UITabBarController {
     
     ///function to return CGPath that discribes half circle and straight.
     func createPathCircle() -> CGPath {
-        let radius: CGFloat = 37.0
         let path = UIBezierPath()
-        let centerWidth = self.tabBar.frame.width * 0.5
         
         //starting point (left top) then draw lines until the it retunrs to the starting point by close().
         let startX: CGFloat = 0
