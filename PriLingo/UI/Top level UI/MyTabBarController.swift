@@ -29,6 +29,9 @@ class MyTabBarController: UITabBarController {
         //prepare button
         let image = UIImage.init(named: "UITabBarItem.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         self.tabBar.items![0].image = image
+        self.tabBar.items![1].image = image
+        self.tabBar.items![2].image = image
+        self.tabBar.items![3].image = image
         
         //change tabbar shape
         self.addTabBarShape()
@@ -57,16 +60,6 @@ class MyTabBarController: UITabBarController {
         } else {
             self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
         }
-        
-        //for background Image
-        /*
-        if self.tabBar.subviews.count != 0 && self.tabBar.subviews[0].layer.sublayers != nil && self.tabBar.subviews[0].layer.sublayers!.count != 0{
-            self.tabBar.subviews[0].layer.replaceSublayer(self.tabBar.subviews[0].layer.sublayers![0], with: _shapeLayer)
-        } else {
-            self.tabBar.subviews[0].layer.insertSublayer(_shapeLayer, at: 0)
-        }*/
-    
-        
     }
 
     
@@ -76,7 +69,7 @@ class MyTabBarController: UITabBarController {
         
         //starting point (left top) then draw lines until the it retunrs to the starting point by close().
         let startX: CGFloat = 0
-        let startY: CGFloat = -100
+        let startY: CGFloat = -75
         path.move(to: CGPoint.init(x: startX, y: startY))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: startY))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
