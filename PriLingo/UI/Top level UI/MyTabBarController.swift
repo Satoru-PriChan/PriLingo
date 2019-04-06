@@ -76,7 +76,7 @@ class MyTabBarController: UITabBarController {
         
         //starting point (left top) then draw lines until the it retunrs to the starting point by close().
         let startX: CGFloat = 0
-        let startY: CGFloat = -37
+        let startY: CGFloat = -100
         path.move(to: CGPoint.init(x: startX, y: startY))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: startY))
         path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
