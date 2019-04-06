@@ -18,22 +18,20 @@ class MyTabBarController: UITabBarController {
         
         //prepare each tab
         let searchVC = SearchViewController()
-        searchVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.search, tag: 0)
         let favoritesVC = FavoritesViewController()
-        favoritesVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.favorites, tag: 1)
         let pronunciationVC = PronunciationViewController()
-        pronunciationVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.history, tag: 2)
         let settingsVC = SettingsViewController()
-        settingsVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarItem.SystemItem.featured, tag: 3)
+        
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
+        //prepare button
+        let image = UIImage.init(named: "UITabBarItem.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        self.tabBar.items![0].image = image
+        
         //change tabbar shape
         self.addTabBarShape()
-        
-        
-        
     }
     
 
@@ -46,8 +44,6 @@ class MyTabBarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
     
     ///change tabbar-like shape.
     func addTabBarShape() {
@@ -88,7 +84,6 @@ class MyTabBarController: UITabBarController {
         path.close()
         
         return path.cgPath
-        
     }
     
 
