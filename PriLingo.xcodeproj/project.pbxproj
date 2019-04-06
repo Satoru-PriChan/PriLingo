@@ -76,6 +76,12 @@
 		CEC806E2225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E3225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E4225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
+		CEC806E622588AFC00055A29 /* MyTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E522588AFC00055A29 /* MyTabBarView.xib */; };
+		CEC806E722588AFC00055A29 /* MyTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E522588AFC00055A29 /* MyTabBarView.xib */; };
+		CEC806E822588AFC00055A29 /* MyTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E522588AFC00055A29 /* MyTabBarView.xib */; };
+		CEC806EA22588B9500055A29 /* MyTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E922588B9500055A29 /* MyTabBarView.swift */; };
+		CEC806EB22588B9500055A29 /* MyTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E922588B9500055A29 /* MyTabBarView.swift */; };
+		CEC806EC22588B9500055A29 /* MyTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E922588B9500055A29 /* MyTabBarView.swift */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -167,6 +173,8 @@
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEC806DD22586F4000055A29 /* UITabBarItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBarItem.png; sourceTree = "<group>"; };
 		CEC806E1225875D700055A29 /* UITabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBar.png; sourceTree = "<group>"; };
+		CEC806E522588AFC00055A29 /* MyTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTabBarView.xib; sourceTree = "<group>"; };
+		CEC806E922588B9500055A29 /* MyTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarView.swift; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -309,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
+				CEC806E922588B9500055A29 /* MyTabBarView.swift */,
+				CEC806E522588AFC00055A29 /* MyTabBarView.xib */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -573,6 +583,7 @@
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CE89222522562B0B00A7F71B /* _UITabBar.png in Resources */,
+				CEC806E622588AFC00055A29 /* MyTabBarView.xib in Resources */,
 				CEA04CE122426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
@@ -590,6 +601,7 @@
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEC806DF22586F4000055A29 /* UITabBarItem.png in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
+				CEC806E722588AFC00055A29 /* MyTabBarView.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE89222622562B0B00A7F71B /* _UITabBar.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
@@ -611,6 +623,7 @@
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEC806E022586F4000055A29 /* UITabBarItem.png in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
+				CEC806E822588AFC00055A29 /* MyTabBarView.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE89222722562B0B00A7F71B /* _UITabBar.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
@@ -775,6 +788,7 @@
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
+				CEC806EA22588B9500055A29 /* MyTabBarView.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
@@ -799,6 +813,7 @@
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
+				CEC806EB22588B9500055A29 /* MyTabBarView.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
@@ -823,6 +838,7 @@
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
+				CEC806EC22588B9500055A29 /* MyTabBarView.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
