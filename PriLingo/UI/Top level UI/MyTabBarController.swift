@@ -27,7 +27,7 @@ class MyTabBarController: UITabBarController {
         self.viewControllers = viewControllers
         
         //prepare button
-        let image = UIImage.init(named: "UITabBarItem.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        let image = UIImage.init(named: "UITabBarItem6.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         self.tabBar.items![0].image = image
         self.tabBar.items![1].image = image
         self.tabBar.items![2].image = image

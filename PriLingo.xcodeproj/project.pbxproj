@@ -61,6 +61,9 @@
 		CEAB08522259AC70002EC0AB /* CoverTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB08512259AC70002EC0AB /* CoverTabBarView.swift */; };
 		CEAB08532259AC70002EC0AB /* CoverTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB08512259AC70002EC0AB /* CoverTabBarView.swift */; };
 		CEAB08542259AC70002EC0AB /* CoverTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB08512259AC70002EC0AB /* CoverTabBarView.swift */; };
+		CEAB086E2259C591002EC0AB /* UITabBarItem6.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB086D2259C591002EC0AB /* UITabBarItem6.png */; };
+		CEAB086F2259C591002EC0AB /* UITabBarItem6.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB086D2259C591002EC0AB /* UITabBarItem6.png */; };
+		CEAB08702259C591002EC0AB /* UITabBarItem6.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB086D2259C591002EC0AB /* UITabBarItem6.png */; };
 		CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
@@ -73,9 +76,6 @@
 		CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
-		CEC806DE22586F4000055A29 /* UITabBarItem.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806DD22586F4000055A29 /* UITabBarItem.png */; };
-		CEC806DF22586F4000055A29 /* UITabBarItem.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806DD22586F4000055A29 /* UITabBarItem.png */; };
-		CEC806E022586F4000055A29 /* UITabBarItem.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806DD22586F4000055A29 /* UITabBarItem.png */; };
 		CEC806E2225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E3225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E4225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
@@ -165,11 +165,11 @@
 		CEA04CF522426F3900501A08 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		CEAB084D2259AC55002EC0AB /* CoverTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverTabBarView.xib; sourceTree = "<group>"; };
 		CEAB08512259AC70002EC0AB /* CoverTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverTabBarView.swift; sourceTree = "<group>"; };
+		CEAB086D2259C591002EC0AB /* UITabBarItem6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBarItem6.png; sourceTree = "<group>"; };
 		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
-		CEC806DD22586F4000055A29 /* UITabBarItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBarItem.png; sourceTree = "<group>"; };
 		CEC806E1225875D700055A29 /* UITabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBar.png; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC806E1225875D700055A29 /* UITabBar.png */,
-				CEC806DD22586F4000055A29 /* UITabBarItem.png */,
+				CEAB086D2259C591002EC0AB /* UITabBarItem6.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -579,9 +579,9 @@
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CEA04CE122426EEA00501A08 /* SearchViewController.xib in Resources */,
+				CEAB086E2259C591002EC0AB /* UITabBarItem6.png in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
-				CEC806DE22586F4000055A29 /* UITabBarItem.png in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E2225875D700055A29 /* UITabBar.png in Resources */,
@@ -593,7 +593,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
-				CEC806DF22586F4000055A29 /* UITabBarItem.png in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEAB084F2259AC55002EC0AB /* CoverTabBarView.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
@@ -604,6 +603,7 @@
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E3225875D700055A29 /* UITabBar.png in Resources */,
+				CEAB086F2259C591002EC0AB /* UITabBarItem6.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
@@ -614,7 +614,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
-				CEC806E022586F4000055A29 /* UITabBarItem.png in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEAB08502259AC55002EC0AB /* CoverTabBarView.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
@@ -625,6 +624,7 @@
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E4225875D700055A29 /* UITabBar.png in Resources */,
+				CEAB08702259C591002EC0AB /* UITabBarItem6.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
