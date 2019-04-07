@@ -28,10 +28,13 @@ class MyTabBarController: UITabBarController {
         
         //prepare button
         let image = UIImage.init(named: "UITabBarItem6.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        let image2 = UIImage.init(named: "UITabBarItem7.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        let image3 = UIImage.init(named: "UITabBarItem8.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        let image4 = UIImage.init(named: "UITabBarItem9.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         self.tabBar.items![0].image = image
-        self.tabBar.items![1].image = image
-        self.tabBar.items![2].image = image
-        self.tabBar.items![3].image = image
+        self.tabBar.items![1].image = image2
+        self.tabBar.items![2].image = image3
+        self.tabBar.items![3].image = image4
         
         //change tabbar shape
         self.addTabBarShape()
