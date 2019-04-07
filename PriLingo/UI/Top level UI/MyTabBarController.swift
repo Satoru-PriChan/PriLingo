@@ -35,6 +35,12 @@ class MyTabBarController: UITabBarController {
         
         //change tabbar shape
         self.addTabBarShape()
+        
+        //add MyTabBarView
+        let myTabBarView = CoverTabBarView()
+        myTabBarView.frame = self.tabBar.bounds
+        self.tabBar.addSubview(myTabBarView)
+        
     }
     
 
