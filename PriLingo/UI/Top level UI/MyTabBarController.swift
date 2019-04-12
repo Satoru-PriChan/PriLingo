@@ -35,15 +35,26 @@ class MyTabBarController: UITabBarController {
         self.tabBar.items![1].image = image2
         self.tabBar.items![2].image = image3
         self.tabBar.items![3].image = image4
+        for i in 0...self.tabBar.items!.count - 1 {
+            self.tabBar.items![i].imageInsets = UIEdgeInsets.init(top: 50, left: 0, bottom: 0, right: 0)
+            
+        }
         
         //change tabbar shape
         self.addTabBarShape()
         
         //add MyTabBarView
         let myTabBarView = CoverTabBarView()
-        myTabBarView.frame = self.tabBar.bounds
-        self.tabBar.addSubview(myTabBarView)
-        
+        myTabBarView.uiTabBarFrame = self.tabBar.bounds
+        myTabBarView.setup()
+        myTabBarView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(myTabBarView)
+        self.view.addConstraints([
+            NSLayoutConstraint.init(item: myTabBarView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: -100),
+            NSLayoutConstraint.init(item: myTabBarView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint.init(item: myTabBarView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint.init(item: myTabBarView, attribute: .height, relatedBy: .equal, toItem: self.tabBar, attribute: .height, multiplier: 1.0, constant: 0)
+        ])
     }
     
 

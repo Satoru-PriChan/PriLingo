@@ -85,6 +85,9 @@
 		CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
+		CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
+		CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
+		CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEC806E2225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E3225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CEC806E4225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
@@ -182,6 +185,7 @@
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
+		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
 		CEC806E1225875D700055A29 /* UITabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBar.png; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -449,6 +453,7 @@
 				CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */,
 				CEF71E852241188000B30970 /* PronunciationTab.xib */,
 				CEF382E2223FD21E000B06B9 /* SettingsTab.xib */,
+				CEBCE93F226153C400B92464 /* testtesttestttttView.xib */,
 			);
 			path = "Screen Design";
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				CEAB084E2259AC55002EC0AB /* CoverTabBarView.xib in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEAB08832259D8C8002EC0AB /* UITabBarItem8.png in Resources */,
 				CEAB08862259D8C8002EC0AB /* UITabBarItem9.png in Resources */,
@@ -626,6 +632,7 @@
 				CEAB086F2259C591002EC0AB /* UITabBarItem6.png in Resources */,
 				CEAB08812259D8C8002EC0AB /* UITabBarItem7.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +657,7 @@
 				CEAB08702259C591002EC0AB /* UITabBarItem6.png in Resources */,
 				CEAB08822259D8C8002EC0AB /* UITabBarItem7.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

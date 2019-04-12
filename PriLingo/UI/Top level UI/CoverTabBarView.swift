@@ -9,6 +9,8 @@
 import UIKit
 
 class CoverTabBarView: UIView {
+    var uiTabBarFrame: CGRect?
+    
     // コードから初期化はここから
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,8 +38,18 @@ class CoverTabBarView: UIView {
         let nib = UINib(nibName: "CoverTabBarView", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         addSubview(view)
+        
+
     }
     
-
+    override func prepareForInterfaceBuilder() {
+        self.comminInit()
+    }
+    
+    func setup() {
+        if self.uiTabBarFrame != nil {
+            self.frame = CGRect.init(x: self.uiTabBarFrame!.origin.x, y: self.uiTabBarFrame!.origin.y - 75, width: self.uiTabBarFrame!.width, height: self.uiTabBarFrame!.height)
+        }
+    }
 
 }
