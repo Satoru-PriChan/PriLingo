@@ -50,11 +50,14 @@ class MyTabBarController: UITabBarController {
         myTabBarView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(myTabBarView)
         self.view.addConstraints([
-            NSLayoutConstraint.init(item: myTabBarView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: -100),
+            NSLayoutConstraint.init(item: myTabBarView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: 0),
             NSLayoutConstraint.init(item: myTabBarView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: 0),
             NSLayoutConstraint.init(item: myTabBarView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0),
             NSLayoutConstraint.init(item: myTabBarView, attribute: .height, relatedBy: .equal, toItem: self.tabBar, attribute: .height, multiplier: 1.0, constant: 0)
         ])
+        self.view.layoutIfNeeded()
+        
+        
     }
     
 

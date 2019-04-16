@@ -8,6 +8,7 @@ target 'PriLingo' do
   # Pods for PriLingo
 
   pod 'FMDB'
+
   target 'PriLingoTests' do
     inherit! :search_paths
     # Pods for testing
