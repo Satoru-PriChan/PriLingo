@@ -8,17 +8,20 @@ target 'PriLingo' do
   # Pods for PriLingo
 
   pod 'FMDB'
+  pod 'SmoothTab'
 
   target 'PriLingoTests' do
     inherit! :search_paths
     # Pods for testing
       pod 'FMDB'
+      pod 'SmoothTab'
   end
 
   target 'PriLingoUITests' do
     inherit! :search_paths
     # Pods for testing
       pod 'FMDB'
+      pod 'SmoothTab'
   end
 
 end

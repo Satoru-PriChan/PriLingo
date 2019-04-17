@@ -1,0 +1,6 @@
+framework module SmoothTab {
+  umbrella header "SmoothTab-umbrella.h"
+
+  export *
+  module * { export * }
+}
