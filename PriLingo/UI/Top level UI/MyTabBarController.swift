@@ -26,6 +26,8 @@ class MyTabBarController: UITabBarController {
         let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
         self.viewControllers = viewControllers
         
+        //@@let's call it a day!@@
+        
         //prepare button
         let image = UIImage.init(named: "UITabBarItem6.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         let image2 = UIImage.init(named: "UITabBarItem7.png")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
@@ -41,7 +43,8 @@ class MyTabBarController: UITabBarController {
         }
         
         //change tabbar shape
-        self.addTabBarShape()
+        self.addTabBarShape(_view: self.tabBar)
+        //@@let's call it a day!
         
         //add MyTabBarView
         let myTabBarView = CoverTabBarView()
@@ -72,31 +75,29 @@ class MyTabBarController: UITabBarController {
     */
     
     ///change tabbar-like shape.
-    func addTabBarShape() {
+    func addTabBarShape(_view: UIView) {
         let _shapeLayer = CAShapeLayer()
-      _shapeLayer.path = self.createPathCircle()
+        _shapeLayer.path = self.createPathCircle(startX: 0, startY: 75, width: _view.frame.width, height: _view.frame.height)
         _shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "UITabBar.png")!).cgColor
         
         //this way, it can support orientation change.
-        if  (self.tabBar.layer.sublayers != nil) && self.tabBar.layer.sublayers!.count != 0 {
-            self.tabBar.layer.replaceSublayer(self.tabBar.layer.sublayers![0], with: _shapeLayer)
+        if  (_view.layer.sublayers != nil) && _view.layer.sublayers!.count != 0 {
+            _view.layer.replaceSublayer(_view.layer.sublayers![0], with: _shapeLayer)
         } else {
-            self.tabBar.layer.insertSublayer(_shapeLayer, at: 0)
+            _view.layer.insertSublayer(_shapeLayer, at: 0)
         }
     }
 
     
     ///function to return CGPath that discribes half circle and straight.
-    func createPathCircle() -> CGPath {
+    func createPathCircle(startX: CGFloat, startY: CGFloat, width: CGFloat, height: CGFloat) -> CGPath {
         let path = UIBezierPath()
         
         //starting point (left top) then draw lines until the it retunrs to the starting point by close().
-        let startX: CGFloat = 0
-        let startY: CGFloat = -75
         path.move(to: CGPoint.init(x: startX, y: startY))
-        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: startY))
-        path.addLine(to: CGPoint.init(x: self.tabBar.frame.width, y: self.tabBar.frame.height))
-        path.addLine(to: CGPoint.init(x: startX, y: self.tabBar.frame.height))
+        path.addLine(to: CGPoint.init(x: width, y: startY))
+        path.addLine(to: CGPoint.init(x: width, y: height))
+        path.addLine(to: CGPoint.init(x: startX, y: height))
         path.close()
         
         return path.cgPath

@@ -9,7 +9,29 @@
 import UIKit
 
 class CoverTabBarView: UIView {
+    
+    //MARK: - Property
+    
+    
+    @IBOutlet weak var leftMostButton: UIButton!
+    @IBOutlet weak var midLeftButton: UIButton!
+    @IBOutlet weak var midRightButton: UIButton!
+    @IBOutlet weak var rightMostButton: UIButton!
+    
     var uiTabBarFrame: CGRect?
+    
+    //MARK: - IBOutlet function
+    
+    @IBAction func leftMostButtonTapped(_ sender: UIButton) {
+    }
+    @IBAction func midLeftButtonTapped(_ sender: UIButton) {
+    }
+    @IBAction func midRightButton(_ sender: UIButton) {
+    }
+    @IBAction func rightMostButton(_ sender: UIButton) {
+    }
+    
+    //MARK: - Function
     
     // コードから初期化はここから
     override init(frame: CGRect) {
