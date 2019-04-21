@@ -29,20 +29,52 @@ class MyTabBarController: UITabBarController {
         //add covertabbarview shape
         let scWidth = self.view.bounds.size.width
         let scHeight = self.view.bounds.size.height
-        let hv: CGFloat = 60
+        let hv: CGFloat = 120
         self.view.addSubview(self.coverTabBarView(originX: 0, originY: scHeight - hv, width: scWidth, height: hv))
         self.tabBar.isHidden = true
-        
-        
     }
     
+    ///function to return UIView to cover default UITabBar.
     func coverTabBarView(originX _x: CGFloat, originY _y: CGFloat, width _width: CGFloat, height _height: CGFloat) -> UIView {
+        
+        //setup view itself
         let view = UIView()
         view.frame = CGRect.init(x: _x, y: _y, width: _width, height: _height)
+        view.backgroundColor = UIColor.purple
+        
+        //setup stackview
+        let stackHeight: CGFloat = 90
+        let stackWidth: CGFloat = 240
+        let myStackView = UIStackView.init(frame: CGRect.init(x: (_width - stackWidth) * 0.5, y: _height - stackHeight, width: stackWidth, height: stackHeight))
+        myStackView.axis = .horizontal
+        myStackView.distribution = .fillEqually
+        myStackView.alignment = .fill
+        view.addSubview(myStackView)
+        
+        //setup buttons
+        let leftMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
+        let midLeftBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
+        let midRightBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
+        let rightMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
+        
+        leftMostBtn.tintColor = UIColor.red
+        midLeftBtn.tintColor = UIColor.green
+        midRightBtn.tintColor = UIColor.gray
+
+        myStackView.addArrangedSubview(leftMostBtn)
+        myStackView.addArrangedSubview(midLeftBtn)
+        myStackView.addArrangedSubview(midRightBtn)
+        myStackView.addArrangedSubview(rightMostBtn)
         
         return view
     }
     
+    ///function to get my TabBarButton.
+    func myTabBarButton(originX _x: CGFloat, originY _y: CGFloat, width _width: CGFloat, height _height: CGFloat) -> UIButton {
+        let btn = UIButton.init(frame: CGRect.init(x: _x, y: _y, width: _width, height: _height))
+        
+        return btn
+    }
 
     /*
     // MARK: - Navigation
