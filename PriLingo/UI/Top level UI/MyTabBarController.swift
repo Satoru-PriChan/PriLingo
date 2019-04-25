@@ -32,6 +32,44 @@ class MyTabBarController: UITabBarController {
         let hv: CGFloat = 120
         self.view.addSubview(self.coverTabBarView(originX: 0, originY: scHeight - hv, width: scWidth, height: hv))
         self.tabBar.isHidden = true
+
+        //initially selected index
+        self.selectedIndex = 1
+    }
+    
+    ///function for when each button is tapped.
+    func animateToTab(toIndex: Int) {
+        if let vcTabs:[UIViewController] = self.viewControllers, let vcSelected = self.selectedViewController, let fromIndex = vcTabs.index(of: vcSelected) {
+            guard fromIndex != toIndex else {return}
+            
+            self.view.isUserInteractionEnabled = false
+            self.selectedIndex = toIndex
+            
+        }
+    }
+    
+    ///function for when leftMostBtn is tapped.
+    @objc func tapLeftMost(sender:AnyObject){
+        let toIndex = 0
+        animateToTab(toIndex: toIndex)
+    }
+
+    ///function for when midLeftBtn is tapped.
+    @objc func tapMidLeft(sender:AnyObject){
+        let toIndex = 1
+        animateToTab(toIndex: toIndex)
+    }
+    
+    ///function for when midRightBtn is tapped.
+    @objc func tapMidRight(sender:AnyObject){
+        let toIndex = 2
+        animateToTab(toIndex: toIndex)
+    }
+    
+    ///function for when rightMostBtn is tapped.
+    @objc func tapRightMost(sender:AnyObject){
+        let toIndex = 3
+        animateToTab(toIndex: toIndex)
     }
     
     ///function to return UIView to cover default UITabBar.
@@ -60,6 +98,12 @@ class MyTabBarController: UITabBarController {
         leftMostBtn.tintColor = UIColor.red
         midLeftBtn.tintColor = UIColor.green
         midRightBtn.tintColor = UIColor.gray
+        
+        leftMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:)), for: .touchUpInside)
+        midLeftBtn.addTarget(self, action: #selector(MyTabBarController.tapMidLeft(sender:)), for: .touchUpInside)
+        midRightBtn.addTarget(self, action: #selector(MyTabBarController.tapMidRight(sender:)), for: .touchUpInside)
+        rightMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:))
+            , for: .touchUpInside)
 
         myStackView.addArrangedSubview(leftMostBtn)
         myStackView.addArrangedSubview(midLeftBtn)
