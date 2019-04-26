@@ -42,7 +42,6 @@ class MyTabBarController: UITabBarController {
         if let vcTabs:[UIViewController] = self.viewControllers, let vcSelected = self.selectedViewController, let fromIndex = vcTabs.index(of: vcSelected) {
             guard fromIndex != toIndex else {return}
             
-            self.view.isUserInteractionEnabled = false
             self.selectedIndex = toIndex
             
         }
@@ -95,9 +94,10 @@ class MyTabBarController: UITabBarController {
         let midRightBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
         let rightMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
         
-        leftMostBtn.tintColor = UIColor.red
-        midLeftBtn.tintColor = UIColor.green
-        midRightBtn.tintColor = UIColor.gray
+        leftMostBtn.backgroundColor = UIColor.red
+        midLeftBtn.backgroundColor = UIColor.green
+        midRightBtn.backgroundColor = UIColor.gray
+        rightMostBtn.backgroundColor = UIColor.blue
         
         leftMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:)), for: .touchUpInside)
         midLeftBtn.addTarget(self, action: #selector(MyTabBarController.tapMidLeft(sender:)), for: .touchUpInside)
