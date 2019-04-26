@@ -85,6 +85,9 @@
 		CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
 		CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2D2282233FD2900410F02 /* DSOCategory.swift */; };
+		CEB4050B2273554300C8BFCD /* lace.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB4050A2273554300C8BFCD /* lace.png */; };
+		CEB4050C2273554300C8BFCD /* lace.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB4050A2273554300C8BFCD /* lace.png */; };
+		CEB4050D2273554300C8BFCD /* lace.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB4050A2273554300C8BFCD /* lace.png */; };
 		CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
@@ -185,6 +188,7 @@
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
+		CEB4050A2273554300C8BFCD /* lace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lace.png; sourceTree = "<group>"; };
 		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
 		CEC806E1225875D700055A29 /* UITabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBar.png; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
@@ -420,6 +424,7 @@
 		CEC67A88224EFC960038D17B /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CEB4050A2273554300C8BFCD /* lace.png */,
 				CEC806E1225875D700055A29 /* UITabBar.png */,
 				CEAB086D2259C591002EC0AB /* UITabBarItem6.png */,
 				CEAB087D2259D8C7002EC0AB /* UITabBarItem7.png */,
@@ -595,6 +600,7 @@
 				CEAB08802259D8C8002EC0AB /* UITabBarItem7.png in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEAB084E2259AC55002EC0AB /* CoverTabBarView.xib in Resources */,
+				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
@@ -626,6 +632,7 @@
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E3225875D700055A29 /* UITabBar.png in Resources */,
 				CEAB08872259D8C8002EC0AB /* UITabBarItem9.png in Resources */,
@@ -651,6 +658,7 @@
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E4225875D700055A29 /* UITabBar.png in Resources */,
 				CEAB08882259D8C8002EC0AB /* UITabBarItem9.png in Resources */,

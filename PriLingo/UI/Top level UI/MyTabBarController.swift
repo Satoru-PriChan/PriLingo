@@ -79,14 +79,27 @@ class MyTabBarController: UITabBarController {
         view.frame = CGRect.init(x: _x, y: _y, width: _width, height: _height)
         view.backgroundColor = UIColor.purple
         
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = self.createLengthExpandShape()
+        shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "lace.png")!).cgColor
+        view.layer.insertSublayer(shapeLayer, at: 0)
+        
         //setup stackview
-        let stackHeight: CGFloat = 90
-        let stackWidth: CGFloat = 240
+        let stackWidth: CGFloat = _width * 3 * 0.25
+        let stackHeight: CGFloat = stackWidth * 0.25
         let myStackView = UIStackView.init(frame: CGRect.init(x: (_width - stackWidth) * 0.5, y: _height - stackHeight, width: stackWidth, height: stackHeight))
+        myStackView.translatesAutoresizingMaskIntoConstraints = false
         myStackView.axis = .horizontal
         myStackView.distribution = .fillEqually
         myStackView.alignment = .fill
         view.addSubview(myStackView)
+        view.addConstraints([
+            NSLayoutConstraint.init(item: view, attribute: .centerX, relatedBy: .equal, toItem: myStackView, attribute: .centerX, multiplier: 1, constant: 0),
+            NSLayoutConstraint.init(item: view, attribute: .centerY, relatedBy: .equal, toItem: myStackView, attribute: .centerY, multiplier: 1, constant: 0),
+            NSLayoutConstraint.init(item: myStackView, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 0.8, constant: 0),
+            NSLayoutConstraint.init(item: myStackView, attribute: .width, relatedBy: .equal, toItem: myStackView, attribute: .height, multiplier: 4, constant: 0)
+            
+        ])
         
         //setup buttons
         let leftMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
@@ -118,6 +131,24 @@ class MyTabBarController: UITabBarController {
         let btn = UIButton.init(frame: CGRect.init(x: _x, y: _y, width: _width, height: _height))
         
         return btn
+    }
+    
+    /// Function to get the CGPath which expands length from original size.
+    ///
+    /// - Returns: A CGPath whose shape is expanded.
+    func createLengthExpandShape() -> CGPath {
+        let path = UIBezierPath()
+        
+        //Starting point (left top) then draw lines until the it returns to the starting point with close().
+        let startX: CGFloat = 0
+        let startY: CGFloat = -37
+        path.move(to: CGPoint.init(x: startX, y: startY))
+        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: startY))
+        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: self.view.bounds.size.height))
+        path.addLine(to: CGPoint.init(x: startX, y: self.view.bounds.size.height))
+        path.close()
+        
+        return path.cgPath
     }
 
     /*
