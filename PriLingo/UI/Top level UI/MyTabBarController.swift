@@ -133,8 +133,6 @@ class MyTabBarController: UITabBarController {
         midRightBtn.addTarget(self, action: #selector(MyTabBarController.tapMidRight(sender:)), for: .touchUpInside)
         rightMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:))
             , for: .touchUpInside)
-
-
         
         return view
     }
