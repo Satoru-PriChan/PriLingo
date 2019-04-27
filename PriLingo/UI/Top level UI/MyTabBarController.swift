@@ -107,10 +107,26 @@ class MyTabBarController: UITabBarController {
         let midRightBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
         let rightMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
         
-        leftMostBtn.backgroundColor = UIColor.red
-        midLeftBtn.backgroundColor = UIColor.green
-        midRightBtn.backgroundColor = UIColor.gray
-        rightMostBtn.backgroundColor = UIColor.blue
+        myStackView.addArrangedSubview(leftMostBtn)
+        myStackView.addArrangedSubview(midLeftBtn)
+        myStackView.addArrangedSubview(midRightBtn)
+        myStackView.addArrangedSubview(rightMostBtn)
+        
+        leftMostBtn.setImage(UIImage.init(named: "button1.png"), for: .normal)
+        midLeftBtn.setImage(UIImage.init(named: "button2.png"), for: .normal)
+        midRightBtn.setImage(UIImage.init(named: "button3.png"), for: .normal)
+        rightMostBtn.setImage(UIImage.init(named: "button4.png"), for: .normal)
+        
+        //adjust image's position
+        //let's call it a day!myStackView.arrangedSubviews.map {}
+        leftMostBtn.contentHorizontalAlignment = .fill
+        leftMostBtn.contentVerticalAlignment = .fill
+        midLeftBtn.contentHorizontalAlignment = .fill
+        midLeftBtn.contentVerticalAlignment = .fill
+        midRightBtn.contentHorizontalAlignment = .fill
+        midRightBtn.contentVerticalAlignment = .fill
+        rightMostBtn.contentHorizontalAlignment = .fill
+        rightMostBtn.contentVerticalAlignment = .fill
         
         leftMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:)), for: .touchUpInside)
         midLeftBtn.addTarget(self, action: #selector(MyTabBarController.tapMidLeft(sender:)), for: .touchUpInside)
@@ -118,10 +134,7 @@ class MyTabBarController: UITabBarController {
         rightMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:))
             , for: .touchUpInside)
 
-        myStackView.addArrangedSubview(leftMostBtn)
-        myStackView.addArrangedSubview(midLeftBtn)
-        myStackView.addArrangedSubview(midRightBtn)
-        myStackView.addArrangedSubview(rightMostBtn)
+
         
         return view
     }
