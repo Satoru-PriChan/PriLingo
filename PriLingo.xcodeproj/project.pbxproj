@@ -28,18 +28,6 @@
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
-		CE9D3D3E22751BBA0082DB54 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3A22751BB90082DB54 /* button4.png */; };
-		CE9D3D3F22751BBA0082DB54 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3A22751BB90082DB54 /* button4.png */; };
-		CE9D3D4022751BBA0082DB54 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3A22751BB90082DB54 /* button4.png */; };
-		CE9D3D4122751BBA0082DB54 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3B22751BBA0082DB54 /* button3.png */; };
-		CE9D3D4222751BBA0082DB54 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3B22751BBA0082DB54 /* button3.png */; };
-		CE9D3D4322751BBA0082DB54 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3B22751BBA0082DB54 /* button3.png */; };
-		CE9D3D4422751BBA0082DB54 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3C22751BBA0082DB54 /* button1.png */; };
-		CE9D3D4522751BBA0082DB54 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3C22751BBA0082DB54 /* button1.png */; };
-		CE9D3D4622751BBA0082DB54 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3C22751BBA0082DB54 /* button1.png */; };
-		CE9D3D4722751BBA0082DB54 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3D22751BBA0082DB54 /* button2.png */; };
-		CE9D3D4822751BBA0082DB54 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3D22751BBA0082DB54 /* button2.png */; };
-		CE9D3D4922751BBA0082DB54 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D3D3D22751BBA0082DB54 /* button2.png */; };
 		CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
@@ -114,6 +102,18 @@
 		CEF46BF5223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
 		CEF46BF6223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
 		CEF46BF7223002270095D3D2 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF46BF4223002270095D3D2 /* Statements.swift */; };
+		CEF5DE3A2276D6AE00457BBA /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE302276D6AE00457BBA /* button2.png */; };
+		CEF5DE3B2276D6AE00457BBA /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE302276D6AE00457BBA /* button2.png */; };
+		CEF5DE3C2276D6AE00457BBA /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE302276D6AE00457BBA /* button2.png */; };
+		CEF5DE3E2276D80A00457BBA /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE3D2276D80A00457BBA /* button1.png */; };
+		CEF5DE3F2276D80A00457BBA /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE3D2276D80A00457BBA /* button1.png */; };
+		CEF5DE402276D80A00457BBA /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE3D2276D80A00457BBA /* button1.png */; };
+		CEF5DE4A2276D8B900457BBA /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE462276D8B900457BBA /* button4.png */; };
+		CEF5DE4B2276D8B900457BBA /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE462276D8B900457BBA /* button4.png */; };
+		CEF5DE4C2276D8B900457BBA /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE462276D8B900457BBA /* button4.png */; };
+		CEF5DE4E2276D93000457BBA /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE4D2276D93000457BBA /* button3.png */; };
+		CEF5DE4F2276D93000457BBA /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE4D2276D93000457BBA /* button3.png */; };
+		CEF5DE502276D93000457BBA /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DE4D2276D93000457BBA /* button3.png */; };
 		CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
 		CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
 		CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
@@ -163,10 +163,6 @@
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
-		CE9D3D3A22751BB90082DB54 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
-		CE9D3D3B22751BBA0082DB54 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
-		CE9D3D3C22751BBA0082DB54 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
-		CE9D3D3D22751BBA0082DB54 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CDC22426EEA00501A08 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CEA04CDD22426EEA00501A08 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +187,10 @@
 		CEF46BE7222FECE60095D3D2 /* SuperTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTable.swift; sourceTree = "<group>"; };
 		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
 		CEF46BF4223002270095D3D2 /* Statements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statements.swift; sourceTree = "<group>"; };
+		CEF5DE302276D6AE00457BBA /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		CEF5DE3D2276D80A00457BBA /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		CEF5DE462276D8B900457BBA /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		CEF5DE4D2276D93000457BBA /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
 		CEF71E852241188000B30970 /* PronunciationTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PronunciationTab.xib; sourceTree = "<group>"; };
 		DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.release.xcconfig"; sourceTree = "<group>"; };
@@ -416,10 +416,10 @@
 			children = (
 				CEB4050A2273554300C8BFCD /* lace.png */,
 				CEC806E1225875D700055A29 /* UITabBar.png */,
-				CE9D3D3C22751BBA0082DB54 /* button1.png */,
-				CE9D3D3D22751BBA0082DB54 /* button2.png */,
-				CE9D3D3B22751BBA0082DB54 /* button3.png */,
-				CE9D3D3A22751BB90082DB54 /* button4.png */,
+				CEF5DE3D2276D80A00457BBA /* button1.png */,
+				CEF5DE462276D8B900457BBA /* button4.png */,
+				CEF5DE4D2276D93000457BBA /* button3.png */,
+				CEF5DE302276D6AE00457BBA /* button2.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -584,20 +584,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D3D4122751BBA0082DB54 /* button3.png in Resources */,
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CEF5DE4E2276D93000457BBA /* button3.png in Resources */,
+				CEF5DE3E2276D80A00457BBA /* button1.png in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
+				CEF5DE3A2276D6AE00457BBA /* button2.png in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
-				CE9D3D4722751BBA0082DB54 /* button2.png in Resources */,
-				CE9D3D3E22751BBA0082DB54 /* button4.png in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
+				CEF5DE4A2276D8B900457BBA /* button4.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
-				CE9D3D4422751BBA0082DB54 /* button1.png in Resources */,
 				CEA04CE122426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
@@ -611,22 +611,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D3D4222751BBA0082DB54 /* button3.png in Resources */,
+				CEF5DE4F2276D93000457BBA /* button3.png in Resources */,
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
+				CEF5DE3B2276D6AE00457BBA /* button2.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CEA04CE222426EEA00501A08 /* SearchViewController.xib in Resources */,
+				CEF5DE3F2276D80A00457BBA /* button1.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CEF5DE4B2276D8B900457BBA /* button4.png in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CE9D3D4522751BBA0082DB54 /* button1.png in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E3225875D700055A29 /* UITabBar.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
-				CE9D3D3F22751BBA0082DB54 /* button4.png in Resources */,
-				CE9D3D4822751BBA0082DB54 /* button2.png in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
@@ -636,22 +636,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D3D4322751BBA0082DB54 /* button3.png in Resources */,
+				CEF5DE502276D93000457BBA /* button3.png in Resources */,
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
+				CEF5DE3C2276D6AE00457BBA /* button2.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CEA04CE322426EEA00501A08 /* SearchViewController.xib in Resources */,
+				CEF5DE402276D80A00457BBA /* button1.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CEF5DE4C2276D8B900457BBA /* button4.png in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CE9D3D4622751BBA0082DB54 /* button1.png in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEC806E4225875D700055A29 /* UITabBar.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
-				CE9D3D4022751BBA0082DB54 /* button4.png in Resources */,
-				CE9D3D4922751BBA0082DB54 /* button2.png in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
 			);
