@@ -11,6 +11,8 @@ import UIKit
 ///class for UITabBar for whole app.
 class MyTabBarController: UITabBarController {
 
+    // MARK: - ViewController lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,8 +25,17 @@ class MyTabBarController: UITabBarController {
         let settingsVC = SettingsViewController()
         
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
-        let viewControllers = vCList.map {UINavigationController.init(rootViewController: $0)}
+        
+        //change appearance of UINavigationBar
+        let viewControllers: [UINavigationController] = vCList.map {UINavigationController.init(rootViewController: $0)}
+        let path = self.createLengthExpandBelowShape()
+        
+        viewControllers.forEach {
+
+                $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkDotGoldenJewelPattern.png")!)
+        }
         self.viewControllers = viewControllers
+
         
         //add covertabbarview shape
         let scWidth = self.view.bounds.size.width
@@ -144,7 +155,29 @@ class MyTabBarController: UITabBarController {
         return btn
     }
     
-    /// Function to get the CGPath which expands length from original size.
+    // MARK: - Function to get CGPath
+    
+    /// Function to get the CGPath which expands length from original size towards below(typically for UINavigationBar).
+    ///
+    /// - Returns: A CGPath whose shape is expanded.
+    func createLengthExpandBelowShape() -> CGPath {
+        let path = UIBezierPath()
+        
+        //Starting point (left top) then draw lines until the it returns to the starting point with close().
+        let startX: CGFloat = 0
+        let startY: CGFloat = 0
+        let addedLength: CGFloat = 37
+        path.move(to: CGPoint.init(x: startX, y: startY))
+        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: startY))
+        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: self.view.bounds.size.height + addedLength))
+        path.addLine(to: CGPoint.init(x: startX, y: self.view.bounds.size.height + addedLength))
+        path.close()
+        
+        return path.cgPath
+    }
+
+    
+    /// Function to get the CGPath which expands length from original size(typically for original UITabBar).
     ///
     /// - Returns: A CGPath whose shape is expanded.
     func createLengthExpandShape() -> CGPath {

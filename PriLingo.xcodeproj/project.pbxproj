@@ -25,6 +25,9 @@
 		CE0B750222159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
 		CE0B750322159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
 		CE0B750422159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
+		CE0DF48F227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0DF48E227965C300427D7D /* PinkDotGoldenJewelPattern.png */; };
+		CE0DF490227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0DF48E227965C300427D7D /* PinkDotGoldenJewelPattern.png */; };
+		CE0DF491227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0DF48E227965C300427D7D /* PinkDotGoldenJewelPattern.png */; };
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
@@ -162,6 +165,7 @@
 		CE0AC1492209B5BA00953C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
+		CE0DF48E227965C300427D7D /* PinkDotGoldenJewelPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkDotGoldenJewelPattern.png; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
 		CE779189227920CF007515B9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 		CE77918D227920F3007515B9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
@@ -415,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB4050A2273554300C8BFCD /* lace.png */,
+				CE0DF48E227965C300427D7D /* PinkDotGoldenJewelPattern.png */,
 				CEC806E1225875D700055A29 /* UITabBar.png */,
 				CE779189227920CF007515B9 /* button1.png */,
 				CE77918D227920F3007515B9 /* button2.png */,
@@ -599,6 +604,7 @@
 				CEA04CE122426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CE0DF48F227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE77919222792107007515B9 /* button3.png in Resources */,
 				CE77918A227920CF007515B9 /* button1.png in Resources */,
@@ -616,6 +622,7 @@
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE77919322792107007515B9 /* button3.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
+				CE0DF490227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */,
 				CEA04CE222426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
@@ -641,6 +648,7 @@
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE77919422792107007515B9 /* button3.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
+				CE0DF491227965C300427D7D /* PinkDotGoldenJewelPattern.png in Resources */,
 				CEA04CE322426EEA00501A08 /* SearchViewController.xib in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
