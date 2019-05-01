@@ -29,7 +29,7 @@ class MyTabBarController: UITabBarController {
         //add covertabbarview shape
         let scWidth = self.view.bounds.size.width
         let scHeight = self.view.bounds.size.height
-        let hv: CGFloat = 120
+        let hv: CGFloat = scHeight * 0.1428//a seventh
         self.view.addSubview(self.coverTabBarView(originX: 0, originY: scHeight - hv, width: scWidth, height: hv))
         self.tabBar.isHidden = true
 
