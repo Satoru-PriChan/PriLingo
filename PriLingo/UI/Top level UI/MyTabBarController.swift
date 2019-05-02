@@ -28,11 +28,11 @@ class MyTabBarController: UITabBarController {
         
         //change appearance of UINavigationBar
         let viewControllers: [UINavigationController] = vCList.map {UINavigationController.init(rootViewController: $0)}
-        let path = self.createLengthExpandBelowShape()
+        //let path = self.createLengthExpandBelowShape()
         
         viewControllers.forEach {
 
-                $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkDotGoldenJewelPattern.png")!)
+                $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkPolkaDot2.png")!)
         }
         self.viewControllers = viewControllers
 
