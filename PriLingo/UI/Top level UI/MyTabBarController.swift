@@ -158,26 +158,6 @@ class MyTabBarController: UITabBarController {
     
     // MARK: - Function to get CGPath
     
-    /// Function to get the CGPath which expands length from original size towards below(typically for UINavigationBar).
-    ///
-    /// - Returns: A CGPath whose shape is expanded.
-    func createLengthExpandBelowShape() -> CGPath {
-        let path = UIBezierPath()
-        
-        //Starting point (left top) then draw lines until the it returns to the starting point with close().
-        let startX: CGFloat = 0
-        let startY: CGFloat = 0
-        let addedLength: CGFloat = 37
-        path.move(to: CGPoint.init(x: startX, y: startY))
-        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: startY))
-        path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: self.view.bounds.size.height + addedLength))
-        path.addLine(to: CGPoint.init(x: startX, y: self.view.bounds.size.height + addedLength))
-        path.close()
-        
-        return path.cgPath
-    }
-
-    
     /// Function to get the CGPath which expands length from original size(typically for original UITabBar).
     ///
     /// - Returns: A CGPath whose shape is expanded.
