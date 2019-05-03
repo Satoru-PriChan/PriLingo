@@ -422,6 +422,14 @@
 		CEC67A88224EFC960038D17B /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CED43FB8227BD43000031DF9 /* Top Level UI */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		CED43FB8227BD43000031DF9 /* Top Level UI */ = {
+			isa = PBXGroup;
+			children = (
 				CED43FB4227BCF1A00031DF9 /* BackArrow.png */,
 				CED43FB0227BCF0B00031DF9 /* Question.png */,
 				CEB4050A2273554300C8BFCD /* lace.png */,
@@ -431,7 +439,7 @@
 				CE77919122792107007515B9 /* button3.png */,
 				CE77919522792122007515B9 /* button4.png */,
 			);
-			path = Image;
+			path = "Top Level UI";
 			sourceTree = "<group>";
 		};
 		CEF3005B2239386B00300D00 /* test */ = {
