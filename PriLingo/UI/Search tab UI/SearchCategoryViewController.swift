@@ -8,14 +8,45 @@
 
 import UIKit
 
-class SearchCategoryViewController: UIViewController {
+class SearchCategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var categories: [DSOCategory]? = []
+    
+    let reuseIdentifier = "MyCell"
 
+    @IBOutlet weak var myTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Get category data from DB.
+        let daoTCategories = DAOTCategories.init()
+        self.categories = daoTCategories.exeSelect()
+        
+        //Register cell
+        self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.reuseIdentifier)
     }
+    
+    //MARK: - UITableViewDelegate
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard self.categories != nil else {return 0}
+        
+        return self.categories!.count
+    }
+    
+    //MARK: - UITableViewDatasource
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = myTableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier)
+        if cell?.textLabel != nil {
+                cell?.textLabel!.text = self.categories![indexPath.row].name1
+        }
+        
+        return cell ?? UITableViewCell()
+    }
 
     /*
     // MARK: - Navigation
