@@ -46,7 +46,7 @@ class MyTabBarController: UITabBarController {
         self.tabBar.isHidden = true
 
         //initially selected index
-        self.selectedIndex = 1
+        self.selectedIndex = 0
     }
     
     ///function for when each button is tapped.
@@ -143,7 +143,7 @@ class MyTabBarController: UITabBarController {
         leftMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:)), for: .touchUpInside)
         midLeftBtn.addTarget(self, action: #selector(MyTabBarController.tapMidLeft(sender:)), for: .touchUpInside)
         midRightBtn.addTarget(self, action: #selector(MyTabBarController.tapMidRight(sender:)), for: .touchUpInside)
-        rightMostBtn.addTarget(self, action: #selector(MyTabBarController.tapLeftMost(sender:))
+        rightMostBtn.addTarget(self, action: #selector(MyTabBarController.tapRightMost(sender:))
             , for: .touchUpInside)
         
         return view
