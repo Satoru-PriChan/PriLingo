@@ -62,6 +62,15 @@ class PriLingoTests: XCTestCase {
         }
     }
     
+    ///function to test Lang class that selects appropriate words from string.resource files.
+    func testLang() {
+        let key = "welcome"
+        XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .English), "Welcome")
+        XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .Japanese), "ようこそ")
+        XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .SimplifiedChinese), "欢迎光临")
+        XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .TraditionalChinese), "歡迎光臨")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

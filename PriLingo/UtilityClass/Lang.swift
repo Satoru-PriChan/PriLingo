@@ -29,14 +29,15 @@ class Lang {
     ///   - key: String
     ///   - lang: Lang.language (enum) specify preferred language here
     /// - Returns: String value(never nil)
-    func getLocalizedString(key: String?, lang: Language?) -> String {
+    static func getLocalizedString(key: String?, lang: Language?) -> String {
         guard key != nil && lang != nil else {
             print("File \(#file): Line \(#line): Func \(#function):  Key or lang is nil. key: \(String(describing: key)) lang: \(String(describing: lang))")
             return ""
             
         }
         
-        let bundle = Bundle(path: lang!.rawValue)
+        let path = Bundle.main.path(forResource: lang!.rawValue, ofType: "lproj")
+        let bundle = Bundle(path: path!)
         return bundle?.localizedString(forKey: key!, value: nil, table: nil) ?? ""
     }
 }
