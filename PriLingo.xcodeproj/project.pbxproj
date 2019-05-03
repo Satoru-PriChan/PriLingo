@@ -94,6 +94,9 @@
 		CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB4227BCF1A00031DF9 /* BackArrow.png */; };
 		CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB4227BCF1A00031DF9 /* BackArrow.png */; };
 		CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB4227BCF1A00031DF9 /* BackArrow.png */; };
+		CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
+		CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
+		CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -191,6 +194,7 @@
 		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
+		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -454,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF375132231591800CC8A74 /* Path.swift */,
+				CED43FB9227BDA3700031DF9 /* Lang.swift */,
 			);
 			path = UtilityClass;
 			sourceTree = "<group>";
@@ -834,6 +839,7 @@
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
+				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
@@ -858,6 +864,7 @@
 				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
+				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
@@ -882,6 +889,7 @@
 				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
+				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
