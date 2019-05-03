@@ -67,9 +67,6 @@
 		CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CF522426F3900501A08 /* SettingsViewController.xib */; };
 		CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CF522426F3900501A08 /* SettingsViewController.xib */; };
 		CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA04CF522426F3900501A08 /* SettingsViewController.xib */; };
-		CEA1A962227B157000605A87 /* PinkPolkaDot.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A961227B157000605A87 /* PinkPolkaDot.png */; };
-		CEA1A963227B157000605A87 /* PinkPolkaDot.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A961227B157000605A87 /* PinkPolkaDot.png */; };
-		CEA1A964227B157000605A87 /* PinkPolkaDot.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A961227B157000605A87 /* PinkPolkaDot.png */; };
 		CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
@@ -91,9 +88,6 @@
 		CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
-		CEC806E2225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
-		CEC806E3225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
-		CEC806E4225875D700055A29 /* UITabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC806E1225875D700055A29 /* UITabBar.png */; };
 		CED43FB1227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
 		CED43FB2227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
 		CED43FB3227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
@@ -188,7 +182,6 @@
 		CEA04CED22426F2200501A08 /* PronunciationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PronunciationViewController.xib; sourceTree = "<group>"; };
 		CEA04CF422426F3900501A08 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA04CF522426F3900501A08 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		CEA1A961227B157000605A87 /* PinkPolkaDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPolkaDot.png; sourceTree = "<group>"; };
 		CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPolkaDot2.png; sourceTree = "<group>"; };
 		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
@@ -196,7 +189,6 @@
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEB4050A2273554300C8BFCD /* lace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lace.png; sourceTree = "<group>"; };
 		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
-		CEC806E1225875D700055A29 /* UITabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBar.png; sourceTree = "<group>"; };
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
@@ -433,9 +425,7 @@
 				CED43FB4227BCF1A00031DF9 /* BackArrow.png */,
 				CED43FB0227BCF0B00031DF9 /* Question.png */,
 				CEB4050A2273554300C8BFCD /* lace.png */,
-				CEA1A961227B157000605A87 /* PinkPolkaDot.png */,
 				CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */,
-				CEC806E1225875D700055A29 /* UITabBar.png */,
 				CE779189227920CF007515B9 /* button1.png */,
 				CE77918D227920F3007515B9 /* button2.png */,
 				CE77919122792107007515B9 /* button3.png */,
@@ -623,11 +613,9 @@
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
-				CEA1A962227B157000605A87 /* PinkPolkaDot.png in Resources */,
 				CE77919222792107007515B9 /* button3.png in Resources */,
 				CE77918A227920CF007515B9 /* button1.png in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
-				CEC806E2225875D700055A29 /* UITabBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +630,6 @@
 				CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CEA04CE222426EEA00501A08 /* SearchViewController.xib in Resources */,
-				CEA1A963227B157000605A87 /* PinkPolkaDot.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
@@ -651,7 +638,6 @@
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
-				CEC806E3225875D700055A29 /* UITabBar.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
@@ -671,7 +657,6 @@
 				CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CEA04CE322426EEA00501A08 /* SearchViewController.xib in Resources */,
-				CEA1A964227B157000605A87 /* PinkPolkaDot.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
@@ -680,7 +665,6 @@
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
-				CEC806E4225875D700055A29 /* UITabBar.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
