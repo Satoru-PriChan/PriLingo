@@ -1,14 +1,14 @@
 //
-//  SearchViewController.swift
+//  SearchWordViewController.swift
 //  PriLingo
 //
-//  Created by USER on 2019/03/20.
+//  Created by USER on 2019/05/03.
 //  Copyright © 2019 SoLaMi Smile. All rights reserved.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchWordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

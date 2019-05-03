@@ -19,7 +19,7 @@ class MyTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         
         //prepare each tab
-        let searchVC = SearchViewController()
+        let searchVC = SearchCategoryViewController()
         let favoritesVC = FavoritesViewController()
         let pronunciationVC = PronunciationViewController()
         let settingsVC = SettingsViewController()
