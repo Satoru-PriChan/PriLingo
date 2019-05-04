@@ -36,7 +36,6 @@ class MyTabBarController: UITabBarController {
             $0.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "BackArrow.png")
         }
         self.viewControllers = viewControllers
-
         
         //add covertabbarview shape
         let scWidth = self.view.bounds.size.width

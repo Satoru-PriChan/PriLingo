@@ -28,6 +28,18 @@
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
+		CE36561C227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
+		CE36561D227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
+		CE36561E227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
+		CE36561F227D15B5003DBF54 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365619227D15B5003DBF54 /* TitleSettings.png */; };
+		CE365620227D15B5003DBF54 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365619227D15B5003DBF54 /* TitleSettings.png */; };
+		CE365621227D15B5003DBF54 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365619227D15B5003DBF54 /* TitleSettings.png */; };
+		CE365622227D15B5003DBF54 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561A227D15B5003DBF54 /* TitleFavorite.png */; };
+		CE365623227D15B5003DBF54 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561A227D15B5003DBF54 /* TitleFavorite.png */; };
+		CE365624227D15B5003DBF54 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561A227D15B5003DBF54 /* TitleFavorite.png */; };
+		CE365625227D15B5003DBF54 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561B227D15B5003DBF54 /* TitleSearch.png */; };
+		CE365626227D15B5003DBF54 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561B227D15B5003DBF54 /* TitleSearch.png */; };
+		CE365627227D15B5003DBF54 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36561B227D15B5003DBF54 /* TitleSearch.png */; };
 		CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
@@ -178,6 +190,10 @@
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
+		CE365618227D15B5003DBF54 /* TitlePronunciation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitlePronunciation.png; sourceTree = "<group>"; };
+		CE365619227D15B5003DBF54 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
+		CE36561A227D15B5003DBF54 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
+		CE36561B227D15B5003DBF54 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
 		CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
@@ -444,6 +460,10 @@
 		CED43FB8227BD43000031DF9 /* Top Level UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE36561A227D15B5003DBF54 /* TitleFavorite.png */,
+				CE365618227D15B5003DBF54 /* TitlePronunciation.png */,
+				CE36561B227D15B5003DBF54 /* TitleSearch.png */,
+				CE365619227D15B5003DBF54 /* TitleSettings.png */,
 				CED43FB4227BCF1A00031DF9 /* BackArrow.png */,
 				CED43FB0227BCF0B00031DF9 /* Question.png */,
 				CEB4050A2273554300C8BFCD /* lace.png */,
@@ -617,6 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE365622227D15B5003DBF54 /* TitleFavorite.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -629,6 +650,8 @@
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CE77919622792122007515B9 /* button4.png in Resources */,
+				CE36561F227D15B5003DBF54 /* TitleSettings.png in Resources */,
+				CE36561C227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
@@ -638,6 +661,7 @@
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE77919222792107007515B9 /* button3.png in Resources */,
+				CE365625227D15B5003DBF54 /* TitleSearch.png in Resources */,
 				CE77918A227920CF007515B9 /* button1.png in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
 			);
@@ -653,16 +677,20 @@
 				CE77919322792107007515B9 /* button3.png in Resources */,
 				CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
+				CE365623227D15B5003DBF54 /* TitleFavorite.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE365626227D15B5003DBF54 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
+				CE36561D227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
+				CE365620227D15B5003DBF54 /* TitleSettings.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
@@ -681,16 +709,20 @@
 				CE77919422792107007515B9 /* button3.png in Resources */,
 				CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
+				CE365624227D15B5003DBF54 /* TitleFavorite.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE365627227D15B5003DBF54 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
+				CE36561E227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
+				CE365621227D15B5003DBF54 /* TitleSettings.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,

@@ -27,6 +27,9 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //Register cell
         self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.reuseIdentifier)
+        
+        //Navigation title
+        self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
     }
     
     //MARK: - UITableViewDelegate

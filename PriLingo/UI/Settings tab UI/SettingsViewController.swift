@@ -14,6 +14,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Navigation title
+        self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSettings.png"))
     }
 
 
