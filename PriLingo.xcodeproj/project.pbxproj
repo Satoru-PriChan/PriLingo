@@ -28,9 +28,6 @@
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
-		CE36561C227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
-		CE36561D227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
-		CE36561E227D15B5003DBF54 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE365618227D15B5003DBF54 /* TitlePronunciation.png */; };
 		CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
@@ -55,6 +52,18 @@
 		CE77919622792122007515B9 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE77919522792122007515B9 /* button4.png */; };
 		CE77919722792122007515B9 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE77919522792122007515B9 /* button4.png */; };
 		CE77919822792122007515B9 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE77919522792122007515B9 /* button4.png */; };
+		CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A22227F21C300F3F490 /* TitlePronunciation.png */; };
+		CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A22227F21C300F3F490 /* TitlePronunciation.png */; };
+		CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A22227F21C300F3F490 /* TitlePronunciation.png */; };
+		CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A23227F21C300F3F490 /* TitleSettings.png */; };
+		CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A23227F21C300F3F490 /* TitleSettings.png */; };
+		CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A23227F21C300F3F490 /* TitleSettings.png */; };
+		CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A24227F21C400F3F490 /* TitleFavorite.png */; };
+		CE785A2D227F21C400F3F490 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A24227F21C400F3F490 /* TitleFavorite.png */; };
+		CE785A2E227F21C400F3F490 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A24227F21C400F3F490 /* TitleFavorite.png */; };
+		CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
+		CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
+		CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
@@ -106,15 +115,6 @@
 		CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
-		CED6100D227E7B12000EB545 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100A227E7B11000EB545 /* TitleFavorite.png */; };
-		CED6100E227E7B12000EB545 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100A227E7B11000EB545 /* TitleFavorite.png */; };
-		CED6100F227E7B12000EB545 /* TitleFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100A227E7B11000EB545 /* TitleFavorite.png */; };
-		CED61010227E7B12000EB545 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100B227E7B12000EB545 /* TitleSearch.png */; };
-		CED61011227E7B12000EB545 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100B227E7B12000EB545 /* TitleSearch.png */; };
-		CED61012227E7B12000EB545 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6100B227E7B12000EB545 /* TitleSearch.png */; };
-		CED61017227E7CD0000EB545 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CED61016227E7CD0000EB545 /* TitleSettings.png */; };
-		CED61018227E7CD0000EB545 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CED61016227E7CD0000EB545 /* TitleSettings.png */; };
-		CED61019227E7CD0000EB545 /* TitleSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CED61016227E7CD0000EB545 /* TitleSettings.png */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -190,7 +190,6 @@
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
-		CE365618227D15B5003DBF54 /* TitlePronunciation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitlePronunciation.png; sourceTree = "<group>"; };
 		CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +198,10 @@
 		CE77918D227920F3007515B9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		CE77919122792107007515B9 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
 		CE77919522792122007515B9 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		CE785A22227F21C300F3F490 /* TitlePronunciation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitlePronunciation.png; sourceTree = "<group>"; };
+		CE785A23227F21C300F3F490 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
+		CE785A24227F21C400F3F490 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
+		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CEA04CE522426F0800501A08 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
@@ -216,9 +219,6 @@
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
-		CED6100A227E7B11000EB545 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
-		CED6100B227E7B12000EB545 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
-		CED61016227E7CD0000EB545 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -460,10 +460,10 @@
 		CED43FB8227BD43000031DF9 /* Top Level UI */ = {
 			isa = PBXGroup;
 			children = (
-				CE365618227D15B5003DBF54 /* TitlePronunciation.png */,
-				CED6100A227E7B11000EB545 /* TitleFavorite.png */,
-				CED6100B227E7B12000EB545 /* TitleSearch.png */,
-				CED61016227E7CD0000EB545 /* TitleSettings.png */,
+				CE785A24227F21C400F3F490 /* TitleFavorite.png */,
+				CE785A22227F21C300F3F490 /* TitlePronunciation.png */,
+				CE785A25227F21C400F3F490 /* TitleSearch.png */,
+				CE785A23227F21C300F3F490 /* TitleSettings.png */,
 				CED43FB4227BCF1A00031DF9 /* BackArrow.png */,
 				CED43FB0227BCF0B00031DF9 /* Question.png */,
 				CEB4050A2273554300C8BFCD /* lace.png */,
@@ -637,8 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED61010227E7B12000EB545 /* TitleSearch.png in Resources */,
-				CED61017227E7CD0000EB545 /* TitleSettings.png in Resources */,
+				CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -651,7 +650,8 @@
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
 				CE77919622792122007515B9 /* button4.png in Resources */,
-				CE36561C227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
+				CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */,
+				CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
@@ -661,9 +661,9 @@
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE77919222792107007515B9 /* button3.png in Resources */,
+				CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918A227920CF007515B9 /* button1.png in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
-				CED6100D227E7B12000EB545 /* TitleFavorite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,20 +677,20 @@
 				CE77919322792107007515B9 /* button3.png in Resources */,
 				CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
-				CED6100E227E7B12000EB545 /* TitleFavorite.png in Resources */,
+				CE785A2D227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CED61018227E7CD0000EB545 /* TitleSettings.png in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
-				CE36561D227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
+				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
-				CED61011227E7B12000EB545 /* TitleSearch.png in Resources */,
+				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
@@ -709,20 +709,20 @@
 				CE77919422792107007515B9 /* button3.png in Resources */,
 				CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
-				CED6100F227E7B12000EB545 /* TitleFavorite.png in Resources */,
+				CE785A2E227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CED61019227E7CD0000EB545 /* TitleSettings.png in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
-				CE36561E227D15B5003DBF54 /* TitlePronunciation.png in Resources */,
+				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
-				CED61012227E7B12000EB545 /* TitleSearch.png in Resources */,
+				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
