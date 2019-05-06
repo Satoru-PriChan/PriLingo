@@ -106,6 +106,12 @@
 		CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
+		CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
+		CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
+		CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
+		CECF2920227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */; };
+		CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */; };
+		CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */; };
 		CED43FB1227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
 		CED43FB2227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
 		CED43FB3227BCF0B00031DF9 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = CED43FB0227BCF0B00031DF9 /* Question.png */; };
@@ -216,6 +222,8 @@
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEB4050A2273554300C8BFCD /* lace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lace.png; sourceTree = "<group>"; };
 		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
+		CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCateogryTableViewCell.swift; sourceTree = "<group>"; };
+		CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCateogryTableViewCell.xib; sourceTree = "<group>"; };
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
@@ -370,6 +378,8 @@
 			children = (
 				CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */,
 				CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */,
+				CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */,
+				CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */,
 				CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */,
 				CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */,
 			);
@@ -640,6 +650,7 @@
 				CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
+				CECF2920227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE46499B227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
@@ -682,6 +693,7 @@
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
+				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
@@ -714,6 +726,7 @@
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
+				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
@@ -892,6 +905,7 @@
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
 				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
@@ -918,6 +932,7 @@
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
 				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
@@ -944,6 +959,7 @@
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
 				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
