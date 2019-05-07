@@ -5,4 +5,9 @@
   Created by USER on 2019/2/7.
   Copyright © 2019年 SoLaMi Smile. All rights reserved.
 */
+//test
 "welcome" = "欢迎光临";
+
+//MARK: - SearchCategoryTableViewCell
+"chapter_firstHalf" = "Chapter";
+"chapter_lastHalf" = "";

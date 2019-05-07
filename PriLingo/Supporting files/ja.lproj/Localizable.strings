@@ -5,5 +5,10 @@
   Created by USER on 2019/2/7.
   Copyright © 2019年 SoLaMi Smile. All rights reserved.
 */
+//test
 "welcome" = "ようこそ";
+
+//MARK: - SearchCategoryTableViewCell
+"chapter_firstHalf" = "Chapter";
+"chapter_lastHalf" = "";
 
