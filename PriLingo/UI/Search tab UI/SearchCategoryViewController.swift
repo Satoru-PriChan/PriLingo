@@ -26,7 +26,9 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         self.categories = daoTCategories.exeSelect()
         
         //Register cell
-        self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.reuseIdentifier)
+        self.myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: nil), forCellReuseIdentifier: self.reuseIdentifier)
+        self.myTableView.delegate = self
+        self.myTableView.dataSource = self
         
         //Navigation title
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
@@ -43,12 +45,13 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
     //MARK: - UITableViewDatasource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = myTableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier)
-        if cell?.textLabel != nil {
-                cell?.textLabel!.text = self.categories![indexPath.row].name1
-        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier, for: indexPath) as? SearchCateogryTableViewCell else {
+            //debug
+            print("File: \(#file) Line \(#line): Func \(#function):  fatal error:")
+            return UITableViewCell()}
+        cell.setCell(chapterNo: String(indexPath.row + 1), categoryNameEN: self.categories![indexPath.row].name1, categoryNameJP: self.categories![indexPath.row].name2, categoryNameCN_S: self.categories![indexPath.row].name3, categoryNameCN_T: self.categories![indexPath.row].name4)
         
-        return cell ?? UITableViewCell()
+        return cell 
     }
 
     /*
