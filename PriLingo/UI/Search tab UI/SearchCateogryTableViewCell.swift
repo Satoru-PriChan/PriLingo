@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class SearchCateogryTableViewCell: UITableViewCell {
     
@@ -34,6 +35,11 @@ class SearchCateogryTableViewCell: UITableViewCell {
         if let categoryLabel = self.theCategoryLabel {
             categoryLabel.text = Lang.getLocalizedString(en: categoryNameEN, jp: categoryNameJP, cn_s: categoryNameCN_S, cn_t: categoryNameCN_T, lang: nil)
         }
+        
+        //Round itself
+        self.layer.cornerRadius = 20
+        self.layer.masksToBounds = true
+        
     }
     
 }
