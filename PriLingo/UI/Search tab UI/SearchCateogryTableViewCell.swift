@@ -39,6 +39,7 @@ class SearchCateogryTableViewCell: UITableViewCell {
         //Round itself
         self.layer.cornerRadius = 20
         self.layer.masksToBounds = true
+        self.backgroundColor = UIColor.clear
         
     }
     
