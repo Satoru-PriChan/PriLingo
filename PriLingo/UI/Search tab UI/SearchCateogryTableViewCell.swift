@@ -10,10 +10,8 @@ import UIKit
 
 class SearchCateogryTableViewCell: UITableViewCell {
     
-    
-    @IBOutlet weak var mymyChapterLabel: UILabel!
-    @IBOutlet weak var mymyCategoryLabel: UILabel!
-    
+    @IBOutlet weak var theCategoryLabel: UILabel!
+    @IBOutlet weak var theChapterLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,12 +26,12 @@ class SearchCateogryTableViewCell: UITableViewCell {
     ///Function to set cell
     func setCell(chapterNo: String, categoryNameEN: String?, categoryNameJP: String?, categoryNameCN_S: String?, categoryNameCN_T: String?) {
         //Chapter XX
-        if let chapterLabel = self.mymyChapterLabel {
+        if let chapterLabel = self.theChapterLabel {
             chapterLabel.text = Lang.getLocalizedString(key: "chapter_firstHalf", lang: nil) + chapterNo + Lang.getLocalizedString(key: "chapter_lastHalf", lang: nil)
         }
         
         //Category name
-        if let categoryLabel = self.mymyCategoryLabel {
+        if let categoryLabel = self.theCategoryLabel {
             categoryLabel.text = Lang.getLocalizedString(en: categoryNameEN, jp: categoryNameJP, cn_s: categoryNameCN_S, cn_t: categoryNameCN_T, lang: nil)
         }
     }
