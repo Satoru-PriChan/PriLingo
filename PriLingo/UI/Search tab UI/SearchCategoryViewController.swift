@@ -32,6 +32,9 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //Navigation title
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
     
     //MARK: - UITableViewDelegate
