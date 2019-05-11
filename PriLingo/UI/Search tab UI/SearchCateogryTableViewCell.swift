@@ -13,6 +13,8 @@ class SearchCateogryTableViewCell: UITableViewCell {
     
     @IBOutlet weak var theCategoryLabel: UILabel!
     @IBOutlet weak var theChapterLabel: UILabel!
+    @IBOutlet weak var myBackgroundView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,7 +41,10 @@ class SearchCateogryTableViewCell: UITableViewCell {
         //Round itself
         self.layer.cornerRadius = 20
         self.layer.masksToBounds = true
-        self.backgroundColor = UIColor.clear
+        
+        self.myBackgroundView.layer.cornerRadius = 20
+        self.myBackgroundView.layer.masksToBounds = true
+        
         
     }
     
