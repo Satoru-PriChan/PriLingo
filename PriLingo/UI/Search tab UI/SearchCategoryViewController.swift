@@ -35,6 +35,9 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
+        
+        //TableView separator line
+        self.myTableView.separatorColor = UIColor.clear
     }
     
     //MARK: - UITableViewDelegate
