@@ -48,6 +48,13 @@ class SearchCateogryTableViewCell: UITableViewCell {
         self.myBackgroundView.layer.cornerRadius = 20
         self.myBackgroundView.layer.masksToBounds = true
         
+        //Change appearance at being selected
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        backgroundView.layer.cornerRadius = 20
+        backgroundView.layer.masksToBounds = true
+        self.selectedBackgroundView = backgroundView
+        
         
     }
     
