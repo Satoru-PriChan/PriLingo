@@ -64,6 +64,9 @@
 		CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
+		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
+		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
+		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
@@ -208,6 +211,7 @@
 		CE785A23227F21C300F3F490 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
 		CE785A24227F21C400F3F490 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
+		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CEA04CE522426F0800501A08 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
@@ -482,6 +486,7 @@
 				CE77918D227920F3007515B9 /* button2.png */,
 				CE77919122792107007515B9 /* button3.png */,
 				CE77919522792122007515B9 /* button4.png */,
+				CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */,
 			);
 			path = "Top Level UI";
 			sourceTree = "<group>";
@@ -654,6 +659,7 @@
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE46499B227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
@@ -690,6 +696,7 @@
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2D227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
@@ -723,6 +730,7 @@
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2E227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,

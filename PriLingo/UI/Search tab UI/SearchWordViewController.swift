@@ -10,10 +10,31 @@ import UIKit
 
 class SearchWordViewController: UIViewController {
 
+    @IBOutlet weak var myTestLabel: UILabel!
+    
+    var myWord: DSOWord?
+    var testPhrase: String?
+    
+    init(labelName: String?) {
+        super.init(nibName: "SearchWordViewController", bundle: nil)
+        self.testPhrase = labelName
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let myLabel = self.myTestLabel {
+            myLabel.text = self.testPhrase
+        }
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
+        
     }
 
 

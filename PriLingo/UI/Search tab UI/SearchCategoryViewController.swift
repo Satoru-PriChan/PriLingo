@@ -32,17 +32,21 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //Navigation title
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
+        
+        //TableView separator line
+        self.myTableView.separatorColor = UIColor.clear
     }
     
-    //MARK: - UITableViewDelegate
+    //MARK: - UITableViewDatasource
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard self.categories != nil else {return 0}
         
         return self.categories!.count
     }
-    
-    //MARK: - UITableViewDatasource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier, for: indexPath) as? SearchCateogryTableViewCell else {
@@ -52,6 +56,17 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         cell.setCell(chapterNo: String(indexPath.row + 1), categoryNameEN: self.categories![indexPath.row].name1, categoryNameJP: self.categories![indexPath.row].name2, categoryNameCN_S: self.categories![indexPath.row].name3, categoryNameCN_T: self.categories![indexPath.row].name4)
         
         return cell 
+    }
+    
+    //MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //you can force self.categories unwrapped cause if it did not exist it would never be tapped.
+       
+        //Screen transition
+        self.navigationController?.pushViewController(SearchWordViewController.init(labelName: self.categories![indexPath.row].name1), animated: false)
+        
+        //Deselect the cell after selected
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 
     /*

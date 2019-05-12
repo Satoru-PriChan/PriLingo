@@ -17,6 +17,9 @@ class PronunciationViewController: UIViewController {
         
         //Navigation title
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitlePronunciation.png"))
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
 
 
