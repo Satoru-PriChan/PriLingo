@@ -35,6 +35,11 @@ class SearchWordViewController: UIViewController {
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
         
+        //back arrow text(none)
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        self.navigationItem.backBarButtonItem = backItem
+        
     }
 
 

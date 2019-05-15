@@ -38,6 +38,11 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //TableView separator line
         self.myTableView.separatorColor = UIColor.clear
+        
+        //back arrow text(none)
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "BackArrow.png")?.withRenderingMode(.alwaysOriginal)
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "BackArrow.png")?.withRenderingMode(.alwaysOriginal)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
     
     //MARK: - UITableViewDatasource
