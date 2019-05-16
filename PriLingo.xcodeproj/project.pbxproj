@@ -153,6 +153,9 @@
 		CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
 		CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
 		CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF71E852241188000B30970 /* PronunciationTab.xib */; };
+		CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */; };
+		CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */; };
+		CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +243,7 @@
 		CEF46BEB222FEFCC0095D3D2 /* WORDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WORDS.swift; sourceTree = "<group>"; };
 		CEF46BF4223002270095D3D2 /* Statements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statements.swift; sourceTree = "<group>"; };
 		CEF71E852241188000B30970 /* PronunciationTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PronunciationTab.xib; sourceTree = "<group>"; };
+		CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelUIExtensions.swift; sourceTree = "<group>"; };
 		DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.release.xcconfig"; sourceTree = "<group>"; };
 		EC4F1B21A6ABEED09A5BBB18 /* Pods-PriLingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoTests/Pods-PriLingoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
+				CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -917,6 +922,7 @@
 				CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
+				CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -944,6 +950,7 @@
 				CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
+				CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -971,6 +978,7 @@
 				CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
+				CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,

@@ -39,9 +39,7 @@ class SearchWordViewController: UIViewController {
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
         
         //back arrow text(none)
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        self.navigationItem.backBarButtonItem = backItem
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.menuButton(self, action: #selector(popSelf), imageName: "BackArrow.png")
         
     }
 
