@@ -91,6 +91,15 @@
 		CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
+		CEA6A441228E358800151E03 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A440228E358800151E03 /* MyNavigationController.swift */; };
+		CEA6A442228E358800151E03 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A440228E358800151E03 /* MyNavigationController.swift */; };
+		CEA6A443228E358800151E03 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A440228E358800151E03 /* MyNavigationController.swift */; };
+		CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
+		CEA6A44A228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
+		CEA6A44B228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
 		CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
@@ -220,6 +229,9 @@
 		CEA04CF422426F3900501A08 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA04CF522426F3900501A08 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPolkaDot2.png; sourceTree = "<group>"; };
+		CEA6A440228E358800151E03 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		CEA6A444228E372700151E03 /* MyNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBar.swift; sourceTree = "<group>"; };
+		CEA6A448228E376F00151E03 /* MyNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNavigationBar.xib; sourceTree = "<group>"; };
 		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
@@ -373,6 +385,9 @@
 			isa = PBXGroup;
 			children = (
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
+				CEA6A440228E358800151E03 /* MyNavigationController.swift */,
+				CEA6A444228E372700151E03 /* MyNavigationBar.swift */,
+				CEA6A448228E376F00151E03 /* MyNavigationBar.xib */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -673,6 +688,7 @@
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
+				CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
@@ -715,6 +731,7 @@
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
+				CEA6A44A228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +766,7 @@
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
+				CEA6A44B228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +925,7 @@
 				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A0227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
@@ -918,6 +937,7 @@
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEA6A441228E358800151E03 /* MyNavigationController.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
@@ -934,6 +954,7 @@
 				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A1227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
@@ -945,6 +966,7 @@
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEA6A442228E358800151E03 /* MyNavigationController.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
@@ -961,6 +983,7 @@
 				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A2227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
@@ -972,6 +995,7 @@
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEA6A443228E358800151E03 /* MyNavigationController.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
