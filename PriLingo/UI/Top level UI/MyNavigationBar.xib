@@ -12,12 +12,78 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyNavigationBar" customModule="PriLingo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6o-Z9-MaC" userLabel="backgroundImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nma-hX-h1M" userLabel="backgroundView">
+                    <rect key="frame" x="44" y="0.0" width="326" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
+                            <rect key="frame" x="0.0" y="4.5" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Kgh-cL-4Xx"/>
+                                <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" id="sDf-A1-zn7"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="LeftButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="p8l-8t-hct"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
+                            <rect key="frame" x="46" y="-35" width="234" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" id="iQr-xo-fj9"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
+                            <rect key="frame" x="280" y="4.5" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" id="doe-uR-axN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="oWe-5b-EcI"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="rightButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="pHG-Lo-ICu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="aIp-bm-3XI" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" id="1Zl-0B-acM"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="3cr-ue-iP2"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" id="AXx-np-NBf"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="leading" secondItem="Nma-hX-h1M" secondAttribute="leading" id="FGu-C7-anP"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="HBU-96-I9C"/>
+                        <constraint firstAttribute="height" constant="55" id="LaS-Va-T43"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MQJ-fL-eOa" secondAttribute="trailing" id="Rnf-Zc-mgL"/>
+                        <constraint firstAttribute="trailing" secondItem="aIp-bm-3XI" secondAttribute="trailing" id="cmR-Kg-vs9"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aIp-bm-3XI" secondAttribute="leading" id="hJw-Ix-Zmg"/>
+                        <constraint firstItem="aIp-bm-3XI" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="vCj-uG-Ymv"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerX" secondItem="Nma-hX-h1M" secondAttribute="centerX" id="vmN-rx-6Tm"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="z6o-Z9-MaC" secondAttribute="trailing" id="0Jd-oV-Nzj"/>
+                <constraint firstItem="Nma-hX-h1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="E9Q-H9-5hP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nma-hX-h1M" secondAttribute="trailing" id="XFK-kG-DIp"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hfR-Dz-Arr"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="jVT-CF-yko"/>
+                <constraint firstItem="Nma-hX-h1M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pWP-KB-7VI"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tta-b0-c1H"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="100" y="-83"/>
+            <connections>
+                <outlet property="leftButton" destination="MQJ-fL-eOa" id="Ovx-Ur-sDe"/>
+                <outlet property="rightButton" destination="aIp-bm-3XI" id="Xou-nw-sBY"/>
+                <outlet property="titleImage" destination="DIb-Z5-o3d" id="YVl-L4-AER"/>
+            </connections>
+            <point key="canvasLocation" x="99.776785714285708" y="-44.20289855072464"/>
         </view>
     </objects>
 </document>
