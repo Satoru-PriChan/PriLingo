@@ -8,13 +8,13 @@
 
 import UIKit
 
-class MyNavigationBar: UIView {
+@IBDesignable class MyNavigationBar: UIView {
     
     //MARK: - IB Outlet
     
-    @IBOutlet weak var leftButton: UIButton!
-    @IBOutlet weak var titleImage: UIImageView!
-    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var myLeftButton: UIButton!
+    @IBOutlet weak var myTitleImage: UIImageView!
+    @IBOutlet weak var myRightButton: UIButton!
     
     //MARK: - Initializer
     
@@ -29,7 +29,9 @@ class MyNavigationBar: UIView {
     }
     
     func loadNib() {
-        if let view = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? UIView {
+        let bundle = Bundle.main
+        
+        if let nib = bundle.loadNibNamed("MyNavigationBar", owner: self, options: nil)?.first, let view = nib as? UIView {
             view.frame = self.bounds
             self.addSubview(view)
         }
@@ -38,11 +40,11 @@ class MyNavigationBar: UIView {
     //MARK: - IB Actions
     
     ///Function for when the left button is tapped.
-    @IBAction func LeftButtonTapped(_ sender: UIButton) {
+    @IBAction func myLeftButtonTapped(_ sender: Any) {
     }
     
     ///Funtion for when the right button is tapped.
-    @IBAction func rightButtonTapped(_ sender: UIButton) {
+    @IBAction func myRightButtonTapped(_ sender: Any) {
     }
     
     /*

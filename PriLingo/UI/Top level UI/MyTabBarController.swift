@@ -27,7 +27,7 @@ class MyTabBarController: UITabBarController {
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         
         //change appearance of UINavigationBar
-        let viewControllers: [UINavigationController] = vCList.map {UINavigationController.init(rootViewController: $0)}
+        let viewControllers: [UINavigationController] = vCList.map {MyUINavigationController.init(rootViewController: $0)}
         
         viewControllers.forEach {
 

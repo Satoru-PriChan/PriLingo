@@ -21,7 +21,6 @@ class MyUINavigationController: UINavigationController {
         //Add my navigation bar.
         let myNaviHeight = 55
         self.view.addSubview(MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: myNaviHeight)))
-        
     }
     
 
