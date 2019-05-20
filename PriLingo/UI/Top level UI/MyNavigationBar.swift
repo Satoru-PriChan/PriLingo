@@ -10,6 +10,8 @@ import UIKit
 
 @IBDesignable class MyNavigationBar: UIView {
     
+    static let myHeight: CGFloat = 100;
+    
     //MARK: - IB Outlet
     
     @IBOutlet weak var myBackgroundImageView: UIImageView!
@@ -38,6 +40,11 @@ import UIKit
             
             self.myBackgroundImageView.image = UIImage.init(named: "PinkPolkaDot2.png")
         }
+    }
+    
+    //Change it's height
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        return CGSize.init(width: UIScreen.main.bounds.width, height: MyNavigationBar.myHeight)
     }
 
     //MARK: - IB Actions

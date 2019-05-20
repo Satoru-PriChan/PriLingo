@@ -21,9 +21,8 @@ class MyUINavigationController: UINavigationController {
         self.navigationBar.isHidden = true
         
         //Add my navigation bar.
-        let myNaviHeight = 100
         var myNavi: MyNavigationBar?
-        myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: myNaviHeight))
+        myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: Int(MyNavigationBar.myHeight)))
         self.view.addSubview(myNavi!)
         self.myNavigationbar = myNavi
         
