@@ -12,6 +12,7 @@ import UIKit
     
     //MARK: - IB Outlet
     
+    @IBOutlet weak var myBackgroundImageView: UIImageView!
     @IBOutlet weak var myLeftButton: UIButton!
     @IBOutlet weak var myTitleImage: UIImageView!
     @IBOutlet weak var myRightButton: UIButton!
@@ -34,6 +35,8 @@ import UIKit
         if let nib = bundle.loadNibNamed("MyNavigationBar", owner: self, options: nil)?.first, let view = nib as? UIView {
             view.frame = self.bounds
             self.addSubview(view)
+            
+            self.myBackgroundImageView.image = UIImage.init(named: "PinkPolkaDot2.png")
         }
     }
 

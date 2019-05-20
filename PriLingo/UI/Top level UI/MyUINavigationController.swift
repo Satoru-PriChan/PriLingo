@@ -10,6 +10,8 @@ import UIKit
 
 class MyUINavigationController: UINavigationController {
 
+    var myNavigationbar: MyNavigationBar?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +21,14 @@ class MyUINavigationController: UINavigationController {
         self.navigationBar.isHidden = true
         
         //Add my navigation bar.
-        let myNaviHeight = 55
-        self.view.addSubview(MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: myNaviHeight)))
+        let myNaviHeight = 100
+        var myNavi: MyNavigationBar?
+        myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: myNaviHeight))
+        self.view.addSubview(myNavi!)
+        self.myNavigationbar = myNavi
+        
+        //
+        
     }
     
 
