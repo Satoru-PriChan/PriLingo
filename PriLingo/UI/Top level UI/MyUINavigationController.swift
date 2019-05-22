@@ -32,7 +32,7 @@ class MyUINavigationController: UINavigationController, MyNavigationBarDelegate 
     //MARK: - UINavigationBarDelegate
 
     func myNavigationBarDelegate(touchedLeftButton: UIButton, myNavigationBar: MyNavigationBar) {
-        self.popViewController(animated: true)
+        self.popViewController(animated: false)
     }
 
     /*
