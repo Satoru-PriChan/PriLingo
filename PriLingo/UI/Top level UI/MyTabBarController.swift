@@ -31,7 +31,6 @@ class MyTabBarController: UITabBarController {
         
         viewControllers.forEach {
 
-            $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkPolkaDot2.png")!)
             $0.navigationBar.backIndicatorImage = UIImage.init(named: "BackArrow.png")
             $0.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "BackArrow.png")
         }
