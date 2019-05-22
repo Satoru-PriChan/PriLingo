@@ -27,27 +27,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nma-hX-h1M" userLabel="backgroundView">
-                    <rect key="frame" x="44" y="0.0" width="326" height="55"/>
+                    <rect key="frame" x="49" y="0.0" width="316" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
                             <rect key="frame" x="0.0" y="4.5" width="46" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Kgh-cL-4Xx"/>
                                 <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" id="sDf-A1-zn7"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" backgroundImage="BackArrow.png"/>
                             <connections>
                                 <action selector="myLeftButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="KKw-Tc-J2k"/>
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
-                            <rect key="frame" x="46" y="-35" width="234" height="125"/>
+                            <rect key="frame" x="46" y="-32" width="224" height="119"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" id="iQr-xo-fj9"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
-                            <rect key="frame" x="280" y="4.5" width="46" height="46"/>
+                            <rect key="frame" x="270" y="4.5" width="46" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" id="doe-uR-axN"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="oWe-5b-EcI"/>
@@ -76,8 +76,8 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="z6o-Z9-MaC" secondAttribute="trailing" id="0Jd-oV-Nzj"/>
-                <constraint firstItem="Nma-hX-h1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="E9Q-H9-5hP"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nma-hX-h1M" secondAttribute="trailing" id="XFK-kG-DIp"/>
+                <constraint firstItem="Nma-hX-h1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="E9Q-H9-5hP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nma-hX-h1M" secondAttribute="trailing" constant="5" id="XFK-kG-DIp"/>
                 <constraint firstItem="z6o-Z9-MaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hfR-Dz-Arr"/>
                 <constraint firstItem="z6o-Z9-MaC" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="jVT-CF-yko"/>
                 <constraint firstItem="Nma-hX-h1M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pWP-KB-7VI"/>
@@ -88,4 +88,7 @@
             <point key="canvasLocation" x="99.776785714285708" y="-44.20289855072464"/>
         </view>
     </objects>
+    <resources>
+        <image name="BackArrow.png" width="14.399999618530273" height="13"/>
+    </resources>
 </document>
