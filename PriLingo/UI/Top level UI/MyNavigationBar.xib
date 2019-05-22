@@ -30,7 +30,7 @@
                     <rect key="frame" x="49" y="0.0" width="316" height="55"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
-                            <rect key="frame" x="0.0" y="4.5" width="46" height="46"/>
+                            <rect key="frame" x="0.0" y="5" width="45" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Kgh-cL-4Xx"/>
                                 <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" id="sDf-A1-zn7"/>
@@ -41,18 +41,18 @@
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
-                            <rect key="frame" x="46" y="-32" width="224" height="119"/>
+                            <rect key="frame" x="45" y="-33" width="226" height="121"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" id="iQr-xo-fj9"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
-                            <rect key="frame" x="270" y="4.5" width="46" height="46"/>
+                            <rect key="frame" x="271" y="5" width="45" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" id="doe-uR-axN"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="oWe-5b-EcI"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" backgroundImage="Question.png"/>
                             <connections>
                                 <action selector="myRightButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="Hl8-H9-f4v"/>
                             </connections>
@@ -90,5 +90,6 @@
     </objects>
     <resources>
         <image name="BackArrow.png" width="14.399999618530273" height="13"/>
+        <image name="Question.png" width="14.399999618530273" height="13"/>
     </resources>
 </document>
