@@ -43,6 +43,9 @@
 		CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
+		CE663F202295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
+		CE663F212295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
+		CE663F222295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
 		CE77918A227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
 		CE77918B227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
 		CE77918C227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
@@ -216,6 +219,7 @@
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
 		CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWordViewController.xib; sourceTree = "<group>"; };
 		CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBarDelegate.swift; sourceTree = "<group>"; };
+		CE663F1F2295431B00DAB5ED /* Candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candy.png; sourceTree = "<group>"; };
 		CE779189227920CF007515B9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 		CE77918D227920F3007515B9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		CE77919122792107007515B9 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
@@ -494,6 +498,7 @@
 		CED43FB8227BD43000031DF9 /* Top Level UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE663F1F2295431B00DAB5ED /* Candy.png */,
 				CE785A24227F21C400F3F490 /* TitleFavorite.png */,
 				CE785A22227F21C300F3F490 /* TitlePronunciation.png */,
 				CE785A25227F21C400F3F490 /* TitleSearch.png */,
@@ -681,6 +686,7 @@
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
+				CE663F202295431B00DAB5ED /* Candy.png in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
@@ -719,6 +725,7 @@
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE663F212295431B00DAB5ED /* Candy.png in Resources */,
 				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
 				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -754,6 +761,7 @@
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE663F222295431B00DAB5ED /* Candy.png in Resources */,
 				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
 				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
