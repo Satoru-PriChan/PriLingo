@@ -9,7 +9,7 @@
 import UIKit
 
 ///class for UITabBar for whole app.
-class MyTabBarController: UITabBarController {
+class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
 
     // MARK: - ViewController lifecycle
     
@@ -29,10 +29,9 @@ class MyTabBarController: UITabBarController {
         //change appearance of UINavigationBar
         let viewControllers: [UINavigationController] = vCList.map {MyUINavigationController.init(rootViewController: $0)}
         
+        //set delegate
         viewControllers.forEach {
-
-            $0.navigationBar.backIndicatorImage = UIImage.init(named: "BackArrow.png")
-            $0.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "BackArrow.png")
+            $0.delegate = self
         }
         self.viewControllers = viewControllers
         
@@ -172,6 +171,29 @@ class MyTabBarController: UITabBarController {
         path.close()
         
         return path.cgPath
+    }
+    
+    //MARK: - UINavigationControllerDelegate
+    
+    ///function called when view has showed.
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if let myNav = navigationController as? MyUINavigationController {
+            ///hides left button if stack view has only one view controller.
+            if myNav.viewControllers.count <= 1 && myNav.myNavigationbar?.myLeftButton.isHidden == false {
+                myNav.myNavigationbar?.myLeftButton.isHidden = true
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isHidden: \(String(describing: myNav.myNavigationbar?.myLeftButton.isHidden)) \n")
+                
+
+            } else if myNav.viewControllers.count >= 2 && myNav.myNavigationbar?.myLeftButton.isHidden == true {
+                myNav.myNavigationbar?.myLeftButton.isHidden = false
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isHidden: \(String(describing: myNav.myNavigationbar?.myLeftButton.isHidden)) \n")
+            }
+            
+
+        
+        }
     }
 
     /*

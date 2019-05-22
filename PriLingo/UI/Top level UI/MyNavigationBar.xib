@@ -37,7 +37,7 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                             <connections>
-                                <action selector="myLeftButtonTapped:" destination="-1" eventType="touchUpInside" id="VWQ-Jc-rTD"/>
+                                <action selector="myLeftButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="KKw-Tc-J2k"/>
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
@@ -54,7 +54,7 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                             <connections>
-                                <action selector="myRightButtonTapped:" destination="-1" eventType="touchUpInside" id="xLj-bL-lVd"/>
+                                <action selector="myRightButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="Hl8-H9-f4v"/>
                             </connections>
                         </button>
                     </subviews>

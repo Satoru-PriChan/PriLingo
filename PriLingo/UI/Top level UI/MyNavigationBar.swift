@@ -12,6 +12,8 @@ import UIKit
     
     static let myHeight: CGFloat = 100;
     
+    var delegate: MyNavigationBarDelegate?
+    
     //MARK: - IB Outlet
     
     @IBOutlet weak var myBackgroundImageView: UIImageView!
@@ -49,13 +51,14 @@ import UIKit
 
     //MARK: - IB Actions
     
-    ///Function for when the left button is tapped.
-    @IBAction func myLeftButtonTapped(_ sender: Any) {
+    ///function for when myLeftButton is tapped.
+    @IBAction func myLeftButtonTouchUpInside(_ sender: UIButton) {
+        self.delegate?.myNavigationBarDelegate(touchedLeftButton: sender, myNavigationBar: self)
     }
     
-    ///Funtion for when the right button is tapped.
-    @IBAction func myRightButtonTapped(_ sender: Any) {
+    @IBAction func myRightButtonTouchUpInside(_ sender: UIButton) {
     }
+    
     
     /*
     // Only override draw() if you perform custom drawing.

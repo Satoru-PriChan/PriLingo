@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyUINavigationController: UINavigationController {
+class MyUINavigationController: UINavigationController, MyNavigationBarDelegate {
 
     var myNavigationbar: MyNavigationBar?
     
@@ -25,11 +25,15 @@ class MyUINavigationController: UINavigationController {
         myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: Int(MyNavigationBar.myHeight)))
         self.view.addSubview(myNavi!)
         self.myNavigationbar = myNavi
-        
-        //
+        self.myNavigationbar?.delegate = self
         
     }
     
+    //MARK: - UINavigationBarDelegate
+
+    func myNavigationBarDelegate(touchedLeftButton: UIButton, myNavigationBar: MyNavigationBar) {
+        self.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
