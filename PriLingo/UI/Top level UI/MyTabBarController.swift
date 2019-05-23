@@ -9,7 +9,7 @@
 import UIKit
 
 ///class for UITabBar for whole app.
-class MyTabBarController: UITabBarController {
+class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
 
     // MARK: - ViewController lifecycle
     
@@ -27,13 +27,11 @@ class MyTabBarController: UITabBarController {
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         
         //change appearance of UINavigationBar
-        let viewControllers: [UINavigationController] = vCList.map {UINavigationController.init(rootViewController: $0)}
+        let viewControllers: [UINavigationController] = vCList.map {MyUINavigationController.init(rootViewController: $0)}
         
+        //set delegate
         viewControllers.forEach {
-
-            $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkPolkaDot2.png")!)
-            $0.navigationBar.backIndicatorImage = UIImage.init(named: "BackArrow.png")
-            $0.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "BackArrow.png")
+            $0.delegate = self
         }
         self.viewControllers = viewControllers
         
@@ -173,6 +171,33 @@ class MyTabBarController: UITabBarController {
         path.close()
         
         return path.cgPath
+    }
+    
+    //MARK: - UINavigationControllerDelegate
+    
+    ///function called when view has showed.
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if let myNav = navigationController as? MyUINavigationController {
+            ///hides left button if stack has only one view controller.
+            if myNav.viewControllers.count <= 1 && myNav.myNavigationbar?.myLeftButton.isEnabled == true {
+                myNav.myNavigationbar?.myLeftButton.isEnabled = false
+            myNav.myNavigationbar?.myLeftButton.setBackgroundImage(UIImage.init(named: "Candy.png"), for: .normal)
+                
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isEnabled: \(String(describing: myNav.myNavigationbar?.myLeftButton.isEnabled)) \n")
+                
+            //shows left button if stack has more than one view controller.
+            } else if myNav.viewControllers.count >= 2 && myNav.myNavigationbar?.myLeftButton.isEnabled == false {
+                myNav.myNavigationbar?.myLeftButton.isEnabled = true
+            myNav.myNavigationbar?.myLeftButton.setBackgroundImage(UIImage.init(named: "BackArrow.png"), for: .normal)
+                
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isEnabled: \(String(describing: myNav.myNavigationbar?.myLeftButton.isEnabled)) \n")
+            }
+            
+
+        
+        }
     }
 
     /*

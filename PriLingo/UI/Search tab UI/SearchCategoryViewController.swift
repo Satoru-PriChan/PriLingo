@@ -31,13 +31,20 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         self.myTableView.dataSource = self
         
         //Navigation title
-        self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleSearch.png"))
+        if let myNav = self.navigationController as? MyUINavigationController {
+            myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleSearch.png")
+ }
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
         
         //TableView separator line
         self.myTableView.separatorColor = UIColor.clear
+        
+        //Adjust it's height to fit custom navigation bar.
+        if #available(iOS 11.0, *) {
+            additionalSafeAreaInsets.top = MyNavigationBar.myHeight - 44
+        }
     }
     
     //MARK: - UITableViewDatasource
