@@ -22,7 +22,7 @@ class MyUINavigationController: UINavigationController, MyNavigationBarDelegate 
         
         //Add my navigation bar.
         var myNavi: MyNavigationBar?
-        myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: Int(MyNavigationBar.myHeight)))
+        myNavi = MyNavigationBar.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: Int(UIApplication.shared.statusBarFrame.height + 60)))
         self.view.addSubview(myNavi!)
         self.myNavigationbar = myNavi
         self.myNavigationbar?.delegate = self
