@@ -79,6 +79,12 @@
 		CE8397172297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
 		CE8397182297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
 		CE8397192297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
+		CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
+		CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
+		CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
+		CE83971F2297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
+		CE8397202297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
+		CE8397212297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -234,6 +240,8 @@
 		CE83970E2297B23500FD7382 /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
 		CE8397122297B25200FD7382 /* fastForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastForward.png; sourceTree = "<group>"; };
 		CE8397162297B27200FD7382 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		CE83971A2297BA7000FD7382 /* MySearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchTabView.swift; sourceTree = "<group>"; };
+		CE83971E2297BA8200FD7382 /* MySearchTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySearchTabView.xib; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +408,8 @@
 				CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */,
 				CE839706229688FA00FD7382 /* PageFlipView.swift */,
 				CE83970A2296891200FD7382 /* PageFlipView.xib */,
+				CE83971A2297BA7000FD7382 /* MySearchTabView.swift */,
+				CE83971E2297BA8200FD7382 /* MySearchTabView.xib */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -694,6 +704,7 @@
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
+				CE83971F2297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
@@ -740,6 +751,7 @@
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE8397182297B27200FD7382 /* play.png in Resources */,
+				CE8397202297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -778,6 +790,7 @@
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE8397192297B27200FD7382 /* play.png in Resources */,
+				CE8397212297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -963,6 +976,7 @@
 				CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -992,6 +1006,7 @@
 				CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1021,6 +1036,7 @@
 				CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
