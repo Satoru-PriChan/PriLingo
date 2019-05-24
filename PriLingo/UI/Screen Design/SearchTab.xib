@@ -227,12 +227,12 @@
             <point key="canvasLocation" x="49.600000000000001" y="107.0464767616192"/>
         </tableViewCell>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="each cell for a language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ft-8G-eAp">
-            <rect key="frame" x="0.0" y="0.0" width="406" height="83"/>
+            <rect key="frame" x="0.0" y="0.0" width="407" height="83"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <fontDescription key="fontDescription" type="system" pointSize="34"/>
             <nil key="textColor"/>
             <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="-620.79999999999995" y="-22.03898050974513"/>
+            <point key="canvasLocation" x="-622" y="21"/>
         </label>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="national frag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x27-cg-m49">
             <rect key="frame" x="0.0" y="0.0" width="113" height="50"/>
@@ -240,7 +240,7 @@
             <fontDescription key="fontDescription" type="system" pointSize="17"/>
             <nil key="textColor"/>
             <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="-424.80000000000001" y="60.26986506746627"/>
+            <point key="canvasLocation" x="-431" y="107"/>
         </label>
         <view contentMode="scaleToFill" id="F5p-kG-ODD">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

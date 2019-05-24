@@ -9,8 +9,6 @@
 import UIKit
 
 class SearchWordViewController: UIViewController {
-
-    @IBOutlet weak var myTestLabel: UILabel!
     
     var myWord: DSOWord?
     var testPhrase: String?
@@ -28,9 +26,6 @@ class SearchWordViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if let myLabel = self.myTestLabel {
-            myLabel.text = self.testPhrase
-        }
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)

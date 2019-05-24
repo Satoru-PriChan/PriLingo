@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordViewController" customModule="PriLingo" customModuleProvider="target">
             <connections>
-                <outlet property="myTestLabel" destination="Sud-3d-aeL" id="mDn-ZM-bMR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,20 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sud-3d-aeL">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="170"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
+                    <rect key="frame" x="87" y="344" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="Sud-3d-aeL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cSN-4w-7ui"/>
-                <constraint firstItem="Sud-3d-aeL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g1V-Bm-bjx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sud-3d-aeL" secondAttribute="trailing" id="pzC-Wm-jOg"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Sud-3d-aeL" secondAttribute="bottom" id="qGF-Kp-0RL"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
