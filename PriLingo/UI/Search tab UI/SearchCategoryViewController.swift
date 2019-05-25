@@ -41,10 +41,15 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         //TableView separator line
         self.myTableView.separatorColor = UIColor.clear
         
-        //Adjust it's height to fit custom navigation bar.
-        if #available(iOS 11.0, *) {
-            additionalSafeAreaInsets.top = MyNavigationBar.myHeight - 44
+        //Adjusts it's height to fit custom navigation bar.
+        if let myNav = self.navigationController as? MyUINavigationController {
+            let a: Int = (myNav.myNavigationbarHeight ?? 60)
+            self.additionalSafeAreaInsets.top = CGFloat.init(Double(a))
+        } else {
+            self.additionalSafeAreaInsets.top = CGFloat(60)
         }
+        
+        
     }
     
     //MARK: - UITableViewDatasource
