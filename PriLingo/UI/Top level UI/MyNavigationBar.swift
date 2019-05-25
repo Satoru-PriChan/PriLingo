@@ -43,11 +43,6 @@ import UIKit
             self.myBackgroundImageView.image = UIImage.init(named: "PinkPolkaDot2.png")
         }
     }
-    
-    //Change it's height
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
-        return CGSize.init(width: UIScreen.main.bounds.width, height: MyNavigationBar.myHeight)
-    }
 
     //MARK: - IB Actions
     
