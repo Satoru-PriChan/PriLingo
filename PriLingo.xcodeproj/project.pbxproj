@@ -40,6 +40,12 @@
 		CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
 		CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
 		CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
+		CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
+		CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
+		CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
+		CE663F202295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
+		CE663F212295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
+		CE663F222295431B00DAB5ED /* Candy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE663F1F2295431B00DAB5ED /* Candy.png */; };
 		CE77918A227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
 		CE77918B227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
 		CE77918C227920CF007515B9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE779189227920CF007515B9 /* button1.png */; };
@@ -88,6 +94,9 @@
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
+		CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
+		CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
+		CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
 		CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
 		CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04CD022426BB200501A08 /* MyTabBarController.swift */; };
@@ -112,6 +121,12 @@
 		CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
+		CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
+		CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
+		CEA6A44A228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
+		CEA6A44B228E376F00151E03 /* MyNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6A448228E376F00151E03 /* MyNavigationBar.xib */; };
 		CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
 		CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */; };
@@ -233,6 +248,8 @@
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
 		CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWordViewController.xib; sourceTree = "<group>"; };
+		CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBarDelegate.swift; sourceTree = "<group>"; };
+		CE663F1F2295431B00DAB5ED /* Candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candy.png; sourceTree = "<group>"; };
 		CE779189227920CF007515B9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 		CE77918D227920F3007515B9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		CE77919122792107007515B9 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
@@ -249,6 +266,7 @@
 		CE83971A2297BA7000FD7382 /* MySearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchTabView.swift; sourceTree = "<group>"; };
 		CE83971E2297BA8200FD7382 /* MySearchTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySearchTabView.xib; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
+		CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUINavigationController.swift; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CEA04CE522426F0800501A08 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
@@ -257,6 +275,8 @@
 		CEA04CF422426F3900501A08 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA04CF522426F3900501A08 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPolkaDot2.png; sourceTree = "<group>"; };
+		CEA6A444228E372700151E03 /* MyNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBar.swift; sourceTree = "<group>"; };
+		CEA6A448228E376F00151E03 /* MyNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNavigationBar.xib; sourceTree = "<group>"; };
 		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
 		CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTCategories.swift; sourceTree = "<group>"; };
 		CEB2D2242233FD1700410F02 /* DSOWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOWord.swift; sourceTree = "<group>"; };
@@ -420,6 +440,10 @@
 				CE83971E2297BA8200FD7382 /* MySearchTabView.xib */,
 				CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */,
 				CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */,
+				CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */,
+				CEA6A444228E372700151E03 /* MyNavigationBar.swift */,
+				CEA6A448228E376F00151E03 /* MyNavigationBar.xib */,
+				CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */,
 			);
 			path = "Top level UI";
 			sourceTree = "<group>";
@@ -521,6 +545,7 @@
 		CED43FB8227BD43000031DF9 /* Top Level UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE663F1F2295431B00DAB5ED /* Candy.png */,
 				CE785A24227F21C400F3F490 /* TitleFavorite.png */,
 				CE785A22227F21C300F3F490 /* TitlePronunciation.png */,
 				CE785A25227F21C400F3F490 /* TitleSearch.png */,
@@ -713,6 +738,7 @@
 				CEEF438E2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
+				CE663F202295431B00DAB5ED /* Candy.png in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CE83971F2297BA8200FD7382 /* MySearchTabView.xib in Resources */,
@@ -727,6 +753,7 @@
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
+				CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
@@ -757,6 +784,7 @@
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE663F212295431B00DAB5ED /* Candy.png in Resources */,
 				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
 				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -777,6 +805,7 @@
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
+				CEA6A44A228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +826,7 @@
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
+				CE663F222295431B00DAB5ED /* Candy.png in Resources */,
 				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
 				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -817,6 +847,7 @@
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
+				CEA6A44B228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,11 +1006,13 @@
 				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A0227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
+				CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE839707229688FA00FD7382 /* PageFlipView.swift in Sources */,
@@ -988,6 +1021,7 @@
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -1006,11 +1040,13 @@
 				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A1227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
+				CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE839708229688FA00FD7382 /* PageFlipView.swift in Sources */,
@@ -1019,6 +1055,7 @@
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -1037,11 +1074,13 @@
 				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A2227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
+				CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
+				CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE839709229688FA00FD7382 /* PageFlipView.swift in Sources */,
@@ -1050,6 +1089,7 @@
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
