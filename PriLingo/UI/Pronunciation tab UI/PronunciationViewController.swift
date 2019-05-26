@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PronunciationViewController: UIViewController {
+class PronunciationViewController: MyContentViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

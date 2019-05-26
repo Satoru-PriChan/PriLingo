@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: UIViewController {
+class SearchWordViewController: MyContentViewController {
     
     var myWord: DSOWord?
     var testPhrase: String?

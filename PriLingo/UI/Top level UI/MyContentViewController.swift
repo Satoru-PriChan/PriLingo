@@ -1,29 +1,29 @@
 //
-//  FavoritesViewController.swift
+//  MyContentViewController.swift
 //  PriLingo
 //
-//  Created by USER on 2019/03/20.
+//  Created by USER on 2019/05/26.
 //  Copyright © 2019 SoLaMi Smile. All rights reserved.
 //
 
 import UIKit
 
-class FavoritesViewController: MyContentViewController {
+class MyContentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //Navigation title
+        //Adjusts it's height to fit custom navigation bar.
         if let myNav = self.navigationController as? MyUINavigationController {
-            myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleFavorite.png")
+            let a: Int = (myNav.myNavigationbarHeight ?? 60)
+            self.additionalSafeAreaInsets.top = CGFloat.init(Double(a))
+        } else {
+            self.additionalSafeAreaInsets.top = CGFloat(60)
         }
-        
-        //Background image
-        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
-
+    
 
     /*
     // MARK: - Navigation

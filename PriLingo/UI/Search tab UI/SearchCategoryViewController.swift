@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchCategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SearchCategoryViewController: MyContentViewController, UITableViewDataSource, UITableViewDelegate {
     
     var categories: [DSOCategory]? = []
     
@@ -40,16 +40,6 @@ class SearchCategoryViewController: UIViewController, UITableViewDataSource, UIT
         
         //TableView separator line
         self.myTableView.separatorColor = UIColor.clear
-        
-        //Adjusts it's height to fit custom navigation bar.
-        if let myNav = self.navigationController as? MyUINavigationController {
-            let a: Int = (myNav.myNavigationbarHeight ?? 60)
-            self.additionalSafeAreaInsets.top = CGFloat.init(Double(a))
-        } else {
-            self.additionalSafeAreaInsets.top = CGFloat(60)
-        }
-        
-        
     }
     
     //MARK: - UITableViewDatasource

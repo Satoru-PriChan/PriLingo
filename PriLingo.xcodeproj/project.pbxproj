@@ -94,6 +94,9 @@
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
+		CE987409229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
+		CE98740A229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
+		CE98740B229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
 		CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
 		CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
 		CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
@@ -266,6 +269,7 @@
 		CE83971A2297BA7000FD7382 /* MySearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchTabView.swift; sourceTree = "<group>"; };
 		CE83971E2297BA8200FD7382 /* MySearchTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySearchTabView.xib; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
+		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUINavigationController.swift; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -434,6 +438,7 @@
 			children = (
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
 				CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */,
+				CE987408229A7E62000F4F45 /* MyContentViewController.swift */,
 				CE839706229688FA00FD7382 /* PageFlipView.swift */,
 				CE83970A2296891200FD7382 /* PageFlipView.xib */,
 				CE83971A2297BA7000FD7382 /* MySearchTabView.swift */,
@@ -999,6 +1004,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE987409229A7E62000F4F45 /* MyContentViewController.swift in Sources */,
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */,
@@ -1033,6 +1039,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98740A229A7E62000F4F45 /* MyContentViewController.swift in Sources */,
 				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */,
@@ -1067,6 +1074,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98740B229A7E62000F4F45 /* MyContentViewController.swift in Sources */,
 				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */,
