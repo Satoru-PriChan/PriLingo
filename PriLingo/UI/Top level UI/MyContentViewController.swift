@@ -22,6 +22,14 @@ class MyContentViewController: UIViewController {
         } else {
             self.additionalSafeAreaInsets.top = CGFloat(60)
         }
+        
+        //Adjusts it's height to fit custom tab bar.
+        if let myTab = self.tabBarController as? MyTabBarController {
+            let a = myTab.myTabBarHeight
+            self.additionalSafeAreaInsets.bottom = a ?? (self.view.bounds.size.height * 0.1428)//seventh
+        } else {
+            self.additionalSafeAreaInsets.bottom = (self.view.bounds.size.height * 0.1428)
+        }
     }
     
 

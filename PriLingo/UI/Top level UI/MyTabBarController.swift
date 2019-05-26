@@ -10,6 +10,8 @@ import UIKit
 
 ///class for UITabBar for whole app.
 class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
+    
+    var myTabBarHeight: CGFloat?
 
     // MARK: - ViewController lifecycle
     
@@ -39,6 +41,7 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
         let scWidth = self.view.bounds.size.width
         let scHeight = self.view.bounds.size.height
         let hv: CGFloat = scHeight * 0.1428//a seventh
+        self.myTabBarHeight = hv
         self.view.addSubview(self.coverTabBarView(originX: 0, originY: scHeight - hv, width: scWidth, height: hv))
         self.tabBar.isHidden = true
 
