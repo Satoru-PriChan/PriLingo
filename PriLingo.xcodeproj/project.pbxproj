@@ -163,12 +163,6 @@
 		CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
-		CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
-		CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
-		CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
-		CEEF438E2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */; };
-		CEEF438F2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */; };
-		CEEF43902298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */; };
 		CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC1292209B5B800953C0D /* ViewController.swift */; };
 		CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */ = {isa = PBXBuildFile; fileRef = CEF3750E2231246B00CC8A74 /* PriLingoDB.db */; };
@@ -292,8 +286,6 @@
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
-		CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndButtonView.swift; sourceTree = "<group>"; };
-		CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndButtonView.xib; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
 		CEF375132231591800CC8A74 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CEF382DE223FBC06000B06B9 /* FavoritesTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
@@ -443,8 +435,6 @@
 				CE83970A2296891200FD7382 /* PageFlipView.xib */,
 				CE83971A2297BA7000FD7382 /* MySearchTabView.swift */,
 				CE83971E2297BA8200FD7382 /* MySearchTabView.xib */,
-				CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */,
-				CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */,
 				CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */,
 				CEA6A444228E372700151E03 /* MyNavigationBar.swift */,
 				CEA6A448228E376F00151E03 /* MyNavigationBar.xib */,
@@ -740,7 +730,6 @@
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE46499B227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CEEF438E2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
 				CE663F202295431B00DAB5ED /* Candy.png in Resources */,
@@ -778,7 +767,6 @@
 			files = (
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
-				CEEF438F2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE8397142297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919322792107007515B9 /* button3.png in Resources */,
@@ -820,7 +808,6 @@
 			files = (
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
-				CEEF43902298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE8397152297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919422792107007515B9 /* button3.png in Resources */,
@@ -1031,7 +1018,6 @@
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
-				CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,7 +1052,6 @@
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
-				CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,7 +1086,6 @@
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
-				CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
