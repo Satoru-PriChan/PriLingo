@@ -70,12 +70,6 @@
 		CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
-		CE839707229688FA00FD7382 /* PageFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE839706229688FA00FD7382 /* PageFlipView.swift */; };
-		CE839708229688FA00FD7382 /* PageFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE839706229688FA00FD7382 /* PageFlipView.swift */; };
-		CE839709229688FA00FD7382 /* PageFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE839706229688FA00FD7382 /* PageFlipView.swift */; };
-		CE83970B2296891200FD7382 /* PageFlipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83970A2296891200FD7382 /* PageFlipView.xib */; };
-		CE83970C2296891200FD7382 /* PageFlipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83970A2296891200FD7382 /* PageFlipView.xib */; };
-		CE83970D2296891200FD7382 /* PageFlipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83970A2296891200FD7382 /* PageFlipView.xib */; };
 		CE83970F2297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
 		CE8397102297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
 		CE8397112297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
@@ -85,12 +79,6 @@
 		CE8397172297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
 		CE8397182297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
 		CE8397192297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
-		CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
-		CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
-		CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83971A2297BA7000FD7382 /* MySearchTabView.swift */; };
-		CE83971F2297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
-		CE8397202297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
-		CE8397212297BA8200FD7382 /* MySearchTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE83971E2297BA8200FD7382 /* MySearchTabView.xib */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -261,13 +249,9 @@
 		CE785A23227F21C300F3F490 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
 		CE785A24227F21C400F3F490 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
-		CE839706229688FA00FD7382 /* PageFlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageFlipView.swift; sourceTree = "<group>"; };
-		CE83970A2296891200FD7382 /* PageFlipView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageFlipView.xib; sourceTree = "<group>"; };
 		CE83970E2297B23500FD7382 /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
 		CE8397122297B25200FD7382 /* fastForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastForward.png; sourceTree = "<group>"; };
 		CE8397162297B27200FD7382 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		CE83971A2297BA7000FD7382 /* MySearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchTabView.swift; sourceTree = "<group>"; };
-		CE83971E2297BA8200FD7382 /* MySearchTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySearchTabView.xib; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUINavigationController.swift; sourceTree = "<group>"; };
@@ -439,10 +423,6 @@
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
 				CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */,
 				CE987408229A7E62000F4F45 /* MyContentViewController.swift */,
-				CE839706229688FA00FD7382 /* PageFlipView.swift */,
-				CE83970A2296891200FD7382 /* PageFlipView.xib */,
-				CE83971A2297BA7000FD7382 /* MySearchTabView.swift */,
-				CE83971E2297BA8200FD7382 /* MySearchTabView.xib */,
 				CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */,
 				CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */,
 				CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */,
@@ -746,7 +726,6 @@
 				CE663F202295431B00DAB5ED /* Candy.png in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
-				CE83971F2297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
@@ -754,7 +733,6 @@
 				CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
-				CE83970B2296891200FD7382 /* PageFlipView.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
@@ -782,7 +760,6 @@
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
 				CE8397142297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919322792107007515B9 /* button3.png in Resources */,
-				CE83970C2296891200FD7382 /* PageFlipView.xib in Resources */,
 				CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2D227F21C400F3F490 /* TitleFavorite.png in Resources */,
@@ -796,7 +773,6 @@
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE8397182297B27200FD7382 /* play.png in Resources */,
-				CE8397202297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -824,7 +800,6 @@
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
 				CE8397152297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919422792107007515B9 /* button3.png in Resources */,
-				CE83970D2296891200FD7382 /* PageFlipView.xib in Resources */,
 				CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2E227F21C400F3F490 /* TitleFavorite.png in Resources */,
@@ -838,7 +813,6 @@
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
 				CE8397192297B27200FD7382 /* play.png in Resources */,
-				CE8397212297BA8200FD7382 /* MySearchTabView.xib in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -1021,7 +995,6 @@
 				CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
-				CE839707229688FA00FD7382 /* PageFlipView.swift in Sources */,
 				CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
@@ -1029,7 +1002,6 @@
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
-				CE83971B2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
@@ -1056,7 +1028,6 @@
 				CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
-				CE839708229688FA00FD7382 /* PageFlipView.swift in Sources */,
 				CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
@@ -1064,7 +1035,6 @@
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
-				CE83971C2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
@@ -1091,7 +1061,6 @@
 				CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
-				CE839709229688FA00FD7382 /* PageFlipView.swift in Sources */,
 				CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
@@ -1099,7 +1068,6 @@
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
-				CE83971D2297BA7000FD7382 /* MySearchTabView.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 			);
