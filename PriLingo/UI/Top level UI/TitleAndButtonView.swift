@@ -29,6 +29,9 @@ class TitleAndButtonView: UIView {
             view.frame = self.bounds
             self.addSubview(view)
         }
+        
+        //color
+        self.backgroundColor = UIColor.clear
     }
 
 
