@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: MyContentViewController {
+class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
@@ -41,6 +41,15 @@ class SearchWordViewController: MyContentViewController {
         //set title
         self.myTItleAndButtonView.myTitleLabel.text = self.titlePhrase
         
+        //set delegate
+        self.myTItleAndButtonView.delegate = self
+        
+    }
+    
+    //MARK: - TitleAndButtonViewDelegate
+    func titleAndButtonView(tappedRepeatButton: UIButton) {
+        //debug
+        print("File: \(#file) Line \(#line): Func \(#function):  function called. \n")
     }
 
 

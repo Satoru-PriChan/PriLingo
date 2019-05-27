@@ -14,6 +14,11 @@ class TitleAndButtonView: UIView {
     
     @IBOutlet weak var playRepeatButton: UIButton!
     
+    ///variable to represent repeat state of the repeat button.
+    var repeatButtonState: RepeatState = .None
+    
+    var delegate: TitleAndButtonViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
@@ -36,6 +41,18 @@ class TitleAndButtonView: UIView {
 
 
     @IBAction func playRepeatButton(_ sender: UIButton) {
+        //change repeat state
+        switch self.repeatButtonState {
+        case .None:
+            self.repeatButtonState = .RepeatAll
+        case .RepeatAll:
+            self.repeatButtonState = .RepeatOne
+        case .RepeatOne:
+            self.repeatButtonState = .None
+        }
+        
+        //do something needed by owner.
+    self.delegate?.titleAndButtonView(tappedRepeatButton: sender)
     }
     
     /*

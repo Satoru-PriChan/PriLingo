@@ -40,6 +40,9 @@
 		CE31F912229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
 		CE31F913229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
 		CE31F914229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
+		CE31F916229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */; };
+		CE31F917229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */; };
+		CE31F918229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */; };
 		CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
@@ -242,6 +245,7 @@
 		CE31F903229BAF5D00FAF2A8 /* repeat-none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-none.png"; sourceTree = "<group>"; };
 		CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-one-track.png"; sourceTree = "<group>"; };
 		CE31F911229BDA4200FAF2A8 /* RepeatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatState.swift; sourceTree = "<group>"; };
+		CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndButtonViewDelegate.swift; sourceTree = "<group>"; };
 		CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
@@ -439,6 +443,7 @@
 				CE987408229A7E62000F4F45 /* MyContentViewController.swift */,
 				CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */,
 				CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */,
+				CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */,
 				CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */,
 				CEA6A444228E372700151E03 /* MyNavigationBar.swift */,
 				CEA6A448228E376F00151E03 /* MyNavigationBar.xib */,
@@ -1015,6 +1020,7 @@
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE31F916229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 				CE31F912229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
@@ -1049,6 +1055,7 @@
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE31F917229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 				CE31F913229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
@@ -1083,6 +1090,7 @@
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
+				CE31F918229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
 				CE31F914229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
