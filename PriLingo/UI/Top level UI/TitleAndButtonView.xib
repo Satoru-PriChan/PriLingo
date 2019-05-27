@@ -33,7 +33,7 @@
                         <constraint firstAttribute="width" constant="55" id="7nD-gP-Iea"/>
                         <constraint firstAttribute="height" constant="55" id="FBJ-Ca-RVB"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" backgroundImage="repeat-none.png"/>
                     <connections>
                         <action selector="playRepeatButton:" destination="-1" eventType="touchUpInside" id="zb0-Ca-4X9"/>
                     </connections>
@@ -49,4 +49,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
+    <resources>
+        <image name="repeat-none.png" width="35.200000762939453" height="35.200000762939453"/>
+    </resources>
 </document>

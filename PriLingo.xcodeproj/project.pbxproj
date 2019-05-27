@@ -28,6 +28,15 @@
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
+		CE31F907229BAF5D00FAF2A8 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F902229BAF5D00FAF2A8 /* repeat-all.png */; };
+		CE31F908229BAF5D00FAF2A8 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F902229BAF5D00FAF2A8 /* repeat-all.png */; };
+		CE31F909229BAF5D00FAF2A8 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F902229BAF5D00FAF2A8 /* repeat-all.png */; };
+		CE31F90A229BAF5D00FAF2A8 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F903229BAF5D00FAF2A8 /* repeat-none.png */; };
+		CE31F90B229BAF5D00FAF2A8 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F903229BAF5D00FAF2A8 /* repeat-none.png */; };
+		CE31F90C229BAF5D00FAF2A8 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F903229BAF5D00FAF2A8 /* repeat-none.png */; };
+		CE31F90E229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
+		CE31F90F229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
+		CE31F910229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
 		CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
@@ -76,15 +85,6 @@
 		CE987409229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
 		CE98740A229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
 		CE98740B229A7E62000F4F45 /* MyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE987408229A7E62000F4F45 /* MyContentViewController.swift */; };
-		CE98740E229AB323000F4F45 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE98740D229AB323000F4F45 /* repeat-all.png */; };
-		CE98740F229AB323000F4F45 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE98740D229AB323000F4F45 /* repeat-all.png */; };
-		CE987410229AB323000F4F45 /* repeat-all.png in Resources */ = {isa = PBXBuildFile; fileRef = CE98740D229AB323000F4F45 /* repeat-all.png */; };
-		CE987413229AB32E000F4F45 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987411229AB32D000F4F45 /* repeat-none.png */; };
-		CE987414229AB32E000F4F45 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987411229AB32D000F4F45 /* repeat-none.png */; };
-		CE987415229AB32E000F4F45 /* repeat-none.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987411229AB32D000F4F45 /* repeat-none.png */; };
-		CE987416229AB32E000F4F45 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987412229AB32D000F4F45 /* repeat-one-track.png */; };
-		CE987417229AB32E000F4F45 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987412229AB32D000F4F45 /* repeat-one-track.png */; };
-		CE987418229AB32E000F4F45 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE987412229AB32D000F4F45 /* repeat-one-track.png */; };
 		CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
 		CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
 		CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */; };
@@ -235,6 +235,9 @@
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
+		CE31F902229BAF5D00FAF2A8 /* repeat-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-all.png"; sourceTree = "<group>"; };
+		CE31F903229BAF5D00FAF2A8 /* repeat-none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-none.png"; sourceTree = "<group>"; };
+		CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-one-track.png"; sourceTree = "<group>"; };
 		CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
@@ -251,9 +254,6 @@
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
-		CE98740D229AB323000F4F45 /* repeat-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-all.png"; sourceTree = "<group>"; };
-		CE987411229AB32D000F4F45 /* repeat-none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-none.png"; sourceTree = "<group>"; };
-		CE987412229AB32D000F4F45 /* repeat-one-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-one-track.png"; sourceTree = "<group>"; };
 		CE9C1423228F8BA40099DC48 /* MyUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUINavigationController.swift; sourceTree = "<group>"; };
 		CEA04CD022426BB200501A08 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CEA04CE422426F0800501A08 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -420,9 +420,9 @@
 		CE98740C229AB2C5000F4F45 /* Search tab UI */ = {
 			isa = PBXGroup;
 			children = (
-				CE98740D229AB323000F4F45 /* repeat-all.png */,
-				CE987411229AB32D000F4F45 /* repeat-none.png */,
-				CE987412229AB32D000F4F45 /* repeat-one-track.png */,
+				CE31F902229BAF5D00FAF2A8 /* repeat-all.png */,
+				CE31F903229BAF5D00FAF2A8 /* repeat-none.png */,
+				CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */,
 			);
 			path = "Search tab UI";
 			sourceTree = "<group>";
@@ -720,9 +720,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE98740E229AB323000F4F45 /* repeat-all.png in Resources */,
 				CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */,
+				CE31F90A229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
+				CE31F90E229BAFC600FAF2A8 /* repeat-one-track.png in Resources */,
 				CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CECF2920227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -740,13 +741,12 @@
 				CE77919622792122007515B9 /* button4.png in Resources */,
 				CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */,
+				CE31F907229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */,
-				CE987413229AB32E000F4F45 /* repeat-none.png in Resources */,
-				CE987416229AB32E000F4F45 /* repeat-one-track.png in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
@@ -762,6 +762,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31F90B229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF438F2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
@@ -771,7 +772,6 @@
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2D227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF222426F2200501A08 /* PronunciationViewController.xib in Resources */,
-				CE98740F229AB323000F4F45 /* repeat-all.png in Resources */,
 				CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE663F212295431B00DAB5ED /* Candy.png in Resources */,
@@ -789,12 +789,12 @@
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
-				CE987414229AB32E000F4F45 /* repeat-none.png in Resources */,
+				CE31F908229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
-				CE987417229AB32E000F4F45 /* repeat-one-track.png in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
 				CEA6A44A228E376F00151E03 /* MyNavigationBar.xib in Resources */,
+				CE31F90F229BAFC600FAF2A8 /* repeat-one-track.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +802,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31F90C229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF43902298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
@@ -811,7 +812,6 @@
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
 				CE785A2E227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CEA04CF322426F2200501A08 /* PronunciationViewController.xib in Resources */,
-				CE987410229AB323000F4F45 /* repeat-all.png in Resources */,
 				CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE663F222295431B00DAB5ED /* Candy.png in Resources */,
@@ -829,12 +829,12 @@
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
-				CE987415229AB32E000F4F45 /* repeat-none.png in Resources */,
+				CE31F909229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
-				CE987418229AB32E000F4F45 /* repeat-one-track.png in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
 				CEA6A44B228E376F00151E03 /* MyNavigationBar.xib in Resources */,
+				CE31F910229BAFC600FAF2A8 /* repeat-one-track.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
