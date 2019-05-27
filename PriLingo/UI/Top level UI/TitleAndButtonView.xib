@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxX-Mv-Ud6">
-                    <rect key="frame" x="182" y="14" width="50.5" height="27.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxX-Mv-Ud6">
+                    <rect key="frame" x="60" y="14" width="294" height="27.5"/>
                     <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -41,9 +41,10 @@
             </subviews>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CiW-7S-PQP" secondAttribute="trailing" constant="5" id="22t-f0-bkI"/>
-                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ZiQ-iT-gcc"/>
+                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" priority="999" id="ZiQ-iT-gcc"/>
                 <constraint firstItem="hxX-Mv-Ud6" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="bmn-S5-vd0"/>
                 <constraint firstItem="CiW-7S-PQP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="jst-be-Ea0"/>
+                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CiW-7S-PQP" secondAttribute="leading" id="wxy-uJ-fmu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
