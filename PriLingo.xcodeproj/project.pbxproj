@@ -37,6 +37,9 @@
 		CE31F90E229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
 		CE31F90F229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
 		CE31F910229BAFC600FAF2A8 /* repeat-one-track.png in Resources */ = {isa = PBXBuildFile; fileRef = CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */; };
+		CE31F912229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
+		CE31F913229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
+		CE31F914229BDA4200FAF2A8 /* RepeatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F911229BDA4200FAF2A8 /* RepeatState.swift */; };
 		CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
 		CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */; };
@@ -238,6 +241,7 @@
 		CE31F902229BAF5D00FAF2A8 /* repeat-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-all.png"; sourceTree = "<group>"; };
 		CE31F903229BAF5D00FAF2A8 /* repeat-none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-none.png"; sourceTree = "<group>"; };
 		CE31F90D229BAFC600FAF2A8 /* repeat-one-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-one-track.png"; sourceTree = "<group>"; };
+		CE31F911229BDA4200FAF2A8 /* RepeatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatState.swift; sourceTree = "<group>"; };
 		CE464996227BFE46009F5514 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
@@ -452,6 +456,7 @@
 				CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */,
 				CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */,
 				CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */,
+				CE31F911229BDA4200FAF2A8 /* RepeatState.swift */,
 			);
 			path = "Search tab UI";
 			sourceTree = "<group>";
@@ -1012,6 +1017,7 @@
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
+				CE31F912229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,6 +1051,7 @@
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
+				CE31F913229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1078,6 +1085,7 @@
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
 				CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */,
+				CE31F914229BDA4200FAF2A8 /* RepeatState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
