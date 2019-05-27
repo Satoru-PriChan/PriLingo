@@ -45,10 +45,14 @@ class TitleAndButtonView: UIView {
         switch self.repeatButtonState {
         case .None:
             self.repeatButtonState = .RepeatAll
+        self.playRepeatButton.setBackgroundImage(UIImage.init(named: "repeat-all.png"), for: .normal)
         case .RepeatAll:
             self.repeatButtonState = .RepeatOne
+        self.playRepeatButton.setBackgroundImage(UIImage.init(named: "repeat-one-track.png"), for: .normal)
         case .RepeatOne:
             self.repeatButtonState = .None
+        self.playRepeatButton.setBackgroundImage(UIImage.init(named: "repeat-none.png"), for: .normal)
+            
         }
         
         //do something needed by owner.
