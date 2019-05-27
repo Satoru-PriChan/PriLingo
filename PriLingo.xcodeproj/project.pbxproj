@@ -70,15 +70,6 @@
 		CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
-		CE83970F2297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
-		CE8397102297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
-		CE8397112297B23500FD7382 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = CE83970E2297B23500FD7382 /* rewind.png */; };
-		CE8397132297B25200FD7382 /* fastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397122297B25200FD7382 /* fastForward.png */; };
-		CE8397142297B25200FD7382 /* fastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397122297B25200FD7382 /* fastForward.png */; };
-		CE8397152297B25200FD7382 /* fastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397122297B25200FD7382 /* fastForward.png */; };
-		CE8397172297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
-		CE8397182297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
-		CE8397192297B27200FD7382 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8397162297B27200FD7382 /* play.png */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -258,9 +249,6 @@
 		CE785A23227F21C300F3F490 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
 		CE785A24227F21C400F3F490 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
-		CE83970E2297B23500FD7382 /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
-		CE8397122297B25200FD7382 /* fastForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastForward.png; sourceTree = "<group>"; };
-		CE8397162297B27200FD7382 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE98740D229AB323000F4F45 /* repeat-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-all.png"; sourceTree = "<group>"; };
@@ -567,9 +555,6 @@
 				CE77919122792107007515B9 /* button3.png */,
 				CE77919522792122007515B9 /* button4.png */,
 				CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */,
-				CE83970E2297B23500FD7382 /* rewind.png */,
-				CE8397122297B25200FD7382 /* fastForward.png */,
-				CE8397162297B27200FD7382 /* play.png */,
 			);
 			path = "Top Level UI";
 			sourceTree = "<group>";
@@ -737,7 +722,6 @@
 			files = (
 				CE98740E229AB323000F4F45 /* repeat-all.png in Resources */,
 				CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */,
-				CE8397132297B25200FD7382 /* fastForward.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CECF2920227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -767,11 +751,9 @@
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
-				CE8397172297B27200FD7382 /* play.png in Resources */,
 				CE77919222792107007515B9 /* button3.png in Resources */,
 				CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918A227920CF007515B9 /* button1.png in Resources */,
-				CE83970F2297B23500FD7382 /* rewind.png in Resources */,
 				CEF3750F2231246B00CC8A74 /* PriLingoDB.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,7 +766,6 @@
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF438F2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
-				CE8397142297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919322792107007515B9 /* button3.png in Resources */,
 				CED43FB6227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15B220B219300953C0D /* SearchTab.xib in Resources */,
@@ -799,7 +780,6 @@
 				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CE8397182297B27200FD7382 /* play.png in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -807,7 +787,6 @@
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
-				CE8397102297B23500FD7382 /* rewind.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
 				CE987414229AB32E000F4F45 /* repeat-none.png in Resources */,
@@ -827,7 +806,6 @@
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF43902298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
-				CE8397152297B25200FD7382 /* fastForward.png in Resources */,
 				CE77919422792107007515B9 /* button3.png in Resources */,
 				CED43FB7227BCF1A00031DF9 /* BackArrow.png in Resources */,
 				CE0AC15C220B219300953C0D /* SearchTab.xib in Resources */,
@@ -842,7 +820,6 @@
 				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
-				CE8397192297B27200FD7382 /* play.png in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -850,7 +827,6 @@
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
-				CE8397112297B23500FD7382 /* rewind.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
 				CE987415229AB32E000F4F45 /* repeat-none.png in Resources */,
