@@ -10,12 +10,14 @@ import UIKit
 
 class SearchWordViewController: MyContentViewController {
     
+    @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
+    
     var myWord: DSOWord?
-    var testPhrase: String?
+    var titlePhrase: String?
     
     init(labelName: String?) {
         super.init(nibName: "SearchWordViewController", bundle: nil)
-        self.testPhrase = labelName
+        self.titlePhrase = labelName
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,6 +37,9 @@ class SearchWordViewController: MyContentViewController {
         
         //back arrow text(none)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.menuButton(self, action: #selector(popSelf), imageName: "BackArrow.png")
+        
+        //set title
+        self.myTItleAndButtonView.myTitleLabel.text = self.titlePhrase
         
     }
 
