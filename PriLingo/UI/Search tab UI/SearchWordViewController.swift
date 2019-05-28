@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate {
+class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate, UIScrollViewDelegate {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
@@ -66,6 +66,19 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         
         //set delegate
         self.myTItleAndButtonView.delegate = self
+        
+        //set table view & scroll view
+        if self.dsoWords != nil {
+            
+            //calculate content size according to the number of table views, ultimately to the number of words to display.
+            self.myScrollView.contentSize = CGSize.init(width: self.myScrollView.frame.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView.frame.size.height)
+            
+            for i in 0...(self.dsoWords!.count - 1) {
+                let tableView = UITableView.init(frame: CGRect.init(x: self.myScrollView.frame.size.width * CGFloat(i), y: 0, width: self.myScrollView.frame.size.width, height: self.myScrollView.frame.size.height))
+            self.myScrollView.addSubview(tableView)
+                
+            }
+        }
         
     }
     

@@ -32,8 +32,11 @@
                                 <constraint firstAttribute="height" constant="55" id="Of3-nz-iY2"/>
                             </constraints>
                         </view>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
                             <rect key="frame" x="0.0" y="55" width="414" height="758"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1e1-ti-enT"/>
+                            </connections>
                         </scrollView>
                     </subviews>
                 </stackView>
