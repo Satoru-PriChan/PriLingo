@@ -14,13 +14,33 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
     
     ///paging enabled on .xib.
     @IBOutlet weak var myScrollView: UIScrollView!
+
+    ///title to display
+    var titleJP: String?
+    var titleEN: String?
+    var titleCN_S: String?
+    var titleCN_T: String?
     
-    var myWord: DSOWord?
-    var titlePhrase: String?
+    ///words to display.
+    var dsoWords: [DSOWord]?
     
-    init(labelName: String?) {
+    ///Initializer
+    init(_categoryID: String?, _titleJP: String?, _titleEN: String?, _titleCN_S: String?, _titleCN_T: String?) {
+        
         super.init(nibName: "SearchWordViewController", bundle: nil)
-        self.titlePhrase = labelName
+        
+        //set title property
+        self.titleJP = _titleJP
+        self.titleEN = _titleEN
+        self.titleCN_S = _titleCN_S
+        self.titleCN_T = _titleCN_T
+        
+        //use DB
+        let DAOwords = DAOMSTWords.init()
+        guard _categoryID != nil else {return}
+        if let _dsoWords = DAOwords.exeSelect(_categoryID: _categoryID!) {
+            self.dsoWords = _dsoWords
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,7 +62,7 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.menuButton(self, action: #selector(popSelf), imageName: "BackArrow.png")
         
         //set title
-        self.myTItleAndButtonView.myTitleLabel.text = self.titlePhrase
+        self.myTItleAndButtonView.myTitleLabel.text = self.titleJP
         
         //set delegate
         self.myTItleAndButtonView.delegate = self

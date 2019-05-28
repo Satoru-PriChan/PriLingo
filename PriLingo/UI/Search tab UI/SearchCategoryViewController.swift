@@ -65,7 +65,7 @@ class SearchCategoryViewController: MyContentViewController, UITableViewDataSour
         //you can force self.categories unwrapped cause if it did not exist it would never be tapped.
        
         //Screen transition
-        self.navigationController?.pushViewController(SearchWordViewController.init(labelName: self.categories![indexPath.row].name1), animated: true)
+        self.navigationController?.pushViewController(SearchWordViewController.init(_categoryID: self.categories![indexPath.row].iD, _titleJP: self.categories![indexPath.row].name1, _titleEN: self.categories![indexPath.row].name2, _titleCN_S: self.categories![indexPath.row].name3, _titleCN_T: self.categories![indexPath.row].name4), animated: true)
         
         //Deselect the cell after selected
         tableView.deselectRow(at: indexPath, animated: false)
