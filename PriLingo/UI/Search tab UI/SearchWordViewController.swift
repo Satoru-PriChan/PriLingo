@@ -12,6 +12,9 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
+    ///paging enabled on .xib.
+    @IBOutlet weak var myScrollView: UIScrollView!
+    
     var myWord: DSOWord?
     var titlePhrase: String?
     

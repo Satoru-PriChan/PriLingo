@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordViewController" customModule="PriLingo" customModuleProvider="target">
             <connections>
+                <outlet property="myScrollView" destination="9h6-dk-mDa" id="p90-M9-Xde"/>
                 <outlet property="myTItleAndButtonView" destination="4QU-K1-NaU" id="kFD-UQ-EhT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,7 +32,7 @@
                                 <constraint firstAttribute="height" constant="55" id="Of3-nz-iY2"/>
                             </constraints>
                         </view>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
                             <rect key="frame" x="0.0" y="55" width="414" height="758"/>
                         </scrollView>
                     </subviews>
