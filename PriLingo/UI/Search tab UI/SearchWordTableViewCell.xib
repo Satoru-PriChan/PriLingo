@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="SearchWordTableViewCell" customModule="PriLingo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1Ej-SW-e4O" userLabel="entireStackView">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="81.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4u-t7-em7">
+                                <rect key="frame" x="0.0" y="0.0" width="139.5" height="81.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MNt-d1-wWO" userLabel="rightStackView">
+                                <rect key="frame" x="179.5" y="0.0" width="139.5" height="81.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ens-TG-82R" userLabel="rightTopStackView">
+                                        <rect key="frame" x="23" y="0.0" width="94" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ste-Ru-B4E" secondAttribute="height" multiplier="1:1" id="0Pw-yc-Gc1"/>
+                                                    <constraint firstAttribute="width" constant="44" id="bwy-Ct-pOM"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="play.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs0-TT-nHC">
+                                                <rect key="frame" x="50" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="5th-R5-jNe"/>
+                                                    <constraint firstAttribute="width" secondItem="Zs0-TT-nHC" secondAttribute="height" multiplier="1:1" id="u6t-MR-S18"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="Star.png"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLF-Or-8tV">
+                                        <rect key="frame" x="34" y="52" width="72" height="29.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C4u-t7-em7" firstAttribute="height" secondItem="MNt-d1-wWO" secondAttribute="height" id="p1c-Ak-mLb"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="01f-fB-Uf7"/>
+                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ldr-Ht-Jg2"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ej-SW-e4O" secondAttribute="trailing" id="VSD-Ct-uZ4"/>
+                    <constraint firstAttribute="bottom" secondItem="1Ej-SW-e4O" secondAttribute="bottom" id="vSD-Ro-Aed"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PronunciationLabel" destination="WLF-Or-8tV" id="hsr-MZ-MUr"/>
+                <outlet property="favoriteButton" destination="Zs0-TT-nHC" id="4QS-Vz-HIe"/>
+                <outlet property="playButton" destination="Ste-Ru-B4E" id="oC8-Xo-pSz"/>
+                <outlet property="wordLabel" destination="C4u-t7-em7" id="AbI-Hy-jRi"/>
+            </connections>
+            <point key="canvasLocation" x="61.594202898550726" y="146.65178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Star.png" width="36" height="36"/>
+        <image name="play.png" width="36" height="36"/>
+    </resources>
+</document>
