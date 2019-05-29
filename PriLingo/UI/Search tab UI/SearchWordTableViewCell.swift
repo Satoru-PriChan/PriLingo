@@ -26,4 +26,10 @@ class SearchWordTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    ///function to set cell values.
+    func setCell(word: String?, pronounce: String?) {
+        self.wordLabel.text = word
+        self.PronunciationLabel.text = pronounce
+    }
+    
 }

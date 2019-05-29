@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate, UIScrollViewDelegate {
+class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
@@ -20,6 +20,9 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
     var titleEN: String?
     var titleCN_S: String?
     var titleCN_T: String?
+    
+    ///reuseIdentifier
+    let myReuseIdentifier = "myCell"
     
     ///words to display.
     var dsoWords: [DSOWord]?
@@ -68,15 +71,28 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         self.myTItleAndButtonView.delegate = self
         
         //set table view & scroll view
-        if self.dsoWords != nil {
+        if self.dsoWords != nil && self.dsoWords!.count > 0 {
             
             //calculate content size according to the number of table views, ultimately to the number of words to display.
             self.myScrollView.contentSize = CGSize.init(width: self.myScrollView.frame.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView.frame.size.height)
             
             for i in 0...(self.dsoWords!.count - 1) {
+                //location of table view
                 let tableView = UITableView.init(frame: CGRect.init(x: self.myScrollView.frame.size.width * CGFloat(i), y: 0, width: self.myScrollView.frame.size.width, height: self.myScrollView.frame.size.height))
-            self.myScrollView.addSubview(tableView)
+                self.myScrollView.addSubview(tableView)
                 
+                //tag
+                guard self.dsoWords![i].iD != nil else {continue}
+                tableView.tag = Int(self.dsoWords![i].iD!)!
+                
+                //register
+                tableView.register(UINib.init(nibName: "SearchWordTableViewCell", bundle: nil), forCellReuseIdentifier: self.myReuseIdentifier)
+                
+                //delegate
+                tableView.delegate = self
+                
+                //datasource
+                tableView.dataSource = self
             }
         }
         
@@ -88,6 +104,41 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         print("File: \(#file) Line \(#line): Func \(#function):  function called. \n")
     }
 
+    //UITableViewDelegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4//JP, EN, CN_S, CN_T
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.myReuseIdentifier, for: indexPath) as? SearchWordTableViewCell
+        
+        //judge which UITableView
+        let newWord = self.dsoWords!.filter {Int($0.categoryID!)! == tableView.tag}
+        guard newWord.count > 0 else {return cell ?? SearchWordTableViewCell()}
+        
+        //judge at how manyth cell
+        var _word: String? = ""
+        var _pronounce: String? = ""
+        switch indexPath.row {
+        case 0:
+            _word = newWord[0].name1
+            _pronounce = newWord[0].phonetic1
+        case 1:
+            _word = newWord[0].name2
+            _pronounce = newWord[0].phonetic2
+        case 2:
+            _word = newWord[0].name3
+            _pronounce = newWord[0].phonetic3
+        case 3:
+            _word = newWord[0].name4
+            _pronounce = newWord[0].phonetic4
+        default:
+            break
+        }
+        cell?.setCell(word: _word, pronounce: _pronounce)
+        
+        return cell ?? SearchWordTableViewCell()
+    }
 
     /*
     // MARK: - Navigation
