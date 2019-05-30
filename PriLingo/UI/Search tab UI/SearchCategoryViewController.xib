@@ -32,10 +32,10 @@
             </subviews>
             <color key="backgroundColor" red="0.75483696960000002" green="1" blue="0.61161962749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BE4-mI-9ew" secondAttribute="bottom" constant="20" id="HLK-7u-jBE"/>
-                <constraint firstItem="BE4-mI-9ew" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="NIu-sB-isu"/>
-                <constraint firstItem="BE4-mI-9ew" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="f1m-dP-qJO"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BE4-mI-9ew" secondAttribute="trailing" constant="10" id="qgU-rr-F8d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BE4-mI-9ew" secondAttribute="bottom" constant="20" identifier="SearchCategoryViewController-1" id="HLK-7u-jBE"/>
+                <constraint firstItem="BE4-mI-9ew" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" identifier="SearchCategoryViewController-3" id="NIu-sB-isu"/>
+                <constraint firstItem="BE4-mI-9ew" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" identifier="SearchCategoryViewController-4" id="f1m-dP-qJO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BE4-mI-9ew" secondAttribute="trailing" constant="10" identifier="SearchCategoryViewController-2" id="qgU-rr-F8d"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

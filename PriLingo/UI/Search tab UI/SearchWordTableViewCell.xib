@@ -40,16 +40,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
                                         <rect key="frame" x="5" y="0.0" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Ste-Ru-B4E" secondAttribute="height" multiplier="1:1" id="0Pw-yc-Gc1"/>
-                                            <constraint firstAttribute="width" constant="44" id="bwy-Ct-pOM"/>
+                                            <constraint firstAttribute="width" secondItem="Ste-Ru-B4E" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-1" id="0Pw-yc-Gc1"/>
+                                            <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-2" id="bwy-Ct-pOM"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="play.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs0-TT-nHC">
                                         <rect key="frame" x="5" y="44" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="5th-R5-jNe"/>
-                                            <constraint firstAttribute="width" secondItem="Zs0-TT-nHC" secondAttribute="height" multiplier="1:1" id="u6t-MR-S18"/>
+                                            <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-3" id="5th-R5-jNe"/>
+                                            <constraint firstAttribute="width" secondItem="Zs0-TT-nHC" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-4" id="u6t-MR-S18"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Star.png"/>
                                     </button>
@@ -57,15 +57,15 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="C4u-t7-em7" firstAttribute="height" secondItem="MNt-d1-wWO" secondAttribute="height" id="p1c-Ak-mLb"/>
+                            <constraint firstItem="C4u-t7-em7" firstAttribute="height" secondItem="MNt-d1-wWO" secondAttribute="height" identifier="SearchWordTableViewCell-5" id="p1c-Ak-mLb"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="01f-fB-Uf7"/>
-                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ldr-Ht-Jg2"/>
-                    <constraint firstAttribute="trailing" secondItem="1Ej-SW-e4O" secondAttribute="trailing" id="VSD-Ct-uZ4"/>
-                    <constraint firstAttribute="bottom" secondItem="1Ej-SW-e4O" secondAttribute="bottom" id="vSD-Ro-Aed"/>
+                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" identifier="SearchWordTableViewCell-6" id="01f-fB-Uf7"/>
+                    <constraint firstItem="1Ej-SW-e4O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" identifier="SearchWordTableViewCell-7" id="Ldr-Ht-Jg2"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ej-SW-e4O" secondAttribute="trailing" identifier="SearchWordTableViewCell-8" id="VSD-Ct-uZ4"/>
+                    <constraint firstAttribute="bottom" secondItem="1Ej-SW-e4O" secondAttribute="bottom" identifier="SearchWordTableViewCell-9" id="vSD-Ro-Aed"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

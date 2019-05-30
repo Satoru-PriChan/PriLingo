@@ -54,19 +54,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="edD-q8-7LA" firstAttribute="leading" secondItem="Bni-g3-rf9" secondAttribute="leading" constant="5" id="7HJ-fc-slw"/>
-                            <constraint firstAttribute="trailing" secondItem="edD-q8-7LA" secondAttribute="trailing" constant="5" id="cSe-ce-PO2"/>
-                            <constraint firstAttribute="bottom" secondItem="edD-q8-7LA" secondAttribute="bottom" constant="5" id="eLo-Nj-V3j"/>
-                            <constraint firstItem="edD-q8-7LA" firstAttribute="top" secondItem="Bni-g3-rf9" secondAttribute="top" constant="5" id="v93-eU-HA5"/>
+                            <constraint firstItem="edD-q8-7LA" firstAttribute="leading" secondItem="Bni-g3-rf9" secondAttribute="leading" constant="5" identifier="SearchCateogryTableViewCell-1" id="7HJ-fc-slw"/>
+                            <constraint firstAttribute="trailing" secondItem="edD-q8-7LA" secondAttribute="trailing" constant="5" identifier="SearchCateogryTableViewCell-2" id="cSe-ce-PO2"/>
+                            <constraint firstAttribute="bottom" secondItem="edD-q8-7LA" secondAttribute="bottom" constant="5" identifier="SearchCateogryTableViewCell-3" id="eLo-Nj-V3j"/>
+                            <constraint firstItem="edD-q8-7LA" firstAttribute="top" secondItem="Bni-g3-rf9" secondAttribute="top" constant="5" identifier="SearchCateogryTableViewCell-4" id="v93-eU-HA5"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Bni-g3-rf9" secondAttribute="bottom" constant="5" id="EOL-0S-cta"/>
-                    <constraint firstItem="Bni-g3-rf9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="EiD-JT-BQI"/>
-                    <constraint firstItem="Bni-g3-rf9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VYy-60-lBL"/>
-                    <constraint firstAttribute="trailing" secondItem="Bni-g3-rf9" secondAttribute="trailing" id="b34-ei-h8w"/>
+                    <constraint firstAttribute="bottom" secondItem="Bni-g3-rf9" secondAttribute="bottom" constant="5" identifier="SearchCateogryTableViewCell-5" id="EOL-0S-cta"/>
+                    <constraint firstItem="Bni-g3-rf9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" identifier="SearchCateogryTableViewCell-6" id="EiD-JT-BQI"/>
+                    <constraint firstItem="Bni-g3-rf9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" identifier="SearchCateogryTableViewCell-7" id="VYy-60-lBL"/>
+                    <constraint firstAttribute="trailing" secondItem="Bni-g3-rf9" secondAttribute="trailing" identifier="SearchCateogryTableViewCell-8" id="b34-ei-h8w"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

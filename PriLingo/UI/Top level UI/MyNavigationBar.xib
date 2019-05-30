@@ -32,8 +32,8 @@
                         <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
                             <rect key="frame" x="0.0" y="5" width="45" height="45"/>
                             <constraints>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Kgh-cL-4Xx"/>
-                                <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" id="sDf-A1-zn7"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" identifier="MyNavigationBar-1" id="Kgh-cL-4Xx"/>
+                                <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" identifier="MyNavigationBar-2" id="sDf-A1-zn7"/>
                             </constraints>
                             <state key="normal" backgroundImage="BackArrow.png"/>
                             <connections>
@@ -43,14 +43,14 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
                             <rect key="frame" x="45" y="-33" width="226" height="121"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" id="iQr-xo-fj9"/>
+                                <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" identifier="MyNavigationBar-3" id="iQr-xo-fj9"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
                             <rect key="frame" x="271" y="5" width="45" height="45"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" id="doe-uR-axN"/>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="oWe-5b-EcI"/>
+                                <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" identifier="MyNavigationBar-4" id="doe-uR-axN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" identifier="MyNavigationBar-5" id="oWe-5b-EcI"/>
                             </constraints>
                             <state key="normal" backgroundImage="Question.png"/>
                             <connections>
@@ -59,29 +59,29 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="aIp-bm-3XI" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" id="1Zl-0B-acM"/>
-                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="3cr-ue-iP2"/>
-                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" id="AXx-np-NBf"/>
-                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="leading" secondItem="Nma-hX-h1M" secondAttribute="leading" id="FGu-C7-anP"/>
-                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="HBU-96-I9C"/>
-                        <constraint firstAttribute="height" constant="55" id="LaS-Va-T43"/>
-                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MQJ-fL-eOa" secondAttribute="trailing" id="Rnf-Zc-mgL"/>
-                        <constraint firstAttribute="trailing" secondItem="aIp-bm-3XI" secondAttribute="trailing" id="cmR-Kg-vs9"/>
-                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aIp-bm-3XI" secondAttribute="leading" id="hJw-Ix-Zmg"/>
-                        <constraint firstItem="aIp-bm-3XI" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" id="vCj-uG-Ymv"/>
-                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerX" secondItem="Nma-hX-h1M" secondAttribute="centerX" id="vmN-rx-6Tm"/>
+                        <constraint firstItem="aIp-bm-3XI" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" identifier="MyNavigationBar-14" id="1Zl-0B-acM"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" identifier="MyNavigationBar-10" id="3cr-ue-iP2"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="height" relation="lessThanOrEqual" secondItem="Nma-hX-h1M" secondAttribute="height" identifier="MyNavigationBar-7" id="AXx-np-NBf"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="leading" secondItem="Nma-hX-h1M" secondAttribute="leading" identifier="MyNavigationBar-8" id="FGu-C7-anP"/>
+                        <constraint firstItem="MQJ-fL-eOa" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" identifier="MyNavigationBar-9" id="HBU-96-I9C"/>
+                        <constraint firstAttribute="height" constant="55" identifier="MyNavigationBar-6" id="LaS-Va-T43"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MQJ-fL-eOa" secondAttribute="trailing" identifier="MyNavigationBar-11" id="Rnf-Zc-mgL"/>
+                        <constraint firstAttribute="trailing" secondItem="aIp-bm-3XI" secondAttribute="trailing" identifier="MyNavigationBar-15" id="cmR-Kg-vs9"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aIp-bm-3XI" secondAttribute="leading" identifier="MyNavigationBar-12" id="hJw-Ix-Zmg"/>
+                        <constraint firstItem="aIp-bm-3XI" firstAttribute="centerY" secondItem="Nma-hX-h1M" secondAttribute="centerY" identifier="MyNavigationBar-16" id="vCj-uG-Ymv"/>
+                        <constraint firstItem="DIb-Z5-o3d" firstAttribute="centerX" secondItem="Nma-hX-h1M" secondAttribute="centerX" identifier="MyNavigationBar-13" id="vmN-rx-6Tm"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="z6o-Z9-MaC" secondAttribute="trailing" id="0Jd-oV-Nzj"/>
-                <constraint firstItem="Nma-hX-h1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="E9Q-H9-5hP"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nma-hX-h1M" secondAttribute="trailing" constant="5" id="XFK-kG-DIp"/>
-                <constraint firstItem="z6o-Z9-MaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hfR-Dz-Arr"/>
-                <constraint firstItem="z6o-Z9-MaC" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="jVT-CF-yko"/>
-                <constraint firstItem="Nma-hX-h1M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pWP-KB-7VI"/>
-                <constraint firstItem="z6o-Z9-MaC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tta-b0-c1H"/>
+                <constraint firstAttribute="trailing" secondItem="z6o-Z9-MaC" secondAttribute="trailing" identifier="MyNavigationBar-18" id="0Jd-oV-Nzj"/>
+                <constraint firstItem="Nma-hX-h1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" identifier="MyNavigationBar-22" id="E9Q-H9-5hP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nma-hX-h1M" secondAttribute="trailing" constant="5" identifier="MyNavigationBar-17" id="XFK-kG-DIp"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" identifier="MyNavigationBar-19" id="hfR-Dz-Arr"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" identifier="MyNavigationBar-20" id="jVT-CF-yko"/>
+                <constraint firstItem="Nma-hX-h1M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" identifier="MyNavigationBar-23" id="pWP-KB-7VI"/>
+                <constraint firstItem="z6o-Z9-MaC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" identifier="MyNavigationBar-21" id="tta-b0-c1H"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
