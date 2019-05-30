@@ -113,7 +113,8 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: self.myReuseIdentifier, for: indexPath) as? SearchWordTableViewCell
         
         //judge which UITableView
-        let newWord = self.dsoWords!.filter {Int($0.categoryID!)! == tableView.tag}
+        let newWord = self.dsoWords!.filter {Int($0.iD!)! == tableView.tag}
+        
         guard newWord.count > 0 else {return cell ?? SearchWordTableViewCell()}
         
         //judge at how manyth cell
