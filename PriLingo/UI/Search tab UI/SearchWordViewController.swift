@@ -65,7 +65,7 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.menuButton(self, action: #selector(popSelf), imageName: "BackArrow.png")
         
         //set title
-        self.myTItleAndButtonView.myTitleLabel.text = self.titleJP
+        self.myTItleAndButtonView.myTitleLabel.text = self.titleEN
         
         //set delegate
         self.myTItleAndButtonView.delegate = self
