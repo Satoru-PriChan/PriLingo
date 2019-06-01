@@ -88,10 +88,13 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
         let buttonHeight = 54
         let buttonWidth = 60
         
+        //expandLength
+        let expandLength: CGFloat = 37
+        
         let __height = (_height ?? (CGFloat(buttonHeight + 30)))
         
         if _height == nil {
-            self.myTabBarHeight = CGFloat(buttonHeight + 30)
+            self.myTabBarHeight = CGFloat(buttonHeight + 30)  + expandLength * 0.7
         }
         
         let _y = UIScreen.main.bounds.size.height - __height
@@ -102,7 +105,7 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
         view.backgroundColor = UIColor.purple
         
         let shapeLayer = CAShapeLayer()
-        shapeLayer.path = self.createLengthExpandShape()
+        shapeLayer.path = self.createLengthExpandShape(expandHeight: expandLength)
         shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "lace.png")!).cgColor
         view.layer.insertSublayer(shapeLayer, at: 0)
         
@@ -173,12 +176,12 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
     /// Function to get the CGPath which expands length from original size(typically for original UITabBar).
     ///
     /// - Returns: A CGPath whose shape is expanded.
-    func createLengthExpandShape() -> CGPath {
+    func createLengthExpandShape(expandHeight: CGFloat) -> CGPath {
         let path = UIBezierPath()
         
         //Starting point (left top) then draw lines until the it returns to the starting point with close().
         let startX: CGFloat = 0
-        let startY: CGFloat = -37
+        let startY: CGFloat = -1 * expandHeight
         path.move(to: CGPoint.init(x: startX, y: startY))
         path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: startY))
         path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: self.view.bounds.size.height))
