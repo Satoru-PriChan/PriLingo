@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,21 +19,21 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="333" height="471"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VWK-Va-JL8">
-                    <rect key="frame" x="0.0" y="49" width="414" height="813"/>
+                    <rect key="frame" x="0.0" y="5" width="333" height="466"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4QU-K1-NaU" customClass="TitleAndButtonView" customModule="PriLingo" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="55"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="55" identifier="SearchWordViewController-1" id="Of3-nz-iY2"/>
                             </constraints>
                         </view>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
-                            <rect key="frame" x="0.0" y="55" width="414" height="758"/>
+                            <rect key="frame" x="0.0" y="55" width="333" height="411"/>
                             <connections>
                                 <outlet property="delegate" destination="-1" id="1e1-ti-enT"/>
                             </connections>
@@ -48,6 +48,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VWK-Va-JL8" secondAttribute="bottom" identifier="SearchWordViewController-2" id="t2R-yK-y9y"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VWK-Va-JL8" secondAttribute="trailing" identifier="SearchWordViewController-3" id="wJi-gW-bUn"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

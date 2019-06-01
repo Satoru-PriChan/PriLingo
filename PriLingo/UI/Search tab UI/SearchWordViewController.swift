@@ -74,11 +74,11 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         if self.dsoWords != nil && self.dsoWords!.count > 0 {
             
             //calculate content size according to the number of table views, ultimately to the number of words to display.
-            self.myScrollView.contentSize = CGSize.init(width: self.myScrollView.frame.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView.frame.size.height)
+            self.myScrollView.contentSize = CGSize.init(width: UIScreen.main.bounds.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: UIScreen.main.bounds.size.height)
             
             for i in 0...(self.dsoWords!.count - 1) {
                 //location of table view
-                let tableView = UITableView.init(frame: CGRect.init(x: self.myScrollView.frame.size.width * CGFloat(i), y: 0, width: self.myScrollView.frame.size.width, height: self.myScrollView.frame.size.height))
+                let tableView = UITableView.init(frame: CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
                 self.myScrollView.addSubview(tableView)
                 
                 //tag
