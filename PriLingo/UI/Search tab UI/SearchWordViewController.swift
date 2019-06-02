@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SearchWordViewController: MyContentViewController, TitleAndButtonViewDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
+class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
     ///paging enabled on .xib.
-    @IBOutlet weak var myScrollView: UIScrollView!
+    @IBOutlet weak var MyLoopScrollViewController: UIScrollView!
 
     ///title to display
     var titleJP: String?
@@ -30,7 +30,15 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
     ///Initializer
     init(_categoryID: String?, _titleJP: String?, _titleEN: String?, _titleCN_S: String?, _titleCN_T: String?) {
         
-        super.init(nibName: "SearchWordViewController", bundle: nil)
+        //use DB
+        let DAOwords = DAOMSTWords.init()
+        var _dsoWords: [DSOWord]? = []
+        if _categoryID != nil {
+            _dsoWords = DAOwords.exeSelect(_categoryID: _categoryID!)
+        }
+        
+        
+        super.init(_nibName: "SearchWordViewController", _scrollView: UIScrollView(), _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 10 : _dsoWords!.count)
         
         //set title property
         self.titleJP = _titleJP
@@ -39,11 +47,9 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         self.titleCN_T = _titleCN_T
         
         //use DB
-        let DAOwords = DAOMSTWords.init()
-        guard _categoryID != nil else {return}
-        if let _dsoWords = DAOwords.exeSelect(_categoryID: _categoryID!) {
-            self.dsoWords = _dsoWords
-        }
+        guard _dsoWords != nil else {return}
+        self.dsoWords = _dsoWords
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -74,12 +80,12 @@ class SearchWordViewController: MyContentViewController, TitleAndButtonViewDeleg
         if self.dsoWords != nil && self.dsoWords!.count > 0 {
             
             //calculate content size according to the number of table views, ultimately to the number of words to display.
-            self.myScrollView.contentSize = CGSize.init(width: UIScreen.main.bounds.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView.frame.size.height)
+            self.myScrollView!.contentSize = CGSize.init(width: UIScreen.main.bounds.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView!.frame.size.height)
             
             for i in 0...(self.dsoWords!.count - 1) {
                 //location of table view
-                let tableView = UITableView.init(frame: CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: self.myScrollView.bounds.size.height))
-                self.myScrollView.addSubview(tableView)
+                let tableView = UITableView.init(frame: CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: self.myScrollView!.bounds.size.height))
+                self.myScrollView!.addSubview(tableView)
                 
                 //tag
                 guard self.dsoWords![i].iD != nil else {continue}
