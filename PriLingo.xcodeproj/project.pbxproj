@@ -85,6 +85,9 @@
 		CE785A2F227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
 		CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = CE785A25227F21C400F3F490 /* TitleSearch.png */; };
+		CE80977322A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */; };
+		CE80977422A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */; };
+		CE80977522A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -272,6 +275,7 @@
 		CE785A23227F21C300F3F490 /* TitleSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSettings.png; sourceTree = "<group>"; };
 		CE785A24227F21C400F3F490 /* TitleFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleFavorite.png; sourceTree = "<group>"; };
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
+		CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoopScrollViewController.swift; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE9A3CFB229CAD6C000B15E7 /* SearchWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordTableViewCell.swift; sourceTree = "<group>"; };
@@ -459,6 +463,7 @@
 				CEA04CD022426BB200501A08 /* MyTabBarController.swift */,
 				CEF8A69B228D359800CA333F /* TopLevelUIExtensions.swift */,
 				CE987408229A7E62000F4F45 /* MyContentViewController.swift */,
+				CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */,
 				CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */,
 				CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */,
 				CE31F915229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift */,
@@ -1033,6 +1038,7 @@
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A0227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
+				CE80977322A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */,
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
@@ -1069,6 +1075,7 @@
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A1227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
+				CE80977422A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */,
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
@@ -1105,6 +1112,7 @@
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
 				CE4649A2227BFE5D009F5514 /* SearchWordViewController.swift in Sources */,
+				CE80977522A252BE007A71D1 /* MyLoopScrollViewController.swift in Sources */,
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
