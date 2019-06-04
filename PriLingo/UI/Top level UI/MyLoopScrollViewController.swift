@@ -85,9 +85,6 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         //which direction scroll view is going.
         let actualPosition = scrollView.panGestureRecognizer.translation(in: scrollView.superview)
         
-        //debug
-        print("File: \(#file) Line \(#line): Func \(#function):  offsetX: \(offsetX), actualPosition: \(actualPosition) \n")
-        
         //scroll view is going to the third content(UITableView here).
         if  (offsetX > UIScreen.main.bounds.size.width * 1.5) {
             
@@ -108,8 +105,13 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
                 self.currentPage! += 1
                 
                 //debug
-                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage!: \(self.currentPage!)\n")
+                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! ADDED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
+            } else {
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! NO CHANGED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
             }
+            
+           
         } else if !(actualPosition.x < 0 && self.currentPage! <= 2) && (offsetX < UIScreen.main.bounds.size.width * 0.5) {
             //put the list in order
             let tmpTable = self.myTableViews?.removeLast()
@@ -126,8 +128,13 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
                 self.currentPage! -= 1
                 
                 //debug
-                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage!: \(self.currentPage!)\n")
+                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! SUBTRACTED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
+            } else {
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! NO CHANGED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
             }
+            
+
         }
         
         //reload table view

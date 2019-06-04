@@ -82,7 +82,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             
             //calculate content size according to the number of table views, ultimately to the number of words to display.
             self.myScrollView!.contentSize = CGSize.init(width: UIScreen.main.bounds.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView!.frame.size.height)
-            // let's call it a day@@
             self.myTableViews!.enumerated().forEach {(i: Int, tableView: UITableView) in
                 //location of table view
                 tableView.frame = CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: self.myScrollView!.bounds.size.height)
