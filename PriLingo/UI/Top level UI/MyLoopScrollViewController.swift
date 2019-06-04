@@ -129,6 +129,9 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
                 print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage!: \(self.currentPage!)\n")
             }
         }
+        
+        //reload table view
+        self.myTableViews![2].reloadData()
     }
 
     /*
