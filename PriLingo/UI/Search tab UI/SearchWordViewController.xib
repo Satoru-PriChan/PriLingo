@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordViewController" customModule="PriLingo" customModuleProvider="target">
             <connections>
-                <outlet property="myScrollView" destination="9h6-dk-mDa" id="p90-M9-Xde"/>
+                <outlet property="myLoopScrollView" destination="9h6-dk-mDa" id="J08-vT-uK3"/>
                 <outlet property="myTItleAndButtonView" destination="4QU-K1-NaU" id="kFD-UQ-EhT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,9 +34,6 @@
                         </view>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
                             <rect key="frame" x="0.0" y="46" width="333" height="425"/>
-                            <connections>
-                                <outlet property="delegate" destination="-1" id="1e1-ti-enT"/>
-                            </connections>
                         </scrollView>
                     </subviews>
                 </stackView>

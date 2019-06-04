@@ -35,12 +35,8 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
     //MARK: - Initiallizer
     
     ///The tag numbers are to be like this: myTableView1 -- -1, myTableView2 -- 0, myTableView3 -- 1.
-    init(_nibName: String, _scrollView: UIScrollView, _tableView1: UITableView, _tableView2: UITableView, _tableView3: UITableView, _pagesInTotal: Int) {
+    init(_nibName: String, _scrollView: UIScrollView?, _tableView1: UITableView, _tableView2: UITableView, _tableView3: UITableView, _pagesInTotal: Int) {
         super.init(nibName: _nibName, bundle: nil)
-        
-        //set UIScrollView and it's delegate
-        self.myScrollView = _scrollView
-        self.myScrollView?.delegate = self
         
         //set UITableView
         self.myTableView1 = _tableView1
@@ -88,6 +84,9 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         
         //which direction scroll view is going.
         let actualPosition = scrollView.panGestureRecognizer.translation(in: scrollView.superview)
+        
+        //debug
+        print("File: \(#file) Line \(#line): Func \(#function):  offsetX: \(offsetX), actualPosition: \(actualPosition) \n")
         
         //scroll view is going to the third content(UITableView here).
         if  (offsetX > UIScreen.main.bounds.size.width * 1.5) {

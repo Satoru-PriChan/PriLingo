@@ -13,8 +13,8 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     
     ///paging enabled on .xib.
-    @IBOutlet weak var MyLoopScrollViewController: UIScrollView!
-
+    @IBOutlet weak var myLoopScrollView: UIScrollView!
+    
     ///title to display
     var titleJP: String?
     var titleEN: String?
@@ -38,7 +38,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         }
         
         
-        super.init(_nibName: "SearchWordViewController", _scrollView: UIScrollView(), _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 10 : _dsoWords!.count)
+        super.init(_nibName: "SearchWordViewController", _scrollView: myLoopScrollView, _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 10 : _dsoWords!.count)
         
         //set title property
         self.titleJP = _titleJP
@@ -60,6 +60,10 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //self.myloopscrollview is nil at initialization, so set it here to self.super instead.
+        self.myScrollView = self.myLoopScrollView
+        //set UIScrollView and it's delegate
+        self.myScrollView?.delegate = self
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
@@ -73,23 +77,16 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //set title
         self.myTItleAndButtonView.myTitleLabel.text = self.titleEN
         
-        //set delegate
-        self.myTItleAndButtonView.delegate = self
-        
         //set table view & scroll view
         if self.dsoWords != nil && self.dsoWords!.count > 0 {
             
             //calculate content size according to the number of table views, ultimately to the number of words to display.
             self.myScrollView!.contentSize = CGSize.init(width: UIScreen.main.bounds.size.width * CGFloat.init(Double(self.dsoWords!.count)), height: self.myScrollView!.frame.size.height)
-            
-            for i in 0...(self.dsoWords!.count - 1) {
+            // let's call it a day@@
+            self.myTableViews!.enumerated().forEach {(i: Int, tableView: UITableView) in
                 //location of table view
-                let tableView = UITableView.init(frame: CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: self.myScrollView!.bounds.size.height))
+                tableView.frame = CGRect.init(x: UIScreen.main.bounds.size.width * CGFloat(i), y: 0, width: UIScreen.main.bounds.size.width, height: self.myScrollView!.bounds.size.height)
                 self.myScrollView!.addSubview(tableView)
-                
-                //tag
-                guard self.dsoWords![i].iD != nil else {continue}
-                tableView.tag = Int(self.dsoWords![i].iD!)!
                 
                 //register
                 tableView.register(UINib.init(nibName: "SearchWordTableViewCell", bundle: nil), forCellReuseIdentifier: self.myReuseIdentifier)
@@ -119,26 +116,24 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: self.myReuseIdentifier, for: indexPath) as? SearchWordTableViewCell
         
         //judge which UITableView
-        let newWord = self.dsoWords!.filter {Int($0.iD!)! == tableView.tag}
-        
-        guard newWord.count > 0 else {return cell ?? SearchWordTableViewCell()}
+        let newWord = self.dsoWords![self.currentPage! - 1]
         
         //judge at how manyth cell
         var _word: String? = ""
         var _pronounce: String? = ""
         switch indexPath.row {
         case 0:
-            _word = newWord[0].name1
-            _pronounce = newWord[0].phonetic1
+            _word = newWord.name1
+            _pronounce = newWord.phonetic1
         case 1:
-            _word = newWord[0].name2
-            _pronounce = newWord[0].phonetic2
+            _word = newWord.name2
+            _pronounce = newWord.phonetic2
         case 2:
-            _word = newWord[0].name3
-            _pronounce = newWord[0].phonetic3
+            _word = newWord.name3
+            _pronounce = newWord.phonetic3
         case 3:
-            _word = newWord[0].name4
-            _pronounce = newWord[0].phonetic4
+            _word = newWord.name4
+            _pronounce = newWord.phonetic4
         default:
             break
         }
