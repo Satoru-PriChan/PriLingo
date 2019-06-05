@@ -86,6 +86,17 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
     
     //MARK: - UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //prohibit swiping at the current page 1, or max
+        if self.currentPage == 1 && scrollView.contentOffset.x < UIScreen.main.bounds.size.width{
+            scrollView.setContentOffset(CGPoint.init(x: UIScreen.main.bounds.size.width, y: 0), animated: false)
+            return
+        }
+        
+        if self.currentPage == self.pagesInTotal && scrollView.contentOffset.x > UIScreen.main.bounds.size.width {
+            scrollView.setContentOffset(CGPoint.init(x: UIScreen.main.bounds.size.width, y: 0), animated: false)
+            return
+        }
+        
         //get where the scroll view is on it's content.
         let offsetX = scrollView.contentOffset.x
         
@@ -95,7 +106,7 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         //scroll view is going to the third content(UITableView here).
         if  (offsetX > UIScreen.main.bounds.size.width * 1.5) {
             
-            if !(actualPosition.x > 0 && self.currentPage! >=  (self.pagesInTotal! - 1)) {
+            if !(actualPosition.x < 0 && self.currentPage! >=  (self.pagesInTotal! - 1)) {
                 //put them in order
                 let tmpTable = self.myTableViews!.remove(at: 0)
                 self.myTableViews?.append(tmpTable)
@@ -119,7 +130,7 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
             }
             
            
-        } else if !(actualPosition.x < 0 && self.currentPage! <= 2) && (offsetX < UIScreen.main.bounds.size.width * 0.5) {
+        } else if !(actualPosition.x > 0 && self.currentPage! <= 2) && (offsetX < UIScreen.main.bounds.size.width * 0.5) {
             //put the list in order
             let tmpTable = self.myTableViews?.removeLast()
             self.myTableViews?.insert(tmpTable!, at: 0)
