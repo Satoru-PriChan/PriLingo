@@ -106,17 +106,17 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         //scroll view is going to the third content(UITableView here).
         if  (offsetX > UIScreen.main.bounds.size.width * 1.5) {
             
-            if !(actualPosition.x < 0 && self.currentPage! >=  (self.pagesInTotal! - 1)) {
-                //put them in order
-                let tmpTable = self.myTableViews!.remove(at: 0)
-                self.myTableViews?.append(tmpTable)
             
-                //set frames
-                self.overwriteFrames()
+            //put them in order
+            let tmpTable = self.myTableViews!.remove(at: 0)
+            self.myTableViews?.append(tmpTable)
             
-                //adjust the view port
-                scrollView.contentOffset.x -= UIScreen.main.bounds.width
-            }
+            //set frames
+            self.overwriteFrames()
+            
+            //adjust the view port
+            scrollView.contentOffset.x -= UIScreen.main.bounds.width
+            
             
             //add 1 to the current page
             if self.currentPage! < self.pagesInTotal! {
@@ -124,13 +124,8 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
                 
                 //debug
                 print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! ADDED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
-            } else {
-                //debug
-                print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! NO CHANGED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
             }
-            
-           
-        } else if !(actualPosition.x > 0 && self.currentPage! <= 2) && (offsetX < UIScreen.main.bounds.size.width * 0.5) {
+        } else if (offsetX < UIScreen.main.bounds.size.width * 0.5) {
             //put the list in order
             let tmpTable = self.myTableViews?.removeLast()
             self.myTableViews?.insert(tmpTable!, at: 0)
@@ -151,12 +146,7 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
                 //debug
                 print("File: \(#file) Line \(#line): Func \(#function):  self.currentPage! NO CHANGED: \(self.currentPage!) acctualPotistion: \(actualPosition), offSetX: \(offsetX)\n")
             }
-            
-
         }
-        
-        //reload table view
-        self.myTableViews![2].reloadData()
     }
 
     /*
