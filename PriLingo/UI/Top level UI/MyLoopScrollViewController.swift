@@ -30,7 +30,13 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
     }
     
     var pagesInTotal: Int?
-    var currentPage: Int?
+    var currentPage: Int? {
+        didSet {
+            self.myTableViews!.forEach {(tableView: UITableView) in
+                tableView.reloadData()
+            }
+        }
+    }
     
     //MARK: - Initiallizer
     
@@ -64,6 +70,7 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
     

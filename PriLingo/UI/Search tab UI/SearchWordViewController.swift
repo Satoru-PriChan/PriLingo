@@ -62,8 +62,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         // Do any additional setup after loading the view.
         //self.myloopscrollview is nil at initialization, so set it here to self.super instead.
         self.myScrollView = self.myLoopScrollView
-        //set UIScrollView and it's delegate
+        //set it's delegate
         self.myScrollView?.delegate = self
+        
+        //set it's initial page(2)
+        self.myScrollView?.contentOffset.x = UIScreen.main.bounds.size.width
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
