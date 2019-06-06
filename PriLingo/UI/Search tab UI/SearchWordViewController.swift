@@ -101,6 +101,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
                 
                 //appearance
                 tableView.backgroundColor = UIColor.clear
+                
+                //delete lines between cells
+                tableView.separatorStyle = .none
             }
         }
         
