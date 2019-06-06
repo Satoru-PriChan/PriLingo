@@ -98,6 +98,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
                 
                 //datasource
                 tableView.dataSource = self
+                
+                //appearance
+                tableView.backgroundColor = UIColor.clear
             }
         }
         
