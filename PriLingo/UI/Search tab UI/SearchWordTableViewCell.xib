@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="322" height="91.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4u-t7-em7">
-                                <rect key="frame" x="0.0" y="2" width="150.5" height="88"/>
+                                <rect key="frame" x="0.0" y="24" width="150.5" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +35,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="MNt-d1-wWO" userLabel="rightStackView">
-                                <rect key="frame" x="278" y="2" width="44" height="88"/>
+                                <rect key="frame" x="278" y="24" width="44" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
+                                        <rect key="frame" x="0.0" y="-44.5" width="44" height="44.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ste-Ru-B4E" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-1" id="0Pw-yc-Gc1"/>
                                             <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-2" id="bwy-Ct-pOM"/>
@@ -46,7 +46,7 @@
                                         <state key="normal" backgroundImage="play.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs0-TT-nHC">
-                                        <rect key="frame" x="0.0" y="44" width="44" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-3" id="5th-R5-jNe"/>
                                             <constraint firstAttribute="width" secondItem="Zs0-TT-nHC" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-4" id="u6t-MR-S18"/>
