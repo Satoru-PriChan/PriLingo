@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F7EB84B22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB84A22A8C47A00C8A3F9 /* GitRemoteTest.swift */; };
-		1F7EB84C22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB84A22A8C47A00C8A3F9 /* GitRemoteTest.swift */; };
-		1F7EB84D22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB84A22A8C47A00C8A3F9 /* GitRemoteTest.swift */; };
 		2AA398083E46E7E11F161FD4 /* Pods_PriLingoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */; };
 		68285597453B3E9B67653C92 /* Pods_PriLingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */; };
 		85C8085E8EB7F06230E3F230 /* Pods_PriLingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */; };
@@ -233,7 +230,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F7EB84A22A8C47A00C8A3F9 /* GitRemoteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRemoteTest.swift; sourceTree = "<group>"; };
 		2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.debug.xcconfig"; sourceTree = "<group>"; };
 		81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -602,7 +598,6 @@
 			isa = PBXGroup;
 			children = (
 				CE0AC1292209B5B800953C0D /* ViewController.swift */,
-				1F7EB84A22A8C47A00C8A3F9 /* GitRemoteTest.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -1039,7 +1034,6 @@
 				CE9A3CFD229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
-				1F7EB84B22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */,
 				CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
@@ -1077,7 +1071,6 @@
 				CE9A3CFE229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
-				1F7EB84C22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */,
 				CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
@@ -1115,7 +1108,6 @@
 				CE9A3CFF229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
-				1F7EB84D22A8C47A00C8A3F9 /* GitRemoteTest.swift in Sources */,
 				CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
