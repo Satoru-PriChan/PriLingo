@@ -37,16 +37,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="MNt-d1-wWO" userLabel="rightStackView">
                                 <rect key="frame" x="278" y="24" width="44" height="44"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
-                                        <rect key="frame" x="0.0" y="-44.5" width="44" height="44.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Ru-B4E">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ste-Ru-B4E" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-1" id="0Pw-yc-Gc1"/>
                                             <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-2" id="bwy-Ct-pOM"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="play.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs0-TT-nHC">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs0-TT-nHC">
+                                        <rect key="frame" x="0.0" y="44" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-3" id="5th-R5-jNe"/>
                                             <constraint firstAttribute="width" secondItem="Zs0-TT-nHC" secondAttribute="height" multiplier="1:1" identifier="SearchWordTableViewCell-4" id="u6t-MR-S18"/>
