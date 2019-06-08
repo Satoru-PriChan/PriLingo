@@ -55,6 +55,15 @@
 		CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
 		CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
 		CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */; };
+		CE5D45E422AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D45E322AB784E00F42A92 /* SearchWordTableHeader.swift */; };
+		CE5D45E522AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D45E322AB784E00F42A92 /* SearchWordTableHeader.swift */; };
+		CE5D45E622AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D45E322AB784E00F42A92 /* SearchWordTableHeader.swift */; };
+		CE5D45E822AB786300F42A92 /* SearchWordTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45E722AB786300F42A92 /* SearchWordTableHeader.xib */; };
+		CE5D45E922AB786300F42A92 /* SearchWordTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45E722AB786300F42A92 /* SearchWordTableHeader.xib */; };
+		CE5D45EA22AB786300F42A92 /* SearchWordTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45E722AB786300F42A92 /* SearchWordTableHeader.xib */; };
+		CE5D45EC22AB96B700F42A92 /* tableHeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* tableHeaderImage.png */; };
+		CE5D45ED22AB96B700F42A92 /* tableHeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* tableHeaderImage.png */; };
+		CE5D45EE22AB96B700F42A92 /* tableHeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* tableHeaderImage.png */; };
 		CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
@@ -265,6 +274,9 @@
 		CE464997227BFE46009F5514 /* SearchCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCategoryViewController.xib; sourceTree = "<group>"; };
 		CE46499E227BFE5D009F5514 /* SearchWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordViewController.swift; sourceTree = "<group>"; };
 		CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWordViewController.xib; sourceTree = "<group>"; };
+		CE5D45E322AB784E00F42A92 /* SearchWordTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordTableHeader.swift; sourceTree = "<group>"; };
+		CE5D45E722AB786300F42A92 /* SearchWordTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWordTableHeader.xib; sourceTree = "<group>"; };
+		CE5D45EB22AB96B700F42A92 /* tableHeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableHeaderImage.png; sourceTree = "<group>"; };
 		CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBarDelegate.swift; sourceTree = "<group>"; };
 		CE663F1F2295431B00DAB5ED /* Candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candy.png; sourceTree = "<group>"; };
 		CE779189227920CF007515B9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
@@ -486,6 +498,8 @@
 				CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */,
 				CE9A3CFB229CAD6C000B15E7 /* SearchWordTableViewCell.swift */,
 				CE9A3CFC229CAD6C000B15E7 /* SearchWordTableViewCell.xib */,
+				CE5D45E322AB784E00F42A92 /* SearchWordTableHeader.swift */,
+				CE5D45E722AB786300F42A92 /* SearchWordTableHeader.xib */,
 				CE31F911229BDA4200FAF2A8 /* RepeatState.swift */,
 			);
 			path = "Search tab UI";
@@ -590,6 +604,7 @@
 				CE77919122792107007515B9 /* button3.png */,
 				CE77919522792122007515B9 /* button4.png */,
 				CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */,
+				CE5D45EB22AB96B700F42A92 /* tableHeaderImage.png */,
 			);
 			path = "Top Level UI";
 			sourceTree = "<group>";
@@ -773,6 +788,7 @@
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
+				CE5D45E822AB786300F42A92 /* SearchWordTableHeader.xib in Resources */,
 				CE77919622792122007515B9 /* button4.png in Resources */,
 				CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */,
@@ -781,6 +797,7 @@
 				CEA04CF922426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CED43FB1227BCF0B00031DF9 /* Question.png in Resources */,
+				CE5D45EC22AB96B700F42A92 /* tableHeaderImage.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
@@ -802,6 +819,7 @@
 			files = (
 				CE31F90B229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
+				CE5D45E922AB786300F42A92 /* SearchWordTableHeader.xib in Resources */,
 				CEF382E0223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF438F2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750322159D6A00CC49A0 /* Top.xib in Resources */,
@@ -820,6 +838,7 @@
 				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919722792122007515B9 /* button4.png in Resources */,
 				CE06F40B220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE5D45ED22AB96B700F42A92 /* tableHeaderImage.png in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -845,6 +864,7 @@
 			files = (
 				CE31F90C229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
+				CE5D45EA22AB786300F42A92 /* SearchWordTableHeader.xib in Resources */,
 				CEF382E1223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEEF43902298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE0B750422159D6A00CC49A0 /* Top.xib in Resources */,
@@ -863,6 +883,7 @@
 				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
 				CE77919822792122007515B9 /* button4.png in Resources */,
 				CE06F40C220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE5D45EE22AB96B700F42A92 /* tableHeaderImage.png in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
@@ -1048,6 +1069,7 @@
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CE5D45E422AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */,
 				CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
@@ -1085,6 +1107,7 @@
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CE5D45E522AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */,
 				CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
@@ -1122,6 +1145,7 @@
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
 				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
+				CE5D45E622AB784E00F42A92 /* SearchWordTableHeader.swift in Sources */,
 				CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
 				CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
