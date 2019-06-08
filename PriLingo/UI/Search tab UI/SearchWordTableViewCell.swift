@@ -12,7 +12,6 @@ class SearchWordTableViewCell: UITableViewCell {
 
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var PronunciationLabel: UILabel!
     
     override func awakeFromNib() {
