@@ -34,6 +34,7 @@
                         </view>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
                             <rect key="frame" x="0.0" y="46" width="333" height="425"/>
+                            <color key="backgroundColor" red="1" green="0.7113048258888508" blue="0.8797168882350892" alpha="0.92230308219178081" colorSpace="custom" customColorSpace="sRGB"/>
                         </scrollView>
                     </subviews>
                 </stackView>
