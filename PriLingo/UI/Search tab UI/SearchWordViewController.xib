@@ -32,8 +32,15 @@
                                 <constraint firstAttribute="height" constant="46" identifier="SearchWordViewController-1" id="Of3-nz-iY2"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9v5-YA-dO4" customClass="SearchWordHeader" customModule="PriLingo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="46" width="333" height="47"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="hsX-Wa-J1N"/>
+                            </constraints>
+                        </view>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-dk-mDa">
-                            <rect key="frame" x="0.0" y="46" width="333" height="425"/>
+                            <rect key="frame" x="0.0" y="93" width="333" height="378"/>
                             <color key="backgroundColor" red="1" green="0.7113048258888508" blue="0.8797168882350892" alpha="0.72947880993150682" colorSpace="custom" customColorSpace="sRGB"/>
                         </scrollView>
                     </subviews>
