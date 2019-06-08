@@ -106,7 +106,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
                 tableView.separatorStyle = .none
                 
                 //set table header
-                tableView.tableHeaderView = SearchWordTableHeader.init(frame: CGRect.init(x: 0, y: 0, width: 500, height: 47
+                tableView.tableHeaderView = SearchWordHeader.init(frame: CGRect.init(x: 0, y: 0, width: 500, height: 47
                 ))
             }
         }

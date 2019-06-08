@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordTableHeader: UIView {
+class SearchWordHeader: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +25,7 @@ class SearchWordTableHeader: UIView {
             view.frame = self.bounds
             self.addSubview(view)
             
-            view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "tableHeaderImage.png")!)
+            view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "headerImage.png")!)
         }
         
         
