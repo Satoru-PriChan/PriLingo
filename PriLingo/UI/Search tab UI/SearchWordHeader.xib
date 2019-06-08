@@ -10,7 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordHeader"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordHeader">
+            <connections>
+                <outlet property="favoriteButton" destination="3pb-yb-q26" id="ITA-1w-QdG"/>
+                <outlet property="numberLabel" destination="GxZ-eD-eEW" id="xYV-Rf-b9Z"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="377" height="47"/>
@@ -29,7 +34,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pb-yb-q26">
-                    <rect key="frame" x="77" y="8" width="39" height="39"/>
+                    <rect key="frame" x="77" y="0.0" width="47" height="47"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="3pb-yb-q26" secondAttribute="height" multiplier="1:1" id="5Tr-bO-38F"/>
                     </constraints>
@@ -39,8 +44,8 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="3pb-yb-q26" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="77" id="5Aj-t7-ZGh"/>
-                <constraint firstItem="3pb-yb-q26" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="AT2-zD-o37"/>
                 <constraint firstItem="3pb-yb-q26" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Avu-hX-pIL"/>
+                <constraint firstItem="3pb-yb-q26" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Klt-Ql-jPh"/>
                 <constraint firstItem="GxZ-eD-eEW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="YOx-oy-PBD"/>
                 <constraint firstItem="GxZ-eD-eEW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ewt-SV-DAu"/>
             </constraints>

@@ -10,6 +10,9 @@ import UIKit
 
 class SearchWordHeader: UIView {
     
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
