@@ -38,7 +38,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="3pb-yb-q26" secondAttribute="height" multiplier="1:1" id="5Tr-bO-38F"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" backgroundImage="Heart.png"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,4 +54,7 @@
             <point key="canvasLocation" x="29.0625" y="558.27464788732391"/>
         </view>
     </objects>
+    <resources>
+        <image name="Heart.png" width="112.80000305175781" height="112.80000305175781"/>
+    </resources>
 </document>
