@@ -23,9 +23,12 @@ class SearchWordTableHeader: UIView {
     func loadNib() {
         if let view = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? UIView {
             view.frame = self.bounds
-            view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "tableHeaderImage.png")!)
             self.addSubview(view)
+            
+            view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "tableHeaderImage.png")!)
         }
+        
+        
     }
 
     /*

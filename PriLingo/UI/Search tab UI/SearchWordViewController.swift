@@ -104,6 +104,10 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
                 
                 //delete lines between cells
                 tableView.separatorStyle = .none
+                
+                //set table header
+                tableView.tableHeaderView = SearchWordTableHeader.init(frame: CGRect.init(x: 0, y: 0, width: 500, height: 47
+                ))
             }
         }
         
