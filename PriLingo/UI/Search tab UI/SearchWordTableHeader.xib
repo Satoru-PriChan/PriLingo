@@ -15,7 +15,35 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="377" height="47"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxZ-eD-eEW">
+                    <rect key="frame" x="3" y="0.0" width="56" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="bVX-vx-GDt"/>
+                        <constraint firstAttribute="width" constant="56" id="iik-Qm-qKd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pb-yb-q26">
+                    <rect key="frame" x="77" y="8" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3pb-yb-q26" secondAttribute="height" multiplier="1:1" id="5Tr-bO-38F"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3pb-yb-q26" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="77" id="5Aj-t7-ZGh"/>
+                <constraint firstItem="3pb-yb-q26" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="AT2-zD-o37"/>
+                <constraint firstItem="3pb-yb-q26" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Avu-hX-pIL"/>
+                <constraint firstItem="GxZ-eD-eEW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="YOx-oy-PBD"/>
+                <constraint firstItem="GxZ-eD-eEW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ewt-SV-DAu"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="29.0625" y="558.27464788732391"/>
