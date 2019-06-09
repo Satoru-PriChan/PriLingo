@@ -64,9 +64,6 @@
 		CE5D45EC22AB96B700F42A92 /* headerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* headerImage.png */; };
 		CE5D45ED22AB96B700F42A92 /* headerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* headerImage.png */; };
 		CE5D45EE22AB96B700F42A92 /* headerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EB22AB96B700F42A92 /* headerImage.png */; };
-		CE5D45F022ABAC7800F42A92 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EF22ABAC7800F42A92 /* Heart.png */; };
-		CE5D45F122ABAC7800F42A92 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EF22ABAC7800F42A92 /* Heart.png */; };
-		CE5D45F222ABAC7800F42A92 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D45EF22ABAC7800F42A92 /* Heart.png */; };
 		CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
 		CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */; };
@@ -169,6 +166,9 @@
 		CEBCE940226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
 		CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE93F226153C400B92464 /* testtesttestttttView.xib */; };
+		CECA996122AC943100D41B46 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CECA996022AC943100D41B46 /* Heart.png */; };
+		CECA996222AC943100D41B46 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CECA996022AC943100D41B46 /* Heart.png */; };
+		CECA996322AC943100D41B46 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CECA996022AC943100D41B46 /* Heart.png */; };
 		CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
 		CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
 		CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */; };
@@ -280,7 +280,6 @@
 		CE5D45E322AB784E00F42A92 /* SearchWordHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordHeader.swift; sourceTree = "<group>"; };
 		CE5D45E722AB786300F42A92 /* SearchWordHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWordHeader.xib; sourceTree = "<group>"; };
 		CE5D45EB22AB96B700F42A92 /* headerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerImage.png; sourceTree = "<group>"; };
-		CE5D45EF22ABAC7800F42A92 /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
 		CE663F1B229519B500DAB5ED /* MyNavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBarDelegate.swift; sourceTree = "<group>"; };
 		CE663F1F2295431B00DAB5ED /* Candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candy.png; sourceTree = "<group>"; };
 		CE779189227920CF007515B9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
@@ -315,6 +314,7 @@
 		CEB2D2282233FD2900410F02 /* DSOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSOCategory.swift; sourceTree = "<group>"; };
 		CEB4050A2273554300C8BFCD /* lace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lace.png; sourceTree = "<group>"; };
 		CEBCE93F226153C400B92464 /* testtesttestttttView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testtesttestttttView.xib; sourceTree = "<group>"; };
+		CECA996022AC943100D41B46 /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
 		CECF291B227FD629003FCF74 /* SearchCateogryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCateogryTableViewCell.swift; sourceTree = "<group>"; };
 		CECF291C227FD629003FCF74 /* SearchCateogryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCateogryTableViewCell.xib; sourceTree = "<group>"; };
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
@@ -609,7 +609,7 @@
 				CE77919522792122007515B9 /* button4.png */,
 				CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */,
 				CE5D45EB22AB96B700F42A92 /* headerImage.png */,
-				CE5D45EF22ABAC7800F42A92 /* Heart.png */,
+				CECA996022AC943100D41B46 /* Heart.png */,
 			);
 			path = "Top Level UI";
 			sourceTree = "<group>";
@@ -805,7 +805,7 @@
 				CE5D45EC22AB96B700F42A92 /* headerImage.png in Resources */,
 				CE0B750222159D6A00CC49A0 /* Top.xib in Resources */,
 				CEA6A449228E376F00151E03 /* MyNavigationBar.xib in Resources */,
-				CE5D45F022ABAC7800F42A92 /* Heart.png in Resources */,
+				CECA996122AC943100D41B46 /* Heart.png in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CE9A3D08229CCDDE000B15E7 /* Star.png in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
@@ -850,7 +850,7 @@
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CE9A3D05229CC614000B15E7 /* play.png in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
-				CE5D45F122ABAC7800F42A92 /* Heart.png in Resources */,
+				CECA996222AC943100D41B46 /* Heart.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
@@ -896,7 +896,7 @@
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CE9A3D06229CC614000B15E7 /* play.png in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
-				CE5D45F222ABAC7800F42A92 /* Heart.png in Resources */,
+				CECA996322AC943100D41B46 /* Heart.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
