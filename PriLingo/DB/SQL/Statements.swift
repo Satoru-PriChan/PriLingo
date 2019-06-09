@@ -24,5 +24,14 @@ class Statements {
     + WORDS.T_CATEGORIES_ID + " = ?"
     + ";"
     
+    public static let UPDATE_WORD_FAVORITE = ""
+        + "UPDATE "
+        + WORDS.MST_WORDS + " "
+        + "SET "
+        + WORDS.FAVORITE + " = ? "
+        + "WHERE "
+        + WORDS.ID + " = ?"
+        + ";"
+    
     
 }
