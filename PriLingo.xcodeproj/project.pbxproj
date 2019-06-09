@@ -100,6 +100,9 @@
 		CE81B0D822AD0AFF00B8CCC8 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0D722AD0AFF00B8CCC8 /* Heart.png */; };
 		CE81B0D922AD0AFF00B8CCC8 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0D722AD0AFF00B8CCC8 /* Heart.png */; };
 		CE81B0DA22AD0AFF00B8CCC8 /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0D722AD0AFF00B8CCC8 /* Heart.png */; };
+		CE81B0DC22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
+		CE81B0DD22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
+		CE81B0DE22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -292,6 +295,7 @@
 		CE785A25227F21C400F3F490 /* TitleSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleSearch.png; sourceTree = "<group>"; };
 		CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoopScrollViewController.swift; sourceTree = "<group>"; };
 		CE81B0D722AD0AFF00B8CCC8 /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
+		CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AshHeart.png; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE9A3CFB229CAD6C000B15E7 /* SearchWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordTableViewCell.swift; sourceTree = "<group>"; };
@@ -610,6 +614,7 @@
 				CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */,
 				CE5D45EB22AB96B700F42A92 /* headerImage.png */,
 				CE81B0D722AD0AFF00B8CCC8 /* Heart.png */,
+				CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */,
 			);
 			path = "Top Level UI";
 			sourceTree = "<group>";
@@ -784,6 +789,7 @@
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE46499B227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE81B0DC22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CEEF438E2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
@@ -852,6 +858,7 @@
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CE81B0D922AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CE81B0DD22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
@@ -898,6 +905,7 @@
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CE81B0DA22AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CE81B0DE22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
