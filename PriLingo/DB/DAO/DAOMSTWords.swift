@@ -13,7 +13,6 @@ import FMDB
 ///class for DAO class to retrieve data from MST_WORDS
 class DAOMSTWords: DAOSuper {
     
-    
     /// function to perform SELECT * FROM MST_WORDS WHERE MST_WORDS_T_CATEGORIES_ID = ?
     ///
     /// - Parameter _categoryID: categoryID whose Words' data you would like to get
@@ -75,11 +74,13 @@ class DAOMSTWords: DAOSuper {
     ///   - _wordID:
     ///   - thisWordIsFavorite: If this words is favorited one, set true. If not, set false. You can set nill. It is considered as false.
     /// - Returns: If success, returns updated DSOWord object. If failed, returns nil.
-    func exeUpdate(_wordID: String?, thisWordIsFavorite: Bool?) {
+    func exeUpdate(_wordID: String?, thisWordIsFavorite: Bool?) -> DSOWord? {
         let myDB = FMDatabase.init(path: Path.libDB)
         
         myDB.open()
         myDB.executeUpdate(Statements.UPDATE_WORD_FAVORITE, withArgumentsIn: [_wordID ?? "", self.convertBoolIntoString(_bool: thisWordIsFavorite)])
         myDB.close()
+        
+        return self.exeSelect(_wordID: _wordID ?? "")
     }
 }
