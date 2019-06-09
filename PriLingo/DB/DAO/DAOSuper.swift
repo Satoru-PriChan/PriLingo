@@ -15,12 +15,19 @@ class DAOSuper {
     
     //convert bool into string to make it suitable for SQLite database.
     func convertBoolIntoString(_bool: Bool?) -> String {
-        guard _bool != nil else {return ""}
-        if _bool! {
-            return self.trueInSQLite
-        } else {
-            return ""
+        var result: String = ""
+        
+        guard _bool != nil else {
+            print("File: \(#file) Line \(#line): Func \(#function): _bool: \(String(describing: _bool)) result: \(result) \n")
+            return result
         }
+        if _bool! {
+            result = self.trueInSQLite
+        } else {
+            result = ""
+        }
+        print("File: \(#file) Line \(#line): Func \(#function): _bool: \(String(describing: _bool)) result: \(result) \n")
+        return result
     }
     
     //convert string into bool to make it suitable for SQLite database.
