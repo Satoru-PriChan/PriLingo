@@ -34,7 +34,8 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         didSet {
             self.myTableViews!.forEach {(tableView: UITableView) in
                 tableView.reloadData()
-            }
+                }
+            self.currentPageChanged(currentPage: self.currentPage!, myLoopScrollVC: self)
         }
     }
     
@@ -82,6 +83,10 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         self.myTableViews!.enumerated().forEach {(index: Int, tableView: UITableView) in
             tableView.frame = CGRect.init(x: w * CGFloat(index), y: 0, width: w, height: h)
         }
+    }
+    
+    ///function called when currentPage property is changed. Override this method if you need.
+    func currentPageChanged(currentPage: Int, myLoopScrollVC: MyLoopScrollViewController) {
     }
     
     //MARK: - UIScrollViewDelegate

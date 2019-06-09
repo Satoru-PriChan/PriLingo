@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWordViewController" customModule="PriLingo" customModuleProvider="target">
             <connections>
                 <outlet property="myLoopScrollView" destination="9h6-dk-mDa" id="J08-vT-uK3"/>
+                <outlet property="mySearchWordHeader" destination="9v5-YA-dO4" id="ISN-HB-MEr"/>
                 <outlet property="myTItleAndButtonView" destination="4QU-K1-NaU" id="kFD-UQ-EhT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

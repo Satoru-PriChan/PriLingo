@@ -11,7 +11,7 @@ import UIKit
 class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
-    
+    @IBOutlet weak var mySearchWordHeader: SearchWordHeader!
     ///paging enabled on .xib.
     @IBOutlet weak var myLoopScrollView: UIScrollView!
     
@@ -107,6 +107,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             }
         }
         
+        //set SearchWordHeader label
+        self.setHeader(currentPage: self.currentPage ?? 1)
+        
     }
     
     //MARK: - TitleAndButtonViewDelegate
@@ -114,6 +117,22 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //debug
         print("File: \(#file) Line \(#line): Func \(#function):  function called. \n")
     }
+    
+    //MARK: - Others
+    
+    func setHeader(currentPage: Int) {
+        guard let mySearchWordHeader = self.mySearchWordHeader else {return}
+        guard let numberLabel = mySearchWordHeader.numberLabel else {return}
+        numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
+    }
+    
+    ///function called when current page value is changed.
+    override func currentPageChanged(currentPage: Int, myLoopScrollVC: MyLoopScrollViewController) {
+        self.setHeader(currentPage: currentPage)
+
+    }
+    
+    //MARK: - UITableViewDelegate
 
     //UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
