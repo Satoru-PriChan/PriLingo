@@ -103,6 +103,9 @@
 		CE81B0DC22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
 		CE81B0DD22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
 		CE81B0DE22AD0C6500B8CCC8 /* AshHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */; };
+		CE81B0E022AD12F900B8CCC8 /* DAOSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B0DF22AD12F900B8CCC8 /* DAOSuper.swift */; };
+		CE81B0E122AD12F900B8CCC8 /* DAOSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B0DF22AD12F900B8CCC8 /* DAOSuper.swift */; };
+		CE81B0E222AD12F900B8CCC8 /* DAOSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B0DF22AD12F900B8CCC8 /* DAOSuper.swift */; };
 		CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF402286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
 		CE96FF412286B3C500211998 /* BackGroundFlower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */; };
@@ -296,6 +299,7 @@
 		CE80977222A252BE007A71D1 /* MyLoopScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoopScrollViewController.swift; sourceTree = "<group>"; };
 		CE81B0D722AD0AFF00B8CCC8 /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
 		CE81B0DB22AD0C6500B8CCC8 /* AshHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AshHeart.png; sourceTree = "<group>"; };
+		CE81B0DF22AD12F900B8CCC8 /* DAOSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOSuper.swift; sourceTree = "<group>"; };
 		CE96FF3E2286B3C500211998 /* BackGroundFlower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGroundFlower.jpg; sourceTree = "<group>"; };
 		CE987408229A7E62000F4F45 /* MyContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentViewController.swift; sourceTree = "<group>"; };
 		CE9A3CFB229CAD6C000B15E7 /* SearchWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordTableViewCell.swift; sourceTree = "<group>"; };
@@ -543,6 +547,7 @@
 		CEB2D21A2233F9E400410F02 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				CE81B0DF22AD12F900B8CCC8 /* DAOSuper.swift */,
 				CEB2D21B2233FA0500410F02 /* DAOTCategories.swift */,
 				CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */,
 			);
@@ -1079,6 +1084,7 @@
 				CEF46BF5223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE4222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CE81B0E022AD12F900B8CCC8 /* DAOSuper.swift in Sources */,
 				CE0AC12A2209B5B800953C0D /* ViewController.swift in Sources */,
 				CEF46BE8222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
@@ -1117,6 +1123,7 @@
 				CEF46BF6223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE5222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CE81B0E122AD12F900B8CCC8 /* DAOSuper.swift in Sources */,
 				CEF266BB2216E304009FEF73 /* ViewController.swift in Sources */,
 				CEF46BE9222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
@@ -1155,6 +1162,7 @@
 				CEF46BF7223002270095D3D2 /* Statements.swift in Sources */,
 				CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */,
 				CEF46BE6222FECB60095D3D2 /* CATEGORIES.swift in Sources */,
+				CE81B0E222AD12F900B8CCC8 /* DAOSuper.swift in Sources */,
 				CEF266BC2216E305009FEF73 /* ViewController.swift in Sources */,
 				CEF46BEA222FECE60095D3D2 /* SuperTable.swift in Sources */,
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,
