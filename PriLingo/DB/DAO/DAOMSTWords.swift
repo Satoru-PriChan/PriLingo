@@ -42,6 +42,32 @@ class DAOMSTWords: DAOSuper {
         return words
     }
     
+    /// function to perform SELECT * FROM MST_WORDS WHERE MST_WORDS_T_CATEGORIES_ID = ?
+    ///
+    /// - Parameter _categoryID: categoryID whose Words' data you would like to get
+    /// - Returns: an Array of DSOWord. if some error occurred, it returns nil.
+    func exeSelect(_wordID: String) -> DSOWord?{
+        let myDB = FMDatabase.init(path: Path.libDB)
+        var myResultSet: FMResultSet? = nil
+        var word: DSOWord
+        
+        myDB.open()
+        
+        do {
+            myResultSet = try myDB.executeQuery(Statements.SELECT_ONE_MSTWORDS, values: [_wordID])
+        } catch {
+            //debug
+            print("File: \(#file) Line \(#line): Func \(#function):  Some error happened executing \(Statements.SELECT_ALL_MSTWORDS), categoryID = \(_wordID)")
+            return nil
+        }
+        
+        //you can force myResultSet unwrapped cause it has already passed do-catch clause.
+        myResultSet!.next()
+        word = DSOWord.init(myResultSet: myResultSet!)
+        
+        myDB.close()
+        return word
+    }
     
     /// Function to execute UPDATE statment to MST_WORDS.
     ///

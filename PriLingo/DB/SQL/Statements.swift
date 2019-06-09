@@ -24,6 +24,13 @@ class Statements {
     + WORDS.T_CATEGORIES_ID + " = ?"
     + ";"
     
+    public static let SELECT_ONE_MSTWORDS = ""
+    + "SELECT * FROM "
+    + WORDS.MST_WORDS + " "
+    + "WHERE "
+    + WORDS.ID + " = ?"
+    + ";"
+    
     public static let UPDATE_WORD_FAVORITE = ""
     + "UPDATE "
     + WORDS.MST_WORDS + " "
