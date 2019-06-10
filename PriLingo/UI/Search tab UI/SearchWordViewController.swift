@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource {
+class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource, SearchWordHeaderDelegate {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     @IBOutlet weak var mySearchWordHeader: SearchWordHeader!
@@ -36,7 +36,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         if _categoryID != nil {
             _dsoWords = DAOwords.exeSelect(_categoryID: _categoryID!)
         }
-        
         
         super.init(_nibName: "SearchWordViewController", _scrollView: myLoopScrollView, _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 10 : _dsoWords!.count)
         
@@ -110,6 +109,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //set SearchWordHeader label
         self.setHeader(currentPage: self.currentPage ?? 1)
         
+        //SearchWordHeader delegate
+        self.mySearchWordHeader.delegate = self
+        
     }
     
     //MARK: - TitleAndButtonViewDelegate
@@ -167,6 +169,21 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         cell?.setCell(word: _word, pronounce: _pronounce)
         
         return cell ?? SearchWordTableViewCell()
+    }
+    
+    // MARK: - SearchWordHeaderDelegate
+    ///function called when favorite button is tapped.
+    func searchWordHeaderDelegate(touchedFavoriteButton: UIButton, searchWordHeader: SearchWordHeader) {
+        guard self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil else {return}
+        guard let index = self.dsoWords!.firstIndex(where: {(word) in
+            return Int(word.iD!) == self.currentPage!}) else {return}
+        
+        let oldWord = self.dsoWords![index]
+        
+        let dao = DAOMSTWords.init()
+        //change favorite flag for the old word.
+        guard let newWord = dao.exeUpdate(_wordID: oldWord.iD!, thisWordIsFavorite: !dao.convertStringIntoBool(_string: oldWord.favorite)) else {return}
+        self.dsoWords![index] = newWord
     }
 
     /*

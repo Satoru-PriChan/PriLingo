@@ -190,6 +190,9 @@
 		CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
 		CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED43FB9227BDA3700031DF9 /* Lang.swift */; };
+		CEDAC35422AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
+		CEDAC35522AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
+		CEDAC35622AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
 		CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
 		CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
 		CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
@@ -328,6 +331,7 @@
 		CED43FB0227BCF0B00031DF9 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question.png; sourceTree = "<group>"; };
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
+		CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordHeaderDelegate.swift; sourceTree = "<group>"; };
 		CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndButtonView.swift; sourceTree = "<group>"; };
 		CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndButtonView.xib; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
@@ -512,6 +516,7 @@
 				CE9A3CFC229CAD6C000B15E7 /* SearchWordTableViewCell.xib */,
 				CE5D45E322AB784E00F42A92 /* SearchWordHeader.swift */,
 				CE5D45E722AB786300F42A92 /* SearchWordHeader.xib */,
+				CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */,
 				CE31F911229BDA4200FAF2A8 /* RepeatState.swift */,
 			);
 			path = "Search tab UI";
@@ -1098,6 +1103,7 @@
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEDAC35422AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F916229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
@@ -1137,6 +1143,7 @@
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEDAC35522AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F917229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
@@ -1176,6 +1183,7 @@
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
 				CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
+				CEDAC35622AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F918229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,

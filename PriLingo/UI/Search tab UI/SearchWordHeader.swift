@@ -13,6 +13,8 @@ class SearchWordHeader: UIView {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    var delegate: SearchWordHeaderDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
@@ -34,6 +36,10 @@ class SearchWordHeader: UIView {
         
     }
 
+    ///function called when a favorite button is tapped.
+    @IBAction func tappedFavoriteButton(_ sender: UIButton) {
+        self.delegate?.searchWordHeaderDelegate(touchedFavoriteButton: sender, searchWordHeader: self)
+    }
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
