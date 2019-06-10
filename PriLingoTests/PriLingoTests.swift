@@ -66,6 +66,10 @@ class PriLingoTests: XCTestCase {
     func testDBUpdateMSTWORDS() {
         let dao = DAOMSTWords.init()
         
+        //initial select
+        let word0 = dao.exeSelect(_wordID: "1")
+        print("File: \(#file) Line \(#line): Func \(#function): word0.favorite: \(String(describing: word0?.favorite))\n")
+        
         //parameter: True -> False
         let word = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: true)
         XCTAssertTrue(dao.convertStringIntoBool(_string: word?.favorite), "File: \(#file) Line \(#line): Func \(#function): First try failed. word?.favorite: \(String(describing: word?.favorite))\n")

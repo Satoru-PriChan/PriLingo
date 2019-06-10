@@ -78,7 +78,7 @@ class DAOMSTWords: DAOSuper {
         let myDB = FMDatabase.init(path: Path.libDB)
         
         myDB.open()
-        myDB.executeUpdate(Statements.UPDATE_WORD_FAVORITE, withArgumentsIn: [_wordID ?? "", self.convertBoolIntoString(_bool: thisWordIsFavorite)])
+        myDB.executeUpdate(Statements.UPDATE_WORD_FAVORITE, withArgumentsIn: [self.convertBoolIntoString(_bool: thisWordIsFavorite), _wordID ?? ""])
         myDB.close()
         
         return self.exeSelect(_wordID: _wordID ?? "")
