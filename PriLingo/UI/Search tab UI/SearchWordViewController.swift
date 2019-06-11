@@ -127,10 +127,13 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     //MARK: - Others
     
     func setHeader(currentPage: Int) {
-        guard let mySearchWordHeader = self.mySearchWordHeader else {return}
-        guard let numberLabel = mySearchWordHeader.numberLabel else {return}
-        numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
-        //TODO: Implement favorite button appearance change
+        if let mySearchWordHeader = self.mySearchWordHeader, let numberLabel = mySearchWordHeader.numberLabel {
+            numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
+        mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: self.dsoWords![currentPage - 1].favorite))
+        }
+        
+        
+        
     }
     
     ///function called when current page value is changed.
@@ -187,11 +190,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         
         let dao = DAOMSTWords.init()
         //change favorite flag for the old word.
-        guard let newWord = dao.exeUpdate(_wordID: oldWord.iD!, thisWordIsFavorite: !dao.convertStringIntoBool(_string: oldWord.favorite)) else {return}
+        guard let newWord = dao.exeUpdate(_wordID: oldWord.iD!, thisWordIsFavorite: !DAOSuper.convertStringIntoBool(_string: oldWord.favorite)) else {return}
         self.dsoWords![index] = newWord
         
         //change button appearance.
-        self.mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: dao.convertStringIntoBool(_string: newWord.favorite))
+        self.mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: newWord.favorite))
     }
 
     /*

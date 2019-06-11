@@ -11,10 +11,10 @@ import FMDB
 
 ///base class for DAO.
 class DAOSuper {
-    let trueInSQLite: String = "1"
+    static let trueInSQLite: String = "1"
     
     //convert bool into string to make it suitable for SQLite database.
-    func convertBoolIntoString(_bool: Bool?) -> String {
+    static func convertBoolIntoString(_bool: Bool?) -> String {
         var result: String = " "
         
         guard _bool != nil else {
@@ -29,7 +29,7 @@ class DAOSuper {
     }
     
     //convert string into bool to make it suitable for SQLite database.
-    func convertStringIntoBool(_string: String?) -> Bool {
+    static func convertStringIntoBool(_string: String?) -> Bool {
         guard _string != nil else {return false}
         return (_string! == self.trueInSQLite)
     }
