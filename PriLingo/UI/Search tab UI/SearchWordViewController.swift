@@ -130,6 +130,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         guard let mySearchWordHeader = self.mySearchWordHeader else {return}
         guard let numberLabel = mySearchWordHeader.numberLabel else {return}
         numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
+        //TODO: Implement favorite button appearance change
     }
     
     ///function called when current page value is changed.
