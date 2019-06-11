@@ -36,10 +36,25 @@ class SearchWordHeader: UIView {
         
     }
 
+    //MARK: - IB function
+    
     ///function called when a favorite button is tapped.
     @IBAction func tappedFavoriteButton(_ sender: UIButton) {
         self.delegate?.searchWordHeaderDelegate(touchedFavoriteButton: sender, searchWordHeader: self)
     }
+    
+    //MARK: - Other methods
+    
+    ///function to change Favorite button appearance. if isFavorite is nil or false, set ash-colored image. if not, set normal image.
+    func changeFavoriteButtonApperance(isFavorite: Bool?) {
+        if isFavorite == nil || !isFavorite! {
+            self.favoriteButton.setBackgroundImage(UIImage.init(named: "AshHeart.png"), for: .normal)
+        } else {
+            self.favoriteButton.setBackgroundImage(UIImage.init(named: "Heart.png"), for: .normal)
+        }
+       
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

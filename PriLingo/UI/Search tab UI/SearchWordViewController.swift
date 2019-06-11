@@ -25,7 +25,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     let myReuseIdentifier = "myCell"
     
     ///words to display.
-    var dsoWords: [DSOWord]?
+    var dsoWords: [DSOWord]? {
+        didSet {
+            
+        }
+    }
     
     ///Initializer
     init(_categoryID: String?, _titleJP: String?, _titleEN: String?, _titleCN_S: String?, _titleCN_T: String?) {
@@ -174,7 +178,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     // MARK: - SearchWordHeaderDelegate
     ///function called when favorite button is tapped.
     func searchWordHeaderDelegate(touchedFavoriteButton: UIButton, searchWordHeader: SearchWordHeader) {
-        guard self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil else {return}
+        guard self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil && self.mySearchWordHeader != nil else {return}
         guard let index = self.dsoWords!.firstIndex(where: {(word) in
             return Int(word.iD!) == self.currentPage!}) else {return}
         
@@ -184,6 +188,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //change favorite flag for the old word.
         guard let newWord = dao.exeUpdate(_wordID: oldWord.iD!, thisWordIsFavorite: !dao.convertStringIntoBool(_string: oldWord.favorite)) else {return}
         self.dsoWords![index] = newWord
+        
+        //change button appearance.
+        self.mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: dao.convertStringIntoBool(_string: newWord.favorite))
     }
 
     /*
