@@ -11,5 +11,5 @@ import UIKit
 ///delegate protocol for SearchWordTableViewCell.
 protocol SearchWordTableViewCellDelegate {
     ///function called when the play button is tapped.
-    func searchWordTableViewCell(tappedPlayButton: UIButton)
+    func searchWordTableViewCell(tappedPlayButton: UIButton, cell: SearchWordTableViewCell)
 }

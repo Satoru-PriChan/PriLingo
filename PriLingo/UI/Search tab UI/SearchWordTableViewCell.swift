@@ -28,14 +28,16 @@ class SearchWordTableViewCell: UITableViewCell {
     }
     
     ///function to set cell values.
-    func setCell(word: String?, pronounce: String?, delegate: SearchWordTableViewCellDelegate?) {
+    func setCell(word: String?, pronounce: String?, delegate: SearchWordTableViewCellDelegate?, tag: Int) {
         self.wordLabel.text = word
         self.PronunciationLabel.text = pronounce
         self.delegate = delegate
+        self.tag = tag
     }
     
     ///function called when the play button is tapped.
     @IBAction func playButtonTapped(_ sender: UIButton) {
-        self.delegate?.searchWordTableViewCell(tappedPlayButton: sender)
+        self.delegate?.searchWordTableViewCell(tappedPlayButton: sender, cell: self)
+        
     }
 }
