@@ -9,6 +9,8 @@
 import UIKit
 
 class SearchWordTableViewCell: UITableViewCell {
+    
+    var delegate: SearchWordTableViewCellDelegate?
 
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
@@ -26,9 +28,14 @@ class SearchWordTableViewCell: UITableViewCell {
     }
     
     ///function to set cell values.
-    func setCell(word: String?, pronounce: String?) {
+    func setCell(word: String?, pronounce: String?, delegate: SearchWordTableViewCellDelegate?) {
         self.wordLabel.text = word
         self.PronunciationLabel.text = pronounce
+        self.delegate = delegate
     }
     
+    ///function called when the play button is tapped.
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        self.delegate?.searchWordTableViewCell(tappedPlayButton: sender)
+    }
 }

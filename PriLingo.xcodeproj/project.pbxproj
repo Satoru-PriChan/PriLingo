@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9036A622B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9036A522B0B2790012E40A /* SearchWordTableViewCellDelegate.swift */; };
+		1F9036A722B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9036A522B0B2790012E40A /* SearchWordTableViewCellDelegate.swift */; };
+		1F9036A822B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9036A522B0B2790012E40A /* SearchWordTableViewCellDelegate.swift */; };
 		2AA398083E46E7E11F161FD4 /* Pods_PriLingoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */; };
 		68285597453B3E9B67653C92 /* Pods_PriLingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */; };
 		85C8085E8EB7F06230E3F230 /* Pods_PriLingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */; };
@@ -251,6 +254,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F9036A522B0B2790012E40A /* SearchWordTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.debug.xcconfig"; sourceTree = "<group>"; };
 		81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -514,6 +518,7 @@
 				CE46499F227BFE5D009F5514 /* SearchWordViewController.xib */,
 				CE9A3CFB229CAD6C000B15E7 /* SearchWordTableViewCell.swift */,
 				CE9A3CFC229CAD6C000B15E7 /* SearchWordTableViewCell.xib */,
+				1F9036A522B0B2790012E40A /* SearchWordTableViewCellDelegate.swift */,
 				CE5D45E322AB784E00F42A92 /* SearchWordHeader.swift */,
 				CE5D45E722AB786300F42A92 /* SearchWordHeader.xib */,
 				CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */,
@@ -1095,6 +1100,7 @@
 				CEA04CE622426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375142231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1424228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
+				1F9036A622B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */,
 				CEB2D21C2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE5D45E422AB784E00F42A92 /* SearchWordHeader.swift in Sources */,
 				CECF291D227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
@@ -1135,6 +1141,7 @@
 				CEA04CE722426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375152231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1425228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
+				1F9036A722B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */,
 				CEB2D21D2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE5D45E522AB784E00F42A92 /* SearchWordHeader.swift in Sources */,
 				CECF291E227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,
@@ -1175,6 +1182,7 @@
 				CEA04CE822426F0800501A08 /* FavoritesViewController.swift in Sources */,
 				CEF375162231591800CC8A74 /* Path.swift in Sources */,
 				CE9C1426228F8BA40099DC48 /* MyUINavigationController.swift in Sources */,
+				1F9036A822B0B2790012E40A /* SearchWordTableViewCellDelegate.swift in Sources */,
 				CEB2D21E2233FA0500410F02 /* DAOTCategories.swift in Sources */,
 				CE5D45E622AB784E00F42A92 /* SearchWordHeader.swift in Sources */,
 				CECF291F227FD629003FCF74 /* SearchCateogryTableViewCell.swift in Sources */,

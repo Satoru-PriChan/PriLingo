@@ -47,6 +47,9 @@
                                             <constraint firstAttribute="width" constant="44" identifier="SearchWordTableViewCell-2" id="bwy-Ct-pOM"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="play.png"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3Te-a2-ZiE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

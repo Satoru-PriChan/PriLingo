@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource, SearchWordHeaderDelegate {
+class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource, SearchWordHeaderDelegate, SearchWordTableViewCellDelegate {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     @IBOutlet weak var mySearchWordHeader: SearchWordHeader!
@@ -174,7 +174,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         default:
             break
         }
-        cell?.setCell(word: _word, pronounce: _pronounce)
+        cell?.setCell(word: _word, pronounce: _pronounce, delegate: self)
         
         return cell ?? SearchWordTableViewCell()
     }
@@ -195,6 +195,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         
         //change button appearance.
         self.mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: newWord.favorite))
+    }
+    
+    // MARK: - SearchWordTableViewCellDelegate
+    func searchWordTableViewCell(tappedPlayButton: UIButton) {
+        // TODO: Implement to play sound
     }
 
     /*
