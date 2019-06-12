@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource, SearchWordHeaderDelegate, SearchWordTableViewCellDelegate {
+class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDelegate, UITableViewDelegate, UITableViewDataSource, SearchWordHeaderDelegate, SearchWordTableViewCellDelegate, AVAudioPlayerDelegate {
     
     @IBOutlet weak var myTItleAndButtonView: TitleAndButtonView!
     @IBOutlet weak var mySearchWordHeader: SearchWordHeader!
@@ -20,6 +21,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     var titleEN: String?
     var titleCN_S: String?
     var titleCN_T: String?
+    
+    //audio player
+    var audioPlayer: AVAudioPlayer?
     
     ///reuseIdentifier
     let myReuseIdentifier = "myCell"
@@ -198,8 +202,21 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     }
     
     // MARK: - SearchWordTableViewCellDelegate
+    
+    ///function called when the play button is tapped.
     func searchWordTableViewCell(tappedPlayButton: UIButton) {
-        // TODO: Implement to play sound
+        
+        ///use audioplayer to play.
+        if let bundlePath = Bundle.main.path(forResource: "0001_01: Manaka Laala JP", ofType: "mp3") {
+            let url = URL.init(fileURLWithPath: bundlePath)
+            do {
+                try audioPlayer = AVAudioPlayer.init(contentsOf: url)
+                audioPlayer?.delegate = self
+                audioPlayer?.prepareToPlay()
+            } catch let error as NSError {
+                print("File \(#file): Line \(#line): Func \(#function):  audioPlayer error: \(error.localizedDescription) ")
+            }
+        }
     }
 
     /*
