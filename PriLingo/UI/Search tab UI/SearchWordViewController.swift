@@ -207,12 +207,12 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     func searchWordTableViewCell(tappedPlayButton: UIButton) {
         
         ///use audioplayer to play.
-        if let bundlePath = Bundle.main.path(forResource: "0001_01: Manaka Laala JP", ofType: "mp3") {
+        if let bundlePath = Bundle.main.path(forResource: "0001jp", ofType: "mp3") {
             let url = URL.init(fileURLWithPath: bundlePath)
             do {
                 try audioPlayer = AVAudioPlayer.init(contentsOf: url)
                 audioPlayer?.delegate = self
-                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
             } catch let error as NSError {
                 print("File \(#file): Line \(#line): Func \(#function):  audioPlayer error: \(error.localizedDescription) ")
             }

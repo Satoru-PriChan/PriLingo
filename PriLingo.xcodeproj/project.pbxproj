@@ -28,6 +28,9 @@
 		CE0B750222159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
 		CE0B750322159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
 		CE0B750422159D6A00CC49A0 /* Top.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B74FE22159D6A00CC49A0 /* Top.xib */; };
+		CE0E115122B136EC003C31B7 /* 0001jp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE0E115022B136EC003C31B7 /* 0001jp.mp3 */; };
+		CE0E115222B136EC003C31B7 /* 0001jp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE0E115022B136EC003C31B7 /* 0001jp.mp3 */; };
+		CE0E115322B136EC003C31B7 /* 0001jp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE0E115022B136EC003C31B7 /* 0001jp.mp3 */; };
 		CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
 		CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17A03C223298F30073A0A4 /* DBSetUp.swift */; };
@@ -280,6 +283,7 @@
 		CE0AC1492209B5BA00953C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0AC156220B219300953C0D /* SearchTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTab.xib; sourceTree = "<group>"; };
 		CE0B74FE22159D6A00CC49A0 /* Top.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top.xib; sourceTree = "<group>"; };
+		CE0E115022B136EC003C31B7 /* 0001jp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0001jp.mp3; sourceTree = "<group>"; };
 		CE17A03C223298F30073A0A4 /* DBSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSetUp.swift; sourceTree = "<group>"; };
 		CE31F902229BAF5D00FAF2A8 /* repeat-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-all.png"; sourceTree = "<group>"; };
 		CE31F903229BAF5D00FAF2A8 /* repeat-none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeat-none.png"; sourceTree = "<group>"; };
@@ -469,6 +473,14 @@
 			path = PriLingoUITests;
 			sourceTree = "<group>";
 		};
+		CE0E114F22B136DC003C31B7 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E115022B136EC003C31B7 /* 0001jp.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		CE17A03B223298D10073A0A4 /* InitialSetup */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +588,7 @@
 		CEB632422229618800FBB79C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE0E114F22B136DC003C31B7 /* Sound */,
 				CEC67A88224EFC960038D17B /* Image */,
 				CEA04CFC22426F6700501A08 /* Top level UI */,
 				CEA04CFD22426FA700501A08 /* Search tab UI */,
@@ -804,6 +817,7 @@
 				CEF71E862241188000B30970 /* PronunciationTab.xib in Resources */,
 				CE46499B227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CE06F40A220C5C1000343CD9 /* Localizable.strings in Resources */,
+				CE0E115122B136EC003C31B7 /* 0001jp.mp3 in Resources */,
 				CE81B0DC22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CEEF438E2298D8AB000A86B1 /* TitleAndButtonView.xib in Resources */,
 				CE96FF3F2286B3C500211998 /* BackGroundFlower.jpg in Resources */,
@@ -873,6 +887,7 @@
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CE81B0D922AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CE0E115222B136EC003C31B7 /* 0001jp.mp3 in Resources */,
 				CE81B0DD22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CE4649A4227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
@@ -920,6 +935,7 @@
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CE81B0DA22AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
+				CE0E115322B136EC003C31B7 /* 0001jp.mp3 in Resources */,
 				CE81B0DE22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
 				CE4649A5227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
