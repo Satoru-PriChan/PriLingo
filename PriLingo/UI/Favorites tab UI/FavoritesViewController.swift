@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class FavoritesViewController: MyContentViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,12 @@ class FavoritesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Navigation title
-        self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "TitleFavorite.png"))
+        if let myNav = self.navigationController as? MyUINavigationController {
+            myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleFavorite.png")
+        }
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
 
 

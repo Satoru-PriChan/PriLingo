@@ -10,7 +10,7 @@ import Foundation
 import FMDB
 
 ///class of Data Accessing Object for T_CATGORIES.
-class DAOTCategories {
+class DAOTCategories: DAOSuper {
     
     /// function to SELECT * FROM T_CATEGORIES
     ///

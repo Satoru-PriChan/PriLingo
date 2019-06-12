@@ -9,7 +9,9 @@
 import UIKit
 
 ///class for UITabBar for whole app.
-class MyTabBarController: UITabBarController {
+class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
+    
+    var myTabBarHeight: CGFloat?
 
     // MARK: - ViewController lifecycle
     
@@ -27,21 +29,18 @@ class MyTabBarController: UITabBarController {
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         
         //change appearance of UINavigationBar
-        let viewControllers: [UINavigationController] = vCList.map {UINavigationController.init(rootViewController: $0)}
+        let viewControllers: [UINavigationController] = vCList.map {MyUINavigationController.init(rootViewController: $0)}
         
+        //set delegate
         viewControllers.forEach {
-
-            $0.navigationBar.barTintColor = UIColor.init(patternImage: UIImage.init(named: "PinkPolkaDot2.png")!)
-            $0.navigationBar.backIndicatorImage = UIImage.init(named: "BackArrow.png")
-            $0.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "BackArrow.png")
+            $0.delegate = self
         }
         self.viewControllers = viewControllers
         
         //add covertabbarview shape
         let scWidth = self.view.bounds.size.width
         let scHeight = self.view.bounds.size.height
-        let hv: CGFloat = scHeight * 0.1428//a seventh
-        self.view.addSubview(self.coverTabBarView(originX: 0, originY: scHeight - hv, width: scWidth, height: hv))
+        self.view.addSubview(self.coverTabBarView(originX: 0, width: scWidth, height: nil))
         self.tabBar.isHidden = true
 
         //initially selected index
@@ -82,23 +81,38 @@ class MyTabBarController: UITabBarController {
         animateToTab(toIndex: toIndex)
     }
     
-    ///function to return UIView to cover default UITabBar.
-    func coverTabBarView(originX _x: CGFloat, originY _y: CGFloat, width _width: CGFloat, height _height: CGFloat) -> UIView {
+    ///function to return UIView to cover default UITabBar. if an input parameter height is nil, it automatially sets appropriate height.
+    func coverTabBarView(originX _x: CGFloat, width _width: CGFloat, height _height: CGFloat?) -> UIView {
+        
+        //button size
+        let buttonHeight = 54
+        let buttonWidth = 60
+        
+        //expandLength
+        let expandLength: CGFloat = 37
+        
+        let __height = (_height ?? (CGFloat(buttonHeight + 30)))
+        
+        if _height == nil {
+            self.myTabBarHeight = CGFloat(buttonHeight + 30)  + expandLength * 0.7
+        }
+        
+        let _y = UIScreen.main.bounds.size.height - __height
         
         //setup view itself
         let view = UIView()
-        view.frame = CGRect.init(x: _x, y: _y, width: _width, height: _height)
+        view.frame = CGRect.init(x: _x, y: _y, width: _width, height: __height)
         view.backgroundColor = UIColor.purple
         
         let shapeLayer = CAShapeLayer()
-        shapeLayer.path = self.createLengthExpandShape()
+        shapeLayer.path = self.createLengthExpandShape(expandHeight: expandLength)
         shapeLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "lace.png")!).cgColor
         view.layer.insertSublayer(shapeLayer, at: 0)
         
         //setup stackview
-        let stackWidth: CGFloat = _width * 3 * 0.25
-        let stackHeight: CGFloat = stackWidth * 0.25
-        let myStackView = UIStackView.init(frame: CGRect.init(x: (_width - stackWidth) * 0.5, y: _height - stackHeight, width: stackWidth, height: stackHeight))
+        let stackWidth: CGFloat = CGFloat(buttonWidth * 4)
+        let stackHeight: CGFloat = CGFloat(buttonHeight)
+        let myStackView = UIStackView.init(frame: CGRect.init(x: (_width - stackWidth) * 0.5, y: __height - stackHeight, width: stackWidth, height: stackHeight))
         myStackView.translatesAutoresizingMaskIntoConstraints = false
         myStackView.axis = .horizontal
         myStackView.distribution = .fillEqually
@@ -107,21 +121,23 @@ class MyTabBarController: UITabBarController {
         view.addConstraints([
             NSLayoutConstraint.init(item: view, attribute: .centerX, relatedBy: .equal, toItem: myStackView, attribute: .centerX, multiplier: 1, constant: 0),
             NSLayoutConstraint.init(item: view, attribute: .centerY, relatedBy: .equal, toItem: myStackView, attribute: .centerY, multiplier: 1, constant: 0),
-            NSLayoutConstraint.init(item: myStackView, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 0.8, constant: 0),
-            NSLayoutConstraint.init(item: myStackView, attribute: .width, relatedBy: .equal, toItem: myStackView, attribute: .height, multiplier: 4, constant: 0)
+            NSLayoutConstraint.init(item: myStackView, attribute: .width, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: CGFloat(buttonWidth/*width of button images*/ * 4)),
+            NSLayoutConstraint.init(item: myStackView, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: CGFloat(buttonHeight)/*height of button images*/)
             
         ])
         
         //setup buttons
-        let leftMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
-        let midLeftBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
-        let midRightBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
-        let rightMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: stackWidth * 0.25, height: stackHeight)
+        let leftMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: CGFloat(buttonWidth), height: CGFloat(buttonHeight))
+        let midLeftBtn = self.myTabBarButton(originX: 0, originY: 0, width: CGFloat(buttonWidth), height: CGFloat(buttonHeight))
+        let midRightBtn = self.myTabBarButton(originX: 0, originY: 0, width: CGFloat(buttonWidth), height: CGFloat(buttonHeight))
+        let rightMostBtn = self.myTabBarButton(originX: 0, originY: 0, width: CGFloat(buttonWidth), height: CGFloat(buttonHeight))
         
         myStackView.addArrangedSubview(leftMostBtn)
         myStackView.addArrangedSubview(midLeftBtn)
         myStackView.addArrangedSubview(midRightBtn)
         myStackView.addArrangedSubview(rightMostBtn)
+        
+        myStackView.spacing = 10
         
         leftMostBtn.setImage(UIImage.init(named: "button1.png"), for: .normal)
         midLeftBtn.setImage(UIImage.init(named: "button2.png"), for: .normal)
@@ -160,12 +176,12 @@ class MyTabBarController: UITabBarController {
     /// Function to get the CGPath which expands length from original size(typically for original UITabBar).
     ///
     /// - Returns: A CGPath whose shape is expanded.
-    func createLengthExpandShape() -> CGPath {
+    func createLengthExpandShape(expandHeight: CGFloat) -> CGPath {
         let path = UIBezierPath()
         
         //Starting point (left top) then draw lines until the it returns to the starting point with close().
         let startX: CGFloat = 0
-        let startY: CGFloat = -37
+        let startY: CGFloat = -1 * expandHeight
         path.move(to: CGPoint.init(x: startX, y: startY))
         path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: startY))
         path.addLine(to: CGPoint.init(x: self.view.bounds.size.width, y: self.view.bounds.size.height))
@@ -173,6 +189,33 @@ class MyTabBarController: UITabBarController {
         path.close()
         
         return path.cgPath
+    }
+    
+    //MARK: - UINavigationControllerDelegate
+    
+    ///function called when view has showed.
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if let myNav = navigationController as? MyUINavigationController {
+            ///hides left button if stack has only one view controller.
+            if myNav.viewControllers.count <= 1 && myNav.myNavigationbar?.myLeftButton.isEnabled == true {
+                myNav.myNavigationbar?.myLeftButton.isEnabled = false
+            myNav.myNavigationbar?.myLeftButton.setBackgroundImage(UIImage.init(named: "Candy.png"), for: .normal)
+                
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isEnabled: \(String(describing: myNav.myNavigationbar?.myLeftButton.isEnabled)) \n")
+                
+            //shows left button if stack has more than one view controller.
+            } else if myNav.viewControllers.count >= 2 && myNav.myNavigationbar?.myLeftButton.isEnabled == false {
+                myNav.myNavigationbar?.myLeftButton.isEnabled = true
+            myNav.myNavigationbar?.myLeftButton.setBackgroundImage(UIImage.init(named: "BackArrow.png"), for: .normal)
+                
+                //debug
+                print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isEnabled: \(String(describing: myNav.myNavigationbar?.myLeftButton.isEnabled)) \n")
+            }
+            
+
+        
+        }
     }
 
     /*

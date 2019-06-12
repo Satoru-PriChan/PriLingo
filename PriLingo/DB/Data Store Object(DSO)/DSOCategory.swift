@@ -14,9 +14,13 @@ class DSOCategory {
     
     // MARK: - Property
     var iD: String?
+    ///Japanese
     var name1: String?
+    ///English
     var name2: String?
+    ///Simplified Chinese
     var name3: String?
+    ///Traditional Chinese
     var name4: String?
     var name5: String?
     var name6: String?

@@ -62,6 +62,30 @@ class PriLingoTests: XCTestCase {
         }
     }
     
+    ///function to test UPDATE function for MST_WORDS.
+    func testDBUpdateMSTWORDS() {
+        let dao = DAOMSTWords.init()
+        
+        //initial select
+        let word0 = dao.exeSelect(_wordID: "1")
+        print("File: \(#file) Line \(#line): Func \(#function): word0.favorite: \(String(describing: word0?.favorite))\n")
+        
+        //parameter: True -> False
+        let word = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: true)
+        XCTAssertTrue(dao.convertStringIntoBool(_string: word?.favorite), "File: \(#file) Line \(#line): Func \(#function): First try failed. word?.favorite: \(String(describing: word?.favorite))\n")
+        
+        let word2 = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: false)
+        XCTAssertFalse(dao.convertStringIntoBool(_string: word2?.favorite), "File: \(#file) Line \(#line): Func \(#function): Second try failed. word2?.favorite: \(String(describing: word2?.favorite))\n")
+        
+        //parameter: True -> nil
+        let word3 = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: true)
+        XCTAssertTrue(dao.convertStringIntoBool(_string: word3?.favorite), "File: \(#file) Line \(#line): Func \(#function): Third try failed. word3?.favorite: \(String(describing: word3?.favorite))\n")
+        
+        let word4 = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: nil)
+        XCTAssertFalse(dao.convertStringIntoBool(_string: word4?.favorite), "File: \(#file) Line \(#line): Func \(#function): Fourth try failed. word4?.favorite: \(String(describing: word4?.favorite))\n")
+        
+    }
+    
     ///function to test Lang class that selects appropriate words from string.resource files.
     func testLang() {
         let key = "welcome"

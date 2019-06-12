@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleAndButtonView" customModule="PriLingo" customModuleProvider="target">
+            <connections>
+                <outlet property="myTitleLabel" destination="hxX-Mv-Ud6" id="4F5-gI-nKa"/>
+                <outlet property="playRepeatButton" destination="CiW-7S-PQP" id="lvv-kz-AoM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxX-Mv-Ud6">
+                    <rect key="frame" x="49" y="14" width="316" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiW-7S-PQP">
+                    <rect key="frame" x="365" y="5.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" identifier="TitleAndButtonView-1" id="7nD-gP-Iea"/>
+                        <constraint firstAttribute="height" constant="44" identifier="TitleAndButtonView-2" id="FBJ-Ca-RVB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="repeat-none.png"/>
+                    <connections>
+                        <action selector="playRepeatButton:" destination="-1" eventType="touchUpInside" id="zb0-Ca-4X9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CiW-7S-PQP" secondAttribute="trailing" constant="5" identifier="TitleAndButtonView-3" id="22t-f0-bkI"/>
+                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" priority="999" identifier="TitleAndButtonView-4" id="ZiQ-iT-gcc"/>
+                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" identifier="TitleAndButtonView-5" id="bmn-S5-vd0"/>
+                <constraint firstItem="CiW-7S-PQP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" identifier="TitleAndButtonView-7" id="jst-be-Ea0"/>
+                <constraint firstItem="hxX-Mv-Ud6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CiW-7S-PQP" secondAttribute="leading" identifier="TitleAndButtonView-6" id="wxy-uJ-fmu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="repeat-none.png" width="35.200000762939453" height="35.200000762939453"/>
+    </resources>
+</document>
