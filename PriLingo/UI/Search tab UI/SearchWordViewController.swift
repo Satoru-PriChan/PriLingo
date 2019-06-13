@@ -235,9 +235,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         if let bundlePath = Bundle.main.path(forResource: str1 + "_" +  str2, ofType: "mp3") {
             let url = URL.init(fileURLWithPath: bundlePath)
             do {
-                try audioPlayer = AVAudioPlayer.init(contentsOf: url)
-                audioPlayer?.delegate = self
-                audioPlayer?.play()
+                try self.audioPlayer = AVAudioPlayer.init(contentsOf: url)
+                self.audioPlayer?.delegate = self
+                self.audioPlayer?.play()
             } catch let error as NSError {
                 print("File \(#file): Line \(#line): Func \(#function):  audioPlayer error: \(error.localizedDescription) ")
             }
