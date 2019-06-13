@@ -232,7 +232,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         print("File: \(#file) Line \(#line): Func \(#function):  str1 + str2: \(str1 + str2)\n")
         
         ///use audioplayer to play.
-        if let bundlePath = Bundle.main.path(forResource: str1 + str2, ofType: "mp3") {
+        if let bundlePath = Bundle.main.path(forResource: str1 + "_" +  str2, ofType: "mp3") {
             let url = URL.init(fileURLWithPath: bundlePath)
             do {
                 try audioPlayer = AVAudioPlayer.init(contentsOf: url)
@@ -246,8 +246,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     
     //MARK: - AVAudioPlayerDelegate
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        
     }
+    
+    
 
     /*
     // MARK: - Navigation
