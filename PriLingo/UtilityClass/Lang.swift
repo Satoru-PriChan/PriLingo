@@ -19,6 +19,20 @@ class Lang {
         case Japanese = "ja"
         case SimplifiedChinese = "zh-Hans"
         case TraditionalChinese = "zh-Hant"
+        
+        //function to return next case. JP -> EN -> CN_S -> CN_T -> JP ...
+        func nextCase() -> Language{
+            switch self {
+            case .Japanese:
+                return .English
+            case .English:
+                return .SimplifiedChinese
+            case .SimplifiedChinese:
+                return .TraditionalChinese
+            case .TraditionalChinese:
+                return .Japanese
+            }
+        }
     }
     
     //MARK: - Function

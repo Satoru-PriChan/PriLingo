@@ -31,28 +31,25 @@ class Path {
     ///
     /// - Parameter soundPath: string. The format should be 4 digit number plus under bar plus an identifier for languages. like this 0001_ja
     /// - Returns: The sound path that should be played after parameter file's played.
-    static func nextSoundPath(soundPath: String) -> String {
+    static func nextSoundPath(soundPath: String) -> String? {
         let elements = soundPath.split(separator: "_")
         var firstHalf = Int(String(elements[0]))!
         var secondHalf = String(elements[1])
         
-        switch secondHalf {
-        case Lang.Language.Japanese.rawValue:
-            secondHalf = Lang.Language.English.rawValue
-        case Lang.Language.English.rawValue:
-            secondHalf = Lang.Language.SimplifiedChinese.rawValue
-        case Lang.Language.SimplifiedChinese.rawValue:
-            secondHalf = Lang.Language.TraditionalChinese.rawValue
-        case Lang.Language.TraditionalChinese.rawValue:
-            secondHalf = Lang.Language.Japanese.rawValue
-            firstHalf += 1
+        //handle the first half
+        if secondHalf == Lang.Language.TraditionalChinese.rawValue {
             //check if the number is over the number of all words.
             if Bundle.main.path(forResource: (String.init(format: "%04d", firstHalf) + "_" + Lang.Language.Japanese.rawValue), ofType: "mp3") == nil {
                 //make it 1
                 firstHalf = 1
-            }
-        default:
-            return ""
+            } else {
+                firstHalf += 1
+        }
+            
+        //handle the second half
+        let nextCase = Lang.Language(rawValue: secondHalf)!.nextCase()
+        secondHalf = nextCase.rawValue
+        
         }
         
         return String.init(format: "%04d", firstHalf) + "_" + secondHalf
