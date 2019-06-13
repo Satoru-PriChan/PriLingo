@@ -25,6 +25,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     //audio player
     var audioPlayer: AVAudioPlayer?
     
+    //sound's repeat state
+    var myRepeatState: RepeatState = .None
+    
     ///reuseIdentifier
     let myReuseIdentifier = "myCell"
     
@@ -123,9 +126,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     }
     
     //MARK: - TitleAndButtonViewDelegate
-    func titleAndButtonView(tappedRepeatButton: UIButton) {
+    func titleAndButtonView(tappedRepeatButton: UIButton, repeatState: RepeatState) {
         //debug
         print("File: \(#file) Line \(#line): Func \(#function):  function called. \n")
+        
+        self.myRepeatState = repeatState
     }
     
     //MARK: - Others

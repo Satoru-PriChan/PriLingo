@@ -11,5 +11,5 @@ import UIKit
 
 protocol TitleAndButtonViewDelegate {
     ///function for when repeat button is tapped.
-    func titleAndButtonView(tappedRepeatButton: UIButton)
+    func titleAndButtonView(tappedRepeatButton: UIButton, repeatState: RepeatState)
 }

@@ -56,7 +56,7 @@ class TitleAndButtonView: UIView {
         }
         
         //do something needed by owner.
-    self.delegate?.titleAndButtonView(tappedRepeatButton: sender)
+        self.delegate?.titleAndButtonView(tappedRepeatButton: sender, repeatState: self.repeatButtonState)
     }
     
     /*
