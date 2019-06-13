@@ -238,6 +238,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             }
         }
     }
+    
+    //MARK: - AVAudioPlayerDelegate
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        
+    }
 
     /*
     // MARK: - Navigation
