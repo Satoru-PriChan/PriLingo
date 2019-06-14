@@ -47,7 +47,7 @@ class Path {
         }
             
         //handle the second half
-        let nextCase = Lang.Language(rawValue: secondHalf)!.nextCase()
+        let nextCase = Lang.Language(rawValue: secondHalf).nextCase()
         secondHalf = nextCase.rawValue
         
         }

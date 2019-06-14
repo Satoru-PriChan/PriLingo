@@ -20,6 +20,22 @@ class Lang {
         case SimplifiedChinese = "zh-Hans"
         case TraditionalChinese = "zh-Hant"
         
+        //Initializer from rawValue
+        init(rawValue: String) {
+            switch rawValue {
+            case Lang.Language.Japanese.rawValue:
+                self = .Japanese
+            case Lang.Language.English.rawValue:
+                self = .English
+            case Lang.Language.SimplifiedChinese.rawValue:
+                self = .SimplifiedChinese
+            case Lang.Language.TraditionalChinese.rawValue:
+                self = .TraditionalChinese
+            default:
+                self = .Japanese
+            }
+        }
+        
         //function to return next case. JP -> EN -> CN_S -> CN_T -> JP ...
         func nextCase() -> Language{
             switch self {
