@@ -92,6 +92,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         
         //set title
         self.myTItleAndButtonView.myTitleLabel.text = self.titleEN
+        self.myTItleAndButtonView.delegate = self
         
         //set table view & scroll view
         if self.dsoWords != nil && self.dsoWords!.count > 0 {
@@ -143,9 +144,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
         mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: self.dsoWords![currentPage - 1].favorite))
         }
-        
-        
-        
     }
     
     ///function called when current page value is changed.

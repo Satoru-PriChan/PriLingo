@@ -36,6 +36,9 @@ class Path {
         var firstHalf = Int(String(elements[0]))!
         var secondHalf = String(elements[1])
         
+        //debug
+        print("File: \(#file) Line \(#line): called: Func \(#function)\n")
+        
         //handle the first half
         if secondHalf == Lang.Language.TraditionalChinese.rawValue {
             //check if the number is over the number of all words.
@@ -44,13 +47,15 @@ class Path {
                 firstHalf = 1
             } else {
                 firstHalf += 1
+            }
         }
-            
+        
         //handle the second half
         let nextCase = Lang.Language(rawValue: secondHalf).nextCase()
+        //debug
+        print("File: \(#file) Line \(#line): Func \(#function): Before change: \(secondHalf), After change: \(nextCase.rawValue) \n")
         secondHalf = nextCase.rawValue
-        
-        }
+
         
         return String.init(format: "%04d", firstHalf) + "_" + secondHalf
     }
