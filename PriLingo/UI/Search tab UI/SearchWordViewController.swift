@@ -25,6 +25,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     //audio player
     var audioPlayer: AVAudioPlayer?
     
+    ///the sound path the system played last time.
+    var currentSoundPath: String?
+    
     //sound's repeat state
     var myRepeatState: RepeatState = .None
     
@@ -212,29 +215,57 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     func searchWordTableViewCell(tappedPlayButton: UIButton, cell: SearchWordTableViewCell) {
         
         ///use audioplayer to play.
-        if let bundlePath = Bundle.main.path(forResource: cell.soundPath, ofType: "mp3") {
+        
+        self.newAudioPlayer(soundPath: cell.soundPath)
+        
+    }
+    
+    //MARK: - AVAudioPlayerDelegate
+    
+    //function to make new audio player.
+    func newAudioPlayer(soundPath: String) {
+        ///use audioplayer to play.
+        if let bundlePath = Bundle.main.path(forResource: soundPath, ofType: "mp3") {
             let url = URL.init(fileURLWithPath: bundlePath)
             do {
                 try self.audioPlayer = AVAudioPlayer.init(contentsOf: url)
                 self.audioPlayer?.delegate = self
+                
+                //record sound path
+                self.currentSoundPath = soundPath
+                
+                print("File \(#file): Line \(#line): Func \(#function):  playing...: \(soundPath) ")
                 self.audioPlayer?.play()
+                
             } catch let error as NSError {
                 print("File \(#file): Line \(#line): Func \(#function):  audioPlayer error: \(error.localizedDescription) ")
             }
         }
     }
     
-    //MARK: - AVAudioPlayerDelegate
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        //TODO: Implement following
-        /*
+        
         switch self.myRepeatState {
         case .None:
+            print("File \(#file): Line \(#line): called: Func \(#function) at None")
             break
         case .RepeatOne:
+            print("File \(#file): Line \(#line): called: Func \(#function) at RepeatOne ")
             
+            guard let currentSoundPath = self.currentSoundPath, var nextPath = Path.nextSoundPath(soundPath: currentSoundPath) else {return}
+            let currentNO = self.currentSoundPath!.split(separator: "_")
+            var nextNo = nextPath.split(separator: "_")
+            
+            if currentNO[0] != nextNo[0] {
+                nextPath = String.init(format: "%04d", (Int(String(currentNO[0]))!)) + "_" + String(nextNo[1])
+            }
+            self.newAudioPlayer(soundPath: nextPath)
         case .RepeatAll:
-        }*/
+            print("File \(#file): Line \(#line): called: Func \(#function) at RepeatAll ")
+            guard let currentSoundPath = self.currentSoundPath, let nextPath = Path.nextSoundPath(soundPath: currentSoundPath) else {return}
+            self.newAudioPlayer(soundPath: nextPath)
+
+        }
     }
     
     
