@@ -18,6 +18,35 @@ class SearchWordTableViewCell: UITableViewCell {
     
     var wordID: String?
     
+    ///returns the sound path that the cell is in charge of.
+    var soundPath: String {
+        if self.wordID == nil || self.tag > 3 {return ""}
+        
+        //get file path(first half)
+        let str1 = String.init(format: "%04d", Int(self.wordID!)!)
+        
+        //get file path (second half)
+        var str2: String
+        switch self.tag {
+        case 0:
+            str2 = Lang.Language.Japanese.rawValue
+        case 1:
+            str2 = Lang.Language.English.rawValue
+        case 2:
+            str2 = Lang.Language.SimplifiedChinese.rawValue
+        case 3:
+            str2 = Lang.Language.TraditionalChinese.rawValue
+        default:
+            return ""
+        }
+        
+        //debug
+        print("File: \(#file) Line \(#line): Func \(#function):  str1 + str2: \(str1 + str2)\n")
+        
+        ///use audioplayer to play.
+        return str1 + "_" + str2
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
