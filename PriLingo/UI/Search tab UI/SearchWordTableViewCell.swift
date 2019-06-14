@@ -16,6 +16,8 @@ class SearchWordTableViewCell: UITableViewCell {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var PronunciationLabel: UILabel!
     
+    var wordID: String?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,11 +30,12 @@ class SearchWordTableViewCell: UITableViewCell {
     }
     
     ///function to set cell values.
-    func setCell(word: String?, pronounce: String?, delegate: SearchWordTableViewCellDelegate?, tag: Int) {
+    func setCell(word: String?, pronounce: String?, delegate: SearchWordTableViewCellDelegate?, tag: Int, wordID: String) {
         self.wordLabel.text = word
         self.PronunciationLabel.text = pronounce
         self.delegate = delegate
         self.tag = tag
+        self.wordID = wordID
     }
     
     ///function called when the play button is tapped.

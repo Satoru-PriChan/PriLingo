@@ -183,7 +183,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         default:
             break
         }
-        cell?.setCell(word: _word, pronounce: _pronounce, delegate: self, tag: indexPath.row)
+        cell?.setCell(word: _word, pronounce: _pronounce, delegate: self, tag: indexPath.row, wordID: newWord.iD!)
         
         return cell ?? SearchWordTableViewCell()
     }
@@ -246,6 +246,15 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     
     //MARK: - AVAudioPlayerDelegate
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        //TODO: Implement following
+        /*
+        switch self.myRepeatState {
+        case .None:
+            break
+        case .RepeatOne:
+            
+        case .RepeatAll:
+        }*/
     }
     
     
