@@ -210,29 +210,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     
     ///function called when the play button is tapped.
     func searchWordTableViewCell(tappedPlayButton: UIButton, cell: SearchWordTableViewCell) {
-        //get file path(first half)
-        let str1 = String.init(format: "%04d", Int(self.dsoWords![self.currentPage! - 1].iD!)!)
-        
-        //get file path (second half)
-        var str2: String
-        switch cell.tag {
-        case 0:
-            str2 = Lang.Language.Japanese.rawValue
-        case 1:
-            str2 = Lang.Language.English.rawValue
-        case 2:
-            str2 = Lang.Language.SimplifiedChinese.rawValue
-        case 3:
-            str2 = Lang.Language.TraditionalChinese.rawValue
-        default:
-            str2 = String()
-        }
-        
-        //debug
-        print("File: \(#file) Line \(#line): Func \(#function):  str1 + str2: \(str1 + str2)\n")
         
         ///use audioplayer to play.
-        if let bundlePath = Bundle.main.path(forResource: str1 + "_" +  str2, ofType: "mp3") {
+        if let bundlePath = Bundle.main.path(forResource: cell.soundPath, ofType: "mp3") {
             let url = URL.init(fileURLWithPath: bundlePath)
             do {
                 try self.audioPlayer = AVAudioPlayer.init(contentsOf: url)
