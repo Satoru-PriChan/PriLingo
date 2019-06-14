@@ -32,8 +32,6 @@ class SearchWordHeader: UIView {
             
             view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "headerImage.png")!)
         }
-        
-        
     }
 
     //MARK: - IB function

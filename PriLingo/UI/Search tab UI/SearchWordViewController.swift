@@ -149,7 +149,10 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     ///function called when current page value is changed.
     override func currentPageChanged(currentPage: Int, myLoopScrollVC: MyLoopScrollViewController) {
         self.setHeader(currentPage: currentPage)
-
+        
+        //stop sound-play
+        self.audioPlayer?.stop()
+        self.audioPlayer = nil
     }
     
     //MARK: - UITableViewDelegate
