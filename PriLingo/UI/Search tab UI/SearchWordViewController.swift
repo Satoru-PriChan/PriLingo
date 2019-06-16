@@ -272,10 +272,21 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             
             if Int(String(currentNO[0]))! + 1 == Int(String(nextNo[0]))! {
                 //scroll to the next page
-                self.myScrollView?.contentOffset.x += UIScreen.main.bounds.width
+                let timing = UICubicTimingParameters.init(animationCurve: .linear)
+                let animator = UIViewPropertyAnimator.init(duration: 0.3, timingParameters: timing)
+                animator.addAnimations {
+                    self.myScrollView?.contentOffset.x += UIScreen.main.bounds.width
+                }
+                animator.startAnimation()
+                
             } else if Int(String(nextNo[0])) == 1 {
                 //scroll to the first page
-                self.myScrollView?.contentOffset.x = UIScreen.main.bounds.width
+                let timing = UICubicTimingParameters.init(animationCurve: .linear)
+                let animator = UIViewPropertyAnimator.init(duration: 0.3, timingParameters: timing)
+                animator.addAnimations {
+                    self.myScrollView?.contentOffset.x = UIScreen.main.bounds.width
+                }
+                animator.startAnimation()
             }
             
             self.newAudioPlayer(soundPath: nextPath)
