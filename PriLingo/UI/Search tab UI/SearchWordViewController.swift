@@ -148,6 +148,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     
     ///function called when current page value is changed.
     override func currentPageChanged(currentPage: Int, myLoopScrollVC: MyLoopScrollViewController) {
+        //change label
         self.setHeader(currentPage: currentPage)
         
         //stop sound-play
@@ -244,6 +245,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         }
     }
     
+    ///function called when the audio player stopped playing sound.
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         
         switch self.myRepeatState {
@@ -264,8 +266,19 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         case .RepeatAll:
             print("File \(#file): Line \(#line): called: Func \(#function) at RepeatAll ")
             guard let currentSoundPath = self.currentSoundPath, let nextPath = Path.nextSoundPath(soundPath: currentSoundPath) else {return}
+            
+            let currentNO = self.currentSoundPath!.split(separator: "_")
+            var nextNo = nextPath.split(separator: "_")
+            
+            if Int(String(currentNO[0]))! + 1 == Int(String(nextNo[0]))! {
+                //scroll to the next page
+                self.myScrollView?.contentOffset.x += UIScreen.main.bounds.width
+            } else if Int(String(nextNo[0])) == 1 {
+                //scroll to the first page
+                self.myScrollView?.contentOffset.x = UIScreen.main.bounds.width
+            }
+            
             self.newAudioPlayer(soundPath: nextPath)
-
         }
     }
     

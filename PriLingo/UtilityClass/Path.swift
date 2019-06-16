@@ -30,7 +30,7 @@ class Path {
     /// function to get sound file's path. typically used in loop sound play.
     ///
     /// - Parameter soundPath: string. The format should be 4 digit number plus under bar plus an identifier for languages. like this 0001_ja
-    /// - Returns: The sound path that should be played after parameter file's played.
+    /// - Returns: The sound path that should be played after parameter file's played. Also, a Bool value to show whether the word has changed into the next one or not.
     static func nextSoundPath(soundPath: String) -> String? {
         let elements = soundPath.split(separator: "_")
         var firstHalf = Int(String(elements[0]))!
@@ -56,8 +56,7 @@ class Path {
         print("File: \(#file) Line \(#line): Func \(#function): Before change: \(secondHalf), After change: \(nextCase.rawValue) \n")
         secondHalf = nextCase.rawValue
 
-        
-        return String.init(format: "%04d", firstHalf) + "_" + secondHalf
+        return (String.init(format: "%04d", firstHalf) + "_" + secondHalf)
     }
     
 }
