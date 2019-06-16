@@ -31,6 +31,14 @@ class Statements {
     + WORDS.ID + " = ?"
     + ";"
     
+    public static let SELECT_FAVORITE_MSTWORDS = ""
+    + "SELECT * FROM "
+    + WORDS.MST_WORDS + " "
+    + "WHERE "
+    + WORDS.FAVORITE
+    + " = \"1\""
+    + ";"
+    
     public static let UPDATE_WORD_FAVORITE = ""
     + "UPDATE "
     + WORDS.MST_WORDS + " "

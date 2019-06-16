@@ -68,6 +68,31 @@ class DAOMSTWords: DAOSuper {
         return word
     }
     
+    ///function to get Favorited words.If some error happens, it returns nil.
+    func exeSelectFavorite() -> [DSOWord]? {
+        let myDB = FMDatabase.init(path: Path.libDB)
+        var myResultSet: FMResultSet? = nil
+        var words: Array<DSOWord> = []
+        
+        myDB.open()
+        
+        do {
+            myResultSet = try myDB.executeQuery(Statements.SELECT_FAVORITE_MSTWORDS, values: nil)
+        } catch {
+            //debug
+            print("File: \(#file) Line \(#line): Func \(#function):  Some error happened")
+            return nil
+        }
+        
+        //you can force myResultSet unwrapped cause it has already passed do-catch clause.
+        while(myResultSet!.next()) {
+            words.append(DSOWord.init(myResultSet: myResultSet!))
+        }
+        
+        myDB.close()
+        return words
+    }
+    
     /// Function to execute UPDATE statment to MST_WORDS.
     ///
     /// - Parameters:
