@@ -154,6 +154,30 @@
 		CEA1A966227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
 		CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */; };
+		CEA217AD22B5E03600CC1271 /* 0003_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A522B5E03500CC1271 /* 0003_ja.mp3 */; };
+		CEA217AE22B5E03600CC1271 /* 0003_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A522B5E03500CC1271 /* 0003_ja.mp3 */; };
+		CEA217AF22B5E03600CC1271 /* 0003_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A522B5E03500CC1271 /* 0003_ja.mp3 */; };
+		CEA217B022B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A622B5E03500CC1271 /* 0004_zh-Hant.mp3 */; };
+		CEA217B122B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A622B5E03500CC1271 /* 0004_zh-Hant.mp3 */; };
+		CEA217B222B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A622B5E03500CC1271 /* 0004_zh-Hant.mp3 */; };
+		CEA217B322B5E03600CC1271 /* 0004_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A722B5E03500CC1271 /* 0004_ja.mp3 */; };
+		CEA217B422B5E03600CC1271 /* 0004_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A722B5E03500CC1271 /* 0004_ja.mp3 */; };
+		CEA217B522B5E03600CC1271 /* 0004_ja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A722B5E03500CC1271 /* 0004_ja.mp3 */; };
+		CEA217B622B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A822B5E03500CC1271 /* 0004_zh-Hans.mp3 */; };
+		CEA217B722B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A822B5E03500CC1271 /* 0004_zh-Hans.mp3 */; };
+		CEA217B822B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A822B5E03500CC1271 /* 0004_zh-Hans.mp3 */; };
+		CEA217B922B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A922B5E03600CC1271 /* 0003_zh-Hans.mp3 */; };
+		CEA217BA22B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A922B5E03600CC1271 /* 0003_zh-Hans.mp3 */; };
+		CEA217BB22B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217A922B5E03600CC1271 /* 0003_zh-Hans.mp3 */; };
+		CEA217BC22B5E03600CC1271 /* 0004_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AA22B5E03600CC1271 /* 0004_en.mp3 */; };
+		CEA217BD22B5E03600CC1271 /* 0004_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AA22B5E03600CC1271 /* 0004_en.mp3 */; };
+		CEA217BE22B5E03600CC1271 /* 0004_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AA22B5E03600CC1271 /* 0004_en.mp3 */; };
+		CEA217BF22B5E03600CC1271 /* 0003_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AB22B5E03600CC1271 /* 0003_en.mp3 */; };
+		CEA217C022B5E03600CC1271 /* 0003_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AB22B5E03600CC1271 /* 0003_en.mp3 */; };
+		CEA217C122B5E03600CC1271 /* 0003_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AB22B5E03600CC1271 /* 0003_en.mp3 */; };
+		CEA217C222B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AC22B5E03600CC1271 /* 0003_zh-Hant.mp3 */; };
+		CEA217C322B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AC22B5E03600CC1271 /* 0003_zh-Hant.mp3 */; };
+		CEA217C422B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA217AC22B5E03600CC1271 /* 0003_zh-Hant.mp3 */; };
 		CEA6A445228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
 		CEA6A446228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
 		CEA6A447228E372700151E03 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A444228E372700151E03 /* MyNavigationBar.swift */; };
@@ -346,6 +370,14 @@
 		CEA04CF422426F3900501A08 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA04CF522426F3900501A08 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		CEA1A965227B16E100605A87 /* PinkPolkaDot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPolkaDot2.png; sourceTree = "<group>"; };
+		CEA217A522B5E03500CC1271 /* 0003_ja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0003_ja.mp3; sourceTree = "<group>"; };
+		CEA217A622B5E03500CC1271 /* 0004_zh-Hant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004_zh-Hant.mp3"; sourceTree = "<group>"; };
+		CEA217A722B5E03500CC1271 /* 0004_ja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0004_ja.mp3; sourceTree = "<group>"; };
+		CEA217A822B5E03500CC1271 /* 0004_zh-Hans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004_zh-Hans.mp3"; sourceTree = "<group>"; };
+		CEA217A922B5E03600CC1271 /* 0003_zh-Hans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003_zh-Hans.mp3"; sourceTree = "<group>"; };
+		CEA217AA22B5E03600CC1271 /* 0004_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0004_en.mp3; sourceTree = "<group>"; };
+		CEA217AB22B5E03600CC1271 /* 0003_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0003_en.mp3; sourceTree = "<group>"; };
+		CEA217AC22B5E03600CC1271 /* 0003_zh-Hant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003_zh-Hant.mp3"; sourceTree = "<group>"; };
 		CEA6A444228E372700151E03 /* MyNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationBar.swift; sourceTree = "<group>"; };
 		CEA6A448228E376F00151E03 /* MyNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNavigationBar.xib; sourceTree = "<group>"; };
 		CEAF85DA2234A25E00B1F9BD /* DAOMSTWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMSTWords.swift; sourceTree = "<group>"; };
@@ -512,6 +544,14 @@
 				CEB6E10E22B45698005FA5DE /* 0002_ja.mp3 */,
 				CEB6E10F22B45698005FA5DE /* 0002_zh-Hans.mp3 */,
 				CEB6E11222B45698005FA5DE /* 0002_zh-Hant.mp3 */,
+				CEA217AB22B5E03600CC1271 /* 0003_en.mp3 */,
+				CEA217A522B5E03500CC1271 /* 0003_ja.mp3 */,
+				CEA217A922B5E03600CC1271 /* 0003_zh-Hans.mp3 */,
+				CEA217AC22B5E03600CC1271 /* 0003_zh-Hant.mp3 */,
+				CEA217AA22B5E03600CC1271 /* 0004_en.mp3 */,
+				CEA217A722B5E03500CC1271 /* 0004_ja.mp3 */,
+				CEA217A822B5E03500CC1271 /* 0004_zh-Hans.mp3 */,
+				CEA217A622B5E03500CC1271 /* 0004_zh-Hant.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -862,10 +902,16 @@
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
+				CEA217B922B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */,
+				CEA217B322B5E03600CC1271 /* 0004_ja.mp3 in Resources */,
+				CEA217B022B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */,
 				CE77918E227920F3007515B9 /* button2.png in Resources */,
+				CEA217BC22B5E03600CC1271 /* 0004_en.mp3 in Resources */,
 				CEB6E12522B45698005FA5DE /* 0001_zh-Hans.mp3 in Resources */,
 				CE0AC1322209B5B900953C0D /* LaunchScreen.storyboard in Resources */,
+				CEA217B622B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */,
 				CE5D45E822AB786300F42A92 /* SearchWordHeader.xib in Resources */,
+				CEA217AD22B5E03600CC1271 /* 0003_ja.mp3 in Resources */,
 				CE77919622792122007515B9 /* button4.png in Resources */,
 				CE785A29227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE785A26227F21C400F3F490 /* TitlePronunciation.png in Resources */,
@@ -884,8 +930,10 @@
 				CE81B0D822AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CE0AC12F2209B5B900953C0D /* Assets.xcassets in Resources */,
 				CE9A3D08229CCDDE000B15E7 /* Star.png in Resources */,
+				CEA217BF22B5E03600CC1271 /* 0003_en.mp3 in Resources */,
 				CEF382E3223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CEA04CF122426F2200501A08 /* PronunciationViewController.xib in Resources */,
+				CEA217C222B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */,
 				CEA04CE922426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE9A3D04229CC614000B15E7 /* play.png in Resources */,
 				CEB6E11322B45698005FA5DE /* 0001_ja.mp3 in Resources */,
@@ -900,6 +948,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA217AE22B5E03600CC1271 /* 0003_ja.mp3 in Resources */,
 				CE31F90B229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E4223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CE5D45E922AB786300F42A92 /* SearchWordHeader.xib in Resources */,
@@ -920,6 +969,7 @@
 				CEB6E11422B45698005FA5DE /* 0001_ja.mp3 in Resources */,
 				CEA04CFA22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE663F212295431B00DAB5ED /* Candy.png in Resources */,
+				CEA217B122B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */,
 				CE785A30227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918B227920CF007515B9 /* button1.png in Resources */,
 				CECF2921227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -928,11 +978,15 @@
 				CE5D45ED22AB96B700F42A92 /* headerImage.png in Resources */,
 				CEB4050C2273554300C8BFCD /* lace.png in Resources */,
 				CE785A27227F21C400F3F490 /* TitlePronunciation.png in Resources */,
+				CEA217B722B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */,
 				CEF375102231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEB6E11A22B45698005FA5DE /* 0001_en.mp3 in Resources */,
+				CEA217B422B5E03600CC1271 /* 0004_ja.mp3 in Resources */,
 				CE9A3D05229CC614000B15E7 /* play.png in Resources */,
+				CEA217BD22B5E03600CC1271 /* 0004_en.mp3 in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEB6E11722B45698005FA5DE /* 0001_zh-Hant.mp3 in Resources */,
+				CEA217BA22B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */,
 				CE81B0D922AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEA22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE81B0DD22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
@@ -940,9 +994,11 @@
 				CE785A2A227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE77918F227920F3007515B9 /* button2.png in Resources */,
 				CEB6E12622B45698005FA5DE /* 0001_zh-Hans.mp3 in Resources */,
+				CEA217C022B5E03600CC1271 /* 0003_en.mp3 in Resources */,
 				CED43FB2227BCF0B00031DF9 /* Question.png in Resources */,
 				CEB6E11D22B45698005FA5DE /* 0002_ja.mp3 in Resources */,
 				CE31F908229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
+				CEA217C322B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */,
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -955,6 +1011,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA217AF22B5E03600CC1271 /* 0003_ja.mp3 in Resources */,
 				CE31F90C229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CEF382E5223FD21E000B06B9 /* SettingsTab.xib in Resources */,
 				CE5D45EA22AB786300F42A92 /* SearchWordHeader.xib in Resources */,
@@ -975,6 +1032,7 @@
 				CEB6E11522B45698005FA5DE /* 0001_ja.mp3 in Resources */,
 				CEA04CFB22426F3900501A08 /* SettingsViewController.xib in Resources */,
 				CE663F222295431B00DAB5ED /* Candy.png in Resources */,
+				CEA217B222B5E03600CC1271 /* 0004_zh-Hant.mp3 in Resources */,
 				CE785A31227F21C400F3F490 /* TitleSearch.png in Resources */,
 				CE77918C227920CF007515B9 /* button1.png in Resources */,
 				CECF2922227FD629003FCF74 /* SearchCateogryTableViewCell.xib in Resources */,
@@ -983,11 +1041,15 @@
 				CE5D45EE22AB96B700F42A92 /* headerImage.png in Resources */,
 				CEB4050D2273554300C8BFCD /* lace.png in Resources */,
 				CE785A28227F21C400F3F490 /* TitlePronunciation.png in Resources */,
+				CEA217B822B5E03600CC1271 /* 0004_zh-Hans.mp3 in Resources */,
 				CEF375112231246B00CC8A74 /* PriLingoDB.db in Resources */,
 				CEB6E11B22B45698005FA5DE /* 0001_en.mp3 in Resources */,
+				CEA217B522B5E03600CC1271 /* 0004_ja.mp3 in Resources */,
 				CE9A3D06229CC614000B15E7 /* play.png in Resources */,
+				CEA217BE22B5E03600CC1271 /* 0004_en.mp3 in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEB6E11822B45698005FA5DE /* 0001_zh-Hant.mp3 in Resources */,
+				CEA217BB22B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */,
 				CE81B0DA22AD0AFF00B8CCC8 /* Heart.png in Resources */,
 				CEA04CEB22426F0800501A08 /* FavoritesViewController.xib in Resources */,
 				CE81B0DE22AD0C6500B8CCC8 /* AshHeart.png in Resources */,
@@ -995,9 +1057,11 @@
 				CE785A2B227F21C400F3F490 /* TitleSettings.png in Resources */,
 				CE779190227920F3007515B9 /* button2.png in Resources */,
 				CEB6E12722B45698005FA5DE /* 0001_zh-Hans.mp3 in Resources */,
+				CEA217C122B5E03600CC1271 /* 0003_en.mp3 in Resources */,
 				CED43FB3227BCF0B00031DF9 /* Question.png in Resources */,
 				CEB6E11E22B45698005FA5DE /* 0002_ja.mp3 in Resources */,
 				CE31F909229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
+				CEA217C422B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */,
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
