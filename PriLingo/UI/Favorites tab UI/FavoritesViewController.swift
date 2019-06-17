@@ -27,6 +27,23 @@ class FavoritesViewController: SearchWordViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //update favorite words.
+        let dao = DAOMSTWords.init()
+        self.dsoWords = dao.exeSelectFavorite()
+        
+        if self.dsoWords == nil {
+            self.pagesInTotal = 0
+        } else {
+            self.pagesInTotal = self.dsoWords!.count
+        }
+        
+        //update appearance
+        self.mySearchWordHeader.numberLabel.text = String(self.currentPage ?? 0) + "/" + String(self.pagesInTotal ?? 0)
+        
+        self.myTableViews?.forEach {$0.reloadData()}
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
