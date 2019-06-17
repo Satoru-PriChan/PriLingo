@@ -8,8 +8,19 @@
 
 import UIKit
 
-class FavoritesViewController: MyContentViewController {
-
+class FavoritesViewController: SearchWordViewController {
+    
+    init() {
+        super.init(_categoryID: nil, _titleJP: Lang.getLocalizedString(key: "favorite", lang: .Japanese), _titleEN: Lang.getLocalizedString(key: "favorite", lang: .English), _titleCN_S: Lang.getLocalizedString(key: "favorite", lang: .SimplifiedChinese), _titleCN_T: Lang.getLocalizedString(key: "favorite", lang: .TraditionalChinese))
+        
+        let dao = DAOMSTWords.init()
+        self.dsoWords = dao.exeSelectFavorite()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

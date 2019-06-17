@@ -22,9 +22,11 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
         
         //prepare each tab
         let searchVC = SearchCategoryViewController()
-        let favoritesVC = FavoritesViewController()
         let pronunciationVC = PronunciationViewController()
         let settingsVC = SettingsViewController()
+        let favoritesVC = FavoritesViewController()
+        
+        //prepare favorite VC.
         
         let vCList = [searchVC, favoritesVC, pronunciationVC, settingsVC]
         
@@ -212,9 +214,6 @@ class MyTabBarController: UITabBarController, UINavigationControllerDelegate {
                 //debug
                 print("File: \(#file) Line \(#line): Func \(#function): myNav.viewControllers.count: \(myNav.viewControllers.count), myNav.myNavigationbar?.myLeftButton.isEnabled: \(String(describing: myNav.myNavigationbar?.myLeftButton.isEnabled)) \n")
             }
-            
-
-        
         }
     }
 

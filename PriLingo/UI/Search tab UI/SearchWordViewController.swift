@@ -51,7 +51,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             _dsoWords = DAOwords.exeSelect(_categoryID: _categoryID!)
         }
         
-        super.init(_nibName: "SearchWordViewController", _scrollView: myLoopScrollView, _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 10 : _dsoWords!.count)
+        super.init(_nibName: "SearchWordViewController", _scrollView: myLoopScrollView, _tableView1: UITableView(), _tableView2: UITableView(), _tableView3: UITableView(), _pagesInTotal: _dsoWords == nil ? 0 : _dsoWords!.count)
         
         //set title property
         self.titleJP = _titleJP
@@ -154,6 +154,9 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //stop sound-play
         self.audioPlayer?.stop()
         self.audioPlayer = nil
+        //debug
+        print("File: \(#file) Line \(#line): Func \(#function):  self.audioPlayer has been stopped forciblly\n")
+        
     }
     
     //MARK: - UITableViewDelegate

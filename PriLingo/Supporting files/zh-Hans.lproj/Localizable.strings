@@ -11,3 +11,4 @@
 //MARK: - SearchCategoryTableViewCell
 "chapter_firstHalf" = "Chapter";
 "chapter_lastHalf" = "";
+"favorite" = "Favorite";
