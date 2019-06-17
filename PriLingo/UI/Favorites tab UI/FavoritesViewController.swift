@@ -15,6 +15,12 @@ class FavoritesViewController: SearchWordViewController {
         
         let dao = DAOMSTWords.init()
         self.dsoWords = dao.exeSelectFavorite()
+        
+        if self.dsoWords == nil {
+            self.pagesInTotal = 0
+        } else {
+            self.pagesInTotal = self.dsoWords!.count
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
