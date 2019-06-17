@@ -39,7 +39,7 @@ class FavoritesViewController: SearchWordViewController {
         }
         
         //update appearance
-        self.mySearchWordHeader.numberLabel.text = String(self.currentPage ?? 0) + "/" + String(self.pagesInTotal ?? 0)
+        self.setHeader(currentPage: self.currentPage ?? 0)
         
         self.myTableViews?.forEach {$0.reloadData()}
     }
