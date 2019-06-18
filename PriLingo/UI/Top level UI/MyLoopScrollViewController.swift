@@ -59,7 +59,7 @@ class MyLoopScrollViewController: MyContentViewController, UIScrollViewDelegate 
         
         //set page number
         self.pagesInTotal = _pagesInTotal
-        self.currentPage = 1
+        self.currentPage = _pagesInTotal > 0 ? 1 : 0
     }
     
     required init?(coder aDecoder: NSCoder) {

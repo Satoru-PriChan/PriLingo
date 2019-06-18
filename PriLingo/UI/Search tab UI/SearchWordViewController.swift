@@ -122,7 +122,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         }
         
         //set SearchWordHeader label
-        self.setHeader(currentPage: self.currentPage ?? 1)
+        self.setHeader(currentPage: self.currentPage ?? 0)
         
         //SearchWordHeader delegate
         self.mySearchWordHeader.delegate = self
