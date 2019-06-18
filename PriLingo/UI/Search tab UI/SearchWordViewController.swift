@@ -62,7 +62,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //use DB
         guard _dsoWords != nil else {return}
         self.dsoWords = _dsoWords
-
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -172,7 +171,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         } else {
             return 4//JP, EN, CN_S, CN_T
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -208,16 +206,14 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     // MARK: - SearchWordHeaderDelegate
     ///function called when favorite button is tapped.
     func searchWordHeaderDelegate(touchedFavoriteButton: UIButton, searchWordHeader: SearchWordHeader) {
-        guard self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil && self.mySearchWordHeader != nil else {return}
-        guard let index = self.dsoWords!.firstIndex(where: {(word) in
-            return Int(word.iD!) == self.currentPage!}) else {return}
+        guard self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil && self.currentPage! != 0 && self.mySearchWordHeader != nil else {return}
         
-        let oldWord = self.dsoWords![index]
+        let oldWord = self.dsoWords![self.currentPage! - 1]
         
         let dao = DAOMSTWords.init()
         //change favorite flag for the old word.
         guard let newWord = dao.exeUpdate(_wordID: oldWord.iD!, thisWordIsFavorite: !DAOSuper.convertStringIntoBool(_string: oldWord.favorite)) else {return}
-        self.dsoWords![index] = newWord
+        self.dsoWords![self.currentPage! - 1] = newWord
         
         //change button appearance.
         self.mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: newWord.favorite))
