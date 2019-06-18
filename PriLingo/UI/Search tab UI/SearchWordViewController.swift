@@ -142,7 +142,11 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
     func setHeader(currentPage: Int) {
         if let mySearchWordHeader = self.mySearchWordHeader, let numberLabel = mySearchWordHeader.numberLabel {
             numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
-        mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: self.dsoWords![currentPage - 1].favorite))
+        
+            if self.dsoWords != nil && self.dsoWords!.count > 0 {
+                mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: self.dsoWords![currentPage - 1].favorite))
+            }
+            
         }
     }
     
