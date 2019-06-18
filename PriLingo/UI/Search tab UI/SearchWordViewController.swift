@@ -143,7 +143,7 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         if let mySearchWordHeader = self.mySearchWordHeader, let numberLabel = mySearchWordHeader.numberLabel {
             numberLabel.text = String(currentPage) + "/" + String(self.pagesInTotal!)
         
-            if self.dsoWords != nil && self.dsoWords!.count > 0 {
+            if self.dsoWords != nil && self.dsoWords!.count > 0 && self.currentPage != nil && self.currentPage! > 0{
                 mySearchWordHeader.changeFavoriteButtonApperance(isFavorite: DAOSuper.convertStringIntoBool(_string: self.dsoWords![currentPage - 1].favorite))
             }
             
@@ -167,7 +167,12 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
 
     //UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4//JP, EN, CN_S, CN_T
+        if self.pagesInTotal == nil || self.pagesInTotal! == 0 || self.currentPage == nil || self.currentPage! == 0 {
+            return 0
+        } else {
+            return 4//JP, EN, CN_S, CN_T
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

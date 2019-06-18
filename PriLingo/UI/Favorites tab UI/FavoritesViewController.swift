@@ -37,6 +37,13 @@ class FavoritesViewController: SearchWordViewController {
         } else {
             self.pagesInTotal = self.dsoWords!.count
         }
+    
+        //update currentPage property, for when totalPages property has changed from over 0 to 0, or oposite case.
+        if self.currentPage == 0 && self.pagesInTotal != nil && self.pagesInTotal! > 0{
+            self.currentPage = 1
+        } else if (self.currentPage == nil || self.currentPage! > 0) && self.pagesInTotal == 0 {
+            self.currentPage = 0
+        }
         
         //update appearance
         self.setHeader(currentPage: self.currentPage ?? 0)
