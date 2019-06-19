@@ -41,8 +41,13 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         }
     }
     
+    //category to display.
+    var categoryID: String?
+    
     ///Initializer
     init(_categoryID: String?, _titleJP: String?, _titleEN: String?, _titleCN_S: String?, _titleCN_T: String?) {
+        
+        self.categoryID = _categoryID
         
         //use DB
         let DAOwords = DAOMSTWords.init()
@@ -68,10 +73,23 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         fatalError("init(coder:) has not been implemented")
     }
     
+    ///wrire a code that should be done everytime the view displays on the screen.
+    override func viewWillAppear(_ animated: Bool) {
+        //update from DB
+        let DAOwords = DAOMSTWords.init()
+        if self.categoryID != nil {
+            self.dsoWords = DAOwords.exeSelect(_categoryID: self.categoryID!)
+        }
+        
+        //set SearchWordHeader label
+        self.setHeader(currentPage: self.currentPage ?? 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         //self.myloopscrollview is nil at initialization, so set it here to self.super instead.
         self.myScrollView = self.myLoopScrollView
         //set it's delegate
@@ -119,9 +137,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
                 tableView.separatorStyle = .none
             }
         }
-        
-        //set SearchWordHeader label
-        self.setHeader(currentPage: self.currentPage ?? 0)
         
         //SearchWordHeader delegate
         self.mySearchWordHeader.delegate = self
