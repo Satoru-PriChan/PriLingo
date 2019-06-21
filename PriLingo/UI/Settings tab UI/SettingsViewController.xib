@@ -32,12 +32,9 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pmz-6F-5sP">
-                                    <rect key="frame" x="0.0" y="35.5" width="414" height="214.5"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="582805922.00119698">
-                                        <!--2019-06-21 10:32:02 +0000-->
-                                    </date>
-                                </datePicker>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-1j-RRS">
+                                    <rect key="frame" x="47" y="35.5" width="320" height="214.5"/>
+                                </pickerView>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="height" constant="250" id="N0X-c7-Jce"/>
@@ -66,7 +63,6 @@
                         <constraint firstItem="PIb-tg-JOe" firstAttribute="top" secondItem="Ruj-H6-CN7" secondAttribute="bottom" id="3Y3-hT-b39"/>
                         <constraint firstItem="PIb-tg-JOe" firstAttribute="leading" secondItem="Qh7-dW-Und" secondAttribute="leading" id="9a7-zb-1Fu"/>
                         <constraint firstAttribute="trailing" secondItem="Ruj-H6-CN7" secondAttribute="trailing" id="HT4-AY-n5S"/>
-                        <constraint firstItem="pmz-6F-5sP" firstAttribute="width" secondItem="Qh7-dW-Und" secondAttribute="width" id="KGk-kG-lLX"/>
                         <constraint firstItem="Ruj-H6-CN7" firstAttribute="leading" secondItem="Qh7-dW-Und" secondAttribute="leading" id="MNj-r2-vkl"/>
                         <constraint firstAttribute="bottom" secondItem="PIb-tg-JOe" secondAttribute="bottom" id="Ooi-Jr-d7q"/>
                         <constraint firstItem="Ruj-H6-CN7" firstAttribute="top" secondItem="Qh7-dW-Und" secondAttribute="top" id="pOu-vS-PCE"/>
