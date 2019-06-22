@@ -8,8 +8,15 @@
 
 import UIKit
 
-class SettingsViewController: MyContentViewController {
+class SettingsViewController: MyContentViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var PreferredLanguageLabel: UILabel!
+    @IBOutlet weak var myPickerView: UIPickerView!
+    @IBOutlet weak var DisplayOrderLabel: UILabel!
+    @IBOutlet weak var myTableView: UITableView!
+    
+    let identifier = "MyCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +29,33 @@ class SettingsViewController: MyContentViewController {
         
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
+        
+        //table view register
+        myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
+        
+    }
+    
+    //MARK: UITableViewDelegate
+    
+    ///function to return the number of cells
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    ///function to return the cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
+        return cell ?? SearchCateogryTableViewCell()
+    }
+    
+    //MARK: - UIPickerView
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 4//Jp, En, Cn_S, Cn_T
     }
 
 
