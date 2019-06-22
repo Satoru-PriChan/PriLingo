@@ -63,6 +63,7 @@ class PriLingoTests: XCTestCase {
     }
     
     ///function to test UPDATE function for MST_WORDS.
+    /*
     func testDBUpdateMSTWORDS() {
         let dao = DAOMSTWords.init()
         
@@ -84,7 +85,7 @@ class PriLingoTests: XCTestCase {
         let word4 = dao.exeUpdate(_wordID: "1", thisWordIsFavorite: nil)
         XCTAssertFalse(dao.convertStringIntoBool(_string: word4?.favorite), "File: \(#file) Line \(#line): Func \(#function): Fourth try failed. word4?.favorite: \(String(describing: word4?.favorite))\n")
         
-    }
+ }*/
     
     ///function to test Lang class that selects appropriate words from string.resource files.
     func testLang() {
@@ -93,6 +94,12 @@ class PriLingoTests: XCTestCase {
         XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .Japanese), "ようこそ")
         XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .SimplifiedChinese), "欢迎光临")
         XCTAssertEqual(Lang.getLocalizedString(key: key, lang: .TraditionalChinese), "歡迎光臨")
+    }
+    
+    ///funciton to test UserDefaults settings. At the first time after initial launch, it will be failed.
+    func testUserDefaultsSettings() {
+        let settings = Settings.init()
+        XCTAssertFalse(settings.settingsInitialSetup())
     }
     
     func testPerformanceExample() {

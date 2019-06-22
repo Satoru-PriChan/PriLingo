@@ -244,6 +244,9 @@
 		CEDAC35422AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
 		CEDAC35522AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
 		CEDAC35622AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
+		CEE5E58322BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
+		CEE5E58422BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
+		CEE5E58522BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
 		CEEF438A2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
 		CEEF438B2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
 		CEEF438C2298D897000A86B1 /* TitleAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */; };
@@ -400,6 +403,7 @@
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordHeaderDelegate.swift; sourceTree = "<group>"; };
+		CEE5E58222BDB74400F3CE87 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndButtonView.swift; sourceTree = "<group>"; };
 		CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndButtonView.xib; sourceTree = "<group>"; };
 		CEF3750E2231246B00CC8A74 /* PriLingoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PriLingoDB.db; sourceTree = "<group>"; };
@@ -735,6 +739,7 @@
 			children = (
 				CEF375132231591800CC8A74 /* Path.swift */,
 				CED43FB9227BDA3700031DF9 /* Lang.swift */,
+				CEE5E58222BDB74400F3CE87 /* Settings.swift */,
 			);
 			path = UtilityClass;
 			sourceTree = "<group>";
@@ -1222,6 +1227,7 @@
 				CE9A3CFD229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEE5E58322BDB74400F3CE87 /* Settings.swift in Sources */,
 				CEB2D2252233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DB2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBA227BDA3700031DF9 /* Lang.swift in Sources */,
@@ -1263,6 +1269,7 @@
 				CE9A3CFE229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BED222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03E223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEE5E58422BDB74400F3CE87 /* Settings.swift in Sources */,
 				CEB2D2262233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DC2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBB227BDA3700031DF9 /* Lang.swift in Sources */,
@@ -1304,6 +1311,7 @@
 				CE9A3CFF229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
 				CEF46BEE222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03F223298F30073A0A4 /* DBSetUp.swift in Sources */,
+				CEE5E58522BDB74400F3CE87 /* Settings.swift in Sources */,
 				CEB2D2272233FD1700410F02 /* DSOWord.swift in Sources */,
 				CEAF85DD2234A25E00B1F9BD /* DAOMSTWords.swift in Sources */,
 				CED43FBC227BDA3700031DF9 /* Lang.swift in Sources */,
