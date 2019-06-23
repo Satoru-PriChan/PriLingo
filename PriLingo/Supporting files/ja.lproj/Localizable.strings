@@ -16,4 +16,5 @@
 "english" = "英語";
 "simplified_chinese" = "簡体字中国語";
 "traditional_chinese" = "繁体字中国語";
-
+"preferred_language" = "Preferred Language";
+"language_display_order" = "Language Display Order";

@@ -8,23 +8,12 @@
 
 import UIKit
 
-class SettingsViewController: MyContentViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsViewController: MyContentViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var PreferredLanguageLabel: UILabel!
-    @IBOutlet weak var myPickerView: UIPickerView!
-    @IBOutlet weak var DisplayOrderLabel: UILabel!
-    @IBOutlet weak var myTableView: UITableView!
+    
+    @IBOutlet weak var myTableVIew: UITableView!
     
     let identifier = "MyCell"
-    
-    ///function called everytime the view is displayed.
-    override func viewWillAppear(_ animated: Bool) {
-        //update table view
-        self.myTableView.reloadData()
-        
-        //update picker view
-        self.myPickerView.reloadAllComponents()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,40 +28,32 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
         
-        //table view register
-        myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
-        
+
+        //tableview register
+        self.myTableVIew.register("SearchCateogryTableViewCell", forCellReuseIdentifier: self.identifier)
     }
     
     //MARK: UITableViewDelegate
     
     ///function to return the number of cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 2
     }
     
     ///function to return the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
         cell?.theChapterLabel.isHidden = true
-        cell?.theCategoryLabel.text = self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row)
+        let setting = Settings.init()
+        
+        switch indexPath.row {
+        case 0:
+            cell?.theCategoryLabel.text = Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.init(rawValue: setting.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        default:
+            cell?.theCategoryLabel.text = Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.init(rawValue: setting.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        }
+        
         return cell ?? SearchCateogryTableViewCell()
-    }
-    
-    //MARK: - UIPickerViewDatasource
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 4//Jp, En, Cn_S, Cn_T
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    //MARK: - UIPickerViewDelegate
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.getLanguageNameInPreferredLanguage(howManyth: row)
     }
     
     //MARK: - Other functions

@@ -12,10 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="PriLingo" customModuleProvider="target">
             <connections>
-                <outlet property="DisplayOrderLabel" destination="AAc-oJ-d78" id="2QV-5Z-9gu"/>
-                <outlet property="PreferredLanguageLabel" destination="XID-6C-ZzA" id="Qaq-cY-211"/>
-                <outlet property="myPickerView" destination="Xul-1j-RRS" id="Jvy-74-oh9"/>
-                <outlet property="myTableView" destination="afV-WI-4QM" id="8Qe-p5-Yff"/>
+                <outlet property="myTableVIew" destination="Qeo-cT-ugS" id="GCH-CH-WQa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,70 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qh7-dW-Und">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-cT-ugS">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ruj-H6-CN7" userLabel="TopStack View">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your preferred language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XID-6C-ZzA">
-                                    <rect key="frame" x="95.5" y="0.0" width="223.5" height="27.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="23"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-1j-RRS">
-                                    <rect key="frame" x="47" y="35.5" width="320" height="214.5"/>
-                                    <connections>
-                                        <outlet property="dataSource" destination="-1" id="FNi-MA-1yf"/>
-                                        <outlet property="delegate" destination="-1" id="Yai-cb-sRc"/>
-                                    </connections>
-                                </pickerView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="250" id="N0X-c7-Jce"/>
-                            </constraints>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-tg-JOe" userLabel="BottomStack View">
-                            <rect key="frame" x="0.0" y="250" width="414" height="500"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-oJ-d78">
-                                    <rect key="frame" x="146.5" y="0.0" width="121.5" height="27.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="23"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="afV-WI-4QM">
-                                    <rect key="frame" x="0.0" y="76.5" width="414" height="423.5"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <connections>
-                                        <outlet property="dataSource" destination="-1" id="C4d-6p-21M"/>
-                                        <outlet property="delegate" destination="-1" id="BMH-KR-AjL"/>
-                                    </connections>
-                                </tableView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="500" id="6PR-fv-aZ7"/>
-                            </constraints>
-                        </stackView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="PIb-tg-JOe" firstAttribute="top" secondItem="Ruj-H6-CN7" secondAttribute="bottom" id="3Y3-hT-b39"/>
-                        <constraint firstItem="PIb-tg-JOe" firstAttribute="leading" secondItem="Qh7-dW-Und" secondAttribute="leading" id="9a7-zb-1Fu"/>
-                        <constraint firstAttribute="trailing" secondItem="Ruj-H6-CN7" secondAttribute="trailing" id="HT4-AY-n5S"/>
-                        <constraint firstItem="Ruj-H6-CN7" firstAttribute="leading" secondItem="Qh7-dW-Und" secondAttribute="leading" id="MNj-r2-vkl"/>
-                        <constraint firstAttribute="bottom" secondItem="PIb-tg-JOe" secondAttribute="bottom" id="Ooi-Jr-d7q"/>
-                        <constraint firstItem="Ruj-H6-CN7" firstAttribute="top" secondItem="Qh7-dW-Und" secondAttribute="top" id="pOu-vS-PCE"/>
-                        <constraint firstAttribute="trailing" secondItem="PIb-tg-JOe" secondAttribute="trailing" id="xZI-wn-JTd"/>
-                    </constraints>
-                </scrollView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PNo-K4-ifn"/>
+                        <outlet property="delegate" destination="-1" id="KoP-WW-LBB"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="Qh7-dW-Und" secondAttribute="leading" id="Fmn-NJ-RFZ"/>
-                <constraint firstItem="Qh7-dW-Und" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZNr-PG-dMZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qh7-dW-Und" secondAttribute="trailing" id="bxq-y5-oUh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qh7-dW-Und" secondAttribute="bottom" id="gBX-pc-STW"/>
+                <constraint firstItem="Qeo-cT-ugS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HN8-dE-wyK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qeo-cT-ugS" secondAttribute="bottom" id="liR-Yp-0Vf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qeo-cT-ugS" secondAttribute="trailing" id="uF3-Vk-dkU"/>
+                <constraint firstItem="Qeo-cT-ugS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zeW-rW-71K"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
