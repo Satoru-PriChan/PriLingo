@@ -102,6 +102,45 @@ class PriLingoTests: XCTestCase {
         XCTAssertFalse(settings.settingsInitialSetup())
     }
     
+    ///function to test Getter and Setter of Settings class.
+    func testUserDefaultsSettingsPreferredLanguage() {
+        let settings = Settings.init()
+        
+        //preferred language
+        settings.setPreferredLanguage(lang: .TraditionalChinese)
+        XCTAssertTrue(settings.getPreferredLanguage() == Lang.Language.TraditionalChinese.rawValue)
+        
+        settings.setPreferredLanguage(lang: .Japanese)
+        XCTAssertTrue(settings.getPreferredLanguage() == Lang.Language.Japanese.rawValue)
+        
+        settings.setPreferredLanguage(lang: .SimplifiedChinese)
+        XCTAssertTrue(settings.getPreferredLanguage() == Lang.Language.SimplifiedChinese.rawValue)
+        
+        settings.setPreferredLanguage(lang: .English)
+        XCTAssertTrue(settings.getPreferredLanguage() == Lang.Language.English.rawValue)
+    }
+    
+     ///function to test Getter and Setter of Settings class.
+    func testUserDefaultsSettingsDisplayOrder() {
+        let settings = Settings.init()
+        
+        settings.setLanguageDisplayOrder(first: .TraditionalChinese, second: .SimplifiedChinese, third: .English, fourth: .Japanese)
+        XCTAssertTrue(settings.getLanguageDisplayOrder() == [Lang.Language.TraditionalChinese.rawValue, Lang.Language.SimplifiedChinese.rawValue, Lang.Language.English.rawValue, Lang.Language.Japanese.rawValue])
+        
+        settings.setLanguageDisplayOrder(first: .Japanese, second: .English, third: .SimplifiedChinese, fourth: .TraditionalChinese)
+        XCTAssertTrue(settings.getLanguageDisplayOrder() == [Lang.Language.Japanese.rawValue, Lang.Language.English.rawValue, Lang.Language.SimplifiedChinese.rawValue, Lang.Language.TraditionalChinese.rawValue])
+    }
+    
+    func testUserDafaultsSettingsDisplayFlag() {
+        let settings = Settings.init()
+        
+        settings.setLanguageDisplayFlag(en: false, jp: false, cn_s: false, cn_t: false)
+        XCTAssertTrue(settings.getLanguageDisplayFlag() == [Lang.Language.English.rawValue:false, Lang.Language.Japanese.rawValue:false, Lang.Language.SimplifiedChinese.rawValue:false, Lang.Language.TraditionalChinese.rawValue:false])
+        
+        settings.setLanguageDisplayFlag(en: true, jp: true, cn_s: true, cn_t: true)
+        XCTAssertTrue(settings.getLanguageDisplayFlag() == [Lang.Language.English.rawValue:true, Lang.Language.Japanese.rawValue:true, Lang.Language.SimplifiedChinese.rawValue:true, Lang.Language.TraditionalChinese.rawValue:true])
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

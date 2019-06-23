@@ -50,4 +50,41 @@ class Settings {
         
         return result
     }
+    
+    /// function to get the user's preferred  language in UserDefault.
+    ///
+    /// - Returns: String for the filename of Strig.resource of the language. If there is not value, returns nil.
+    func getPreferredLanguage() -> String? {
+        let userDefaults = UserDefaults.standard
+        return userDefaults.string(forKey: self.key_preferredLanguage)
+    }
+    
+    /// function to get the display order of the languages.
+    ///
+    /// - Returns: String Array containing the file names of String.resource of those languages. If there is no value, returns nil.
+    func getLanguageDisplayOrder() -> [String]? {
+        return UserDefaults.standard.stringArray(forKey: self.key_languageDisplayOrder)
+    }
+    
+    ///function to gt the display flag for languages.
+    ///
+    /// - Returns: String and Bool Dictionary indicating whether to display the language of the Key or not. If there is no value, returns nil.
+    func getLanguageDisplayFlag() -> [String: Bool]? {
+        return UserDefaults.standard.dictionary(forKey: self.key_languageDisplayFlag) as? [String: Bool]
+    }
+    
+    ///function to set the preferred language.
+    func setPreferredLanguage(lang: Lang.Language) {
+        UserDefaults.standard.set(lang.rawValue, forKey: self.key_preferredLanguage)
+    }
+    
+    ///function to set the language display order.
+    func setLanguageDisplayOrder(first: Lang.Language, second: Lang.Language, third: Lang.Language, fourth: Lang.Language) {
+        UserDefaults.standard.set([first.rawValue, second.rawValue, third.rawValue, fourth.rawValue], forKey: self.key_languageDisplayOrder)
+    }
+    
+    ///function to set the language display flag.
+    func setLanguageDisplayFlag(en: Bool, jp: Bool, cn_s: Bool, cn_t: Bool) {
+        UserDefaults.standard.set([Lang.Language.English.rawValue:en, Lang.Language.Japanese.rawValue:jp, Lang.Language.SimplifiedChinese.rawValue:cn_s,Lang.Language.TraditionalChinese.rawValue:cn_t], forKey: self.key_languageDisplayFlag)
+    }
 }
