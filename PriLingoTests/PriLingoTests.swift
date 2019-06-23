@@ -131,6 +131,7 @@ class PriLingoTests: XCTestCase {
         XCTAssertTrue(settings.getLanguageDisplayOrder() == [Lang.Language.Japanese.rawValue, Lang.Language.English.rawValue, Lang.Language.SimplifiedChinese.rawValue, Lang.Language.TraditionalChinese.rawValue])
     }
     
+    ///function to test Getter and Setter of Settings class.
     func testUserDafaultsSettingsDisplayFlag() {
         let settings = Settings.init()
         

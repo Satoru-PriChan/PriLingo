@@ -17,6 +17,15 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     
     let identifier = "MyCell"
     
+    ///function called everytime the view is displayed.
+    override func viewWillAppear(_ animated: Bool) {
+        //update table view
+        self.myTableView.reloadData()
+        
+        //update picker view
+        self.myPickerView.reloadAllComponents()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,18 +54,48 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     ///function to return the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
+        cell?.theChapterLabel.isHidden = true
+        cell?.theCategoryLabel.text = self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row)
         return cell ?? SearchCateogryTableViewCell()
     }
     
-    //MARK: - UIPickerView
+    //MARK: - UIPickerViewDatasource
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 4//Jp, En, Cn_S, Cn_T
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 4//Jp, En, Cn_S, Cn_T
+    //MARK: - UIPickerViewDelegate
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.getLanguageNameInPreferredLanguage(howManyth: row)
     }
+    
+    //MARK: - Other functions
+    
+    func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
+        switch howManyth {
+        case 1:
+            let settings = Settings.init()
+            return Lang.getLocalizedString(key: "english", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        case 2:
+            let settings = Settings.init()
+            return Lang.getLocalizedString(key: "japanese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        case 3:
+            let settings = Settings.init()
+            return Lang.getLocalizedString(key: "simplified_chinese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        default:
+            let settings = Settings.init()
+            return Lang.getLocalizedString(key: "traditional_chinese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        }
+
+    }
+    
+
 
 
     /*

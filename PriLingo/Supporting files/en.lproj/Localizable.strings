@@ -12,3 +12,7 @@
 "chapter_firstHalf" = "Chapter";
 "chapter_lastHalf" = "";
 "favorite" = "Favorite";
+"japanese" = "Japanese";
+"english" = "English";
+"simplified_chinese" = "Simplified Chinese";
+"traditional_chinese" = "Traditional Chinese";

@@ -12,4 +12,8 @@
 "chapter_firstHalf" = "Chapter";
 "chapter_lastHalf" = "";
 "favorite" = "Favorite";
+"japanese" = "日本語";
+"english" = "英語";
+"simplified_chinese" = "簡体字中国語";
+"traditional_chinese" = "繁体字中国語";
 
