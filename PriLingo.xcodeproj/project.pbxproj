@@ -244,18 +244,6 @@
 		CEDAC35422AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
 		CEDAC35522AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
 		CEDAC35622AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */; };
-		CEE0A0F322C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F122C17E4C00CD8CED /* PreferredLanguageViewController.swift */; };
-		CEE0A0F422C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F122C17E4C00CD8CED /* PreferredLanguageViewController.swift */; };
-		CEE0A0F522C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F122C17E4C00CD8CED /* PreferredLanguageViewController.swift */; };
-		CEE0A0F622C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0F222C17E4C00CD8CED /* PreferredLanguageViewController.xib */; };
-		CEE0A0F722C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0F222C17E4C00CD8CED /* PreferredLanguageViewController.xib */; };
-		CEE0A0F822C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0F222C17E4C00CD8CED /* PreferredLanguageViewController.xib */; };
-		CEE0A0FB22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F922C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift */; };
-		CEE0A0FC22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F922C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift */; };
-		CEE0A0FD22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A0F922C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift */; };
-		CEE0A0FE22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0FA22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib */; };
-		CEE0A0FF22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0FA22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib */; };
-		CEE0A10022C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0A0FA22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib */; };
 		CEE5E58322BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
 		CEE5E58422BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
 		CEE5E58522BDB74400F3CE87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E58222BDB74400F3CE87 /* Settings.swift */; };
@@ -415,10 +403,6 @@
 		CED43FB4227BCF1A00031DF9 /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
 		CED43FB9227BDA3700031DF9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		CEDAC35322AF06550050F1EB /* SearchWordHeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordHeaderDelegate.swift; sourceTree = "<group>"; };
-		CEE0A0F122C17E4C00CD8CED /* PreferredLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredLanguageViewController.swift; sourceTree = "<group>"; };
-		CEE0A0F222C17E4C00CD8CED /* PreferredLanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferredLanguageViewController.xib; sourceTree = "<group>"; };
-		CEE0A0F922C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDisplayOrderViewController.swift; sourceTree = "<group>"; };
-		CEE0A0FA22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageDisplayOrderViewController.xib; sourceTree = "<group>"; };
 		CEE5E58222BDB74400F3CE87 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CEEF43892298D897000A86B1 /* TitleAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndButtonView.swift; sourceTree = "<group>"; };
 		CEEF438D2298D8AB000A86B1 /* TitleAndButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndButtonView.xib; sourceTree = "<group>"; };
@@ -657,10 +641,6 @@
 			children = (
 				CEA04CF422426F3900501A08 /* SettingsViewController.swift */,
 				CEA04CF522426F3900501A08 /* SettingsViewController.xib */,
-				CEE0A0F122C17E4C00CD8CED /* PreferredLanguageViewController.swift */,
-				CEE0A0F222C17E4C00CD8CED /* PreferredLanguageViewController.xib */,
-				CEE0A0F922C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift */,
-				CEE0A0FA22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib */,
 			);
 			path = "Settings tab UI";
 			sourceTree = "<group>";
@@ -908,7 +888,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE0A0FE22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */,
 				CE785A2C227F21C400F3F490 /* TitleFavorite.png in Resources */,
 				CE31F90A229BAF5D00FAF2A8 /* repeat-none.png in Resources */,
 				CED43FB5227BCF1A00031DF9 /* BackArrow.png in Resources */,
@@ -926,7 +905,6 @@
 				CE0AC15A220B219300953C0D /* SearchTab.xib in Resources */,
 				CE663F202295431B00DAB5ED /* Candy.png in Resources */,
 				CE4649A3227BFE5D009F5514 /* SearchWordViewController.xib in Resources */,
-				CEE0A0F622C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */,
 				CEF382DF223FBC06000B06B9 /* FavoritesTab.xib in Resources */,
 				CEB4050B2273554300C8BFCD /* lace.png in Resources */,
 				CEA217B922B5E03600CC1271 /* 0003_zh-Hans.mp3 in Resources */,
@@ -1010,7 +988,6 @@
 				CEB6E11A22B45698005FA5DE /* 0001_en.mp3 in Resources */,
 				CEA217B422B5E03600CC1271 /* 0004_ja.mp3 in Resources */,
 				CE9A3D05229CC614000B15E7 /* play.png in Resources */,
-				CEE0A0F722C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */,
 				CEA217BD22B5E03600CC1271 /* 0004_en.mp3 in Resources */,
 				CEA1A967227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEB6E11722B45698005FA5DE /* 0001_zh-Hant.mp3 in Resources */,
@@ -1027,7 +1004,6 @@
 				CEB6E11D22B45698005FA5DE /* 0002_ja.mp3 in Resources */,
 				CE31F908229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
 				CEA217C322B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */,
-				CEE0A0FF22C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */,
 				CE46499C227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE941226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E872241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -1075,7 +1051,6 @@
 				CEB6E11B22B45698005FA5DE /* 0001_en.mp3 in Resources */,
 				CEA217B522B5E03600CC1271 /* 0004_ja.mp3 in Resources */,
 				CE9A3D06229CC614000B15E7 /* play.png in Resources */,
-				CEE0A0F822C17E4C00CD8CED /* PreferredLanguageViewController.xib in Resources */,
 				CEA217BE22B5E03600CC1271 /* 0004_en.mp3 in Resources */,
 				CEA1A968227B16E100605A87 /* PinkPolkaDot2.png in Resources */,
 				CEB6E11822B45698005FA5DE /* 0001_zh-Hant.mp3 in Resources */,
@@ -1092,7 +1067,6 @@
 				CEB6E11E22B45698005FA5DE /* 0002_ja.mp3 in Resources */,
 				CE31F909229BAF5D00FAF2A8 /* repeat-all.png in Resources */,
 				CEA217C422B5E03600CC1271 /* 0003_zh-Hant.mp3 in Resources */,
-				CEE0A10022C17E6B00CD8CED /* LanguageDisplayOrderViewController.xib in Resources */,
 				CE46499D227BFE46009F5514 /* SearchCategoryViewController.xib in Resources */,
 				CEBCE942226153C400B92464 /* testtesttestttttView.xib in Resources */,
 				CEF71E882241188000B30970 /* PronunciationTab.xib in Resources */,
@@ -1275,12 +1249,10 @@
 				CE464998227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1282209B5B800953C0D /* AppDelegate.swift in Sources */,
 				CEB2D2292233FD2900410F02 /* DSOCategory.swift in Sources */,
-				CEE0A0FB22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */,
 				CEF8A69C228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEE22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEDAC35422AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1C229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
-				CEE0A0F322C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */,
 				CEA04CD122426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F916229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF622426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -1319,12 +1291,10 @@
 				CE464999227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC13D2209B5B900953C0D /* PriLingoTests.swift in Sources */,
 				CEB2D22A2233FD2900410F02 /* DSOCategory.swift in Sources */,
-				CEE0A0FC22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */,
 				CEF8A69D228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CEF22426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEDAC35522AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1D229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
-				CEE0A0F422C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */,
 				CEA04CD222426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F917229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF722426F3900501A08 /* SettingsViewController.swift in Sources */,
@@ -1363,12 +1333,10 @@
 				CE46499A227BFE46009F5514 /* SearchCategoryViewController.swift in Sources */,
 				CE0AC1482209B5BA00953C0D /* PriLingoUITests.swift in Sources */,
 				CEB2D22B2233FD2900410F02 /* DSOCategory.swift in Sources */,
-				CEE0A0FD22C17E6B00CD8CED /* LanguageDisplayOrderViewController.swift in Sources */,
 				CEF8A69E228D359800CA333F /* TopLevelUIExtensions.swift in Sources */,
 				CEA04CF022426F2200501A08 /* PronunciationViewController.swift in Sources */,
 				CEDAC35622AF06550050F1EB /* SearchWordHeaderDelegate.swift in Sources */,
 				CE663F1E229519B500DAB5ED /* MyNavigationBarDelegate.swift in Sources */,
-				CEE0A0F522C17E4C00CD8CED /* PreferredLanguageViewController.swift in Sources */,
 				CEA04CD322426BB200501A08 /* MyTabBarController.swift in Sources */,
 				CE31F918229BDAE200FAF2A8 /* TitleAndButtonViewDelegate.swift in Sources */,
 				CEA04CF822426F3900501A08 /* SettingsViewController.swift in Sources */,
