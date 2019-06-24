@@ -46,7 +46,6 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     ///function to return the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
-        let setting = Settings.init()
         
         switch indexPath.row {
         case 0:
