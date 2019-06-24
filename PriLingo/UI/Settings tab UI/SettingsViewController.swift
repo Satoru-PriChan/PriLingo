@@ -30,7 +30,7 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
         
 
         //tableview register
-        self.myTableVIew.register("SearchCateogryTableViewCell", forCellReuseIdentifier: self.identifier)
+        self.myTableVIew.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
     }
     
     //MARK: UITableViewDelegate
