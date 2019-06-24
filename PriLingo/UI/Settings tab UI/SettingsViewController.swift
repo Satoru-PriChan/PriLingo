@@ -31,6 +31,9 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
 
         //tableview register
         self.myTableVIew.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
+        
+        //TableView separator line
+        self.myTableVIew.separatorColor = UIColor.clear
     }
     
     //MARK: UITableViewDelegate
@@ -43,15 +46,18 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     ///function to return the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
-        cell?.theChapterLabel.isHidden = true
         let setting = Settings.init()
         
         switch indexPath.row {
         case 0:
-            cell?.theCategoryLabel.text = Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.init(rawValue: setting.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.TraditionalChinese))
+
         default:
-            cell?.theCategoryLabel.text = Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.init(rawValue: setting.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.TraditionalChinese))
         }
+        
+        //hide chapter label
+        cell?.theChapterLabel.isHidden = true
         
         return cell ?? SearchCateogryTableViewCell()
     }
