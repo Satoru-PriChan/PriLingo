@@ -20,6 +20,9 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
 
         // Do any additional setup after loading the view.
         
+        //tableview register
+        self.myTableVIew.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
+        
         //Navigation title
         if let myNav = self.navigationController as? MyUINavigationController {
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleSettings.png")
@@ -28,12 +31,13 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
         //Background image
         self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
         
-
-        //tableview register
-        self.myTableVIew.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
-        
         //TableView separator line
         self.myTableVIew.separatorColor = UIColor.clear
+    }
+    
+    ///function called after the view is appearred on the screen.
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     
     //MARK: UITableViewDelegate
@@ -61,25 +65,20 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
         return cell ?? SearchCateogryTableViewCell()
     }
     
-    //MARK: - Other functions
-    
-    func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
-        switch howManyth {
-        case 1:
-            let settings = Settings.init()
-            return Lang.getLocalizedString(key: "english", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
-        case 2:
-            let settings = Settings.init()
-            return Lang.getLocalizedString(key: "japanese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
-        case 3:
-            let settings = Settings.init()
-            return Lang.getLocalizedString(key: "simplified_chinese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+    ///function for when a cell is touched.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+        self.navigationController?.pushViewController(PreferredLanguageViewController(), animated: false)
         default:
-            let settings = Settings.init()
-            return Lang.getLocalizedString(key: "traditional_chinese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
+        self.navigationController?.pushViewController(DisplayLanguageOrderViewController(), animated: false)
         }
-
+        
     }
+    
+    //MARK: - Other functions
+
     
 
 
