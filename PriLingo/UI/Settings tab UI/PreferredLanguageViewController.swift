@@ -38,13 +38,13 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
     
     func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
         switch howManyth {
-        case 1:
+        case 0:
             let settings = Settings.init()
             return Lang.getLocalizedString(key: "english", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
-        case 2:
+        case 1:
             let settings = Settings.init()
             return Lang.getLocalizedString(key: "japanese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
-        case 3:
+        case 2:
             let settings = Settings.init()
             return Lang.getLocalizedString(key: "simplified_chinese", lang: Lang.Language.init(rawValue: settings.getPreferredLanguage() ?? Lang.Language.English.rawValue))
         default:
