@@ -60,9 +60,6 @@ class FavoritesViewController: SearchWordViewController {
         if let myNav = self.navigationController as? MyUINavigationController {
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleFavorite.png")
         }
-        
-        //Background image
-        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
 
 

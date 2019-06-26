@@ -35,9 +35,6 @@ class SearchCategoryViewController: MyContentViewController, UITableViewDataSour
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleSearch.png")
         }
         
-        //Background image
-        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
-        
         //TableView separator line
         self.myTableView.separatorColor = UIColor.clear
     }

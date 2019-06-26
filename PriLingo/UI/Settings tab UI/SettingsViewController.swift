@@ -27,10 +27,6 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
         if let myNav = self.navigationController as? MyUINavigationController {
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitleSettings.png")
         }
-        
-        //Background image
-        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
-        
         //TableView separator line
         self.myTableVIew.separatorColor = UIColor.clear
     }

@@ -19,9 +19,6 @@ class PronunciationViewController: MyContentViewController {
         if let myNav = self.navigationController as? MyUINavigationController {
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitlePronunciation.png")
         }
-        
-        //Background image
-        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
 
 

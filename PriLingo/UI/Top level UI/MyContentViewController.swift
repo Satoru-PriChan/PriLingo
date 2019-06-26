@@ -30,6 +30,9 @@ class MyContentViewController: UIViewController {
         } else {
             self.additionalSafeAreaInsets.bottom = (self.view.bounds.size.height * 0.1428)
         }
+        
+        //Background image
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "BackGroundFlower.jpg")!)
     }
     
 
