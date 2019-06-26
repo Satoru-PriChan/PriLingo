@@ -18,6 +18,7 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         super.viewDidLoad()
 
         self.myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifier)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -43,16 +44,7 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
     
     ///function for when a cell is tapped, including programatical selection.
     func doThingsWithIndexPath(indexPath: Int, tableView: UITableView) {
-        
-        //update UI
-        for i in 0...(Lang.Language.allCases.count - 1) {
-            if i == indexPath {
-                tableView.selectRow(at: IndexPath.init(row: i, section: 0), animated: false, scrollPosition: .top)
-            } else {
-                tableView.deselectRow(at: IndexPath.init(row: i, section: 0), animated: false)
-            }
-        }
-        
+    
         //update settings
         let settings = Settings.init()
         switch indexPath {
@@ -68,6 +60,19 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         
         //update table
         self.myTableView.reloadData()
+        
+        //update UI
+        for i in 0...(Lang.Language.allCases.count - 1) {
+            if i == indexPath {
+                tableView.selectRow(at: IndexPath.init(row: i, section: 0), animated: false, scrollPosition: .top)
+                let cell = tableView.cellForRow(at: IndexPath.init(row: indexPath, section: 0))
+                cell?.accessoryType = .checkmark
+            } else {
+                tableView.deselectRow(at: IndexPath.init(row: i, section: 0), animated: false)
+                let cell = tableView.cellForRow(at: IndexPath.init(row: indexPath, section: 0))
+                cell?.accessoryType = .none
+            }
+        }
     }
     
     func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
