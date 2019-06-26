@@ -34,7 +34,38 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         return 4
     }
     
+    ///function called when a cell is touched. If it is selected programmatically, this method is not called.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.doThingsWithIndexPath(indexPath: indexPath.row, tableView: tableView)
+    }
+    
     //Others
+    
+    ///function for when a cell is tapped, including programatical selection.
+    func doThingsWithIndexPath(indexPath: Int, tableView: UITableView) {
+        
+        //update UI
+        for i in 0...(Lang.Language.allCases.count - 1) {
+            if i == indexPath {
+                tableView.selectRow(at: IndexPath.init(row: i, section: 0), animated: false, scrollPosition: .top)
+            } else {
+                tableView.deselectRow(at: IndexPath.init(row: i, section: 0), animated: false)
+            }
+        }
+        
+        //update settings
+        let settings = Settings.init()
+        switch indexPath {
+        case 0:
+            settings.setPreferredLanguage(lang: .English)
+        case 1:
+            settings.setPreferredLanguage(lang: .Japanese)
+        case 2:
+            settings.setPreferredLanguage(lang: .SimplifiedChinese)
+        default:
+            settings.setPreferredLanguage(lang: .TraditionalChinese)
+        }
+    }
     
     func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
         switch howManyth {

@@ -14,7 +14,7 @@ class Lang {
     //MARK: - Enum: The names of string resource files
     
     //Raw values are names of the string resource files.
-    enum Language: String {
+    enum Language: String, CaseIterable {
         case English = "en"
         case Japanese = "ja"
         case SimplifiedChinese = "zh-Hans"
