@@ -65,6 +65,9 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         default:
             settings.setPreferredLanguage(lang: .TraditionalChinese)
         }
+        
+        //update table
+        self.myTableView.reloadData()
     }
     
     func getLanguageNameInPreferredLanguage(howManyth: Int) -> String {
