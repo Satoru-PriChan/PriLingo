@@ -17,18 +17,27 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifier)
+        self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.identifier)
         
         // Do any additional setup after loading the view.
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
-        cell?.theChapterLabel.isHidden = true
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath)
         
-        cell?.setCell(chapterNo: "", categoryNameEN: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameJP: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameCN_S: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameCN_T: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row))
+        cell.isSelected = false
         
-        return cell ?? SearchCateogryTableViewCell()
+        cell.textLabel?.font = UIFont.systemFont(ofSize: CGFloat.init(28.0), weight: .heavy)
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.init(red: 255/255, green: 203/255, blue: 226/255, alpha: 1.0)
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
+        cell.layer.borderColor = UIColor.white.cgColor
+        cell.layer.borderWidth = 5
+        
+        cell.textLabel?.text = self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row)
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,13 +72,14 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         
         //update UI
         for i in 0...(Lang.Language.allCases.count - 1) {
+            
             if i == indexPath {
                 tableView.selectRow(at: IndexPath.init(row: i, section: 0), animated: false, scrollPosition: .top)
-                let cell = tableView.cellForRow(at: IndexPath.init(row: indexPath, section: 0))
+                let cell = tableView.cellForRow(at: IndexPath.init(row: i, section: 0))
                 cell?.accessoryType = .checkmark
             } else {
                 tableView.deselectRow(at: IndexPath.init(row: i, section: 0), animated: false)
-                let cell = tableView.cellForRow(at: IndexPath.init(row: indexPath, section: 0))
+                let cell = tableView.cellForRow(at: IndexPath.init(row: i, section: 0))
                 cell?.accessoryType = .none
             }
         }

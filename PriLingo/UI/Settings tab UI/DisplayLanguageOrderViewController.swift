@@ -25,8 +25,6 @@ class DisplayLanguageOrderViewController: MyContentViewController, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
         cell?.theChapterLabel.isHidden = true
         
-        
-        
         cell?.setCell(chapterNo: "", categoryNameEN: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameJP: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameCN_S: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row), categoryNameCN_T: self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row))
         
         return cell ?? SearchCateogryTableViewCell()
