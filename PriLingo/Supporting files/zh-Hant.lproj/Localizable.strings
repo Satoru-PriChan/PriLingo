@@ -18,3 +18,4 @@
 "traditional_chinese" = "繁體中文";
 "preferred_language" = "Preferred Language";
 "language_display_order" = "Language Display Order";
+"languages_to_display" = "想顯示的語言";

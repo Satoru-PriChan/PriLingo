@@ -52,7 +52,7 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
             cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.TraditionalChinese))
 
         default:
-            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "Language Display Order", lang: Lang.Language.TraditionalChinese))
+            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.TraditionalChinese))
         }
         
         //hide chapter label
