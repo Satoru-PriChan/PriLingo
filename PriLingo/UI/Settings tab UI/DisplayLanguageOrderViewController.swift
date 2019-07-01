@@ -22,6 +22,40 @@ class DisplayLanguageOrderViewController: MyContentViewController, UITableViewDa
         // Do any additional setup after loading the view.
     }
     
+    ///function called after the view is appeared.
+    override func viewDidAppear(_ animated: Bool) {
+        //update UI
+        let settings = Settings.init()
+        guard let dic = settings.getLanguageDisplayFlag() else {return}
+        guard let cell0 = self.myTableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) else {return}
+        if dic[Lang.Language.English.rawValue]! {
+            cell0.accessoryType = .checkmark
+        } else {
+            cell0.accessoryType = .none
+        }
+        
+        guard let cell1 = self.myTableView.cellForRow(at: IndexPath.init(row: 1, section: 0)) else {return}
+        if dic[Lang.Language.Japanese.rawValue]! {
+            cell1.accessoryType = .checkmark
+        } else {
+            cell1.accessoryType = .none
+        }
+        
+        guard let cell2 = self.myTableView.cellForRow(at: IndexPath.init(row: 2, section: 0)) else {return}
+        if dic[Lang.Language.SimplifiedChinese.rawValue]! {
+            cell2.accessoryType = .checkmark
+        } else {
+            cell2.accessoryType = .none
+        }
+        
+        guard let cell3 = self.myTableView.cellForRow(at: IndexPath.init(row: 3, section: 0)) else {return}
+        if dic[Lang.Language.TraditionalChinese.rawValue]! {
+            cell3.accessoryType = .checkmark
+        } else {
+            cell3.accessoryType = .none
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath)
         

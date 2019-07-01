@@ -113,11 +113,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PriLingo/UI/Settings tab UI/DisplayLanguageOrderViewController.swift"
-            timestampString = "583710727.967505"
+            timestampString = "583712328.033267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "doThingsWithIndexPath(indexPath:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
