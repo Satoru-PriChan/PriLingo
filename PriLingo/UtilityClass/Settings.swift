@@ -87,4 +87,32 @@ class Settings {
     func setLanguageDisplayFlag(en: Bool, jp: Bool, cn_s: Bool, cn_t: Bool) {
         UserDefaults.standard.set([Lang.Language.English.rawValue:en, Lang.Language.Japanese.rawValue:jp, Lang.Language.SimplifiedChinese.rawValue:cn_s,Lang.Language.TraditionalChinese.rawValue:cn_t], forKey: self.key_languageDisplayFlag)
     }
+    
+    ///function to set the English display flag.
+    func setLanguageDisplayFlag(en: Bool) {
+        
+        let dic = self.getLanguageDisplayFlag()
+        UserDefaults.standard.set([Lang.Language.English.rawValue:en, Lang.Language.Japanese.rawValue:dic?[Lang.Language.Japanese.rawValue] ?? true, Lang.Language.SimplifiedChinese.rawValue:dic?[Lang.Language.SimplifiedChinese.rawValue] ?? true, Lang.Language.TraditionalChinese.rawValue:dic?[Lang.Language.TraditionalChinese.rawValue] ?? true], forKey: self.key_languageDisplayFlag)
+    }
+    
+    ///function to set the Japanese display flag.
+    func setLanguageDisplayFlag(jp: Bool) {
+        
+        let dic = self.getLanguageDisplayFlag()
+        UserDefaults.standard.set([Lang.Language.English.rawValue:dic?[Lang.Language.English.rawValue] ?? true, Lang.Language.Japanese.rawValue:jp, Lang.Language.SimplifiedChinese.rawValue:dic?[Lang.Language.SimplifiedChinese.rawValue] ?? true, Lang.Language.TraditionalChinese.rawValue:dic?[Lang.Language.TraditionalChinese.rawValue] ?? true], forKey: self.key_languageDisplayFlag)
+    }
+    
+    ///function to set the Simplified Chinese display flag.
+    func setLanguageDisplayFlag(cn_s: Bool) {
+        
+        let dic = self.getLanguageDisplayFlag()
+        UserDefaults.standard.set([Lang.Language.English.rawValue:dic?[Lang.Language.English.rawValue] ?? true, Lang.Language.Japanese.rawValue:dic?[Lang.Language.Japanese.rawValue] ?? true, Lang.Language.SimplifiedChinese.rawValue:cn_s, Lang.Language.TraditionalChinese.rawValue:dic?[Lang.Language.TraditionalChinese.rawValue] ?? true], forKey: self.key_languageDisplayFlag)
+    }
+    
+    ///function to set the Traditional Chinese display flag.
+    func setLanguageDisplayFlag(cn_t: Bool) {
+        
+        let dic = self.getLanguageDisplayFlag()
+        UserDefaults.standard.set([Lang.Language.English.rawValue:dic?[Lang.Language.English.rawValue] ?? true, Lang.Language.Japanese.rawValue:dic?[Lang.Language.Japanese.rawValue] ?? true, Lang.Language.SimplifiedChinese.rawValue:dic?[Lang.Language.SimplifiedChinese.rawValue] ?? true, Lang.Language.TraditionalChinese.rawValue:cn_t], forKey: self.key_languageDisplayFlag)
+    }
 }
