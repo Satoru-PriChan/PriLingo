@@ -29,14 +29,18 @@ class SearchCateogryTableViewCell: UITableViewCell {
     
     ///Function to set cell
     func setCell(chapterNo: String, categoryNameEN: String?, categoryNameJP: String?, categoryNameCN_S: String?, categoryNameCN_T: String?) {
+        //get language settings
+        let setting = Settings.init()
+        let lang = setting.getPreferredLanguage()
+        
         //Chapter XX
         if let chapterLabel = self.theChapterLabel {
-            chapterLabel.text = Lang.getLocalizedString(key: "chapter_firstHalf", lang: nil) + chapterNo + Lang.getLocalizedString(key: "chapter_lastHalf", lang: nil)
+            chapterLabel.text = Lang.getLocalizedString(key: "chapter_firstHalf", lang: Lang.Language.init(rawValue: lang ?? "")) + chapterNo + Lang.getLocalizedString(key: "chapter_lastHalf", lang: Lang.Language.init(rawValue: lang ?? ""))
         }
         
         //Category name
         if let categoryLabel = self.theCategoryLabel {
-            categoryLabel.text = Lang.getLocalizedString(en: categoryNameEN, jp: categoryNameJP, cn_s: categoryNameCN_S, cn_t: categoryNameCN_T, lang: nil)
+            categoryLabel.text = Lang.getLocalizedString(en: categoryNameEN, jp: categoryNameJP, cn_s: categoryNameCN_S, cn_t: categoryNameCN_T, lang: Lang.Language.init(rawValue: lang ?? ""))
         }
         
         //Round itself

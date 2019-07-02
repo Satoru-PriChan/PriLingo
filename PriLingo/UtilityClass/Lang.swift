@@ -32,7 +32,7 @@ class Lang {
             case Lang.Language.TraditionalChinese.rawValue:
                 self = .TraditionalChinese
             default:
-                self = .Japanese
+                self = .English
             }
         }
         
