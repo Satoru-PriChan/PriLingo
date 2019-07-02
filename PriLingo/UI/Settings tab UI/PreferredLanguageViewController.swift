@@ -21,6 +21,24 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        //update UI
+        let setting = Settings.init()
+        guard let preferredLanguage = setting.getPreferredLanguage() else {return}
+        
+        switch preferredLanguage {
+        case Lang.Language.English.rawValue:
+            self.doThingsWithIndexPath(indexPath: 0, tableView: self.myTableView)
+        case Lang.Language.Japanese.rawValue:
+            self.doThingsWithIndexPath(indexPath: 1, tableView: self.myTableView)
+        case Lang.Language.SimplifiedChinese.rawValue:
+            self.doThingsWithIndexPath(indexPath: 2, tableView: self.myTableView)
+        default:
+            self.doThingsWithIndexPath(indexPath: 3, tableView: self.myTableView)
+        }
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath)
