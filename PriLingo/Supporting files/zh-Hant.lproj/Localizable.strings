@@ -9,8 +9,8 @@
 "welcome" = "歡迎光臨";
 
 //MARK: - SearchCategoryTableViewCell
-"chapter_firstHalf" = "Chapter";
-"chapter_lastHalf" = "";
+"chapter_firstHalf" = "第";
+"chapter_lastHalf" = "章";
 "favorite" = "Favorite";
 "japanese" = "日文";
 "english" = "英文";

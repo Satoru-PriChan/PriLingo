@@ -39,6 +39,11 @@ class SearchCategoryViewController: MyContentViewController, UITableViewDataSour
         self.myTableView.separatorColor = UIColor.clear
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        //update UI
+        self.myTableView.reloadData()
+    }
+    
     //MARK: - UITableViewDatasource
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +57,7 @@ class SearchCategoryViewController: MyContentViewController, UITableViewDataSour
             //debug
             print("File: \(#file) Line \(#line): Func \(#function):  fatal error:")
             return UITableViewCell()}
-        cell.setCell(chapterNo: String(indexPath.row + 1), categoryNameEN: self.categories![indexPath.row].name1, categoryNameJP: self.categories![indexPath.row].name2, categoryNameCN_S: self.categories![indexPath.row].name3, categoryNameCN_T: self.categories![indexPath.row].name4)
+        cell.setCell(chapterNo: String(indexPath.row + 1), categoryNameEN: self.categories![indexPath.row].name2, categoryNameJP: self.categories![indexPath.row].name1, categoryNameCN_S: self.categories![indexPath.row].name3, categoryNameCN_T: self.categories![indexPath.row].name4)
         
         return cell 
     }

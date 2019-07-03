@@ -9,7 +9,7 @@
 "welcome" = "ようこそ";
 
 //MARK: - SearchCategoryTableViewCell
-"chapter_firstHalf" = "Chapter";
+"chapter_firstHalf" = "チャプター";
 "chapter_lastHalf" = "";
 "favorite" = "Favorite";
 "japanese" = "日本語";
