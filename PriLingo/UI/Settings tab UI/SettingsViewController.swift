@@ -33,7 +33,7 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     
     ///function called after the view is appearred on the screen.
     override func viewDidAppear(_ animated: Bool) {
-        
+        self.myTableVIew.reloadData()
     }
     
     //MARK: UITableViewDelegate
@@ -47,12 +47,16 @@ class SettingsViewController: MyContentViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell
         
+        let setting = Settings.init()
+        let preferredLanguage = setting.getPreferredLanguage()
+        let lang = Lang.Language.init(rawValue: preferredLanguage ?? "en")
+        
         switch indexPath.row {
         case 0:
-            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.TraditionalChinese))
+            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "preferred_language", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "preferred_language", lang: lang))
 
         default:
-            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.TraditionalChinese))
+            cell?.setCell(chapterNo: "", categoryNameEN: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.English), categoryNameJP: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.Japanese), categoryNameCN_S: Lang.getLocalizedString(key: "languages_to_display", lang: Lang.Language.SimplifiedChinese), categoryNameCN_T: Lang.getLocalizedString(key: "languages_to_display", lang: lang))
         }
         
         //hide chapter label
