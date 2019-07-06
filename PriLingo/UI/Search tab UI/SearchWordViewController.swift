@@ -181,7 +181,15 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         if self.pagesInTotal == nil || self.pagesInTotal! == 0 || self.currentPage == nil || self.currentPage! == 0 {
             return 0
         } else {
-            return 4//JP, EN, CN_S, CN_T
+            let settings = Settings.init()
+            let displayLanguages = settings.getLanguageDisplayFlag()
+            
+            if displayLanguages == nil || displayLanguages!.isEmpty {
+                return 0
+            } else {
+                //return the number of languages whose display flags are true.
+                return displayLanguages?.filter() {(key, value) in return value }.count ?? 0
+            }
         }
     }
     

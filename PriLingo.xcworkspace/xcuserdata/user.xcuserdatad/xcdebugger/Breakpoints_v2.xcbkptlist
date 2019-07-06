@@ -72,38 +72,6 @@
             endingLineNumber = "101"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PriLingo.MyLoopScrollViewController.scrollViewDidScroll(__C.UIScrollView) -&gt; ()"
-                  moduleName = "PriLingo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/Xcode%20projects/PriLingo/PriLingo/UI/Top%20level%20UI/MyLoopScrollViewController.swift"
-                  timestampString = "584105535.1185319"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PriLingoTests.MyLoopScrollViewController.scrollViewDidScroll(__C.UIScrollView) -&gt; ()"
-                  moduleName = "PriLingoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/Xcode%20projects/PriLingo/PriLingo/UI/Top%20level%20UI/MyLoopScrollViewController.swift"
-                  timestampString = "584105536.1271141"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
