@@ -36,25 +36,39 @@ class Path {
         var firstHalf = Int(String(elements[0]))!
         var secondHalf = String(elements[1])
         
-        //debug
-        print("File: \(#file) Line \(#line): called: Func \(#function)\n")
+        //get diaplay language settings
+        let settings = Settings.init()
+        let displayLanguage = settings.getLanguageDisplayFlag()
         
-        //handle the first half
-        if secondHalf == Lang.Language.TraditionalChinese.rawValue {
-            //check if the number is over the number of all words.
-            if Bundle.main.path(forResource: (String.init(format: "%04d", firstHalf) + "_" + Lang.Language.Japanese.rawValue), ofType: "mp3") == nil {
-                //make it 1
-                firstHalf = 1
-            } else {
-                firstHalf += 1
+        while(true) {
+            //handle the first half
+            if secondHalf == Lang.Language.TraditionalChinese.rawValue {
+                //check if the number is over the number of all words.
+                if Bundle.main.path(forResource: (String.init(format: "%04d", firstHalf + 1) + "_" + Lang.Language.Japanese.rawValue), ofType: "mp3") == nil {
+                    //make it 1
+                    firstHalf = 1
+                } else {
+                    firstHalf += 1
+                }
+            }
+        
+            //handle the second half
+            let nextCase = Lang.Language(rawValue: secondHalf).nextCase()
+        
+            secondHalf = nextCase.rawValue
+            
+            //judge whether it is to be displayed.
+            if displayLanguage == nil || displayLanguage!.isEmpty || displayLanguage![secondHalf] ?? true {
+                break
+            }
+            
+            if /*the case all flag is set false*/!displayLanguage!.contains(where: {(key, value) in value == true}) {
+                return soundPath
             }
         }
         
-        //handle the second half
-        let nextCase = Lang.Language(rawValue: secondHalf).nextCase()
         //debug
-        print("File: \(#file) Line \(#line): Func \(#function): Before change: \(secondHalf), After change: \(nextCase.rawValue) \n")
-        secondHalf = nextCase.rawValue
+        print("File: \(#file) Line \(#line): Func \(#function): Before change: \(secondHalf), After change: \(String.init(format: "%04d", firstHalf) + "_" + secondHalf) \n")
 
         return (String.init(format: "%04d", firstHalf) + "_" + secondHalf)
     }

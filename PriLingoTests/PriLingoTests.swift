@@ -142,6 +142,25 @@ class PriLingoTests: XCTestCase {
         XCTAssertTrue(settings.getLanguageDisplayFlag() == [Lang.Language.English.rawValue:true, Lang.Language.Japanese.rawValue:true, Lang.Language.SimplifiedChinese.rawValue:true, Lang.Language.TraditionalChinese.rawValue:true])
     }
     
+    ///function to test Path class NextSoundPath() method.
+    func testPathNextSoundPath() {
+        let setting = Settings.init()
+        setting.setLanguageDisplayFlag(en: false, jp: false, cn_s: false, cn_t: false)
+        
+        var path = "0001_en"
+        
+        for i in 0...199 {
+            
+            print("\(i)th trial: ")
+            
+            if let a = Path.nextSoundPath(soundPath: path) {
+                path = a
+            } else {
+                break;
+            }
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
