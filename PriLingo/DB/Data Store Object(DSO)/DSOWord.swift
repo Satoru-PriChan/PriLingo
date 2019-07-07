@@ -108,6 +108,24 @@ class DSOWord {
         self.spare10 = myResultSet.string(forColumn: WORDS.SPARE10)
     }
     
+    ///function to get a word's name, phonetic, and description in this order according to the parameter's language.
+    func getNameInPreferredLanguage(lang: Lang.Language?) -> (String?, String?, String?)? {
+        
+        //return default value (in English)
+        guard lang != nil else {return (self.name2, self.phonetic2, self.description2)}
+        
+        switch lang! {
+        case .Japanese:
+            return (self.name1, self.phonetic1, self.description1)
+        case .English:
+            return (self.name2, self.phonetic2, self.description2)
+        case .SimplifiedChinese:
+            return (self.name3, self.phonetic3, self.description3)
+        case .TraditionalChinese:
+            return (self.name4, self.phonetic4, self.description4)
+        }
+    }
+    
     ///describe itself by print method
     func describe() {
         print("File: \(#file) Line \(#line): Func \(#function):" +

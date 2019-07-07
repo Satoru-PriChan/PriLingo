@@ -161,6 +161,35 @@ class PriLingoTests: XCTestCase {
         }
     }
     
+    ///function to test Settings class getLanguageDisplayOrder().
+    func testSettingsGetLanguageDisplayOrder() {
+        let setting = Settings.init()
+        setting.setLanguageDisplayFlag(en: true, jp: true, cn_s: true, cn_t: true)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [Lang.Language.Japanese.rawValue,Lang.Language.English.rawValue, Lang.Language.SimplifiedChinese.rawValue, Lang.Language.TraditionalChinese.rawValue])
+
+        setting.setLanguageDisplayFlag(en: false, jp: true, cn_s: true, cn_t: true)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [ Lang.Language.Japanese.rawValue, Lang.Language.SimplifiedChinese.rawValue, Lang.Language.TraditionalChinese.rawValue])
+        
+        setting.setLanguageDisplayFlag(en: true, jp: false, cn_s: true, cn_t: false)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [Lang.Language.English.rawValue, Lang.Language.SimplifiedChinese.rawValue])
+        
+        setting.setLanguageDisplayFlag(en: false, jp: false, cn_s: false, cn_t: true)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [Lang.Language.TraditionalChinese.rawValue])
+        
+        setting.setLanguageDisplayFlag(en: false, jp: false, cn_s: false, cn_t: false)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [])
+        
+        setting.setLanguageDisplayFlag(en: true, jp: true, cn_s: true, cn_t: true)
+        
+        XCTAssertEqual(setting.getLanguageDisplayOrder(), [Lang.Language.Japanese.rawValue,Lang.Language.English.rawValue,  Lang.Language.SimplifiedChinese.rawValue, Lang.Language.TraditionalChinese.rawValue])
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

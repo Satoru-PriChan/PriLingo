@@ -199,20 +199,28 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         //judge which UITableView
         let newWord = self.dsoWords![self.currentPage! - 1]
         
-        //judge at how manyth cell
+        //judge at how manyth cell and if it's display flag is true or not.
         var _word: String? = ""
         var _pronounce: String? = ""
+        
+        let settings = Settings.init()
+        let displayLanguage = settings.getLanguageDisplayFlag()
+        
         switch indexPath.row {
         case 0:
+            //jp
             _word = newWord.name1
             _pronounce = newWord.phonetic1
         case 1:
+            //en
             _word = newWord.name2
             _pronounce = newWord.phonetic2
         case 2:
+            //cn_s
             _word = newWord.name3
             _pronounce = newWord.phonetic3
         case 3:
+            //cn_t
             _word = newWord.name4
             _pronounce = newWord.phonetic4
         default:

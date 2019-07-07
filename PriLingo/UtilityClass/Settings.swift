@@ -61,9 +61,14 @@ class Settings {
     
     /// function to get the display order of the languages.
     ///
-    /// - Returns: String Array containing the file names of String.resource of those languages. If there is no value, returns nil.
+    /// - Returns: String Array containing the file names of String.resource of those languages. Languages or the language whose display flag is false is automatically removed. If there is no value, returns nil.
     func getLanguageDisplayOrder() -> [String]? {
-        return UserDefaults.standard.stringArray(forKey: self.key_languageDisplayOrder)
+        guard let order = UserDefaults.standard.stringArray(forKey: self.key_languageDisplayOrder) else {return nil}
+        
+        return order.filter() {str in
+            guard let displayFlag = self.getLanguageDisplayFlag() else {return false}
+            return displayFlag[str] ?? false
+        }
     }
     
     ///function to gt the display flag for languages.
