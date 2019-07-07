@@ -61,7 +61,6 @@ class DisplayLanguageOrderViewController: MyContentViewController, UITableViewDa
         
         cell.isSelected = false
         
-        cell.textLabel?.font = UIFont.systemFont(ofSize: CGFloat.init(28.0), weight: .heavy)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.init(red: 255/255, green: 203/255, blue: 226/255, alpha: 1.0)
         cell.layer.cornerRadius = 20
