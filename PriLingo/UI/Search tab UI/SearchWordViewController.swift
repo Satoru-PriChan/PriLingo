@@ -177,7 +177,6 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         self.audioPlayer = nil
         //debug
         print("File: \(#file) Line \(#line): Func \(#function):  self.audioPlayer has been stopped forciblly\n")
-        
     }
     
     //MARK: - UITableViewDelegate

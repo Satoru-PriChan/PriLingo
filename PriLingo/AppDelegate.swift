@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let dbSetUp = DBSetUp.init()
         dbSetUp.InitialSetUpDB()
         
+        //Initial settings
+        let settings = Settings.init()
+        settings.settingsInitialSetup()
+        
         //display your window
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         let uiViewController = MyTabBarController()
