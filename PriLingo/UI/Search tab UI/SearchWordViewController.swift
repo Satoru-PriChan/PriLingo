@@ -148,6 +148,12 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         self.myRepeatState = repeatState
     }
     
+    ///function called everytime the view is appeared.
+    override func viewDidAppear(_ animated: Bool) {
+        //reload table views
+        self.myTableViews?.map({tableView in tableView.reloadData()})
+    }
+    
     //MARK: - Others
     
     func setHeader(currentPage: Int) {
@@ -182,13 +188,10 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
             return 0
         } else {
             let settings = Settings.init()
-            let displayLanguages = settings.getLanguageDisplayFlag()
-            
-            if displayLanguages == nil || displayLanguages!.isEmpty {
-                return 0
+            if let languageDisplayOrder = settings.getLanguageDisplayOrder() {
+                return languageDisplayOrder.count
             } else {
-                //return the number of languages whose display flags are true.
-                return displayLanguages?.filter() {(key, value) in return value }.count ?? 0
+                return 0
             }
         }
     }
@@ -204,28 +207,13 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         var _pronounce: String? = ""
         
         let settings = Settings.init()
-        let displayLanguage = settings.getLanguageDisplayFlag()
+        guard let languageDisplayOrder = settings.getLanguageDisplayOrder() else {return SearchWordTableViewCell()}
+        let language = languageDisplayOrder[indexPath.row]
         
-        switch indexPath.row {
-        case 0:
-            //jp
-            _word = newWord.name1
-            _pronounce = newWord.phonetic1
-        case 1:
-            //en
-            _word = newWord.name2
-            _pronounce = newWord.phonetic2
-        case 2:
-            //cn_s
-            _word = newWord.name3
-            _pronounce = newWord.phonetic3
-        case 3:
-            //cn_t
-            _word = newWord.name4
-            _pronounce = newWord.phonetic4
-        default:
-            break
-        }
+        guard let taple = newWord.getNameInPreferredLanguage(lang: Lang.Language.init(rawValue: language)) else {return SearchWordTableViewCell()}
+        _word = taple.0
+        _pronounce = taple.1
+        
         cell?.setCell(word: _word, pronounce: _pronounce, delegate: self, tag: indexPath.row, wordID: newWord.iD!)
         
         return cell ?? SearchWordTableViewCell()
