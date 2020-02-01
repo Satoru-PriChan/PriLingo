@@ -1,6 +1,0 @@
-framework module Pods_PriLingoTests {
-  umbrella header "Pods-PriLingoTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
