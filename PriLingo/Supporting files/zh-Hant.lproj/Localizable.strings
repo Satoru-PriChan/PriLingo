@@ -14,6 +14,7 @@
 "favorite" = "Favorite";
 "japanese" = "日文";
 "english" = "英文";
+"chinese" = "中文";
 "simplified_chinese" = "簡體中文";
 "traditional_chinese" = "繁體中文";
 "preferred_language" = "選擇首選語言";

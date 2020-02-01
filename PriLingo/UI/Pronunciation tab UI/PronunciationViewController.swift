@@ -8,8 +8,43 @@
 
 import UIKit
 
+//contents displayed on Pronunciation Table View.
+struct PronunciationContent {
+    let langKey: String
+    let urlJa: URL
+    let urlEn: URL
+    let urlCnS: URL
+    let urlCnT: URL
+    
+    public static func get() -> [PronunciationContent] {
+        return [PronunciationContent(langKey: "japanese",
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/日本語の音韻")!,
+                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/Japanese_phonology")!,
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/日語音系")!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/日語音系")!),
+                
+                PronunciationContent(langKey: "english",
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/英語")!,
+                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/English_phonology")!,
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/英語音系學")!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/英語音系學")!),
+                
+                PronunciationContent(langKey: "chinese",
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/ピン音")!,
+                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/Standard_Chinese_phonology")!,
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系")!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系")!)
+        ]
+    }
+    
+}
+
 class PronunciationViewController: MyContentViewController {
 
+    @IBOutlet weak var myTableView: UITableView!
+    
+    let identifier = "myCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +54,10 @@ class PronunciationViewController: MyContentViewController {
         if let myNav = self.navigationController as? MyUINavigationController {
             myNav.myNavigationbar?.myTitleImage.image = UIImage.init(named: "TitlePronunciation.png")
         }
+        
+        //tableview
+        self.myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
+        
     }
 
 
@@ -32,4 +71,35 @@ class PronunciationViewController: MyContentViewController {
     }
     */
 
+}
+
+// MARK: - UITableViewDelegate
+
+extension PronunciationViewController: UITableViewDelegate {
+    
+}
+
+// MARK: - UITableViewDatasource
+
+extension PronunciationViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return PronunciationContent.get().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? SearchCateogryTableViewCell else {return SearchCateogryTableViewCell()}
+        
+        let contents = PronunciationContent.get()[indexPath.row]
+        
+        cell.setCell(chapterNo: "",
+                     categoryNameEN: Lang.getLocalizedString(key: contents.langKey, lang: .English),
+                     categoryNameJP: Lang.getLocalizedString(key: contents.langKey, lang: .Japanese),
+                     categoryNameCN_S: Lang.getLocalizedString(key: contents.langKey, lang: .SimplifiedChinese),
+                     categoryNameCN_T: Lang.getLocalizedString(key: contents.langKey, lang: .TraditionalChinese))
+        
+        return cell
+    }
+    
+    
 }
