@@ -18,22 +18,22 @@ struct PronunciationContent {
     
     public static func get() -> [PronunciationContent] {
         return [PronunciationContent(langKey: "japanese",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/日本語の音韻")!,
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/日本語の音韻".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
                                      urlEn: URL(string: "https://en.wikipedia.org/wiki/Japanese_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/日語音系")!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/日語音系")!),
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/日語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/日語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!),
                 
                 PronunciationContent(langKey: "english",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/英語")!,
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/英語".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
                                      urlEn: URL(string: "https://en.wikipedia.org/wiki/English_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/英語音系學")!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/英語音系學")!),
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/英語音系學".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/英語音系學".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!),
                 
                 PronunciationContent(langKey: "chinese",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/ピン音")!,
+                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/ピン音".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
                                      urlEn: URL(string: "https://en.wikipedia.org/wiki/Standard_Chinese_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系")!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系")!)
+                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
+                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!)
         ]
     }
     
@@ -57,6 +57,9 @@ class PronunciationViewController: MyContentViewController {
         
         //tableview
         self.myTableView.register(UINib.init(nibName: "SearchCateogryTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: self.identifier)
+        self.myTableView.backgroundColor = .clear
+        self.myTableView.separatorColor = .clear
+        
         
     }
 
@@ -97,7 +100,8 @@ extension PronunciationViewController: UITableViewDataSource {
                      categoryNameJP: Lang.getLocalizedString(key: contents.langKey, lang: .Japanese),
                      categoryNameCN_S: Lang.getLocalizedString(key: contents.langKey, lang: .SimplifiedChinese),
                      categoryNameCN_T: Lang.getLocalizedString(key: contents.langKey, lang: .TraditionalChinese))
-        
+        cell.selectionStyle = .none
+        cell.theChapterLabel.isHidden  = true
         return cell
     }
     
