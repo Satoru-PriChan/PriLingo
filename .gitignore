@@ -113,4 +113,10 @@ iOSInjectionProject/
 *.mp3
 *.db
 
+
+### bundler ###
+/.bundle/
+/vendor/bundle
+Gemfile.lock
+.ruby-version
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods

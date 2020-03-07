@@ -9,7 +9,7 @@ DEPENDENCIES:
   - SmoothTab
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - FMDB
     - SmoothTab
 
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: adee6f165a5eb490b59f9e86d39a4c04ec8890d0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
