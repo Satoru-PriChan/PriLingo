@@ -11,29 +11,29 @@ import UIKit
 //contents displayed on Pronunciation Table View.
 struct PronunciationContent {
     let langKey: String
-    let urlJa: URL
-    let urlEn: URL
-    let urlCnS: URL
-    let urlCnT: URL
+    let urlJa: String
+    let urlEn: String
+    let urlCnS: String
+    let urlCnT: String
     
     public static func get() -> [PronunciationContent] {
         return [PronunciationContent(langKey: "japanese",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/日本語の音韻".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/Japanese_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/日語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/日語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!),
+                                     urlJa: "https://ja.wikipedia.org/wiki/日本語の音韻",
+                                     urlEn: "https://en.wikipedia.org/wiki/Japanese_phonology",
+                                     urlCnS:  "https://zh.wikipedia.org/wiki/日語音系",
+                                     urlCnT:  "https://zh.wikipedia.org/wiki/日語音系"),
                 
                 PronunciationContent(langKey: "english",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/英語".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/English_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/英語音系學".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/英語音系學".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!),
+                                     urlJa:  "https://ja.wikipedia.org/wiki/英語",
+                                     urlEn:  "https://en.wikipedia.org/wiki/English_phonology",
+                                     urlCnS:  "https://zh.wikipedia.org/wiki/英語音系學",
+                                     urlCnT:  "https://zh.wikipedia.org/wiki/英語音系學"),
                 
                 PronunciationContent(langKey: "chinese",
-                                     urlJa: URL(string: "https://ja.wikipedia.org/wiki/ピン音".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlEn: URL(string: "https://en.wikipedia.org/wiki/Standard_Chinese_phonology")!,
-                                     urlCnS: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!,
-                                     urlCnT: URL(string: "https://zh.wikipedia.org/wiki/現代標準漢語音系".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!)
+                                     urlJa:  "https://ja.wikipedia.org/wiki/ピン音",
+                                     urlEn:  "https://en.wikipedia.org/wiki/Standard_Chinese_phonology",
+                                     urlCnS:  "https://zh.wikipedia.org/wiki/現代標準漢語音系",
+                                     urlCnT:  "https://zh.wikipedia.org/wiki/現代標準漢語音系")
         ]
     }
     
@@ -79,7 +79,30 @@ class PronunciationViewController: MyContentViewController {
 // MARK: - UITableViewDelegate
 
 extension PronunciationViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contents = PronunciationContent.get()
+        guard contents.count > indexPath.row else { return }
+        
+        let setting = Settings()
+        let prefferredLang = setting.getPreferredLanguage()
+        let url = self.getDisplayUrl(contents: contents[indexPath.row], lang: Lang.Language(rawValue: prefferredLang ?? ""))
+        
+        let vc = WebViewViewController(url: url)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
+    func getDisplayUrl(contents: PronunciationContent, lang: Lang.Language) -> String {
+        switch lang {
+        case .English:
+            return contents.urlEn
+        case .Japanese:
+            return contents.urlJa
+        case .SimplifiedChinese:
+            return contents.urlCnS
+        case .TraditionalChinese:
+            return contents.urlCnT
+        }
+    }
 }
 
 // MARK: - UITableViewDatasource
