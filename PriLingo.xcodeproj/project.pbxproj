@@ -903,6 +903,8 @@
 		1FDCE283241392C8004AC2FF /* 0056_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FDCDF07241392C7004AC2FF /* 0056_zh-Hans.mp3 */; };
 		1FDCE284241392C8004AC2FF /* 0144_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FDCDF08241392C7004AC2FF /* 0144_zh-Hans.mp3 */; };
 		1FDCE285241392C8004AC2FF /* 0026_zh-Hans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FDCDF09241392C7004AC2FF /* 0026_zh-Hans.mp3 */; };
+		1FDCE2882413ADCE004AC2FF /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCE2862413ADCE004AC2FF /* WebViewViewController.swift */; };
+		1FDCE2892413ADCE004AC2FF /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FDCE2872413ADCE004AC2FF /* WebViewViewController.xib */; };
 		2AA398083E46E7E11F161FD4 /* Pods_PriLingoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */; };
 		68285597453B3E9B67653C92 /* Pods_PriLingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D37E93D51BCECE7458ECC8 /* Pods_PriLingo.framework */; };
 		85C8085E8EB7F06230E3F230 /* Pods_PriLingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10E336442056FA6192890A /* Pods_PriLingoUITests.framework */; };
@@ -2053,6 +2055,8 @@
 		1FDCDF07241392C7004AC2FF /* 0056_zh-Hans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0056_zh-Hans.mp3"; sourceTree = "<group>"; };
 		1FDCDF08241392C7004AC2FF /* 0144_zh-Hans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0144_zh-Hans.mp3"; sourceTree = "<group>"; };
 		1FDCDF09241392C7004AC2FF /* 0026_zh-Hans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0026_zh-Hans.mp3"; sourceTree = "<group>"; };
+		1FDCE2862413ADCE004AC2FF /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		1FDCE2872413ADCE004AC2FF /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingo/Pods-PriLingo.debug.xcconfig"; sourceTree = "<group>"; };
 		81C50E96305275B7053AE22E /* Pods-PriLingoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriLingoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriLingoUITests/Pods-PriLingoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E33A748F7EE20988E690D /* Pods_PriLingoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriLingoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3274,6 +3278,8 @@
 			children = (
 				CEA04CEC22426F2200501A08 /* PronunciationViewController.swift */,
 				CEA04CED22426F2200501A08 /* PronunciationViewController.xib */,
+				1FDCE2862413ADCE004AC2FF /* WebViewViewController.swift */,
+				1FDCE2872413ADCE004AC2FF /* WebViewViewController.xib */,
 			);
 			path = "Pronunciation tab UI";
 			sourceTree = "<group>";
@@ -3984,6 +3990,7 @@
 				1FDCE212241392C8004AC2FF /* 0010_zh-Hans.mp3 in Resources */,
 				1FDCE181241392C8004AC2FF /* 0146_en.mp3 in Resources */,
 				1FDCE0B1241392C8004AC2FF /* 0023_zh-Hant.mp3 in Resources */,
+				1FDCE2892413ADCE004AC2FF /* WebViewViewController.xib in Resources */,
 				1FDCE001241392C8004AC2FF /* 0189_zh-Hant.mp3 in Resources */,
 				1FDCDF4A241392C7004AC2FF /* 0182_ja.mp3 in Resources */,
 				1FDCE19A241392C8004AC2FF /* 0072_en.mp3 in Resources */,
@@ -4698,6 +4705,7 @@
 			files = (
 				CE987409229A7E62000F4F45 /* MyContentViewController.swift in Sources */,
 				CE9A3CFD229CAD6C000B15E7 /* SearchWordTableViewCell.swift in Sources */,
+				1FDCE2882413ADCE004AC2FF /* WebViewViewController.swift in Sources */,
 				CEF46BEC222FEFCC0095D3D2 /* WORDS.swift in Sources */,
 				CE17A03D223298F30073A0A4 /* DBSetUp.swift in Sources */,
 				CEE5E58322BDB74400F3CE87 /* Settings.swift in Sources */,
