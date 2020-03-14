@@ -4996,7 +4996,7 @@
 			baseConfigurationReference = 2340B949D4E79F3100A802CE /* Pods-PriLingo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VWFXDPF5TY;
 				INFOPLIST_FILE = PriLingo/Info.plist;
@@ -5006,9 +5006,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.saitama.satoru-aikawa.PriLingo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Prilingo-development";
+				PROVISIONING_PROFILE_SPECIFIER = "PriLingo-destribution";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -5017,7 +5017,7 @@
 			baseConfigurationReference = E0C1AC5F0B46A823FD4C483A /* Pods-PriLingo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VWFXDPF5TY;
 				INFOPLIST_FILE = PriLingo/Info.plist;
@@ -5027,9 +5027,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.saitama.satoru-aikawa.PriLingo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Prilingo-development";
+				PROVISIONING_PROFILE_SPECIFIER = "PriLingo-destribution";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
