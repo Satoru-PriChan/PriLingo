@@ -32,7 +32,7 @@ class Settings {
         
         //initial setup for the preferred language
         if userDefaults.string(forKey: self.key_preferredLanguage) == nil {
-            userDefaults.set(Lang.Language.English.rawValue, forKey: self.key_preferredLanguage)
+            userDefaults.set(Lang.Language.Japanese.rawValue, forKey: self.key_preferredLanguage)
             result = true
         }
         
