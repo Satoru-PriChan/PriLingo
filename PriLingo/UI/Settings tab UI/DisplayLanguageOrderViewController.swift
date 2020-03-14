@@ -70,6 +70,8 @@ class DisplayLanguageOrderViewController: MyContentViewController, UITableViewDa
         
         cell.textLabel?.text = self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row)
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     

@@ -54,6 +54,8 @@ class PreferredLanguageViewController: MyContentViewController, UITableViewDeleg
         
         cell.textLabel?.text = self.getLanguageNameInPreferredLanguage(howManyth: indexPath.row)
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     

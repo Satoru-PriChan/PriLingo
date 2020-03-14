@@ -215,6 +215,8 @@ class SearchWordViewController: MyLoopScrollViewController, TitleAndButtonViewDe
         
         cell?.setCell(word: _word, pronounce: _pronounce, delegate: self, tag: indexPath.row, wordID: newWord.iD!)
         
+        cell?.selectionStyle = .none
+        
         return cell ?? SearchWordTableViewCell()
     }
     

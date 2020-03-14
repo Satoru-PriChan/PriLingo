@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,10 +25,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nma-hX-h1M" userLabel="backgroundView">
-                    <rect key="frame" x="49" y="0.0" width="316" height="55"/>
+                    <rect key="frame" x="49" y="0.0" width="360" height="55"/>
                     <subviews>
                         <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-fL-eOa" userLabel="leftButton">
-                            <rect key="frame" x="0.0" y="5" width="45" height="45"/>
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" identifier="MyNavigationBar-1" id="Kgh-cL-4Xx"/>
                                 <constraint firstAttribute="width" secondItem="MQJ-fL-eOa" secondAttribute="height" multiplier="1:1" identifier="MyNavigationBar-2" id="sDf-A1-zn7"/>
@@ -41,13 +39,13 @@
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-Z5-o3d">
-                            <rect key="frame" x="45" y="-33" width="226" height="121"/>
+                            <rect key="frame" x="55" y="-39" width="250" height="133"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="DIb-Z5-o3d" secondAttribute="height" multiplier="15:8" identifier="MyNavigationBar-3" id="iQr-xo-fj9"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
-                            <rect key="frame" x="271" y="5" width="45" height="45"/>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-bm-3XI" userLabel="rightButton">
+                            <rect key="frame" x="305" y="0.0" width="55" height="55"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="aIp-bm-3XI" secondAttribute="height" multiplier="1:1" identifier="MyNavigationBar-4" id="doe-uR-axN"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" identifier="MyNavigationBar-5" id="oWe-5b-EcI"/>
